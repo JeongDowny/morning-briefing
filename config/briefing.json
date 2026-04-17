@@ -1,0 +1,66 @@
+{
+  "naver_news": {
+    "ranking": {
+      "enabled": true,
+      "_note": "네이버 랭킹 페이지는 언론사별 구조 → 경제 중심 언론사 화이트리스트로 필터링.",
+      "press_whitelist": [
+        "매일경제",
+        "한국경제",
+        "머니투데이",
+        "이데일리",
+        "파이낸셜뉴스",
+        "조선비즈",
+        "아시아경제",
+        "서울경제",
+        "헤럴드경제"
+      ],
+      "top_n": 10
+    },
+    "keyword_search": {
+      "enabled": false,
+      "_note_m2": "M2에서 활성화. 키워드별 카테고리 태그가 Daily 노트·텔레그램에 그룹핑 헤더로 반영됨.",
+      "keywords": [
+        { "term": "금리",    "category": "거시" },
+        { "term": "환율",    "category": "거시" },
+        { "term": "물가",    "category": "거시" },
+        { "term": "부동산",  "category": "자산" },
+        { "term": "코스피",  "category": "자산" },
+        { "term": "연준",    "category": "글로벌" },
+        { "term": "나스닥",  "category": "글로벌" }
+      ],
+      "per_keyword": 3,
+      "sort": "date"
+    }
+  },
+  "schedule": {
+    "time_kst": "08:00",
+    "cron_utc": "0 23 * * *",
+    "_note": "time_kst 변경 시 cron_utc 자동 재계산. Claude Code Routines 등록 시 cron_utc 값을 복사해 주입."
+  },
+  "window": {
+    "timezone": "Asia/Seoul",
+    "_note": "수집 시간창은 schedule.time_kst 기준 직전 24시간 (랭킹은 미적용, 키워드 검색만 해당)",
+    "applies_to": ["keyword_search"]
+  },
+  "output": {
+    "obsidian": {
+      "daily_note_path": "Daily/{date}.md",
+      "include_raw_lead": true
+    },
+    "channels": {
+      "telegram": {
+        "enabled": true,
+        "split_by_section": true,
+        "_env_required": ["TELEGRAM_BOT_TOKEN", "TELEGRAM_CHAT_ID"]
+      },
+      "slack": {
+        "enabled": false,
+        "split_by_section": true,
+        "_env_required": ["SLACK_WEBHOOK_URL"]
+      }
+    }
+  },
+  "dedupe": {
+    "retention_days": 30
+  }
+}

@@ -1,0 +1,25 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+.pytest_cache/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Obsidian — 기기별 상태 (커밋 시 충돌 유발)
+.obsidian/workspace*.json
+.obsidian/app.json
+.obsidian/appearance.json
+.obsidian/hotkeys.json
+.obsidian/graph.json
+
+# 수집 중간 산출물 (실행 시마다 재생성, 커밋 불필요)
+collected/
+
+# 로컬 비밀값 (만일 로컬에서 .env 테스트할 경우)
+.env
+.env.local
