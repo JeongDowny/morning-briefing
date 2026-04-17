@@ -1,27 +1,26 @@
 # morning-briefing-economy
 
-> 매일 아침 경제뉴스를 자동 수집·요약·배포하는 개인용 브리핑 파이프라인
-> **경제 공부 목적** — 랭킹·키워드 기반 네이버뉴스 수집, Obsidian + Slack/Telegram
+네이버 경제뉴스를 매일 아침 자동 수집·요약해서 Obsidian vault 와 Slack/Telegram 으로 전달하는 개인용 자동화.
 
-자매 프로젝트: [`morning-briefing-dev`](https://github.com/jeongdowny/morning-briefing-dev) — AI·개발 동향 버전
+경제 학습 목적으로 설계되었으며 투자 자문 도구가 아니다. 수집은 "많이 본 뉴스" 랭킹 중 경제 전문 언론사로 화이트리스트 필터링하고, 요약은 Claude Code Routine 이 담당한다.
 
----
+## 동작 방식
 
-## 특징
+1. Claude Code Routine 이 사용자가 지정한 시각(KST)에 클라우드에서 실행된다. 로컬 머신은 켜져 있지 않아도 된다.
+2. `scripts/collect_naver.py` 가 네이버 랭킹 페이지를 파싱해 `collected/naver.json` 에 저장한다.
+3. `scripts/manage_seen.py filter` 가 `data/seen.json` 과 대조해 지난 30일 이내 이미 노출된 항목을 제거한다.
+4. Routine 안의 Claude 가 각 항목을 한국어 2~3줄로 요약하고 `Daily/YYYY-MM-DD.md` 를 생성한다.
+5. `scripts/send_telegram.py` · `scripts/send_slack.py` 중 활성화된 쪽이 섹션별 메시지로 전송한다.
+6. 신규 노트와 `data/seen.json` 변경분이 `main` 브랜치로 커밋된다.
 
-- ⏰ **매일 원하는 시각 발송** — `config_ui` 에서 시간 설정, cron 자동 계산
-- 📈 **경제 전문 언론사 필터** — 매경·한경·머니투데이 등 9개 화이트리스트
-- 🔍 **키워드 검색** (M2) — 금리·환율·물가·부동산·코스피·연준·나스닥 커스터마이징 가능
-- 📝 **Obsidian 주 뷰어** — GitHub 레포 자체가 Obsidian vault, `#keep` 태그로 북마크
-- 📲 **Slack / Telegram** 양쪽 지원 — 체크박스로 선택
-- ☁️ **Claude Code Routines** — 랩탑 꺼져 있어도 클라우드 자동 실행
-- 🎛️ **브라우저 UI** — 코드 없이 키워드·언론사·시각·시크릿 편집
+## 요구사항
 
----
+- Python 3.11 이상
+- Claude Code (Routines 사용 가능한 플랜)
+- Telegram 봇 또는 Slack Incoming Webhook (발송 채널)
+- (선택) 네이버 개발자 센터 Client ID / Secret — 키워드 검색(M2) 에서 사용
 
-## 5분 셋업
-
-### 1. 클론 + 의존성
+## 설치
 
 ```bash
 git clone https://github.com/jeongdowny/morning-briefing-economy.git
@@ -29,97 +28,77 @@ cd morning-briefing-economy
 pip install requests beautifulsoup4 pytz
 ```
 
-### 2. 설정 UI 실행
+## 설정
+
+레포 루트에서 설정 UI 를 실행한다.
 
 ```bash
 python3 scripts/config_ui.py
-# → http://localhost:8765 자동 오픈
 ```
 
-### 3. UI 에서 아래 단계대로
+`http://localhost:8765` 이 자동으로 열린다. 탭은 다음과 같다.
 
-1. **📖 발급 가이드** 탭 — Naver API / Telegram Bot / Slack Webhook 단계별 발급 링크 제공
-2. **🔑 시크릿** — 발급받은 키들 입력
-3. **📡 채널** — Telegram 또는 Slack 활성화 + **테스트 전송** 버튼으로 확인
-4. **📈 네이버 랭킹** — 원하는 언론사만 남기기
-5. **⚙️ 기타** — 발송 시각(기본 08:00 KST) 조정 → 자동 계산된 Cron 복사
-6. **💾 전체 저장** (auto-commit 켜두면 커밋까지 자동)
+| 탭 | 역할 |
+|---|---|
+| 채널 | Telegram / Slack 활성화, 각 채널 테스트 전송 |
+| 시크릿 | `.env` 에 저장되는 API 토큰 (gitignore 됨) |
+| 네이버 랭킹 | 수집 대상 언론사 화이트리스트, 상위 N 개 |
+| 키워드 | Open API 검색 키워드 (M2 에서 활성화) |
+| 기타 | 발송 시각(KST) 입력 시 UTC cron 을 자동 계산 |
+| 발급 가이드 | Naver / Telegram / Slack / GitHub App 단계별 안내 |
 
-### 4. Claude Code Routines 등록
-
-1. [github.com/apps/claude](https://github.com/apps/claude) → 이 레포에 Claude GitHub App 설치
-2. `claude` CLI 에서 `/schedule` 실행 또는 [claude.ai/code/routines](https://claude.ai/code/routines) 접속
-3. 새 Routine:
-   - Name: `morning-briefing-economy`
-   - Trigger: Schedule, **Cron = UI에서 복사한 값**
-   - Repo: `morning-briefing-economy`
-   - **Allow unrestricted branch pushes: ON**
-   - Setup script: `pip install requests beautifulsoup4 pytz`
-   - Prompt: `.claude/routine-prompt.md` 내용 복사 붙여넣기
-4. 환경변수 주입 (UI 시크릿 탭과 동일 키)
-5. **Run once** 로 테스트 실행
-
----
-
-## 레포 구조
-
-```
-.
-├── Daily/                    # 일일 브리핑 노트 (자동 생성, Obsidian vault)
-├── Keeps.md                  # Dataview #keep 집계
-├── config/
-│   ├── briefing.json         # 모든 설정 (UI 가 관리)
-│   └── prompts/              # 요약 프롬프트
-├── data/seen.json            # 중복 방지 상태
-├── scripts/
-│   ├── config_ui.py          # ⭐ 로컬 편집 UI
-│   ├── collect_naver.py      # 네이버 랭킹 수집
-│   ├── manage_seen.py        # 중복 제거
-│   ├── send_telegram.py
-│   └── send_slack.py
-└── .claude/routine-prompt.md # Scheduled Agent 실행 지시
-```
-
----
+`auto-commit` 을 켜면 저장 시 `config/briefing.json` 변경분이 자동으로 커밋된다. `.env` 값은 절대 커밋되지 않는다.
 
 ## Obsidian 연동
 
-이 레포 자체를 Obsidian vault 로 엽니다:
+레포 디렉토리 구조가 그대로 Obsidian vault 로 동작한다.
 
-1. [Obsidian 설치](https://obsidian.md) → `Open folder as vault` → 이 레포 폴더 선택
-2. Community plugins 설치:
-   - **Obsidian Git** — 15분마다 자동 pull (Scheduled Agent 가 푸시한 최신 브리핑 수신)
-   - **Dataview** — `Keeps.md` 의 `#keep` 자동 집계
-3. 출근 후 `Daily/{날짜}.md` 열어 읽고, 중요한 항목 끝에 `#keep` 태그 추가
-4. `Keeps.md` 에서 누적 키프 확인
+1. Obsidian 에서 `Open folder as vault` → 이 레포 폴더 선택.
+2. Community plugin 설치:
+   - **Obsidian Git** — auto pull 15분.
+   - **Dataview** — `Keeps.md` 집계용.
+3. Routine 이 푸시한 `Daily/YYYY-MM-DD.md` 를 열고, 다시 볼 항목에 `#keep` 태그를 붙이면 `Keeps.md` 에 자동 집계된다.
 
----
+## Claude Code Routine 등록
 
-## 로컬 파이프라인 수동 테스트
+1. [github.com/apps/claude](https://github.com/apps/claude) 에서 이 레포에 Claude GitHub App 설치.
+2. `claude` CLI 에서 `/schedule` 실행 (또는 [claude.ai/code/routines](https://claude.ai/code/routines)).
+3. 새 Routine 을 아래와 같이 구성한다.
+   - Trigger — Schedule, cron 은 설정 UI "기타" 탭의 값 사용
+   - Repository — 이 레포
+   - Allow unrestricted branch pushes — on
+   - Setup script — `pip install requests beautifulsoup4 pytz`
+   - Prompt — `.claude/routine-prompt.md` 내용 복사
+4. `.env` 와 동일한 키를 환경변수에 주입한다.
+5. `Run once` 로 첫 실행을 검증한다.
+
+## 로컬 파이프라인 수동 실행
+
+요약과 Daily 노트 생성은 Routine 안의 Claude 가 담당하지만, 수집·전송 단계는 로컬에서 단독 실행할 수 있다.
 
 ```bash
-python3 scripts/collect_naver.py         # 수집 → collected/naver.json
-python3 scripts/manage_seen.py filter    # 중복 제거 → collected/filtered.json
-# (Claude 가 요약 + Daily 노트 생성 — Routines 가 자동으로 수행)
-python3 scripts/send_telegram.py         # 전송 (.env 에 토큰 필요)
-python3 scripts/manage_seen.py update    # seen.json 갱신
+python3 scripts/collect_naver.py
+python3 scripts/manage_seen.py filter
+python3 scripts/send_telegram.py          # 또는 send_slack.py
+python3 scripts/manage_seen.py update
 ```
 
----
+## 구현 현황
 
-## 로드맵
+- [x] 네이버 경제 전문지 랭킹 수집
+- [x] Telegram / Slack 섹션 분할 전송
+- [x] Obsidian Daily 노트 + `#keep` 집계
+- [x] 로컬 설정 편집 UI
+- [ ] 네이버 Open API 키워드 검색 (M2)
+- [ ] 월요일 주간 리뷰 (M3)
+- [ ] 가격 스냅샷 — KOSPI, USD/KRW, 금, 유가 (M4)
 
-- [x] **M1 MVP** — 네이버 랭킹 + Obsidian + Telegram/Slack
-- [ ] **M2** — 네이버 Open API 키워드 검색 (금리·환율 등 정밀 필터)
-- [ ] **M3** — Keep 주간 리뷰 (월요일 아침 지난 주 요약)
-- [ ] **M4** — 가격 스냅샷 (KOSPI·USD/KRW·금·유가)
+설계 배경과 리스크 정리는 [`morning-briefing-plan.md`](./morning-briefing-plan.md) 참조.
 
-자세한 설계는 [`morning-briefing-plan.md`](./morning-briefing-plan.md) 참조.
+## 관련 프로젝트
 
----
+[morning-briefing-dev](https://github.com/jeongdowny/morning-briefing-dev) — 같은 파이프라인 구조로 OpenAI · Anthropic · Threads 를 수집하는 개발자 버전.
 
-## 라이선스 / 기여
+## 라이선스
 
-MIT. 이슈·PR 환영합니다.
-
-피드백: `@jeongdowny`
+MIT.
