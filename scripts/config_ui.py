@@ -29,7 +29,11 @@ from typing import Any
 ROOT = Path(__file__).resolve().parent.parent
 CONFIG_PATH = ROOT / "config" / "briefing.json"
 ENV_PATH = ROOT / ".env"
+ROUTINE_PROMPT_PATH = ROOT / ".claude" / "routine-prompt.md"
 PORT = 8765
+
+SETUP_SCRIPT = "pip install feedparser requests beautifulsoup4 pytz"
+ROUTINE_NAME = ROOT.name  # 디렉토리 이름을 Routine 이름으로
 
 ENV_KEYS = [
     ("NAVER_CLIENT_ID",     "네이버 검색 API Client ID"),
@@ -38,6 +42,31 @@ ENV_KEYS = [
     ("TELEGRAM_CHAT_ID",    "Telegram Chat ID"),
     ("SLACK_WEBHOOK_URL",   "Slack Incoming Webhook URL"),
 ]
+
+
+def get_repo_slug() -> str:
+    """git remote URL 에서 owner/repo 추출. 실패 시 디렉토리명으로 폴백."""
+    try:
+        result = subprocess.run(
+            ["git", "-C", str(ROOT), "remote", "get-url", "origin"],
+            capture_output=True, text=True,
+        )
+        if result.returncode == 0:
+            url = result.stdout.strip()
+            if "github.com" in url:
+                part = url.split("github.com", 1)[-1].lstrip("/:").rstrip("/")
+                if part.endswith(".git"):
+                    part = part[:-4]
+                return part
+    except Exception:
+        pass
+    return f"<your-github-username>/{ROOT.name}"
+
+
+def read_routine_prompt() -> str:
+    if ROUTINE_PROMPT_PATH.exists():
+        return ROUTINE_PROMPT_PATH.read_text(encoding="utf-8")
+    return "(.claude/routine-prompt.md 파일이 아직 없습니다)"
 
 
 # ─── file helpers ──────────────────────────────────────────────────────
@@ -74,15 +103,19 @@ def write_env(env: dict[str, str]) -> None:
     ENV_PATH.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
-def mask_env(env: dict[str, str]) -> dict[str, dict[str, Any]]:
-    """브라우저에 넘길 마스킹된 상태. 실제 값은 절대 안 내보냄."""
+def env_state(env: dict[str, str]) -> dict[str, dict[str, Any]]:
+    """로컬 UI 용 env 상태. 실제 값 포함 (127.0.0.1 한정 서버라 외부 노출 없음).
+
+    브라우저에선 기본적으로 type=password 로 가려 표시하고,
+    사용자가 '표시' 버튼을 눌러야 드러낸다.
+    """
     out: dict[str, dict[str, Any]] = {}
     for key, desc in ENV_KEYS:
         val = env.get(key, "")
         out[key] = {
             "desc": desc,
             "is_set": bool(val),
-            "preview": ("••••" + val[-4:]) if len(val) >= 8 else ("••••" if val else ""),
+            "value": val,
         }
     return out
 
@@ -145,12 +178,26 @@ HTML = r"""<!doctype html>
   <button data-tab="secrets"  class="tab-btn px-3 py-1.5 rounded-lg border bg-white hover:bg-slate-100">🔑 시크릿</button>
   <button data-tab="ranking"  class="tab-btn px-3 py-1.5 rounded-lg border bg-white hover:bg-slate-100">📈 네이버 랭킹</button>
   <button data-tab="keywords" class="tab-btn px-3 py-1.5 rounded-lg border bg-white hover:bg-slate-100">🔍 키워드 (M2)</button>
+  <button data-tab="devnews"  class="tab-btn px-3 py-1.5 rounded-lg border bg-white hover:bg-slate-100">📰 개발소식</button>
+  <button data-tab="threads"  class="tab-btn px-3 py-1.5 rounded-lg border bg-white hover:bg-slate-100">🧵 Threads</button>
   <button data-tab="misc"     class="tab-btn px-3 py-1.5 rounded-lg border bg-white hover:bg-slate-100">⚙️ 기타</button>
+  <button data-tab="routine"  class="tab-btn px-3 py-1.5 rounded-lg border bg-white hover:bg-slate-100">🚀 Routine 등록</button>
   <button data-tab="guide"    class="tab-btn px-3 py-1.5 rounded-lg border bg-white hover:bg-slate-100">📖 발급 가이드</button>
 </nav>
 
 <!-- CHANNELS -->
 <section data-pane="channels" class="pane bg-white rounded-lg shadow-sm p-6">
+  <div class="mb-6 p-4 border rounded-lg bg-slate-50">
+    <h3 class="font-medium mb-2">프로필 프리셋</h3>
+    <p class="text-sm text-slate-600 mb-3">어떤 브리핑을 받으시겠어요? 버튼 하나로 관련 섹션만 활성화됩니다. 이후 개별 토글로 세부 조정 가능합니다.</p>
+    <div class="flex gap-2 flex-wrap">
+      <button data-preset="economy" class="px-3 py-1.5 border rounded bg-white hover:bg-slate-100 text-sm">📈 경제만</button>
+      <button data-preset="dev" class="px-3 py-1.5 border rounded bg-white hover:bg-slate-100 text-sm">🤖 개발만</button>
+      <button data-preset="full" class="px-3 py-1.5 border rounded bg-white hover:bg-slate-100 text-sm">🌐 전체</button>
+    </div>
+    <p class="text-xs text-slate-500 mt-3">현재 프로필: <code class="kbd" id="currentProfile">...</code></p>
+  </div>
+
   <h2 class="text-lg font-semibold mb-4">배포 채널</h2>
   <p class="text-sm text-slate-500 mb-4">브리핑을 받을 채널을 선택하세요. 양쪽 다 체크하면 두 곳 모두 전송됩니다.</p>
 
@@ -181,9 +228,9 @@ HTML = r"""<!doctype html>
 <!-- SECRETS -->
 <section data-pane="secrets" class="pane hidden bg-white rounded-lg shadow-sm p-6">
   <h2 class="text-lg font-semibold mb-4">환경변수 (.env)</h2>
-  <p class="text-sm text-slate-500 mb-4">값이 이미 설정된 경우 빈 칸으로 두면 유지됩니다. 새 값을 입력하면 덮어씁니다. 이 파일은 gitignore 되어 커밋되지 않습니다.</p>
+  <p class="text-sm text-slate-500 mb-4">현재 값이 입력란에 미리 채워져 있습니다. '표시' 버튼으로 확인하거나, 덮어써서 변경한 뒤 전체 저장하세요. 이 파일은 gitignore 되어 커밋되지 않습니다.</p>
   <div id="envList" class="space-y-3"></div>
-  <p class="text-xs text-slate-400 mt-4">💡 프로덕션(Scheduled Agent)은 별도로 Claude Code Routines 환경변수 UI에서 설정해야 합니다. 로컬 테스트용으로만 여기 저장됩니다.</p>
+  <p class="text-xs text-slate-400 mt-4">프로덕션(Scheduled Agent)은 별도로 Claude Code Routines 환경변수 UI에서 설정해야 합니다. 로컬 테스트용으로만 여기 저장됩니다.</p>
 </section>
 
 <!-- KEYWORDS -->
@@ -242,6 +289,44 @@ HTML = r"""<!doctype html>
   </label>
 </section>
 
+<!-- DEV NEWS -->
+<section data-pane="devnews" class="pane hidden bg-white rounded-lg shadow-sm p-6">
+  <h2 class="text-lg font-semibold mb-4">AI / 개발 소식</h2>
+  <div class="mb-4">
+    <label class="flex items-center gap-2 text-sm">
+      <input id="devnews_enabled" type="checkbox"> 개발 소식 수집 활성화
+    </label>
+  </div>
+  <div id="devSources" class="space-y-3"></div>
+  <p class="text-xs text-slate-400 mt-4">소스 URL · 수집 방식(RSS / HTML)은 코드 레벨 설정입니다. 추가/변경이 필요하면 briefing.json 을 직접 수정하세요.</p>
+</section>
+
+<!-- THREADS -->
+<section data-pane="threads" class="pane hidden bg-white rounded-lg shadow-sm p-6">
+  <div class="flex items-center justify-between mb-4">
+    <div>
+      <h2 class="text-lg font-semibold">Threads 팔로잉 계정</h2>
+      <p class="text-sm text-slate-500 mt-1">RSSHub 를 통해 공개 포스트를 가져옵니다.</p>
+    </div>
+    <button id="addThread" class="bg-slate-900 text-white px-3 py-1.5 rounded hover:bg-slate-700">+ 추가</button>
+  </div>
+  <div class="mb-4">
+    <label class="flex items-center gap-2 text-sm">
+      <input id="threads_enabled" type="checkbox"> Threads 수집 활성화
+    </label>
+  </div>
+  <div class="grid grid-cols-3 gap-2 text-xs text-slate-500 font-medium mb-2">
+    <div>핸들 (handle, @제외)</div>
+    <div>라벨</div>
+    <div></div>
+  </div>
+  <div id="threadList" class="space-y-2"></div>
+  <label class="text-sm block mt-4">
+    <span class="text-slate-500">계정당 최대 포스트 수</span>
+    <input id="max_posts" type="number" min="1" max="10" class="w-full border rounded px-2 py-1 mt-1">
+  </label>
+</section>
+
 <!-- MISC -->
 <section data-pane="misc" class="pane hidden bg-white rounded-lg shadow-sm p-6">
   <h2 class="text-lg font-semibold mb-4">기타 설정</h2>
@@ -273,6 +358,76 @@ HTML = r"""<!doctype html>
 </section>
 
 <!-- GUIDE -->
+<section data-pane="routine" class="pane hidden bg-white rounded-lg shadow-sm p-6 space-y-4">
+  <div>
+    <h2 class="text-lg font-semibold">Claude Code Routine 등록</h2>
+    <p class="text-sm text-slate-500 mt-1">각 단계마다 필요한 값을 복사 버튼으로 제공합니다. Routines UI 에 그대로 붙여넣으세요.</p>
+  </div>
+
+  <div class="border rounded-lg p-4">
+    <div class="font-medium mb-2">1. Claude GitHub App 설치 (처음 한 번만)</div>
+    <p class="text-sm text-slate-700"><a href="https://github.com/apps/claude" target="_blank" class="text-blue-600 underline">github.com/apps/claude</a> 에서 <code class="kbd" id="r_repo_slug2">...</code> 레포에 설치.</p>
+  </div>
+
+  <div class="border rounded-lg p-4">
+    <div class="font-medium mb-2">2. Routines 페이지 열기</div>
+    <p class="text-sm text-slate-700"><a href="https://claude.ai/code/routines" target="_blank" class="text-blue-600 underline">claude.ai/code/routines</a> 접속 → New routine.</p>
+  </div>
+
+  <div class="border rounded-lg p-4">
+    <div class="font-medium mb-3">3. 기본 필드 입력</div>
+    <table class="w-full text-sm">
+      <tr class="border-b">
+        <td class="py-2 pr-3 text-slate-500 w-40">Name</td>
+        <td><code class="kbd" id="r_name">...</code></td>
+        <td class="text-right"><button data-copy-id="r_name" class="text-xs border rounded px-2 py-1 hover:bg-slate-100">복사</button></td>
+      </tr>
+      <tr class="border-b">
+        <td class="py-2 pr-3 text-slate-500">Repository</td>
+        <td><code class="kbd" id="r_repo_slug">...</code></td>
+        <td class="text-right"><button data-copy-id="r_repo_slug" class="text-xs border rounded px-2 py-1 hover:bg-slate-100">복사</button></td>
+      </tr>
+      <tr class="border-b">
+        <td class="py-2 pr-3 text-slate-500">Cron (UTC)</td>
+        <td><code class="kbd" id="r_cron">...</code></td>
+        <td class="text-right"><button data-copy-id="r_cron" class="text-xs border rounded px-2 py-1 hover:bg-slate-100">복사</button></td>
+      </tr>
+      <tr class="border-b">
+        <td class="py-2 pr-3 text-slate-500">Setup script</td>
+        <td><code class="kbd" id="r_setup">...</code></td>
+        <td class="text-right"><button data-copy-id="r_setup" class="text-xs border rounded px-2 py-1 hover:bg-slate-100">복사</button></td>
+      </tr>
+      <tr>
+        <td class="py-2 pr-3 text-slate-500 align-top">Allow unrestricted<br>branch pushes</td>
+        <td colspan="2"><strong>ON</strong> (체크박스 활성화) <span class="text-xs text-slate-400">— main 에 커밋 허용</span></td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="border rounded-lg p-4">
+    <div class="font-medium mb-2">4. Prompt 필드에 붙여넣기</div>
+    <p class="text-sm text-slate-600 mb-2">아래 버튼을 누르면 <code class="kbd">.claude/routine-prompt.md</code> 전체가 클립보드로 복사됩니다.</p>
+    <button id="copyPrompt" class="bg-slate-900 text-white px-3 py-1.5 rounded text-sm hover:bg-slate-700">📋 Prompt 전체 복사</button>
+    <details class="mt-3">
+      <summary class="text-xs text-slate-500 cursor-pointer">Prompt 미리보기</summary>
+      <pre id="r_prompt_preview" class="mt-2 p-3 bg-slate-50 border rounded text-xs max-h-60 overflow-auto font-mono whitespace-pre-wrap"></pre>
+    </details>
+  </div>
+
+  <div class="border rounded-lg p-4">
+    <div class="font-medium mb-2">5. Environment variables 입력</div>
+    <p class="text-sm text-slate-600 mb-2">'🔑 시크릿' 탭에서 저장한 값들을 아래 버튼으로 한 번에 복사한 뒤, Routines UI 의 Environment 섹션에 줄 별로 한 쌍씩 입력하세요.</p>
+    <button id="copyEnvBlock" class="bg-slate-900 text-white px-3 py-1.5 rounded text-sm hover:bg-slate-700">📋 env 블록 복사</button>
+    <span id="envBlockCount" class="ml-2 text-xs text-slate-500"></span>
+    <p class="mt-2 text-xs text-amber-600">민감 값이라 클립보드에만 올라갑니다 — 실수로 Slack/GitHub 같은 데 붙여넣지 않도록 주의.</p>
+  </div>
+
+  <div class="border rounded-lg p-4">
+    <div class="font-medium mb-2">6. Save + Run once</div>
+    <p class="text-sm text-slate-700">Save 후 <strong>Run now</strong> 클릭. <code class="kbd">Daily/YYYY-MM-DD.md</code> 가 커밋되고 활성화한 채널로 메시지가 오면 성공.</p>
+  </div>
+</section>
+
 <section data-pane="guide" class="pane hidden bg-white rounded-lg shadow-sm p-6 space-y-6">
   <h2 class="text-lg font-semibold">🎯 외부 서비스 발급 가이드</h2>
 
@@ -350,18 +505,104 @@ function toast(msg, ms = 2500) {
 
 // ─── load ──────────────────────────
 async function load() {
-  const [cfg, env] = await Promise.all([
+  const [cfg, env, routine] = await Promise.all([
     fetch('/api/config').then(r => r.json()),
     fetch('/api/env').then(r => r.json()),
+    fetch('/api/routine-info').then(r => r.json()),
   ]);
   state.config = cfg;
   state.env = env;
+  state.routine = routine;
   renderChannels();
   renderSecrets();
   renderKeywords();
   renderRanking();
+  renderDevNews();
+  renderThreads();
   renderMisc();
+  renderRoutine();
+  updateCurrentProfile();
 }
+
+// ─── profile presets ──────────────────
+function applyPreset(preset) {
+  if (preset === 'economy') {
+    state.config.naver_news.ranking.enabled = true;
+    state.config.naver_news.keyword_search.enabled = false;
+    state.config.dev_news.enabled = false;
+    state.config.threads.enabled = false;
+  } else if (preset === 'dev') {
+    state.config.naver_news.ranking.enabled = false;
+    state.config.naver_news.keyword_search.enabled = false;
+    state.config.dev_news.enabled = true;
+    state.config.threads.enabled = true;
+  } else if (preset === 'full') {
+    state.config.naver_news.ranking.enabled = true;
+    state.config.naver_news.keyword_search.enabled = false;
+    state.config.dev_news.enabled = true;
+    state.config.threads.enabled = true;
+  }
+  state.config.profile = preset;
+  renderRanking();
+  renderKeywords();
+  renderDevNews();
+  renderThreads();
+  updateCurrentProfile();
+  toast(`'${preset}' 프리셋 적용됨 — '전체 저장' 버튼을 눌러야 실제로 반영됩니다`, 3500);
+}
+function deriveProfile() {
+  const n = state.config.naver_news?.ranking?.enabled;
+  const d = state.config.dev_news?.enabled;
+  const t = state.config.threads?.enabled;
+  if (n && !d && !t) return 'economy';
+  if (!n && d && t) return 'dev';
+  if (n && d && t) return 'full';
+  return 'custom';
+}
+function updateCurrentProfile() {
+  const el = $('#currentProfile');
+  if (!el) return;
+  const profile = deriveProfile();
+  const label = { economy: '경제만', dev: '개발만', full: '전체', custom: '커스텀' }[profile];
+  el.textContent = label;
+}
+$$('[data-preset]').forEach(btn => btn.addEventListener('click', () => applyPreset(btn.dataset.preset)));
+
+function renderRoutine() {
+  const r = state.routine || {};
+  $('#r_name').textContent = r.routine_name || '';
+  $('#r_repo_slug').textContent = r.repo_slug || '';
+  $('#r_repo_slug2').textContent = r.repo_slug || '';
+  $('#r_cron').textContent = kstToUtcCron($('#schedule_time').value || (state.config.schedule?.time_kst || '08:00'));
+  $('#r_setup').textContent = r.setup_script || '';
+  $('#r_prompt_preview').textContent = r.prompt || '';
+  updateEnvBlockCount();
+}
+
+function updateEnvBlockCount() {
+  const n = Object.values(state.env || {}).filter(e => e.value).length;
+  const el = $('#envBlockCount');
+  if (el) el.textContent = n > 0 ? `${n}개 변수 설정됨` : '(아직 시크릿 탭에 값 없음)';
+}
+
+document.addEventListener('click', async (e) => {
+  const btn = e.target.closest('[data-copy-id]');
+  if (!btn) return;
+  const text = document.getElementById(btn.dataset.copyId).textContent;
+  await navigator.clipboard.writeText(text);
+  toast('복사됨: ' + text.slice(0, 50), 1500);
+});
+document.addEventListener('click', async (e) => {
+  if (e.target.id === 'copyPrompt') {
+    await navigator.clipboard.writeText(state.routine?.prompt || '');
+    toast('Prompt 전체 복사됨', 2000);
+  } else if (e.target.id === 'copyEnvBlock') {
+    const lines = Object.entries(state.env).filter(([_, i]) => i.value).map(([k, i]) => `${k}=${i.value}`);
+    if (!lines.length) { toast('먼저 시크릿 탭에서 값을 저장하세요', 3000); return; }
+    await navigator.clipboard.writeText(lines.join('\n'));
+    toast(`env ${lines.length}개 복사됨`, 2000);
+  }
+});
 
 // ─── channels ──────────────────────
 function renderChannels() {
@@ -375,14 +616,26 @@ function renderSecrets() {
   wrap.innerHTML = '';
   Object.entries(state.env).forEach(([key, info]) => {
     const row = document.createElement('div');
-    row.className = 'grid grid-cols-[180px_1fr_auto] gap-3 items-center';
+    row.className = 'grid grid-cols-[180px_1fr_auto_auto] gap-3 items-center';
     row.innerHTML = `
       <label class="text-sm"><div class="font-medium">${key}</div><div class="text-xs text-slate-400">${info.desc}</div></label>
-      <input data-envkey="${key}" type="password" autocomplete="off" placeholder="${info.is_set ? info.preview + ' (변경 시에만 입력)' : '미설정 — 값 입력'}" class="border rounded px-2 py-1 text-sm">
-      <span class="text-xs ${info.is_set ? 'text-emerald-600' : 'text-slate-400'}">${info.is_set ? '✓ 설정됨' : '— 미설정'}</span>
+      <input data-envkey="${key}" type="password" autocomplete="off" value="${escapeAttr(info.value || '')}" placeholder="${info.is_set ? '' : '미설정 — 값 입력'}" class="border rounded px-2 py-1 text-sm font-mono">
+      <button type="button" data-toggle="${key}" class="text-xs border rounded px-2 py-1 text-slate-600 hover:bg-slate-100">표시</button>
+      <span class="text-xs ${info.is_set ? 'text-emerald-600' : 'text-slate-400'}">${info.is_set ? '설정됨' : '미설정'}</span>
     `;
     wrap.appendChild(row);
   });
+  $$('[data-toggle]').forEach(btn => btn.addEventListener('click', () => {
+    const key = btn.dataset.toggle;
+    const input = document.querySelector(`input[data-envkey="${key}"]`);
+    if (input.type === 'password') {
+      input.type = 'text';
+      btn.textContent = '숨김';
+    } else {
+      input.type = 'password';
+      btn.textContent = '표시';
+    }
+  }));
 }
 
 // ─── keywords ──────────────────────
@@ -432,6 +685,46 @@ $('#addPress').addEventListener('click', () => {
   $('#pressList').appendChild(pressRow(''));
 });
 
+// ─── dev news ──────────────────────
+function renderDevNews() {
+  const d = state.config.dev_news || {};
+  $('#devnews_enabled').checked = !!d.enabled;
+  const wrap = $('#devSources');
+  wrap.innerHTML = '';
+  (d.sources || []).forEach(src => {
+    const div = document.createElement('div');
+    div.className = 'border rounded p-3 text-sm';
+    div.innerHTML = `
+      <div class="font-medium">${escapeAttr(src.name)}</div>
+      <div class="text-xs text-slate-400 mt-1">type: ${escapeAttr(src.type)} · url: <span class="kbd">${escapeAttr(src.url)}</span></div>
+    `;
+    wrap.appendChild(div);
+  });
+}
+
+// ─── threads ───────────────────────
+function renderThreads() {
+  const t = state.config.threads || {};
+  $('#threads_enabled').checked = !!t.enabled;
+  $('#max_posts').value = t.max_posts_per_account ?? 3;
+  const list = $('#threadList');
+  list.innerHTML = '';
+  (t.accounts || []).forEach(acc => list.appendChild(threadRow(acc)));
+}
+function threadRow(acc) {
+  const row = document.createElement('div');
+  row.className = 'grid grid-cols-[1fr_1fr_auto] gap-2';
+  row.innerHTML = `
+    <input data-field="handle" value="${escapeAttr(acc.handle || '')}" class="border rounded px-2 py-1 text-sm" placeholder="예: swyx">
+    <input data-field="label" value="${escapeAttr(acc.label || '')}" class="border rounded px-2 py-1 text-sm" placeholder="예: AI 엔지니어링">
+    <button class="text-red-500 hover:bg-red-50 px-2 rounded" onclick="this.parentElement.remove()">✕</button>
+  `;
+  return row;
+}
+$('#addThread').addEventListener('click', () => {
+  $('#threadList').appendChild(threadRow({ handle: '', label: '' }));
+});
+
 // ─── misc ──────────────────────────
 function renderMisc() {
   const s = state.config.schedule || {};
@@ -451,7 +744,11 @@ function updateCron() {
   const t = $('#schedule_time').value || '08:00';
   $('#schedule_cron').textContent = kstToUtcCron(t);
 }
-$('#schedule_time').addEventListener('input', updateCron);
+$('#schedule_time').addEventListener('input', () => {
+  updateCron();
+  const rcron = $('#r_cron');
+  if (rcron) rcron.textContent = kstToUtcCron($('#schedule_time').value || '08:00');
+});
 $('#copyCron').addEventListener('click', async () => {
   const cron = $('#schedule_cron').textContent;
   await navigator.clipboard.writeText(cron);
@@ -484,6 +781,19 @@ function collectConfig() {
     row.querySelector('[data-field="name"]').value.trim()
   ).filter(Boolean);
 
+  cfg.dev_news = cfg.dev_news || {};
+  cfg.dev_news.enabled = $('#devnews_enabled').checked;
+
+  cfg.threads = cfg.threads || {};
+  cfg.threads.enabled = $('#threads_enabled').checked;
+  cfg.threads.max_posts_per_account = Number($('#max_posts').value);
+  cfg.threads.accounts = [...$$('#threadList > div')].map(row => ({
+    handle: row.querySelector('[data-field="handle"]').value.trim().replace(/^@/, ''),
+    label: row.querySelector('[data-field="label"]').value.trim(),
+  })).filter(a => a.handle);
+
+  cfg.profile = deriveProfile();
+
   cfg.schedule = cfg.schedule || {};
   cfg.schedule.time_kst = $('#schedule_time').value || '08:00';
   cfg.schedule.cron_utc = kstToUtcCron(cfg.schedule.time_kst);
@@ -509,6 +819,8 @@ function validateConfig(cfg) {
   if (new Set(terms).size !== terms.length) errors.push('키워드에 중복이 있습니다.');
   const whitelist = cfg.naver_news.ranking.press_whitelist;
   if (new Set(whitelist).size !== whitelist.length) errors.push('언론사 화이트리스트에 중복이 있습니다.');
+  const handles = cfg.threads.accounts.map(a => a.handle);
+  if (new Set(handles).size !== handles.length) errors.push('Threads 핸들에 중복이 있습니다.');
   return errors;
 }
 
@@ -634,6 +946,16 @@ def diff_summary(old: dict[str, Any], new: dict[str, Any]) -> str:
     if removed := old_press - new_press:
         changes.append(f"언론사 제거: {', '.join(sorted(removed))}")
 
+    old_th = {a["handle"] for a in old.get("threads", {}).get("accounts", [])}
+    new_th = {a["handle"] for a in new.get("threads", {}).get("accounts", [])}
+    if added := new_th - old_th:
+        changes.append(f"Threads 계정 추가: {', '.join(sorted(added))}")
+    if removed := old_th - new_th:
+        changes.append(f"Threads 계정 제거: {', '.join(sorted(removed))}")
+
+    if old.get("profile") != new.get("profile"):
+        changes.append(f"프로필 {old.get('profile', '?')} → {new.get('profile', '?')}")
+
     old_ch = old.get("output", {}).get("channels", {})
     new_ch = new.get("output", {}).get("channels", {})
     for name in ("telegram", "slack"):
@@ -684,7 +1006,15 @@ class Handler(BaseHTTPRequestHandler):
                 self._send_json(500, {"error": str(e)})
             return
         if self.path == "/api/env":
-            self._send_json(200, mask_env(read_env()))
+            self._send_json(200, env_state(read_env()))
+            return
+        if self.path == "/api/routine-info":
+            self._send_json(200, {
+                "repo_slug": get_repo_slug(),
+                "routine_name": ROUTINE_NAME,
+                "setup_script": SETUP_SCRIPT,
+                "prompt": read_routine_prompt(),
+            })
             return
         self._send_json(404, {"error": "not found"})
 

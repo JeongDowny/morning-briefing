@@ -1,4 +1,7 @@
 {
+  "profile": "full",
+  "_profile_note": "economy / dev / full / custom 중 하나. UI 의 '프로필 프리셋' 버튼으로 전환하거나, 각 섹션의 enabled 플래그를 개별 토글해 custom 으로 만들 수 있음.",
+
   "naver_news": {
     "ranking": {
       "enabled": true,
@@ -18,7 +21,7 @@
     },
     "keyword_search": {
       "enabled": false,
-      "_note_m2": "M2에서 활성화. 키워드별 카테고리 태그가 Daily 노트·텔레그램에 그룹핑 헤더로 반영됨.",
+      "_note_m2": "M2 에서 활성화. 키워드별 카테고리 태그가 Daily 노트·메시지에 그룹핑 헤더로 반영됨.",
       "keywords": [
         { "term": "금리",    "category": "거시" },
         { "term": "환율",    "category": "거시" },
@@ -32,16 +35,48 @@
       "sort": "date"
     }
   },
+
+  "dev_news": {
+    "enabled": true,
+    "sources": [
+      {
+        "name": "OpenAI",
+        "type": "rss",
+        "url": "https://openai.com/news/rss.xml"
+      },
+      {
+        "name": "Anthropic",
+        "type": "html_scrape",
+        "url": "https://www.anthropic.com/news",
+        "_note": "공식 RSS 없음 → HTML 파싱 (BeautifulSoup). 선택자는 collect_anthropic.py 에서 관리."
+      }
+    ]
+  },
+
+  "threads": {
+    "enabled": true,
+    "accounts": [
+      { "handle": "swyx",          "label": "AI 엔지니어링" },
+      { "handle": "yoheinakajima", "label": "에이전트 연구" },
+      { "handle": "karpathy",      "label": "ML 대가" }
+    ],
+    "max_posts_per_account": 3,
+    "fetch_method": "rsshub",
+    "rsshub_base": "https://rsshub.app"
+  },
+
   "schedule": {
     "time_kst": "08:00",
     "cron_utc": "0 23 * * *",
     "_note": "time_kst 변경 시 cron_utc 자동 재계산. Claude Code Routines 등록 시 cron_utc 값을 복사해 주입."
   },
+
   "window": {
     "timezone": "Asia/Seoul",
-    "_note": "수집 시간창은 schedule.time_kst 기준 직전 24시간 (랭킹은 미적용, 키워드 검색만 해당)",
-    "applies_to": ["keyword_search"]
+    "_note": "수집 시간창은 schedule.time_kst 기준 직전 24시간. 랭킹은 미적용 (인기 순 자체가 최근성 반영).",
+    "applies_to": ["keyword_search", "dev_news", "threads"]
   },
+
   "output": {
     "obsidian": {
       "daily_note_path": "Daily/{date}.md",
@@ -60,6 +95,7 @@
       }
     }
   },
+
   "dedupe": {
     "retention_days": 30
   }
