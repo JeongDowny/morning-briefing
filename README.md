@@ -1,146 +1,193 @@
 # morning-briefing
 
-매일 아침 경제뉴스·AI 개발 동향·Threads 팔로잉 포스트를 자동 수집·요약해서 Obsidian vault 와 Slack/Telegram 으로 전달하는 개인용 자동화.
+> 매일 아침 경제뉴스·AI 개발 동향을 자동 수집·요약해서 Obsidian vault 와 Telegram/Slack 으로 전달하는 GitHub Actions 기반 파이프라인
 
-세 가지 프로필 중 골라서 사용합니다.
+출근 전 20분에 필요한 정보만 모아 Claude 가 아닌 Gemini (무료) 가 한국어로 2~3줄 요약해준다. 레포 폴더 자체가 Obsidian vault 로 동작해서 중요한 항목은 `#keep` 태그로 바로 북마크할 수 있고, 랩탑이 꺼져 있어도 GitHub Actions 가 정해진 시각에 알아서 돌려준다.
 
-- **경제만** — 네이버 경제 전문지 랭킹 수집
-- **개발만** — OpenAI · Anthropic 공식 블로그 + Threads 계정
-- **전체** — 위 둘 다
+## 만들게 된 이유
 
-수집 · 요약 · 전송은 GitHub Actions 가 정해진 시각에 실행합니다. 랩탑 상태와 무관하게 동작합니다.
+매일 아침 20분, 커피 마시면서 뉴스·블로그를 대충 훑고 출근하고 싶은데 막상 열어보면 —
 
-## 동작 방식
+- 경제뉴스 사이트는 **연예·사회 기사가 앞에 섞여 있어서** 거르느라 시간이 가고
+- AI 랩·블로그 (OpenAI · Anthropic · DeepMind · Hugging Face · 개인 블로그...) 는 **사이트 10군데 돌아다니기 귀찮고**
+- 원문이 영어면 **아침에 머리 풀 가동** 되는 게 피곤하고
 
-1. `.github/workflows/daily-brief.yml` 의 cron 이 지정된 시각(UTC) 에 트리거됩니다.
-2. `config/briefing.json` 의 `enabled` 플래그에 따라 활성화된 소스만 수집:
-   - `scripts/collect_naver.py` — 네이버 "많이 본 뉴스" 랭킹 (경제 전문 언론사 whitelist 필터링)
-   - `scripts/collect_openai.py` — OpenAI 공식 RSS
-   - `scripts/collect_anthropic.py` — Anthropic `/news` HTML 스크래핑 (공식 RSS 없음)
-   - `scripts/collect_threads.py` — RSSHub 경유 Threads 계정별 피드
-3. `scripts/manage_seen.py filter` 가 지난 30일 이내 이미 노출된 항목 제거.
-4. `scripts/summarize.py` 가 Google Gemini API 로 각 항목을 한국어 2~3줄로 요약 (기본 `gemini-2.0-flash`, 무료 티어).
-5. `scripts/render_daily.py` 가 `Daily/YYYY-MM-DD.md` 생성.
-6. `scripts/send_telegram.py` · `scripts/send_slack.py` 중 시크릿이 설정된 쪽이 섹션별 메시지로 전송.
-7. 신규 노트와 `data/seen.json` 이 `main` 브랜치로 자동 커밋.
+그래서 매일 아침 8시에 알아서 수집·요약·전송해주는 파이프라인을 얹었다. 개인용이지만 필요한 사람 fork 해서 쓰라고 OSS 로 공개.
+
+## 주요 기능
+
+- **경제뉴스 수집** — 네이버 오픈 API 로 관심 키워드 (금리·환율·물가·부동산·코스피·연준·나스닥 등) 기반 최근 24h 기사
+- **AI 랩·블로그 RSS** — OpenAI · Anthropic · Google DeepMind · Hugging Face · GitHub Blog + 개인 블로그 (Simon Willison · swyx · Karpathy · Lilian Weng · Nathan Lambert). 새 소스는 `config/briefing.json` 에 한 줄만 추가
+- **Gemini 요약** — 소스별 배치 호출로 한국어 2~3줄, 영문 제목은 한국어 번역 병기. 무료 티어로 월 0원
+- **Obsidian vault** — 레포 = vault, `Daily/YYYY-MM-DD.md` 자동 커밋, `#keep` 태그 → `Keeps.md` Dataview 집계
+- **Telegram / Slack** — 섹션별 분할 메시지, 활성화된 채널만 전송
+- **로컬 편집 UI** — `python3 scripts/config_ui.py` 로 브라우저에서 키워드·소스·시크릿 편집
+
+## 동작 예시
+
+매일 08:00 KST 에 이런 Daily 노트가 자동으로 레포에 커밋된다.
+
+```markdown
+# 🌅 모닝 브리핑 — 2026년 04월 19일 (일)
+
+> 수집 기간: 전일 08:00 ~ 오늘 08:00 KST · 총 23건
+
+## 📈 경제뉴스
+### 네이버 경제 뉴스
+- **[원달러 환율 1,380 돌파](URL)** — 한국경제
+  - 🤖 원달러 환율이 전일 대비 6.2원 오른 1,381.4원에 마감, 3개월 만에 최고치.
+    미 고용지표 호조로 달러 강세가 재개된 영향. 외국인 자금 유출 우려 확대.
+
+## 🤖 AI / 개발 소식
+### Anthropic
+- **[Introducing Claude Opus 4.7](URL)** — Anthropic
+  - ▸ *Claude Opus 4.7 공개*
+  - 🤖 Anthropic 이 Opus 4.7 을 4/16 공개. 코딩·에이전트·비전·다단계 작업 성능이
+    향상되고 이전 Opus 대비 정확도·일관성에서 개선을 보였다고 밝혔다.
+
+### Simon Willison
+- **[Changes in the system prompt between Claude Opus 4.6 and 4.7](URL)** — Simon Willison
+  - ▸ *Claude Opus 4.6 ↔ 4.7 시스템 프롬프트 변경 사항*
+  - 🤖 Anthropic 의 시스템 프롬프트 아카이브에서 Opus 4.7 업데이트 내역 분석.
+    Simon 이 Claude Code 로 Git 타임라인화해서 diff 확인 가능하게 만듦.
+```
+
+Telegram 으로는 섹션별 3개 메시지 푸시 알림. 핸드폰에서 빠르게 훑고, 출근해서 모니터로 Obsidian 열어 깊이 읽는 흐름.
 
 ## 요구사항
 
-- Python 3.11 이상 (로컬 테스트용, GitHub Actions 러너는 자동 준비)
-- GitHub 계정 + public 레포 (Actions 2,000분/월 무료)
-- [Google Gemini API Key](https://aistudio.google.com/apikey) (요약 단계용, **무료 티어** — 카드 등록 불필요)
-- Telegram 봇 또는 Slack Incoming Webhook (발송 채널)
-- (선택) 네이버 개발자 센터 Client ID / Secret — 경제 프로필의 키워드 검색(M2)에서 사용
+- GitHub 계정 (public 레포 Actions 월 2,000분 무료)
+- Python 3.11 이상 (로컬 편집 UI · 수동 실행용)
+- [Google Gemini API Key](https://aistudio.google.com/apikey) — 무료 티어, 카드 등록 불필요
+- Telegram Bot 또는 Slack Incoming Webhook (발송 채널)
+- (선택) 네이버 개발자 Client ID/Secret — 경제 키워드 검색 쓸 때
 
 ## 설치
 
+### 1. Fork & clone
+
 ```bash
-git clone https://github.com/jeongdowny/morning-briefing.git
+git clone https://github.com/<your-username>/morning-briefing.git
 cd morning-briefing
-pip install feedparser requests beautifulsoup4 pytz
+pip install requests beautifulsoup4 feedparser pytz google-genai
 ```
 
-## 설정
-
-레포 루트에서 설정 UI 를 실행합니다.
+### 2. 설정 UI
 
 ```bash
 python3 scripts/config_ui.py
 ```
 
-`http://localhost:8765` 이 자동으로 열립니다. 탭 구성:
+브라우저 `http://localhost:8765` 자동 오픈. 탭:
 
-| 탭 | 역할 |
-|---|---|
-| 채널 | 프로필 프리셋(경제만 / 개발만 / 전체) + Telegram·Slack 활성화 및 테스트 전송 |
-| 시크릿 | `.env` 토큰 관리 (gitignore, 표시/숨김 토글) |
-| 네이버 랭킹 | 수집 대상 언론사 화이트리스트, 상위 N 개 |
-| 키워드 | Open API 검색 키워드 (M2) |
-| 개발소식 | OpenAI / Anthropic 수집 활성화 |
-| Threads | 팔로잉 계정 추가·삭제 |
-| 기타 | 발송 시각(KST) 입력 시 UTC cron 자동 계산 |
-| Routine 등록 | Routines UI 에 붙여넣을 값 복사 버튼 모음 |
-| 발급 가이드 | Naver / Telegram / Slack / GitHub App / RSSHub 단계별 안내 |
+- **채널** — Telegram / Slack 활성화 + 테스트 전송
+- **시크릿** — `.env` 에 토큰 저장 (gitignore, 표시/숨김 토글)
+- **네이버 랭킹** — 경제지 화이트리스트
+- **경제 키워드** — 수집 키워드 추가/삭제
+- **개발소식** — dev_news.sources 확인 (직접 편집은 `config/briefing.json`)
+- **기타** — 발송 시각 (KST) → UTC cron 자동 계산 + 워크플로 YAML 동기화
+- **GitHub Actions 등록** — Secrets 페이지 링크 + 각 값 복사 버튼
+- **발급 가이드** — Gemini · Telegram · Slack · GitHub App 단계별 안내
 
-**첫 사용자**: 채널 탭의 "프로필 프리셋" 버튼 하나로 관련 섹션들이 한 번에 활성화됩니다. 이후 개별 토글로 세부 조정 가능.
+### 3. GitHub Secrets 등록
 
-`auto-commit` 이 켜져 있으면 저장 시 `config/briefing.json` 변경사항을 `config: ...` 커밋 메시지로 자동 커밋합니다. `.env` 는 절대 커밋되지 않습니다.
+UI 의 **GitHub Actions 등록** 탭 → 각 시크릿 "값 복사" 버튼 → GitHub 레포 Settings → Secrets and variables → Actions → New repository secret:
 
-## Obsidian 연동
+- `GEMINI_API_KEY` (필수)
+- `TELEGRAM_BOT_TOKEN`, `TELEGRAM_CHAT_ID` (Telegram 쓸 때)
+- `SLACK_WEBHOOK_URL` (Slack 쓸 때)
+- `NAVER_CLIENT_ID`, `NAVER_CLIENT_SECRET` (경제 키워드 검색 쓸 때)
 
-레포 디렉토리 구조가 그대로 Obsidian vault 로 동작합니다.
+### 4. 첫 실행 확인
 
-1. Obsidian 에서 `Open folder as vault` → 이 레포 폴더 선택.
-2. Community plugin 설치:
-   - **Obsidian Git** — auto pull 15분.
-   - **Dataview** — `Keeps.md` 집계용.
-3. Routine 이 푸시한 `Daily/YYYY-MM-DD.md` 를 열고, 다시 볼 항목에 `#keep` 태그를 붙이면 `Keeps.md` 에 카테고리별로 자동 집계됩니다.
+`.github/workflows/daily-brief.yml` 이 매일 08:00 KST 에 자동 실행. 첫 검증은 Actions 탭 → **Daily Brief** → **Run workflow** 버튼.
 
-카테고리 태그는 자동 분류됩니다: `#거시`, `#자산`, `#글로벌` (경제), `#openai`, `#anthropic`, `#threads`, `#research` (개발).
+## 로컬 수동 실행
 
-## GitHub Actions 등록
-
-자동 실행은 `.github/workflows/daily-brief.yml` 이 담당합니다. 셋업 UI 의 **"🚀 GitHub Actions 등록"** 탭에 복사 버튼이 준비되어 있습니다.
-
-1. `python3 scripts/config_ui.py` → "🚀 GitHub Actions 등록" 탭.
-2. **로컬 `.env`** 에 시크릿 저장:
-   - `GEMINI_API_KEY` (요약용, 필수 · 무료)
-   - `TELEGRAM_BOT_TOKEN` / `TELEGRAM_CHAT_ID` (Telegram 발송 시)
-   - `SLACK_WEBHOOK_URL` (Slack 발송 시)
-   - (선택) `NAVER_CLIENT_ID` / `NAVER_CLIENT_SECRET` — M2 키워드 검색용
-3. UI 의 "Secrets 페이지 열기" 링크 → GitHub repo Settings → Secrets and variables → Actions.
-4. UI 에서 각 키의 "값 복사" 버튼 → GitHub Secrets UI 에서 **New repository secret** 클릭 → 같은 Name 으로 paste.
-5. 발송 시각(cron) 은 "⚙️ 기타" 탭에서 시간만 바꾸면 저장 시 워크플로 YAML 이 자동 동기화됩니다.
-6. GitHub Actions 탭에서 "Daily Brief" 워크플로 → **Run workflow** 로 즉시 한 번 실행해 검증.
-
-### 과거 Claude Code Routines 기반 셋업
-
-초기 설계는 Claude Code Routines 로 돌렸으나 샌드박스 egress 네트워크 제한으로 수집 대상(naver·openai·anthropic·rsshub) 에 접근 불가하여 GitHub Actions 로 전환했습니다. 관련 문서는 `.claude/` 하위에 남아있지만 실제 실행에는 사용되지 않습니다.
-
-## 로컬에서 파이프라인 수동 실행
-
-의존성 설치:
+CI 없이 직접 돌려보고 싶을 때:
 
 ```bash
-pip install requests beautifulsoup4 feedparser pytz google-genai
+set -a; source .env; set +a
+
+python3 scripts/collect_naver.py       # 경제뉴스
+python3 scripts/collect_rss.py         # 모든 RSS 소스 (10+ 개)
+python3 scripts/collect_anthropic.py   # Anthropic HTML
+python3 scripts/manage_seen.py filter  # 지난 30일 중복 제거
+python3 scripts/summarize.py           # Gemini 요약
+python3 scripts/render_daily.py        # Daily/YYYY-MM-DD.md 생성
+python3 scripts/send_telegram.py       # 전송
+python3 scripts/manage_seen.py update  # seen.json 갱신
 ```
 
-`.env` 에 키 저장 후 (config UI 또는 직접 편집):
+## 저장 구조
 
-```bash
-python3 scripts/collect_naver.py        # ranking 활성화 시
-python3 scripts/collect_openai.py       # dev_news 활성화 시
-python3 scripts/collect_anthropic.py    # dev_news 활성화 시
-python3 scripts/collect_threads.py      # threads 활성화 시
-python3 scripts/manage_seen.py filter
-python3 scripts/summarize.py            # GEMINI_API_KEY 필요
-python3 scripts/render_daily.py
-python3 scripts/send_telegram.py        # 또는 send_slack.py
-python3 scripts/manage_seen.py update
+```
+.
+├── Daily/                      ← 일일 브리핑 노트 (자동 커밋)
+│   ├── 2026-04-18.md
+│   └── 2026-04-19.md
+│
+├── Keeps.md                    ← #keep 태그 Dataview 집계
+│
+├── config/
+│   ├── briefing.json           ← 모든 설정 (UI 가 편집)
+│   └── prompts/
+│       ├── news-summary.md     ← 경제뉴스 요약 규칙
+│       ├── blog-summary.md     ← AI 블로그 요약 규칙
+│       └── threads-summary.md
+│
+├── scripts/
+│   ├── config_ui.py            ← 로컬 편집 UI (stdlib http.server)
+│   ├── collect_naver.py        ← 네이버 키워드 검색 + 랭킹
+│   ├── collect_rss.py          ← 범용 RSS (10+ 소스 자동 순회)
+│   ├── collect_anthropic.py    ← Anthropic /news HTML 스크래핑
+│   ├── collect_threads.py      ← Threads (RSSHub 차단, 비활성)
+│   ├── manage_seen.py          ← 중복 제거 + seen.json 관리
+│   ├── summarize.py            ← Gemini 호출 (소스별 배치)
+│   ├── render_daily.py         ← Daily MD 생성
+│   ├── send_telegram.py
+│   └── send_slack.py
+│
+├── data/seen.json              ← 중복 방지 상태 (30일 유지)
+├── .github/workflows/daily-brief.yml   ← GitHub Actions 파이프라인
+└── .claude/                    ← Claude Code CLI 설정 (로컬 개발용)
 ```
 
-`.env` 의 값은 스크립트가 자동으로 읽지 않으므로 로컬 실행 시에는 `export` 하거나 `python-dotenv` 로 로드하세요. 예: `set -a; source .env; set +a; python3 scripts/summarize.py`.
+### Daily 노트
+
+파일명: `Daily/YYYY-MM-DD.md`. 섹션 — **📈 경제뉴스 · 🤖 AI / 개발 소식 · 🧵 Threads (현재 비활성)**. 중요 항목 아래에 `#keep` 태그를 붙이면 `Keeps.md` 에 카테고리별 (`#거시`, `#자산`, `#글로벌`, `#openai`, `#anthropic` 등) 로 자동 집계.
+
+### Obsidian 연동
+
+레포 폴더를 그대로 vault 로 열면 `Daily/` · `Keeps.md` 가 바로 보인다.
+
+1. [Obsidian](https://obsidian.md) 설치 → "Open folder as vault" → 이 레포 폴더
+2. Community plugin:
+   - **Obsidian Git** — 15분 interval auto pull (Actions 가 push 한 최신 브리핑 자동 반영)
+   - **Dataview** — `Keeps.md` 집계
+3. 출근해서 `Daily/오늘날짜.md` 열고 읽으며 `#keep` 태그 추가
 
 ## 알려진 제약
 
-- **Anthropic HTML 스크래핑**: 공식 RSS 가 없어 `anthropic.com/news` 의 Next.js 렌더링 DOM 을 파싱합니다. 구조 변경 시 `scripts/collect_anthropic.py` 의 선택자 업데이트가 필요합니다.
-- **RSSHub 공용 인스턴스**: `rsshub.app` 은 Rate limit 과 간헐적 장애가 있습니다. 안정성을 원한다면 RSSHub self-host 후 `config/briefing.json` 의 `threads.rsshub_base` 교체.
-- **네이버 랭킹 필터링**: 네이버의 공식 섹션별 랭킹 URL 이 없어 "많이 본 뉴스" 중 경제 전문 언론사로 화이트리스트 필터링하는 우회 구조입니다. 일부 비경제 기사가 섞여 들어올 수 있습니다.
+- **Anthropic 은 공식 RSS 가 없어** `/news` 페이지 Next.js DOM 을 파싱한다. 사이트 구조가 바뀌면 `scripts/collect_anthropic.py` 의 선택자 업데이트가 필요하다.
+- **Threads 수집 불가** — RSSHub 공용 인스턴스(`rsshub.app`) 가 2026-04 부로 production 접근을 차단했다. Self-host 전에는 안 돈다. 대체로 각 인물의 블로그 RSS (Simon Willison · Karpathy bearblog · Latent Space · Interconnects · Lilian Weng) 를 `dev_news.sources` 에 추가해 커버한다.
+- **Gemini 2.5-flash 무료 티어 한도는 일 20회** 요청이다. 프로덕션 (일 3~4회) 엔 충분하지만 로컬 테스트를 여러 번 돌리면 금방 소진된다. 다음날 자동 리셋.
 
-## 구현 현황
+## 개발
 
-- [x] 프로필 프리셋 (경제 / 개발 / 전체)
-- [x] 네이버 경제 전문지 랭킹 수집
-- [x] OpenAI RSS · Anthropic HTML · Threads RSSHub
-- [x] Telegram / Slack 섹션 분할 전송
-- [x] Obsidian Daily 노트 + `#keep` 집계
-- [x] 로컬 설정 편집 UI (시크릿 / Routine 등록 복사 버튼 포함)
-- [ ] 네이버 Open API 키워드 검색 (M2)
-- [ ] Hacker News · GitHub Trending (M2)
-- [ ] 주간 리뷰 리포트 (M3)
-- [ ] 가격 스냅샷 — KOSPI · USD/KRW · 금 · 유가 (M3)
+설정 UI 는 외부 의존성 없는 순수 stdlib `http.server` 위에서 동작한다. HTML/CSS/JS 는 `config_ui.py` 에 인라인.
 
-설계 배경과 리스크 정리는 [`morning-briefing-plan.md`](./morning-briefing-plan.md) 참조.
+```bash
+pip install requests beautifulsoup4 feedparser pytz google-genai
+
+# 각 수집기·요약기·전송기 독립 실행 가능
+python3 scripts/collect_rss.py         # 10+ RSS 소스 한 번에
+python3 scripts/config_ui.py           # UI 서버 → http://localhost:8765
+```
+
+새 RSS 소스 추가는 `config/briefing.json` 의 `dev_news.sources` 배열에 한 줄 추가하면 끝. 코드 수정 불필요.
+
+설계·리팩터 히스토리는 [`morning-briefing-plan.md`](./morning-briefing-plan.md) 참조 (v1: 매크로 분석 → v2: 단일 레포 + 프로필 → v3: Routines → GitHub Actions · Claude API → Gemini).
 
 ## 라이선스
 
