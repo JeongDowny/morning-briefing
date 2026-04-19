@@ -132,7 +132,7 @@
     "retention_days": 30
   },
   "summarize": {
-    "model": "gpt-5-mini",
-    "_note": "OpenAI 모델 ID. 대안: gpt-4o-mini (저가), gpt-4o (고품질), gpt-5 (최고 품질). 모델에 따라 max_completion_tokens / max_tokens 파라미터를 자동 선택."
+    "model": "gemini-2.0-flash",
+    "_note": "Google Gemini 모델 ID. 무료 티어: gemini-2.0-flash (추천, 일 1,500회 무료), gemini-2.0-flash-lite, gemini-2.5-flash, gemini-2.5-pro. aistudio.google.com/apikey 에서 발급."
   }
 }
