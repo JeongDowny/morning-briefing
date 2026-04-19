@@ -13,7 +13,9 @@ from datetime import datetime, timedelta
 from pathlib import Path
 from typing import Any
 
-import feedparser
+import requests
+import xml.etree.ElementTree as ET
+from email.utils import parsedate_to_datetime
 from zoneinfo import ZoneInfo
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -39,14 +41,23 @@ def compute_window(time_kst: str) -> tuple[datetime, datetime]:
     return start, end
 
 
-def to_kst(dt_struct) -> datetime | None:
-    if not dt_struct:
+USER_AGENT = (
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
+    "(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+)
+REQUEST_TIMEOUT = 15
+
+
+def parse_rss_date(date_str: str | None) -> datetime | None:
+    if not date_str:
         return None
     try:
-        naive = datetime(*dt_struct[:6])
-        return naive.replace(tzinfo=ZoneInfo("UTC")).astimezone(ZoneInfo("Asia/Seoul"))
+        return parsedate_to_datetime(date_str).astimezone(ZoneInfo("Asia/Seoul"))
     except Exception:
-        return None
+        try:
+            return datetime.fromisoformat(date_str.replace("Z", "+00:00")).astimezone(ZoneInfo("Asia/Seoul"))
+        except Exception:
+            return None
 
 
 def collect() -> dict[str, Any]:
@@ -69,20 +80,43 @@ def collect() -> dict[str, Any]:
     items: list[dict[str, Any]] = []
 
     try:
-        feed = feedparser.parse(url)
-        for entry in feed.entries:
-            published_kst = to_kst(entry.get("published_parsed"))
+        resp = requests.get(url, headers={"User-Agent": USER_AGENT}, timeout=REQUEST_TIMEOUT)
+        resp.raise_for_status()
+        root = ET.fromstring(resp.content)
+        ns = {"atom": "http://www.w3.org/2005/Atom"}
+        channel = root.find("channel")
+        entries = root.findall(".//item") if channel is not None else root.findall("atom:entry", ns)
+
+        for entry in entries:
+            if channel is not None:
+                title = (entry.findtext("title") or "").strip()
+                link = (entry.findtext("link") or "").strip()
+                summary = (entry.findtext("description") or "").strip()
+                pub_str = entry.findtext("pubDate")
+                category = (entry.findtext("category") or "").strip()
+            else:
+                title = (entry.findtext("atom:title", namespaces=ns) or "").strip()
+                link = ""
+                for lel in entry.findall("atom:link", ns):
+                    if lel.get("rel", "alternate") == "alternate":
+                        link = lel.get("href", "")
+                        break
+                summary = (entry.findtext("atom:summary", namespaces=ns) or "").strip()
+                pub_str = entry.findtext("atom:published", namespaces=ns)
+                category = ""
+
+            published_kst = parse_rss_date(pub_str)
             if published_kst and not (start_kst <= published_kst <= end_kst):
                 continue
 
             items.append(
                 {
-                    "title": entry.get("title", "").strip(),
-                    "url": entry.get("link", ""),
+                    "title": title,
+                    "url": link,
                     "source_name": "OpenAI",
-                    "lead": entry.get("summary", "").strip() or entry.get("description", "").strip(),
+                    "lead": summary,
                     "published_at": published_kst.isoformat(timespec="seconds") if published_kst else None,
-                    "category": entry.get("tags", [{}])[0].get("term", "") if entry.get("tags") else "",
+                    "category": category,
                 }
             )
         print(

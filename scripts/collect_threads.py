@@ -8,7 +8,9 @@ from datetime import datetime, timedelta
 from pathlib import Path
 from typing import Any
 
-import feedparser
+import requests
+import xml.etree.ElementTree as ET
+from email.utils import parsedate_to_datetime
 from zoneinfo import ZoneInfo
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -32,14 +34,23 @@ def compute_window(time_kst: str) -> tuple[datetime, datetime]:
     return start, end
 
 
-def to_kst(dt_struct) -> datetime | None:
-    if not dt_struct:
+USER_AGENT = (
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
+    "(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+)
+REQUEST_TIMEOUT = 15
+
+
+def parse_rss_date(date_str: str | None) -> datetime | None:
+    if not date_str:
         return None
     try:
-        naive = datetime(*dt_struct[:6])
-        return naive.replace(tzinfo=ZoneInfo("UTC")).astimezone(ZoneInfo("Asia/Seoul"))
+        return parsedate_to_datetime(date_str).astimezone(ZoneInfo("Asia/Seoul"))
     except Exception:
-        return None
+        try:
+            return datetime.fromisoformat(date_str.replace("Z", "+00:00")).astimezone(ZoneInfo("Asia/Seoul"))
+        except Exception:
+            return None
 
 
 def fetch_account(base: str, handle: str, label: str, max_posts: int,
@@ -47,19 +58,28 @@ def fetch_account(base: str, handle: str, label: str, max_posts: int,
     url = f"{base.rstrip('/')}/threads/{handle}"
     items: list[dict[str, Any]] = []
     try:
-        feed = feedparser.parse(url)
-        for entry in feed.entries[: max_posts * 2]:
-            published = to_kst(entry.get("published_parsed"))
+        resp = requests.get(url, headers={"User-Agent": USER_AGENT}, timeout=REQUEST_TIMEOUT)
+        resp.raise_for_status()
+        root = ET.fromstring(resp.content)
+        channel = root.find("channel")
+        entries = root.findall(".//item") if channel is not None else []
+
+        for entry in entries[: max_posts * 2]:
+            title = (entry.findtext("title") or "").strip()
+            link = (entry.findtext("link") or "").strip()
+            summary = (entry.findtext("description") or "").strip()
+            pub_str = entry.findtext("pubDate")
+            published = parse_rss_date(pub_str)
             if published and not (start <= published <= end):
                 continue
 
             items.append(
                 {
-                    "title": (entry.get("title") or "").strip(),
-                    "url": entry.get("link", ""),
+                    "title": title,
+                    "url": link,
                     "handle": handle,
                     "label": label,
-                    "lead": (entry.get("summary") or entry.get("description", "")).strip(),
+                    "lead": summary,
                     "published_at": published.isoformat(timespec="seconds") if published else None,
                 }
             )
