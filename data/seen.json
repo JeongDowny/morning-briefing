@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-19T20:37:52+09:00",
+  "last_updated": "2026-04-19T20:52:01+09:00",
   "news": {
     "http://www.fnnews.com/news/202604191945321081": "2026-04-19T20:29:36+09:00",
     "https://www.tfmedia.co.kr/news/article.html?no=203845": "2026-04-19T20:29:36+09:00",
@@ -31,7 +31,12 @@
     "https://n.news.naver.com/article/014/0005509671?ntype=RANKING": "2026-04-19T20:37:52+09:00",
     "https://n.news.naver.com/article/014/0005509905?ntype=RANKING": "2026-04-19T20:37:52+09:00",
     "https://n.news.naver.com/article/014/0005509827?ntype=RANKING": "2026-04-19T20:37:52+09:00",
-    "https://n.news.naver.com/article/014/0005509829?ntype=RANKING": "2026-04-19T20:37:52+09:00"
+    "https://n.news.naver.com/article/014/0005509829?ntype=RANKING": "2026-04-19T20:37:52+09:00",
+    "https://n.news.naver.com/article/015/0005276721?ntype=RANKING": "2026-04-19T20:52:01+09:00",
+    "https://n.news.naver.com/article/015/0005276664?ntype=RANKING": "2026-04-19T20:52:01+09:00",
+    "https://n.news.naver.com/article/015/0005276738?ntype=RANKING": "2026-04-19T20:52:01+09:00",
+    "https://n.news.naver.com/article/015/0005276614?ntype=RANKING": "2026-04-19T20:52:01+09:00",
+    "https://n.news.naver.com/article/015/0005276781?ntype=RANKING": "2026-04-19T20:52:01+09:00"
   },
   "dev_blog": {
     "https://www.anthropic.com/news/claude-opus-4-7": "2026-04-19T20:29:36+09:00",
