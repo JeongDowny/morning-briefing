@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-19T20:51:12+09:00",
+  "last_updated": "2026-04-19T20:56:12+09:00",
   "news": {
     "https://n.news.naver.com/article/016/0002631841?ntype=RANKING": "2026-04-19T20:51:12+09:00",
     "https://n.news.naver.com/article/016/0002631763?ntype=RANKING": "2026-04-19T20:51:12+09:00",
@@ -10,7 +10,17 @@
     "https://n.news.naver.com/article/011/0004612091?ntype=RANKING": "2026-04-19T20:51:12+09:00",
     "https://n.news.naver.com/article/011/0004612272?ntype=RANKING": "2026-04-19T20:51:12+09:00",
     "https://n.news.naver.com/article/011/0004612141?ntype=RANKING": "2026-04-19T20:51:12+09:00",
-    "https://n.news.naver.com/article/011/0004612170?ntype=RANKING": "2026-04-19T20:51:12+09:00"
+    "https://n.news.naver.com/article/011/0004612170?ntype=RANKING": "2026-04-19T20:51:12+09:00",
+    "https://n.news.naver.com/article/277/0005751410?ntype=RANKING": "2026-04-19T20:56:12+09:00",
+    "https://n.news.naver.com/article/277/0005751456?ntype=RANKING": "2026-04-19T20:56:12+09:00",
+    "https://n.news.naver.com/article/277/0005751477?ntype=RANKING": "2026-04-19T20:56:12+09:00",
+    "https://n.news.naver.com/article/277/0005751511?ntype=RANKING": "2026-04-19T20:56:12+09:00",
+    "https://n.news.naver.com/article/277/0005751500?ntype=RANKING": "2026-04-19T20:56:12+09:00",
+    "https://n.news.naver.com/article/008/0005346135?ntype=RANKING": "2026-04-19T20:56:12+09:00",
+    "https://n.news.naver.com/article/008/0005346159?ntype=RANKING": "2026-04-19T20:56:12+09:00",
+    "https://n.news.naver.com/article/008/0005346143?ntype=RANKING": "2026-04-19T20:56:12+09:00",
+    "https://n.news.naver.com/article/008/0005346161?ntype=RANKING": "2026-04-19T20:56:12+09:00",
+    "https://n.news.naver.com/article/008/0005346168?ntype=RANKING": "2026-04-19T20:56:12+09:00"
   },
   "dev_blog": {
     "https://www.anthropic.com/news/claude-opus-4-7": "2026-04-19T20:51:12+09:00",
