@@ -1,4 +1,53 @@
-# 모닝 브리핑 자동화 시스템 — 개발 계획서 v2.1
+# 모닝 브리핑 자동화 시스템 — 설계 문서
+
+> **상태**: 실제 동작 중인 구현의 **실시간 상태는 [`README.md`](./README.md) 참조**. 이 문서는 **설계·의사결정 히스토리** 를 기록하는 archive 다.
+>
+> 문서 하단은 v2.1 원본이고, 이후 중대한 변경 (v3~) 은 아래 changelog 로 추적한다.
+
+---
+
+## v3.x 변경 이력 (2026-04-18 ~ 2026-04-19)
+
+### v3.2 — RSS 범용 리팩터 + 소스 10개 확장 (2026-04-19)
+
+- 🔧 **`collect_openai.py` → `collect_rss.py`** — config 의 `dev_news.sources` 중 `type=rss` 인 모든 소스를 자동 순회. 소스별 `collected/rss-{slug}.json` 로 분리 저장. UA 헤더 포함 (bearblog 등 일부 서버 대응)
+- ➕ **Tier 1 RSS 추가**: Google DeepMind, Hugging Face, GitHub Blog
+- ➕ **Tier 3 대체 (개인 블로그)**: Simon Willison, Latent Space, Karpathy bearblog, Interconnects, Lilian Weng
+- 🔁 **Threads 비활성** — RSSHub 공용 인스턴스 (`rsshub.app`) 가 2026-04 부로 production 접근 차단 (HTTP 403). Self-host 전에는 불가. 대신 각 인물 블로그 RSS 로 대체 커버
+- 🔧 **`manage_seen.py` · `render_daily.py` 범용화** — 하드코딩 매핑 제거. `_rss` / `_html` / `threads_*` / `naver_*` suffix 기반 동적 섹션 분류. 새 RSS 추가는 config 편집만으로 끝
+- 🔧 **24시간 롤링 윈도우** — "전일 08:00 ~ 오늘 08:00" 고정 → "지금 기준 지난 24시간"
+
+### v3.1 — 요약 품질 강화 + 제목 번역 + 경제 키워드 검색 (2026-04-19)
+
+- 🎯 **요약 프롬프트 강화**: "제목 재진술 금지" · "lead 에서 수치·고유명사·기간 필수 추출" · 금지 어휘 · 길이 범위 엄격히 규정
+- 🌐 **영문 제목 한국어 병기** (`title_ko`): blog-summary · threads-summary 프롬프트에 번역 필드 추가. render_daily / send_telegram / send_slack 에서 `▸ *한국어 번역*` 형태 표시
+- 🔍 **경제 뉴스 → 네이버 오픈 API 키워드 검색**: "많이 본 뉴스" 랭킹은 연예·사회 섞임 → 키워드 기반 (금리·환율·물가·부동산·코스피·연준·나스닥) 최근 24h 기사로 전환. 실제 경제 콘텐츠 100%
+
+### v3.0 — 아키텍처 전환 (2026-04-19)
+
+**배경**: Claude Code Routines (v2.1 설계) 를 실제 돌려보니 샌드박스의 **egress 네트워크 차단** 으로 네이버·OpenAI·Anthropic·RSSHub 전부 HTTP 403. 스케줄 집행 불가 확인.
+
+- 🏗️ **Claude Code Routines → GitHub Actions** — `.github/workflows/daily-brief.yml` 로 매일 08:00 KST 실행. 완전한 인터넷 egress + 네이티브 env var + public 레포 무료
+- 🔑 **Claude API → Google Gemini API** — 사용자 Claude Max 구독은 API 콜권을 포함 안 함 (별도 과금). 대안으로 Gemini 2.5-flash 무료 티어 (일 20회) 로 전환. 카드 등록 불필요
+- 📄 **신규 스크립트**: `scripts/summarize.py` (Gemini 호출), `scripts/render_daily.py` (Daily MD 렌더링)
+- 🔧 **워크플로 YAML 자동 동기화** — UI 에서 발송 시각 변경 시 `.github/workflows/daily-brief.yml` 의 cron 라인도 저장 시 업데이트
+- 📦 **`.claude/routine-prompt.md` deprecated** — Routines 용 프롬프트. GitHub Actions 로 넘어온 이후 사용 안 함
+
+### v2.2 → v3.0 간 주요 설계 결정
+
+- **단일 레포 통합** (v2.2 → v2.3): 초기에 `morning-briefing-economy` · `morning-briefing-dev` 로 분리했다가, 유지보수 부담과 "양쪽 다 구독하려면 Routine 2개" 문제로 **단일 레포 + 프로필 프리셋** (경제만 · 개발만 · 전체) 으로 통합
+- **로컬 설정 UI 도입**: 키워드 · Threads 계정 · 시크릿 편집을 JSON 수동 편집 대신 브라우저 폼으로. stdlib `http.server` 기반 (외부 의존성 0). `python3 scripts/config_ui.py` 한 줄 실행
+- **Gemini 모델 선택**: 2.0-flash 는 일부 계정에서 free tier limit 0 (Google 정책). 2.5-flash 로 전환. max_output_tokens 8192 → 16384 (한국어 JSON 토큰 효율 낮음 대응)
+
+---
+
+## 아래부터 v2.1 원본 (역사적 기록)
+
+> v2.1 원본은 아키텍처 전환 전이라 **현재와 다른 부분이 많음**. 실제 동작하는 파이프라인은 README 와 위 changelog 가 정답.
+
+---
+
+# 모닝 브리핑 자동화 시스템 — 개발 계획서 v2.1 (원본)
 
 > Claude Code Scheduled Agent 기반 | 매일 아침 08:00 KST 자동 실행
 > 업데이트: 2026-04-17
