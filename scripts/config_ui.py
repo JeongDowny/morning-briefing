@@ -204,7 +204,7 @@ HTML = r"""<!doctype html>
   <button data-tab="channels" class="tab-btn active px-3 py-1.5 rounded-lg border bg-white hover:bg-slate-100">📡 채널</button>
   <button data-tab="secrets"  class="tab-btn px-3 py-1.5 rounded-lg border bg-white hover:bg-slate-100">🔑 시크릿</button>
   <button data-tab="ranking"  class="tab-btn px-3 py-1.5 rounded-lg border bg-white hover:bg-slate-100">📈 네이버 랭킹</button>
-  <button data-tab="keywords" class="tab-btn px-3 py-1.5 rounded-lg border bg-white hover:bg-slate-100">🔍 키워드 (M2)</button>
+  <button data-tab="keywords" class="tab-btn px-3 py-1.5 rounded-lg border bg-white hover:bg-slate-100">🔍 경제 키워드</button>
   <button data-tab="devnews"  class="tab-btn px-3 py-1.5 rounded-lg border bg-white hover:bg-slate-100">📰 개발소식</button>
   <button data-tab="threads"  class="tab-btn px-3 py-1.5 rounded-lg border bg-white hover:bg-slate-100">🧵 Threads</button>
   <button data-tab="misc"     class="tab-btn px-3 py-1.5 rounded-lg border bg-white hover:bg-slate-100">⚙️ 기타</button>
@@ -279,15 +279,16 @@ HTML = r"""<!doctype html>
 <section data-pane="keywords" class="pane hidden bg-white rounded-lg shadow-sm p-6">
   <div class="flex items-center justify-between mb-4">
     <div>
-      <h2 class="text-lg font-semibold">경제 키워드 (Open API 검색)</h2>
-      <p class="text-sm text-slate-500 mt-1">카테고리별로 섹션 헤더 그룹핑에 사용됩니다.</p>
+      <h2 class="text-lg font-semibold">경제 키워드 (네이버 오픈 API 검색)</h2>
+      <p class="text-sm text-slate-500 mt-1">여기 등록된 키워드들로 네이버 뉴스에서 지난 24시간 기사를 수집합니다. 카테고리별로 Daily 노트 섹션이 그룹핑됨.</p>
     </div>
     <button id="addKeyword" class="bg-slate-900 text-white px-3 py-1.5 rounded hover:bg-slate-700">+ 추가</button>
   </div>
   <div class="mb-4">
     <label class="flex items-center gap-2 text-sm">
-      <input id="keyword_enabled" type="checkbox"> 키워드 검색 활성화 (M2 이후)
+      <input id="keyword_enabled" type="checkbox"> 키워드 검색 활성화
     </label>
+    <p class="text-xs text-slate-400 mt-1">NAVER_CLIENT_ID / NAVER_CLIENT_SECRET 시크릿 필요. 일 쿼터 25,000회 (키워드 N개 × per_keyword 만큼 소비).</p>
   </div>
   <div class="grid grid-cols-3 gap-2 text-xs text-slate-500 font-medium mb-2">
     <div>키워드 (term)</div>
