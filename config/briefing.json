@@ -94,7 +94,7 @@
   "schedule": {
     "time_kst": "08:00",
     "cron_utc": "0 23 * * *",
-    "_note": "time_kst 변경 시 cron_utc 자동 재계산. Claude Code Routines 등록 시 cron_utc 값을 복사해 주입."
+    "_note": "time_kst 변경 시 cron_utc 자동 재계산. GitHub Actions 워크플로 YAML 이 저장 시 함께 동기화됨."
   },
   "window": {
     "timezone": "Asia/Seoul",
@@ -130,5 +130,9 @@
   },
   "dedupe": {
     "retention_days": 30
+  },
+  "summarize": {
+    "model": "gpt-5-mini",
+    "_note": "OpenAI 모델 ID. 대안: gpt-4o-mini (저가), gpt-4o (고품질), gpt-5 (최고 품질). 모델에 따라 max_completion_tokens / max_tokens 파라미터를 자동 선택."
   }
 }
