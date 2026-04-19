@@ -32,12 +32,15 @@ ENV_PATH = ROOT / ".env"
 ROUTINE_PROMPT_PATH = ROOT / ".claude" / "routine-prompt.md"
 PORT = 8765
 
-SETUP_SCRIPT = "pip install feedparser requests beautifulsoup4 pytz"
-ROUTINE_NAME = ROOT.name  # 디렉토리 이름을 Routine 이름으로
+SETUP_SCRIPT = "pip install feedparser requests beautifulsoup4 pytz google-genai"
+ROUTINE_NAME = ROOT.name
+REPO_NAME = ROOT.name
+WORKFLOW_PATH = ROOT / ".github" / "workflows" / "daily-brief.yml"
 
 ENV_KEYS = [
-    ("NAVER_CLIENT_ID",     "네이버 검색 API Client ID"),
-    ("NAVER_CLIENT_SECRET", "네이버 검색 API Client Secret"),
+    ("GEMINI_API_KEY",      "Google Gemini API Key (요약용, 필수 · 무료 티어)"),
+    ("NAVER_CLIENT_ID",     "네이버 검색 API Client ID (M2+)"),
+    ("NAVER_CLIENT_SECRET", "네이버 검색 API Client Secret (M2+)"),
     ("TELEGRAM_BOT_TOKEN",  "Telegram Bot Token"),
     ("TELEGRAM_CHAT_ID",    "Telegram Chat ID"),
     ("SLACK_WEBHOOK_URL",   "Slack Incoming Webhook URL"),
@@ -63,10 +66,24 @@ def get_repo_slug() -> str:
     return f"<your-github-username>/{ROOT.name}"
 
 
-def read_routine_prompt() -> str:
-    if ROUTINE_PROMPT_PATH.exists():
-        return ROUTINE_PROMPT_PATH.read_text(encoding="utf-8")
-    return "(.claude/routine-prompt.md 파일이 아직 없습니다)"
+def sync_workflow_cron(cron_utc: str) -> bool:
+    """`.github/workflows/daily-brief.yml` 의 cron 값을 현재 설정으로 동기화.
+
+    변경이 있었으면 True 반환. 파일이 없거나 변경 불필요면 False.
+    """
+    if not WORKFLOW_PATH.exists():
+        return False
+    content = WORKFLOW_PATH.read_text(encoding="utf-8")
+    new_content = re.sub(
+        r"(\s*-\s*cron:\s*)['\"][^'\"]+['\"]",
+        f"\\1'{cron_utc}'",
+        content,
+        count=1,
+    )
+    if new_content == content:
+        return False
+    WORKFLOW_PATH.write_text(new_content, encoding="utf-8")
+    return True
 
 
 # ─── file helpers ──────────────────────────────────────────────────────
@@ -120,22 +137,32 @@ def env_state(env: dict[str, str]) -> dict[str, dict[str, Any]]:
     return out
 
 
-def git_commit_config(message: str) -> tuple[bool, str]:
+def git_commit_config(message: str, extra_paths: list[str] | None = None) -> tuple[bool, str]:
+    """config/briefing.json (+ 필요 시 추가 경로) 을 자동 커밋.
+
+    변경 없음은 정상 케이스로 처리. git 메시지의 로케일 영향을 피하기 위해
+    `git diff --cached --quiet` 종료 코드로 판별한다.
+    """
+    paths = ["config/briefing.json"] + [p for p in (extra_paths or []) if (ROOT / p).exists()]
     try:
-        subprocess.run(
-            ["git", "-C", str(ROOT), "add", "config/briefing.json"],
-            check=True, capture_output=True,
+        for p in paths:
+            subprocess.run(
+                ["git", "-C", str(ROOT), "add", p],
+                check=True, capture_output=True,
+            )
+        diff = subprocess.run(
+            ["git", "-C", str(ROOT), "diff", "--cached", "--quiet", "--"] + paths,
         )
+        if diff.returncode == 0:
+            return True, "변경 없음"
         result = subprocess.run(
-            ["git", "-C", str(ROOT), "commit", "-m", message],
+            ["git", "-C", str(ROOT), "commit", "-m", message, "--only"] + paths,
             capture_output=True, text=True,
         )
         if result.returncode == 0:
-            return True, result.stdout.strip()
-        # 변경사항 없음은 정상 케이스
-        if "nothing to commit" in (result.stdout + result.stderr).lower():
-            return True, "변경 없음"
-        return False, result.stderr.strip() or result.stdout.strip()
+            return True, "커밋됨"
+        err = (result.stderr.strip() or result.stdout.strip())[:300]
+        return False, err
     except Exception as e:
         return False, str(e)
 
@@ -181,7 +208,7 @@ HTML = r"""<!doctype html>
   <button data-tab="devnews"  class="tab-btn px-3 py-1.5 rounded-lg border bg-white hover:bg-slate-100">📰 개발소식</button>
   <button data-tab="threads"  class="tab-btn px-3 py-1.5 rounded-lg border bg-white hover:bg-slate-100">🧵 Threads</button>
   <button data-tab="misc"     class="tab-btn px-3 py-1.5 rounded-lg border bg-white hover:bg-slate-100">⚙️ 기타</button>
-  <button data-tab="routine"  class="tab-btn px-3 py-1.5 rounded-lg border bg-white hover:bg-slate-100">🚀 Routine 등록</button>
+  <button data-tab="routine"  class="tab-btn px-3 py-1.5 rounded-lg border bg-white hover:bg-slate-100">🚀 GitHub Actions 등록</button>
   <button data-tab="guide"    class="tab-btn px-3 py-1.5 rounded-lg border bg-white hover:bg-slate-100">📖 발급 가이드</button>
 </nav>
 
@@ -230,6 +257,21 @@ HTML = r"""<!doctype html>
   <h2 class="text-lg font-semibold mb-4">환경변수 (.env)</h2>
   <p class="text-sm text-slate-500 mb-4">현재 값이 입력란에 미리 채워져 있습니다. '표시' 버튼으로 확인하거나, 덮어써서 변경한 뒤 전체 저장하세요. 이 파일은 gitignore 되어 커밋되지 않습니다.</p>
   <div id="envList" class="space-y-3"></div>
+
+  <div class="mt-5 p-4 border rounded-lg bg-slate-50">
+    <div class="text-sm font-medium mb-1">🔧 도구 — Gemini API 연결 테스트</div>
+    <p class="text-xs text-slate-500 mb-3">GEMINI_API_KEY 저장 후 클릭하면 실제 호출로 키 유효성을 확인합니다. 무료 티어라 비용 0.</p>
+    <button id="testGemini" class="text-sm bg-slate-900 text-white px-3 py-1.5 rounded hover:bg-slate-700">Gemini 연결 테스트</button>
+    <div id="geminiResult" class="mt-3 text-sm"></div>
+  </div>
+
+  <div class="mt-3 p-4 border rounded-lg bg-slate-50">
+    <div class="text-sm font-medium mb-1">🔧 도구 — Telegram Chat ID 자동 감지</div>
+    <p class="text-xs text-slate-500 mb-3">① TELEGRAM_BOT_TOKEN 을 먼저 저장 → ② 텔레그램에서 봇을 검색해 <code class="kbd">/start</code> 전송 → ③ 아래 버튼 클릭.</p>
+    <button id="detectChatId" class="text-sm bg-slate-900 text-white px-3 py-1.5 rounded hover:bg-slate-700">Chat ID 감지 실행</button>
+    <div id="chatIdResult" class="mt-3 text-sm"></div>
+  </div>
+
   <p class="text-xs text-slate-400 mt-4">프로덕션(Scheduled Agent)은 별도로 Claude Code Routines 환경변수 UI에서 설정해야 합니다. 로컬 테스트용으로만 여기 저장됩니다.</p>
 </section>
 
@@ -360,71 +402,59 @@ HTML = r"""<!doctype html>
 <!-- GUIDE -->
 <section data-pane="routine" class="pane hidden bg-white rounded-lg shadow-sm p-6 space-y-4">
   <div>
-    <h2 class="text-lg font-semibold">Claude Code Routine 등록</h2>
-    <p class="text-sm text-slate-500 mt-1">각 단계마다 필요한 값을 복사 버튼으로 제공합니다. Routines UI 에 그대로 붙여넣으세요.</p>
+    <h2 class="text-lg font-semibold">GitHub Actions 등록 — 자동 실행</h2>
+    <p class="text-sm text-slate-500 mt-1">
+      자동 실행은 <code class="kbd">.github/workflows/daily-brief.yml</code> 이 담당합니다.
+      워크플로 파일은 레포에 이미 포함되어 있고, GitHub Secrets 만 채우면 다음 스케줄에 맞춰 실행됩니다.
+    </p>
   </div>
 
   <div class="border rounded-lg p-4">
-    <div class="font-medium mb-2">1. Claude GitHub App 설치 (처음 한 번만)</div>
-    <p class="text-sm text-slate-700"><a href="https://github.com/apps/claude" target="_blank" class="text-blue-600 underline">github.com/apps/claude</a> 에서 <code class="kbd" id="r_repo_slug2">...</code> 레포에 설치.</p>
+    <div class="font-medium mb-2">1. Secrets 페이지 열기</div>
+    <p class="text-sm text-slate-700">
+      <a id="secretsPageLink" target="_blank" class="text-blue-600 underline">Settings → Secrets and variables → Actions</a>
+    </p>
+    <p class="text-xs text-slate-400 mt-1">레포 Settings 에 들어가서 "New repository secret" 버튼을 누르면 됩니다.</p>
   </div>
 
   <div class="border rounded-lg p-4">
-    <div class="font-medium mb-2">2. Routines 페이지 열기</div>
-    <p class="text-sm text-slate-700"><a href="https://claude.ai/code/routines" target="_blank" class="text-blue-600 underline">claude.ai/code/routines</a> 접속 → New routine.</p>
-  </div>
-
-  <div class="border rounded-lg p-4">
-    <div class="font-medium mb-3">3. 기본 필드 입력</div>
+    <div class="font-medium mb-2">2. 필요한 Secrets 목록 + 값 복사</div>
+    <p class="text-sm text-slate-600 mb-3">
+      아래 각 키를 Secrets 페이지에 하나씩 추가합니다. 이름(Name)은 왼쪽 그대로, 값(Value)은 "값 복사" 버튼으로 가져와 붙여넣기.
+      로컬에 저장된 시크릿만 복사 버튼이 활성화됩니다.
+    </p>
     <table class="w-full text-sm">
-      <tr class="border-b">
-        <td class="py-2 pr-3 text-slate-500 w-40">Name</td>
-        <td><code class="kbd" id="r_name">...</code></td>
-        <td class="text-right"><button data-copy-id="r_name" class="text-xs border rounded px-2 py-1 hover:bg-slate-100">복사</button></td>
-      </tr>
-      <tr class="border-b">
-        <td class="py-2 pr-3 text-slate-500">Repository</td>
-        <td><code class="kbd" id="r_repo_slug">...</code></td>
-        <td class="text-right"><button data-copy-id="r_repo_slug" class="text-xs border rounded px-2 py-1 hover:bg-slate-100">복사</button></td>
-      </tr>
-      <tr class="border-b">
-        <td class="py-2 pr-3 text-slate-500">Cron (UTC)</td>
-        <td><code class="kbd" id="r_cron">...</code></td>
-        <td class="text-right"><button data-copy-id="r_cron" class="text-xs border rounded px-2 py-1 hover:bg-slate-100">복사</button></td>
-      </tr>
-      <tr class="border-b">
-        <td class="py-2 pr-3 text-slate-500">Setup script</td>
-        <td><code class="kbd" id="r_setup">...</code></td>
-        <td class="text-right"><button data-copy-id="r_setup" class="text-xs border rounded px-2 py-1 hover:bg-slate-100">복사</button></td>
-      </tr>
-      <tr>
-        <td class="py-2 pr-3 text-slate-500 align-top">Allow unrestricted<br>branch pushes</td>
-        <td colspan="2"><strong>ON</strong> (체크박스 활성화) <span class="text-xs text-slate-400">— main 에 커밋 허용</span></td>
-      </tr>
+      <thead>
+        <tr class="text-left text-xs text-slate-500 border-b">
+          <th class="py-2 pr-2">Secret name</th>
+          <th>로컬 상태</th>
+          <th class="text-right">값 복사</th>
+        </tr>
+      </thead>
+      <tbody id="ghSecretsList"></tbody>
     </table>
+    <p class="text-xs text-slate-400 mt-3">
+      <strong>GEMINI_API_KEY</strong> 는 <a href="https://aistudio.google.com/apikey" target="_blank" class="text-blue-600 underline">aistudio.google.com/apikey</a> 에서 발급 (무료 티어).
+      Telegram / Slack 은 '📖 발급 가이드' 탭 참고.
+    </p>
   </div>
 
   <div class="border rounded-lg p-4">
-    <div class="font-medium mb-2">4. Prompt 필드에 붙여넣기</div>
-    <p class="text-sm text-slate-600 mb-2">아래 버튼을 누르면 <code class="kbd">.claude/routine-prompt.md</code> 전체가 클립보드로 복사됩니다.</p>
-    <button id="copyPrompt" class="bg-slate-900 text-white px-3 py-1.5 rounded text-sm hover:bg-slate-700">📋 Prompt 전체 복사</button>
-    <details class="mt-3">
-      <summary class="text-xs text-slate-500 cursor-pointer">Prompt 미리보기</summary>
-      <pre id="r_prompt_preview" class="mt-2 p-3 bg-slate-50 border rounded text-xs max-h-60 overflow-auto font-mono whitespace-pre-wrap"></pre>
-    </details>
+    <div class="font-medium mb-2">3. 실행 스케줄 (cron)</div>
+    <div class="flex items-center gap-3 text-sm">
+      <span class="text-slate-600">현재 설정</span>
+      <code class="kbd" id="r_cron">0 23 * * *</code>
+      <span class="text-xs text-slate-400">(UTC 기준, '기타' 탭의 발송 시각과 자동 연동)</span>
+    </div>
+    <p class="text-xs text-slate-500 mt-2">'기타' 탭에서 시각을 바꾸면 저장 시 <code class="kbd">.github/workflows/daily-brief.yml</code> 의 cron 도 같이 업데이트됩니다 (auto-commit 활성화 필수).</p>
   </div>
 
   <div class="border rounded-lg p-4">
-    <div class="font-medium mb-2">5. Environment variables 입력</div>
-    <p class="text-sm text-slate-600 mb-2">'🔑 시크릿' 탭에서 저장한 값들을 아래 버튼으로 한 번에 복사한 뒤, Routines UI 의 Environment 섹션에 줄 별로 한 쌍씩 입력하세요.</p>
-    <button id="copyEnvBlock" class="bg-slate-900 text-white px-3 py-1.5 rounded text-sm hover:bg-slate-700">📋 env 블록 복사</button>
-    <span id="envBlockCount" class="ml-2 text-xs text-slate-500"></span>
-    <p class="mt-2 text-xs text-amber-600">민감 값이라 클립보드에만 올라갑니다 — 실수로 Slack/GitHub 같은 데 붙여넣지 않도록 주의.</p>
-  </div>
-
-  <div class="border rounded-lg p-4">
-    <div class="font-medium mb-2">6. Save + Run once</div>
-    <p class="text-sm text-slate-700">Save 후 <strong>Run now</strong> 클릭. <code class="kbd">Daily/YYYY-MM-DD.md</code> 가 커밋되고 활성화한 채널로 메시지가 오면 성공.</p>
+    <div class="font-medium mb-2">4. 수동 실행으로 검증</div>
+    <p class="text-sm text-slate-700">
+      <a id="actionsPageLink" target="_blank" class="text-blue-600 underline">Actions 탭</a> 에서 "Daily Brief" 워크플로 선택 → <strong>Run workflow</strong> 버튼.
+    </p>
+    <p class="text-xs text-slate-500 mt-2">정상이면 실행 로그 끝에 "brief: YYYY-MM-DD 자동 브리핑" 커밋이 main 에 올라가고 활성화된 채널로 메시지가 도착합니다.</p>
   </div>
 </section>
 
@@ -432,10 +462,29 @@ HTML = r"""<!doctype html>
   <h2 class="text-lg font-semibold">🎯 외부 서비스 발급 가이드</h2>
 
   <details class="border rounded-lg p-4" open>
+    <summary class="font-medium cursor-pointer">Google Gemini API Key (요약용, 필수 · 무료 티어)</summary>
+    <ol class="list-decimal pl-5 mt-3 text-sm space-y-1 text-slate-700">
+      <li><a class="text-blue-600 underline" href="https://aistudio.google.com/apikey" target="_blank">aistudio.google.com/apikey</a> 접속 (Google 계정 로그인)</li>
+      <li><strong>Create API key</strong> 클릭 → 프로젝트 선택 또는 새로 생성</li>
+      <li>생성된 키 복사 (<span class="kbd">AIza…</span> 로 시작)</li>
+      <li>"🔑 시크릿" 탭에서 GEMINI_API_KEY 입력 후 저장</li>
+      <li>"🔑 시크릿" 탭 하단의 <strong>Gemini 연결 테스트</strong> 버튼으로 유효성 확인</li>
+    </ol>
+    <p class="text-xs text-slate-400 mt-2">
+      <strong>무료 티어</strong>: Gemini 2.0 Flash 기준 일 1,500회 · 분당 15회 · 1M TPM. 이 프로젝트는 일 4회 쓰므로 한도 <strong>375배</strong> 여유.
+      카드 등록 <strong>불필요</strong>. 모델 변경은 <code class="kbd">config/briefing.json</code> 의 <code class="kbd">summarize.model</code> 직접 수정 (<span class="kbd">gemini-2.5-flash</span>, <span class="kbd">gemini-2.5-pro</span> 등).
+    </p>
+  </details>
+
+  <details class="border rounded-lg p-4">
     <summary class="font-medium cursor-pointer">네이버 검색 API Client ID / Secret</summary>
     <ol class="list-decimal pl-5 mt-3 text-sm space-y-1 text-slate-700">
       <li><a class="text-blue-600 underline" href="https://developers.naver.com/apps/#/register" target="_blank">developers.naver.com/apps/#/register</a> 이동 (네이버 로그인 필요)</li>
-      <li>애플리케이션 이름 입력 (예: morning-briefing)</li>
+      <li>애플리케이션 이름 입력
+        <div class="mt-1 text-xs text-slate-500">
+          예시: <span class="kbd">morning-briefing</span> · <span class="kbd">am-news-brief</span> · <span class="kbd">&lt;닉네임&gt;-brief</span>
+        </div>
+      </li>
       <li>사용 API 에서 <strong>"검색"</strong> 체크</li>
       <li>환경 선택: <strong>WEB 설정</strong>, URL은 <span class="kbd">http://localhost</span> 입력</li>
       <li>등록 완료 후 <strong>Client ID / Client Secret</strong> 복사</li>
@@ -448,27 +497,50 @@ HTML = r"""<!doctype html>
     <summary class="font-medium cursor-pointer">Telegram Bot Token / Chat ID</summary>
     <ol class="list-decimal pl-5 mt-3 text-sm space-y-1 text-slate-700">
       <li>텔레그램 앱에서 <span class="kbd">@BotFather</span> 검색 후 대화 시작</li>
-      <li><span class="kbd">/newbot</span> 입력 → 봇 이름 입력 → 봇 username 입력 (끝에 <span class="kbd">_bot</span>)</li>
-      <li>BotFather가 보내주는 <strong>Token</strong> 복사 (예: <span class="kbd">1234567:AAE...</span>)</li>
+      <li><span class="kbd">/newbot</span> 입력</li>
+      <li><strong>Bot 표시 이름</strong> 입력 (나중에 변경 가능, 이모지·한글 허용)
+        <div class="mt-1 text-xs text-slate-500">
+          예시: <span class="kbd">🌅 모닝 브리핑</span> · <span class="kbd">Morning Brief</span> · <span class="kbd">아침 뉴스봇</span> · <span class="kbd">Daybreak Digest</span>
+        </div>
+      </li>
+      <li><strong>Bot username</strong> 입력 (고유값, 반드시 <span class="kbd">_bot</span> 또는 <span class="kbd">bot</span> 로 끝남, 영문·숫자·밑줄만)
+        <div class="mt-1 text-xs text-slate-500">
+          예시: <span class="kbd">morning_briefing_jd_bot</span> · <span class="kbd">daily_brief_&lt;닉네임&gt;_bot</span> · <span class="kbd">am_digest_jeongdowny_bot</span><br>
+          "Sorry, this username is already taken" 이면 뒤에 숫자·이니셜 추가
+        </div>
+      </li>
+      <li>BotFather가 보내주는 <strong>Token</strong> 복사 (예: <span class="kbd">1234567:AAE-XyZ...</span>)</li>
       <li>방금 만든 봇을 검색해 대화창 열고 아무 메시지(<span class="kbd">/start</span> 등) 보내기</li>
       <li>브라우저에서 <span class="kbd">https://api.telegram.org/bot&lt;TOKEN&gt;/getUpdates</span> 접속</li>
-      <li>응답 JSON의 <span class="kbd">result[0].message.chat.id</span> 값 복사</li>
+      <li>응답 JSON의 <span class="kbd">result[0].message.chat.id</span> 값 복사 (예: <span class="kbd">123456789</span>)</li>
       <li>"🔑 시크릿" 탭에서 TELEGRAM_BOT_TOKEN / TELEGRAM_CHAT_ID 입력 후 저장</li>
       <li>"📡 채널" 탭에서 Telegram 활성화 + 테스트 전송 버튼 클릭</li>
     </ol>
+    <p class="text-xs text-slate-400 mt-2">Tip: BotFather 에서 <span class="kbd">/setdescription</span> · <span class="kbd">/setuserpic</span> 로 설명·프로필 이미지도 지정 가능.</p>
   </details>
 
   <details class="border rounded-lg p-4">
     <summary class="font-medium cursor-pointer">Slack Incoming Webhook URL</summary>
     <ol class="list-decimal pl-5 mt-3 text-sm space-y-1 text-slate-700">
       <li><a class="text-blue-600 underline" href="https://api.slack.com/apps" target="_blank">api.slack.com/apps</a> 에서 <strong>Create New App</strong></li>
-      <li><strong>From scratch</strong> 선택 → 앱 이름·워크스페이스 선택</li>
+      <li><strong>From scratch</strong> 선택</li>
+      <li>앱 이름 입력 + 워크스페이스 선택
+        <div class="mt-1 text-xs text-slate-500">
+          앱 이름 예시: <span class="kbd">Morning Brief</span> · <span class="kbd">🌅 모닝 브리핑</span> · <span class="kbd">Daily Digest</span> · <span class="kbd">Sunrise Report</span>
+        </div>
+      </li>
       <li>좌측 메뉴 <strong>Incoming Webhooks</strong> → 토글 On</li>
-      <li>하단 <strong>Add New Webhook to Workspace</strong> → 브리핑 받을 채널 선택 → 허용</li>
-      <li>생성된 <strong>Webhook URL</strong> 복사 (<span class="kbd">https://hooks.slack.com/services/…</span>)</li>
+      <li>하단 <strong>Add New Webhook to Workspace</strong> → 브리핑 받을 채널 선택 → 허용
+        <div class="mt-1 text-xs text-slate-500">
+          채널 이름 예시: <span class="kbd">#morning-brief</span> · <span class="kbd">#daily-news</span> · <span class="kbd">#am-digest</span> · <span class="kbd">#daybreak</span><br>
+          해당 채널이 없으면 Slack 워크스페이스에서 먼저 만들어 두세요.
+        </div>
+      </li>
+      <li>생성된 <strong>Webhook URL</strong> 복사 (<span class="kbd">https://hooks.slack.com/services/T…/B…/x…</span>)</li>
       <li>"🔑 시크릿" 탭에서 SLACK_WEBHOOK_URL 입력 후 저장</li>
       <li>"📡 채널" 탭에서 Slack 활성화 + 테스트 전송 버튼 클릭</li>
     </ol>
+    <p class="text-xs text-slate-400 mt-2">Tip: 좌측 메뉴 <strong>Basic Information</strong> → <strong>Display Information</strong> 에서 앱 아이콘·설명·배경색 지정 가능.</p>
   </details>
 
   <details class="border rounded-lg p-4">
@@ -570,19 +642,51 @@ $$('[data-preset]').forEach(btn => btn.addEventListener('click', () => applyPres
 
 function renderRoutine() {
   const r = state.routine || {};
-  $('#r_name').textContent = r.routine_name || '';
-  $('#r_repo_slug').textContent = r.repo_slug || '';
-  $('#r_repo_slug2').textContent = r.repo_slug || '';
+  const slug = r.repo_slug || '';
   $('#r_cron').textContent = kstToUtcCron($('#schedule_time').value || (state.config.schedule?.time_kst || '08:00'));
-  $('#r_setup').textContent = r.setup_script || '';
-  $('#r_prompt_preview').textContent = r.prompt || '';
-  updateEnvBlockCount();
-}
 
-function updateEnvBlockCount() {
-  const n = Object.values(state.env || {}).filter(e => e.value).length;
-  const el = $('#envBlockCount');
-  if (el) el.textContent = n > 0 ? `${n}개 변수 설정됨` : '(아직 시크릿 탭에 값 없음)';
+  const secretsLink = $('#secretsPageLink');
+  if (secretsLink) {
+    if (slug && !slug.startsWith('<')) {
+      secretsLink.href = `https://github.com/${slug}/settings/secrets/actions`;
+      secretsLink.textContent = `github.com/${slug}/settings/secrets/actions`;
+    } else {
+      secretsLink.textContent = '(git remote 가 아직 없음)';
+      secretsLink.removeAttribute('href');
+    }
+  }
+  const actionsLink = $('#actionsPageLink');
+  if (actionsLink && slug && !slug.startsWith('<')) {
+    actionsLink.href = `https://github.com/${slug}/actions`;
+  }
+
+  // Secrets 목록 렌더
+  const tbody = $('#ghSecretsList');
+  if (tbody) {
+    const order = ['GEMINI_API_KEY', 'NAVER_CLIENT_ID', 'NAVER_CLIENT_SECRET', 'TELEGRAM_BOT_TOKEN', 'TELEGRAM_CHAT_ID', 'SLACK_WEBHOOK_URL'];
+    tbody.innerHTML = '';
+    order.forEach(key => {
+      const info = state.env?.[key] || { is_set: false, value: '' };
+      const isSet = info.is_set;
+      const tr = document.createElement('tr');
+      tr.className = 'border-b';
+      tr.innerHTML = `
+        <td class="py-2 pr-2 font-mono text-xs">${key}</td>
+        <td class="text-xs ${isSet ? 'text-emerald-600' : 'text-slate-400'}">${isSet ? '로컬에 있음' : '로컬에 없음'}</td>
+        <td class="text-right">
+          <button data-copy-secret="${key}" class="text-xs border rounded px-2 py-1 ${isSet ? 'hover:bg-slate-100' : 'opacity-40 cursor-not-allowed'}" ${isSet ? '' : 'disabled'}>값 복사</button>
+        </td>
+      `;
+      tbody.appendChild(tr);
+    });
+    $$('[data-copy-secret]').forEach(btn => btn.addEventListener('click', async () => {
+      const key = btn.dataset.copySecret;
+      const val = state.env?.[key]?.value || '';
+      if (!val) { toast('로컬에 값이 없습니다', 2000); return; }
+      await navigator.clipboard.writeText(val);
+      toast(`${key} 값 복사됨`, 1500);
+    }));
+  }
 }
 
 document.addEventListener('click', async (e) => {
@@ -864,6 +968,45 @@ $('#testSlack').addEventListener('click', async () => {
   toast(r.ok ? '✅ Slack 전송 성공' : '❌ ' + (r.error || 'Slack 실패'), 4000);
 });
 
+$('#testGemini').addEventListener('click', async () => {
+  const resultEl = $('#geminiResult');
+  resultEl.innerHTML = '<span class="text-slate-500">호출 중...</span>';
+  const r = await fetch('/api/test-gemini', { method: 'POST' }).then(r => r.json());
+  if (r.ok) {
+    resultEl.innerHTML = `<div class="text-emerald-700">✅ 연결 성공 — ${escapeAttr(r.detail)}</div>`;
+  } else {
+    resultEl.innerHTML = `<div class="text-red-600">❌ ${escapeAttr(r.error || '실패')}</div>`;
+  }
+});
+
+$('#detectChatId').addEventListener('click', async () => {
+  const resultEl = $('#chatIdResult');
+  resultEl.innerHTML = '<span class="text-slate-500">감지 중...</span>';
+  const r = await fetch('/api/telegram-chat-id', { method: 'POST' }).then(r => r.json());
+  if (!r.ok) {
+    resultEl.innerHTML = `<div class="text-red-600">${escapeAttr(r.message)}</div>`;
+    return;
+  }
+  resultEl.innerHTML = `<div class="text-emerald-700 mb-2">${escapeAttr(r.message)}</div>` +
+    r.chats.map(c => `
+      <div class="flex items-center justify-between border rounded px-3 py-2 mb-1 bg-white">
+        <div>
+          <div class="font-mono text-xs">${escapeAttr(c.id)}</div>
+          <div class="text-xs text-slate-500">${escapeAttr(c.type)} · ${escapeAttr(c.title)}</div>
+        </div>
+        <button data-fill-chat-id="${escapeAttr(c.id)}" class="text-xs bg-slate-900 text-white px-2 py-1 rounded hover:bg-slate-700">이 값 입력</button>
+      </div>
+    `).join('');
+  $$('[data-fill-chat-id]').forEach(btn => btn.addEventListener('click', () => {
+    const input = document.querySelector('input[data-envkey="TELEGRAM_CHAT_ID"]');
+    if (input) {
+      input.value = btn.dataset.fillChatId;
+      input.type = 'text';
+      toast("TELEGRAM_CHAT_ID 채워짐. '전체 저장' 눌러 반영하세요.", 3500);
+    }
+  }));
+});
+
 function escapeAttr(s) {
   return String(s ?? '').replaceAll('&', '&amp;').replaceAll('"', '&quot;').replaceAll('<', '&lt;').replaceAll('>', '&gt;');
 }
@@ -901,6 +1044,87 @@ def test_telegram() -> tuple[bool, str]:
         return False, f"{resp.status_code}: {resp.text[:200]}"
     except Exception as e:
         return False, str(e)
+
+
+def test_gemini() -> tuple[bool, str]:
+    """GEMINI_API_KEY 로 간단한 호출 시도."""
+    env = read_env()
+    key = env.get("GEMINI_API_KEY")
+    if not key:
+        return False, "GEMINI_API_KEY 가 아직 저장되지 않았습니다."
+    try:
+        from google import genai
+    except ImportError:
+        return False, "'google-genai' 패키지 필요: pip install google-genai"
+    try:
+        client = genai.Client(api_key=key)
+        resp = client.models.generate_content(
+            model="gemini-2.0-flash",
+            contents="한 단어로만 답해: pong",
+        )
+        text = (resp.text or "").strip()
+        return True, f"응답: {text[:80] or '(빈 응답)'}"
+    except Exception as e:
+        msg = str(e)
+        # 2.0-flash 가 안 되면 2.5-flash 로 재시도
+        if "model" in msg.lower() or "not found" in msg.lower():
+            try:
+                client = genai.Client(api_key=key)
+                resp = client.models.generate_content(
+                    model="gemini-2.5-flash",
+                    contents="한 단어로만 답해: pong",
+                )
+                text = (resp.text or "").strip()
+                return True, f"gemini-2.5-flash 로 응답: {text[:80]}"
+            except Exception as e2:
+                return False, f"{e2}"[:300]
+        return False, msg[:300]
+
+
+def detect_telegram_chat_ids() -> tuple[bool, str, list[dict[str, Any]]]:
+    """TELEGRAM_BOT_TOKEN 으로 getUpdates 호출해 chat id 목록 추출."""
+    env = read_env()
+    token = env.get("TELEGRAM_BOT_TOKEN")
+    if not token:
+        return False, "TELEGRAM_BOT_TOKEN 이 아직 저장되지 않았습니다. 먼저 시크릿 탭에서 토큰을 저장하세요.", []
+    try:
+        import requests as _req
+        resp = _req.get(f"https://api.telegram.org/bot{token}/getUpdates", timeout=10)
+        if not resp.ok:
+            return False, f"Telegram API 오류 {resp.status_code}: {resp.text[:200]}", []
+        data = resp.json()
+        if not data.get("ok"):
+            return False, f"Telegram 응답 오류: {data.get('description', 'unknown')}", []
+
+        updates = data.get("result", [])
+        if not updates:
+            return False, "아직 봇에게 보낸 메시지가 없습니다. 텔레그램에서 봇을 검색해 /start 를 보낸 뒤 다시 시도하세요.", []
+
+        seen: dict[str, dict[str, Any]] = {}
+        for u in updates:
+            msg = u.get("message") or u.get("edited_message") or u.get("channel_post") or {}
+            chat = msg.get("chat") or {}
+            cid = chat.get("id")
+            if cid is None:
+                continue
+            key = str(cid)
+            title = chat.get("title")
+            if not title:
+                fn = chat.get("first_name", "")
+                ln = chat.get("last_name", "")
+                title = f"{fn} {ln}".strip() or chat.get("username", "")
+            seen[key] = {
+                "id": key,
+                "type": chat.get("type", ""),
+                "title": title or "(이름 없음)",
+            }
+
+        chats = list(seen.values())
+        if not chats:
+            return False, "메시지는 있지만 chat 정보를 찾지 못했습니다.", []
+        return True, f"{len(chats)}개 감지됨", chats
+    except Exception as e:
+        return False, str(e), []
 
 
 def test_slack() -> tuple[bool, str]:
@@ -1009,11 +1233,13 @@ class Handler(BaseHTTPRequestHandler):
             self._send_json(200, env_state(read_env()))
             return
         if self.path == "/api/routine-info":
+            # 이름은 유지 (프론트 호환) 하지만 의미가 바뀜 — GitHub Actions 용 정보
+            env = read_env()
+            secret_count = sum(1 for k, _ in ENV_KEYS if env.get(k))
             self._send_json(200, {
                 "repo_slug": get_repo_slug(),
-                "routine_name": ROUTINE_NAME,
-                "setup_script": SETUP_SCRIPT,
-                "prompt": read_routine_prompt(),
+                "repo_name": REPO_NAME,
+                "secret_count": secret_count,
             })
             return
         self._send_json(404, {"error": "not found"})
@@ -1028,11 +1254,17 @@ class Handler(BaseHTTPRequestHandler):
                     return
                 old_cfg = read_config()
                 write_config(new_cfg)
+
+                # 워크플로 cron 동기화
+                cron = new_cfg.get("schedule", {}).get("cron_utc")
+                workflow_changed = sync_workflow_cron(cron) if cron else False
+
                 commit_msg = None
                 if data.get("auto_commit"):
-                    ok, out = git_commit_config(diff_summary(old_cfg, new_cfg))
+                    extra = [".github/workflows/daily-brief.yml"] if workflow_changed else []
+                    ok, out = git_commit_config(diff_summary(old_cfg, new_cfg), extra_paths=extra)
                     commit_msg = out if ok else f"auto-commit 실패: {out}"
-                self._send_json(200, {"ok": True, "commit": commit_msg})
+                self._send_json(200, {"ok": True, "commit": commit_msg, "workflow_synced": workflow_changed})
             except Exception as e:
                 self._send_json(500, {"ok": False, "error": str(e)})
             return
@@ -1055,6 +1287,16 @@ class Handler(BaseHTTPRequestHandler):
 
         if self.path == "/api/test-telegram":
             ok, msg = test_telegram()
+            self._send_json(200, {"ok": ok, "error": None if ok else msg, "detail": msg})
+            return
+
+        if self.path == "/api/telegram-chat-id":
+            ok, msg, chats = detect_telegram_chat_ids()
+            self._send_json(200, {"ok": ok, "message": msg, "chats": chats})
+            return
+
+        if self.path == "/api/test-gemini":
+            ok, msg = test_gemini()
             self._send_json(200, {"ok": ok, "error": None if ok else msg, "detail": msg})
             return
 

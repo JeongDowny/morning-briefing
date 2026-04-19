@@ -1,0 +1,99 @@
+name: Daily Brief
+
+on:
+  schedule:
+    # cron 은 config/briefing.json 의 schedule.cron_utc 와 동기화되어야 함.
+    # 로컬 설정 UI "기타" 탭에서 시각을 바꾸면 이 파일도 자동 갱신됨.
+    - cron: '0 23 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-brief
+  cancel-in-progress: false
+
+jobs:
+  brief:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests beautifulsoup4 feedparser pytz google-genai
+
+      - name: Ensure collected dir
+        run: mkdir -p collected
+
+      - name: Collect — Naver ranking
+        run: python scripts/collect_naver.py
+        continue-on-error: true
+
+      - name: Collect — OpenAI RSS
+        run: python scripts/collect_openai.py
+        continue-on-error: true
+
+      - name: Collect — Anthropic HTML
+        run: python scripts/collect_anthropic.py
+        continue-on-error: true
+
+      - name: Collect — Threads (RSSHub)
+        run: python scripts/collect_threads.py
+        continue-on-error: true
+
+      - name: Filter already-seen items
+        run: python scripts/manage_seen.py filter
+        continue-on-error: true
+
+      - name: Summarize with Gemini
+        run: python scripts/summarize.py
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        continue-on-error: true
+
+      - name: Render Daily note
+        run: python scripts/render_daily.py
+        continue-on-error: true
+
+      - name: Send Telegram
+        run: python scripts/send_telegram.py
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        continue-on-error: true
+
+      - name: Send Slack
+        run: python scripts/send_slack.py
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+        continue-on-error: true
+
+      - name: Update seen state
+        run: python scripts/manage_seen.py update
+        continue-on-error: true
+
+      - name: Commit Daily note and seen.json
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add Daily/ data/seen.json
+          if git diff --cached --quiet; then
+            echo "변경 없음 — 커밋 스킵"
+          else
+            DATE_KST=$(TZ='Asia/Seoul' date +%Y-%m-%d)
+            git commit -m "brief: ${DATE_KST} 자동 브리핑"
+            git push
+          fi

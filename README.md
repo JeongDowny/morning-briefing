@@ -8,25 +8,27 @@
 - **개발만** — OpenAI · Anthropic 공식 블로그 + Threads 계정
 - **전체** — 위 둘 다
 
-수집 · 요약 · 전송은 로컬이 아닌 Claude Code Routine 이 클라우드에서 실행하기 때문에 랩탑 상태와 무관하게 동작합니다.
+수집 · 요약 · 전송은 GitHub Actions 가 정해진 시각에 실행합니다. 랩탑 상태와 무관하게 동작합니다.
 
 ## 동작 방식
 
-1. Routine 이 사용자가 지정한 시각(KST)에 실행됩니다.
+1. `.github/workflows/daily-brief.yml` 의 cron 이 지정된 시각(UTC) 에 트리거됩니다.
 2. `config/briefing.json` 의 `enabled` 플래그에 따라 활성화된 소스만 수집:
    - `scripts/collect_naver.py` — 네이버 "많이 본 뉴스" 랭킹 (경제 전문 언론사 whitelist 필터링)
    - `scripts/collect_openai.py` — OpenAI 공식 RSS
    - `scripts/collect_anthropic.py` — Anthropic `/news` HTML 스크래핑 (공식 RSS 없음)
    - `scripts/collect_threads.py` — RSSHub 경유 Threads 계정별 피드
 3. `scripts/manage_seen.py filter` 가 지난 30일 이내 이미 노출된 항목 제거.
-4. Routine 안의 Claude 가 각 항목을 한국어 2~3줄로 요약하고 `Daily/YYYY-MM-DD.md` 를 생성.
-5. `scripts/send_telegram.py` · `scripts/send_slack.py` 중 활성화된 쪽이 섹션별 메시지로 전송.
-6. 신규 노트와 `data/seen.json` 변경분이 `main` 브랜치로 커밋.
+4. `scripts/summarize.py` 가 Google Gemini API 로 각 항목을 한국어 2~3줄로 요약 (기본 `gemini-2.0-flash`, 무료 티어).
+5. `scripts/render_daily.py` 가 `Daily/YYYY-MM-DD.md` 생성.
+6. `scripts/send_telegram.py` · `scripts/send_slack.py` 중 시크릿이 설정된 쪽이 섹션별 메시지로 전송.
+7. 신규 노트와 `data/seen.json` 이 `main` 브랜치로 자동 커밋.
 
 ## 요구사항
 
-- Python 3.11 이상
-- Claude Code (Routines 사용 가능한 플랜)
+- Python 3.11 이상 (로컬 테스트용, GitHub Actions 러너는 자동 준비)
+- GitHub 계정 + public 레포 (Actions 2,000분/월 무료)
+- [Google Gemini API Key](https://aistudio.google.com/apikey) (요약 단계용, **무료 티어** — 카드 등록 불필요)
 - Telegram 봇 또는 Slack Incoming Webhook (발송 채널)
 - (선택) 네이버 개발자 센터 Client ID / Secret — 경제 프로필의 키워드 검색(M2)에서 사용
 
@@ -76,33 +78,48 @@ python3 scripts/config_ui.py
 
 카테고리 태그는 자동 분류됩니다: `#거시`, `#자산`, `#글로벌` (경제), `#openai`, `#anthropic`, `#threads`, `#research` (개발).
 
-## Claude Code Routine 등록
+## GitHub Actions 등록
 
-자동 실행은 Claude Code Routines 가 담당합니다. 등록 과정은 설정 UI 의 **"🚀 Routine 등록"** 탭에 단계별 복사 버튼 형태로 준비되어 있습니다.
+자동 실행은 `.github/workflows/daily-brief.yml` 이 담당합니다. 셋업 UI 의 **"🚀 GitHub Actions 등록"** 탭에 복사 버튼이 준비되어 있습니다.
 
-1. `python3 scripts/config_ui.py` → "🚀 Routine 등록" 탭을 엽니다.
-2. [github.com/apps/claude](https://github.com/apps/claude) 에서 이 레포에 Claude GitHub App 설치 (최초 1회).
-3. [claude.ai/code/routines](https://claude.ai/code/routines) → New routine.
-4. UI 의 각 필드 값(이름 · 저장소 · cron · setup script)을 복사 버튼으로 가져와 붙여넣습니다.
-5. `Allow unrestricted branch pushes` 켜기.
-6. Prompt 필드에 UI 의 "Prompt 전체 복사" 결과를 붙여넣습니다.
-7. Environment variables 섹션에 UI 의 "env 블록 복사" 결과를 줄별로 입력합니다.
-8. Save → `Run now` 로 즉시 검증.
+1. `python3 scripts/config_ui.py` → "🚀 GitHub Actions 등록" 탭.
+2. **로컬 `.env`** 에 시크릿 저장:
+   - `GEMINI_API_KEY` (요약용, 필수 · 무료)
+   - `TELEGRAM_BOT_TOKEN` / `TELEGRAM_CHAT_ID` (Telegram 발송 시)
+   - `SLACK_WEBHOOK_URL` (Slack 발송 시)
+   - (선택) `NAVER_CLIENT_ID` / `NAVER_CLIENT_SECRET` — M2 키워드 검색용
+3. UI 의 "Secrets 페이지 열기" 링크 → GitHub repo Settings → Secrets and variables → Actions.
+4. UI 에서 각 키의 "값 복사" 버튼 → GitHub Secrets UI 에서 **New repository secret** 클릭 → 같은 Name 으로 paste.
+5. 발송 시각(cron) 은 "⚙️ 기타" 탭에서 시간만 바꾸면 저장 시 워크플로 YAML 이 자동 동기화됩니다.
+6. GitHub Actions 탭에서 "Daily Brief" 워크플로 → **Run workflow** 로 즉시 한 번 실행해 검증.
 
-**자동 주입 불가**: Anthropic 은 제3자가 사용자 Routine 에 시크릿을 쓰는 API 를 공개하지 않아, 환경변수 입력만큼은 수동으로 해야 합니다. `.env` 와 Routines UI 의 env 는 별도 관리입니다.
+### 과거 Claude Code Routines 기반 셋업
+
+초기 설계는 Claude Code Routines 로 돌렸으나 샌드박스 egress 네트워크 제한으로 수집 대상(naver·openai·anthropic·rsshub) 에 접근 불가하여 GitHub Actions 로 전환했습니다. 관련 문서는 `.claude/` 하위에 남아있지만 실제 실행에는 사용되지 않습니다.
 
 ## 로컬에서 파이프라인 수동 실행
 
+의존성 설치:
+
 ```bash
-python3 scripts/collect_naver.py       # ranking 활성화 시
-python3 scripts/collect_openai.py      # dev_news 활성화 시
-python3 scripts/collect_anthropic.py   # dev_news 활성화 시
-python3 scripts/collect_threads.py     # threads 활성화 시
+pip install requests beautifulsoup4 feedparser pytz google-genai
+```
+
+`.env` 에 키 저장 후 (config UI 또는 직접 편집):
+
+```bash
+python3 scripts/collect_naver.py        # ranking 활성화 시
+python3 scripts/collect_openai.py       # dev_news 활성화 시
+python3 scripts/collect_anthropic.py    # dev_news 활성화 시
+python3 scripts/collect_threads.py      # threads 활성화 시
 python3 scripts/manage_seen.py filter
-# (요약과 Daily 노트 생성은 Routine 안의 Claude 가 담당)
-python3 scripts/send_telegram.py       # 또는 send_slack.py
+python3 scripts/summarize.py            # GEMINI_API_KEY 필요
+python3 scripts/render_daily.py
+python3 scripts/send_telegram.py        # 또는 send_slack.py
 python3 scripts/manage_seen.py update
 ```
+
+`.env` 의 값은 스크립트가 자동으로 읽지 않으므로 로컬 실행 시에는 `export` 하거나 `python-dotenv` 로 로드하세요. 예: `set -a; source .env; set +a; python3 scripts/summarize.py`.
 
 ## 알려진 제약
 

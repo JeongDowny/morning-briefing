@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "pip install --quiet feedparser requests beautifulsoup4 pytz google-genai",
+            "timeout": 120
+          }
+        ]
+      }
+    ]
+  }
+}

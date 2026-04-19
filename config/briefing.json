@@ -132,7 +132,7 @@
     "retention_days": 30
   },
   "summarize": {
-    "model": "gemini-2.0-flash",
-    "_note": "Google Gemini 모델 ID. 무료 티어: gemini-2.0-flash (추천, 일 1,500회 무료), gemini-2.0-flash-lite, gemini-2.5-flash, gemini-2.5-pro. aistudio.google.com/apikey 에서 발급."
+    "model": "gemini-2.5-flash",
+    "_note": "Google Gemini 모델 ID. 2.5-flash 가 무료 티어 호환성 가장 좋음. 다른 옵션: gemini-2.5-pro (고품질), gemini-2.0-flash (계정에 따라 quota:0 일 수 있음). aistudio.google.com/apikey 에서 발급."
   }
 }
