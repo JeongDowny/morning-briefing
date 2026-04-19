@@ -57,6 +57,7 @@
   },
   "dev_news": {
     "enabled": true,
+    "_note": "type=rss 는 collect_rss.py 가, type=html_scrape 는 개별 collect_*.py 가 처리.",
     "sources": [
       {
         "name": "OpenAI",
@@ -68,28 +69,66 @@
         "type": "html_scrape",
         "url": "https://www.anthropic.com/news",
         "_note": "공식 RSS 없음 → HTML 파싱 (BeautifulSoup). 선택자는 collect_anthropic.py 에서 관리."
+      },
+      {
+        "name": "Google DeepMind",
+        "type": "rss",
+        "url": "https://deepmind.google/blog/rss.xml"
+      },
+      {
+        "name": "Hugging Face",
+        "type": "rss",
+        "url": "https://huggingface.co/blog/feed.xml"
+      },
+      {
+        "name": "GitHub Blog",
+        "type": "rss",
+        "url": "https://github.blog/feed/"
+      },
+      {
+        "name": "Simon Willison",
+        "type": "rss",
+        "url": "https://simonwillison.net/atom/everything/",
+        "_note": "LLM 도구·프롬프트 엔지니어링 분석. Threads @simonw 대체."
+      },
+      {
+        "name": "Latent Space",
+        "type": "rss",
+        "url": "https://www.latent.space/feed",
+        "_note": "swyx 가 운영하는 AI 엔지니어링 Substack. Threads @swyx 대체."
+      },
+      {
+        "name": "Andrej Karpathy",
+        "type": "rss",
+        "url": "https://karpathy.bearblog.dev/feed/",
+        "_note": "Karpathy 개인 blog (bearblog). Threads @karpathy 대체."
+      },
+      {
+        "name": "Interconnects",
+        "type": "rss",
+        "url": "https://www.interconnects.ai/feed",
+        "_note": "Nathan Lambert 의 AI 연구·정책 분석 Substack."
+      },
+      {
+        "name": "Lilian Weng",
+        "type": "rss",
+        "url": "https://lilianweng.github.io/index.xml",
+        "_note": "OpenAI 출신 연구자의 long-form 기술 에세이."
       }
     ]
   },
   "threads": {
-    "enabled": true,
+    "enabled": false,
+    "_note": "RSSHub 공용 인스턴스(rsshub.app) 가 2026-04 부로 production 접근 차단(HTTP 403). Self-host 하기 전에는 동작 불가. 대신 개인 블로그 RSS (Simon Willison, Karpathy bearblog, Latent Space 등) 를 dev_news.sources 에 추가해 커버.",
     "accounts": [
-      {
-        "handle": "swyx",
-        "label": "AI 엔지니어링"
-      },
-      {
-        "handle": "yoheinakajima",
-        "label": "에이전트 연구"
-      },
-      {
-        "handle": "karpathy",
-        "label": "ML 대가"
-      },
-      {
-        "handle": "tatum_hq",
-        "label": "바이브코딩 보안"
-      }
+      { "handle": "swyx",          "label": "AI 엔지니어링" },
+      { "handle": "yoheinakajima", "label": "에이전트 연구" },
+      { "handle": "karpathy",      "label": "ML 대가" },
+      { "handle": "simonw",        "label": "LLM 도구·프롬프트 엔지니어링" },
+      { "handle": "sama",          "label": "OpenAI CEO" },
+      { "handle": "levie",         "label": "Box CEO · 엔터프라이즈 AI 관점" },
+      { "handle": "alexandr_wang", "label": "Scale AI · AGI 담론" },
+      { "handle": "goodside",      "label": "프롬프트 엔지니어링 선구자" }
     ],
     "max_posts_per_account": 5,
     "fetch_method": "rsshub",

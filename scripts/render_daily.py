@@ -24,14 +24,28 @@ DAILY_DIR = ROOT / "Daily"
 
 WEEKDAYS_KR = ["월", "화", "수", "목", "금", "토", "일"]
 
-SECTION_MAP = {
-    "naver_ranking":  ("📈 경제뉴스",       "### 네이버 경제 언론사 랭킹"),
-    "openai_rss":     ("🤖 AI / 개발 소식",  "### OpenAI"),
-    "anthropic_html": ("🤖 AI / 개발 소식",  "### Anthropic"),
-    "threads_rsshub": ("🧵 Threads",        None),  # 계정별 서브섹션
-}
-
 SECTION_ORDER = ["📈 경제뉴스", "🤖 AI / 개발 소식", "🧵 Threads", "📰 기타"]
+
+
+def section_for_source(source: str, source_name: str = "") -> tuple[str, str | None]:
+    """수집 소스 식별자에서 (섹션 라벨, 서브섹션 헤더) 유추.
+
+    범용 매핑:
+      naver_* → 경제뉴스
+      threads_* → Threads (서브섹션은 계정별로 동적 생성)
+      *_rss, *_html → AI / 개발 소식, 서브섹션은 source_name
+    """
+    if source.startswith("naver_"):
+        return "📈 경제뉴스", "### 네이버 경제 뉴스"
+    if source.startswith("threads_"):
+        return "🧵 Threads", None
+    if source.endswith("_rss") or source.endswith("_html"):
+        if source_name:
+            display = source_name
+        else:
+            display = source.replace("_rss", "").replace("_html", "").replace("-", " ").replace("_", " ").title()
+        return "🤖 AI / 개발 소식", f"### {display}"
+    return "📰 기타", None
 
 
 def load_config() -> dict[str, Any]:
@@ -123,10 +137,11 @@ def group_sources(sources: list[dict[str, Any]]) -> dict[str, list[tuple[str | N
     grouped: dict[str, list[tuple[str | None, list[dict[str, Any]]]]] = {}
     for src in sources:
         name = src.get("source", "")
+        source_name = src.get("source_name", "")
         items = src.get("items", [])
         if not items:
             continue
-        section, sub = SECTION_MAP.get(name, ("📰 기타", None))
+        section, sub = section_for_source(name, source_name)
         grouped.setdefault(section, []).append((sub, items))
     return grouped
 

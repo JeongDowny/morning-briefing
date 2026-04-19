@@ -38,19 +38,22 @@ jobs:
       - name: Ensure collected dir
         run: mkdir -p collected
 
-      - name: Collect — Naver ranking
+      - name: Collect — Naver (keyword search + ranking)
         run: python scripts/collect_naver.py
+        env:
+          NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
+          NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
         continue-on-error: true
 
-      - name: Collect — OpenAI RSS
-        run: python scripts/collect_openai.py
+      - name: Collect — RSS sources (OpenAI · DeepMind · HF · GitHub · blogs)
+        run: python scripts/collect_rss.py
         continue-on-error: true
 
       - name: Collect — Anthropic HTML
         run: python scripts/collect_anthropic.py
         continue-on-error: true
 
-      - name: Collect — Threads (RSSHub)
+      - name: Collect — Threads (RSSHub · 현재 차단)
         run: python scripts/collect_threads.py
         continue-on-error: true
 

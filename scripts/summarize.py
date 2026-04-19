@@ -176,6 +176,7 @@ def main() -> int:
 
         out_sources.append({
             "source": source,
+            "source_name": src_block.get("source_name", ""),
             "collected_at": src_block.get("collected_at"),
             "items": items,
         })

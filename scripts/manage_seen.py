@@ -53,13 +53,19 @@ def normalize_url(item: dict[str, Any]) -> str:
 
 
 def bucket_for_source(source: str) -> str:
-    """수집 소스를 seen.json 버킷에 매핑."""
+    """수집 소스를 seen.json 버킷에 매핑.
+
+    규칙:
+      naver_* → news
+      threads_* → threads
+      *_rss, *_html → dev_blog (범용 suffix 매칭)
+    """
     if source.startswith("naver_"):
         return "news"
-    if source in {"openai_rss", "anthropic_html"}:
-        return "dev_blog"
     if source.startswith("threads_"):
         return "threads"
+    if source.endswith("_rss") or source.endswith("_html"):
+        return "dev_blog"
     return "news"
 
 
@@ -106,6 +112,7 @@ def cmd_filter() -> int:
         filtered_sources.append(
             {
                 "source": source,
+                "source_name": data.get("source_name", ""),
                 "collected_at": data.get("collected_at"),
                 "items": new_items,
             }
