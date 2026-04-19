@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-19T20:56:12+09:00",
+  "last_updated": "2026-04-20T08:31:15+09:00",
   "news": {
     "https://n.news.naver.com/article/016/0002631841?ntype=RANKING": "2026-04-19T20:51:12+09:00",
     "https://n.news.naver.com/article/016/0002631763?ntype=RANKING": "2026-04-19T20:51:12+09:00",
@@ -20,7 +20,16 @@
     "https://n.news.naver.com/article/008/0005346159?ntype=RANKING": "2026-04-19T20:56:12+09:00",
     "https://n.news.naver.com/article/008/0005346143?ntype=RANKING": "2026-04-19T20:56:12+09:00",
     "https://n.news.naver.com/article/008/0005346161?ntype=RANKING": "2026-04-19T20:56:12+09:00",
-    "https://n.news.naver.com/article/008/0005346168?ntype=RANKING": "2026-04-19T20:56:12+09:00"
+    "https://n.news.naver.com/article/008/0005346168?ntype=RANKING": "2026-04-19T20:56:12+09:00",
+    "https://n.news.naver.com/article/008/0005346244?ntype=RANKING": "2026-04-20T08:31:15+09:00",
+    "https://n.news.naver.com/article/008/0005346258?ntype=RANKING": "2026-04-20T08:31:15+09:00",
+    "https://n.news.naver.com/article/008/0005346234?ntype=RANKING": "2026-04-20T08:31:15+09:00",
+    "https://n.news.naver.com/article/008/0005346245?ntype=RANKING": "2026-04-20T08:31:15+09:00",
+    "https://n.news.naver.com/article/008/0005346241?ntype=RANKING": "2026-04-20T08:31:15+09:00",
+    "https://n.news.naver.com/article/011/0004612293?ntype=RANKING": "2026-04-20T08:31:15+09:00",
+    "https://n.news.naver.com/article/011/0004612282?ntype=RANKING": "2026-04-20T08:31:15+09:00",
+    "https://n.news.naver.com/article/011/0004612311?ntype=RANKING": "2026-04-20T08:31:15+09:00",
+    "https://n.news.naver.com/article/011/0004612354?ntype=RANKING": "2026-04-20T08:31:15+09:00"
   },
   "dev_blog": {
     "https://www.anthropic.com/news/claude-opus-4-7": "2026-04-19T20:51:12+09:00",
@@ -35,7 +44,8 @@
     "https://www.anthropic.com/news/mozilla-firefox-security": "2026-04-19T20:51:12+09:00",
     "https://www.anthropic.com/news/where-stand-department-war": "2026-04-19T20:51:12+09:00",
     "https://simonwillison.net/2026/Apr/18/opus-system-prompt/#atom-everything": "2026-04-19T20:51:12+09:00",
-    "https://simonwillison.net/2026/Apr/18/extract-system-prompts/#atom-everything": "2026-04-19T20:51:12+09:00"
+    "https://simonwillison.net/2026/Apr/18/extract-system-prompts/#atom-everything": "2026-04-19T20:51:12+09:00",
+    "https://simonwillison.net/2026/Apr/19/headless-everything/#atom-everything": "2026-04-20T08:31:15+09:00"
   },
   "threads": {}
 }
