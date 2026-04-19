@@ -34,7 +34,7 @@ SOURCE_PROMPT = {
 }
 
 DEFAULT_MODEL = "gemini-2.5-flash"
-DEFAULT_MAX_TOKENS = 8192
+DEFAULT_MAX_TOKENS = 16384  # 한국어 요약 + title_ko 필드 때문에 넉넉하게
 
 
 def load_config() -> dict[str, Any]:
@@ -66,15 +66,16 @@ def build_user_message(items: list[dict[str, Any]], instruction: str) -> str:
 
     return (
         f"{instruction}\n\n"
-        "다음은 요약할 항목 리스트. 각 항목의 id 를 결과에 그대로 포함해.\n\n"
+        "다음은 요약할 항목 리스트. 각 항목의 id 를 결과에 그대로 포함하고, "
+        "프롬프트에 지정된 필드를 모두 채워 반환할 것. title_ko 는 한국어 원문이면 빈 문자열.\n\n"
         f"{input_block}\n\n"
-        "응답은 반드시 아래 JSON 스키마만 사용. 다른 설명·마크다운 금지.\n"
-        '{"summaries": [{"id": "item_0", "summary": "..."}, ...]}'
+        "응답은 반드시 JSON 객체만 반환 (다른 설명·마크다운 금지). "
+        "누락된 id 가 없도록 입력된 모든 item 을 포함할 것."
     )
 
 
-def parse_response(text: str) -> dict[str, str]:
-    """응답 텍스트에서 JSON 추출 후 id→summary 맵."""
+def parse_response(text: str) -> dict[str, dict[str, str]]:
+    """응답 텍스트에서 JSON 추출 후 id → {summary, title_ko} 맵."""
     text = text.strip()
     m = re.search(r"```(?:json)?\s*(\{.*?\})\s*```", text, re.DOTALL)
     if m:
@@ -88,10 +89,13 @@ def parse_response(text: str) -> dict[str, str]:
     except Exception as e:
         print(f"[summarize] JSON 파싱 실패: {e}\n원문 앞부분: {text[:300]}", file=sys.stderr)
         return {}
-    out: dict[str, str] = {}
+    out: dict[str, dict[str, str]] = {}
     for s in data.get("summaries", []):
         if isinstance(s, dict) and "id" in s:
-            out[str(s["id"])] = (s.get("summary") or "").strip()
+            out[str(s["id"])] = {
+                "summary": (s.get("summary") or "").strip(),
+                "title_ko": (s.get("title_ko") or "").strip(),
+            }
     return out
 
 
@@ -112,10 +116,14 @@ def summarize_source(client, items: list[dict[str, Any]], instruction: str, mode
         config=config,
     )
     text = (resp.text or "").strip()
-    summaries = parse_response(text)
+    parsed = parse_response(text)
 
     for i, item in enumerate(items):
-        item["summary"] = summaries.get(f"item_{i}", "")
+        entry = parsed.get(f"item_{i}", {})
+        item["summary"] = entry.get("summary", "")
+        title_ko = entry.get("title_ko", "")
+        if title_ko:
+            item["title_ko"] = title_ko
     return items
 
 

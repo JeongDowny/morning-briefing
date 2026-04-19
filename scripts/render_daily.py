@@ -52,6 +52,7 @@ def load_input() -> dict[str, Any] | None:
 
 def render_article(item: dict[str, Any], include_lead: bool) -> list[str]:
     title = (item.get("title") or "").strip()
+    title_ko = (item.get("title_ko") or "").strip()
     url = item.get("originallink") or item.get("link") or item.get("url") or ""
     source = item.get("press") or item.get("source_name") or ""
     summary = (item.get("summary") or "").strip()
@@ -66,6 +67,9 @@ def render_article(item: dict[str, Any], include_lead: bool) -> list[str]:
         head += f" — {source}"
     lines.append(head)
 
+    # 영문 원문 제목일 때만 한국어 번역을 추가로 표시 (title_ko 가 비어있지 않을 때)
+    if title_ko:
+        lines.append(f"  - ▸ *{title_ko}*")
     if summary:
         lines.append(f"  - 🤖 {summary}")
     if include_lead and lead and lead != summary:
@@ -78,6 +82,7 @@ def render_article(item: dict[str, Any], include_lead: bool) -> list[str]:
 
 def render_threads_post(item: dict[str, Any], include_lead: bool) -> list[str]:
     url = item.get("url", "")
+    title_ko = (item.get("title_ko") or "").strip()
     summary = (item.get("summary") or "").strip()
     lead = (item.get("lead") or "").strip()
     published = item.get("published_at") or ""
@@ -102,6 +107,8 @@ def render_threads_post(item: dict[str, Any], include_lead: bool) -> list[str]:
         head += "**(post)**"
     lines.append(head)
 
+    if title_ko:
+        lines.append(f"  - ▸ *{title_ko}*")
     if summary:
         lines.append(f"  - 🤖 {summary}")
     if include_lead and lead and lead != summary:

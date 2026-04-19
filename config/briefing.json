@@ -3,8 +3,8 @@
   "_profile_note": "economy / dev / full / custom 중 하나. UI 의 '프로필 프리셋' 버튼으로 전환하거나, 각 섹션의 enabled 플래그를 개별 토글해 custom 으로 만들 수 있음.",
   "naver_news": {
     "ranking": {
-      "enabled": true,
-      "_note": "네이버 랭킹 페이지는 언론사별 구조 → 경제 중심 언론사 화이트리스트로 필터링.",
+      "enabled": false,
+      "_note": "'많이 본 뉴스' 기반이라 연예·사회 기사가 섞일 수 있음. 기본 비활성, keyword_search 가 경제 기사 공급 담당.",
       "press_whitelist": [
         "매일경제",
         "한국경제",
@@ -19,8 +19,8 @@
       "top_n": 10
     },
     "keyword_search": {
-      "enabled": false,
-      "_note_m2": "M2 에서 활성화. 키워드별 카테고리 태그가 Daily 노트·메시지에 그룹핑 헤더로 반영됨.",
+      "enabled": true,
+      "_note": "네이버 오픈 API 뉴스 검색. 키워드별 최신 pubDate 기준 per_keyword 건 수집 후 window 필터. 일 21회 호출 (7키워드 × 3), 쿼터 25,000/일 대비 여유.",
       "keywords": [
         {
           "term": "금리",

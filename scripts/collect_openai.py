@@ -29,12 +29,9 @@ def load_config() -> dict[str, Any]:
         return json.load(f)
 
 
-def compute_window(time_kst: str) -> tuple[datetime, datetime]:
-    h, m = map(int, time_kst.split(":"))
-    now = datetime.now(ZoneInfo("Asia/Seoul"))
-    end = now.replace(hour=h, minute=m, second=0, microsecond=0)
-    if now < end:
-        end = end - timedelta(days=1)
+def compute_window(_time_kst: str | None = None) -> tuple[datetime, datetime]:
+    """최근 24시간 창 (KST)."""
+    end = datetime.now(ZoneInfo("Asia/Seoul"))
     start = end - timedelta(days=1)
     return start, end
 
