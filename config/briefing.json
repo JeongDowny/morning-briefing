@@ -85,9 +85,13 @@
       {
         "handle": "karpathy",
         "label": "ML 대가"
+      },
+      {
+        "handle": "tatum_hq",
+        "label": "바이브코딩 보안"
       }
     ],
-    "max_posts_per_account": 3,
+    "max_posts_per_account": 5,
     "fetch_method": "rsshub",
     "rsshub_base": "https://rsshub.app"
   },
