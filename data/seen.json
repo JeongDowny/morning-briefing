@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-20T08:31:15+09:00",
+  "last_updated": "2026-04-21T08:39:06+09:00",
   "news": {
     "https://n.news.naver.com/article/016/0002631841?ntype=RANKING": "2026-04-19T20:51:12+09:00",
     "https://n.news.naver.com/article/016/0002631763?ntype=RANKING": "2026-04-19T20:51:12+09:00",
@@ -29,7 +29,17 @@
     "https://n.news.naver.com/article/011/0004612293?ntype=RANKING": "2026-04-20T08:31:15+09:00",
     "https://n.news.naver.com/article/011/0004612282?ntype=RANKING": "2026-04-20T08:31:15+09:00",
     "https://n.news.naver.com/article/011/0004612311?ntype=RANKING": "2026-04-20T08:31:15+09:00",
-    "https://n.news.naver.com/article/011/0004612354?ntype=RANKING": "2026-04-20T08:31:15+09:00"
+    "https://n.news.naver.com/article/011/0004612354?ntype=RANKING": "2026-04-20T08:31:15+09:00",
+    "https://n.news.naver.com/article/008/0005346824?ntype=RANKING": "2026-04-21T08:39:06+09:00",
+    "https://n.news.naver.com/article/008/0005346856?ntype=RANKING": "2026-04-21T08:39:06+09:00",
+    "https://n.news.naver.com/article/008/0005346890?ntype=RANKING": "2026-04-21T08:39:06+09:00",
+    "https://n.news.naver.com/article/008/0005346882?ntype=RANKING": "2026-04-21T08:39:06+09:00",
+    "https://n.news.naver.com/article/008/0005346883?ntype=RANKING": "2026-04-21T08:39:06+09:00",
+    "https://n.news.naver.com/article/277/0005752147?ntype=RANKING": "2026-04-21T08:39:06+09:00",
+    "https://n.news.naver.com/article/277/0005752164?ntype=RANKING": "2026-04-21T08:39:06+09:00",
+    "https://n.news.naver.com/article/277/0005752056?ntype=RANKING": "2026-04-21T08:39:06+09:00",
+    "https://n.news.naver.com/article/277/0005752201?ntype=RANKING": "2026-04-21T08:39:06+09:00",
+    "https://n.news.naver.com/article/277/0005752210?ntype=RANKING": "2026-04-21T08:39:06+09:00"
   },
   "dev_blog": {
     "https://www.anthropic.com/news/claude-opus-4-7": "2026-04-19T20:51:12+09:00",
@@ -45,7 +55,14 @@
     "https://www.anthropic.com/news/where-stand-department-war": "2026-04-19T20:51:12+09:00",
     "https://simonwillison.net/2026/Apr/18/opus-system-prompt/#atom-everything": "2026-04-19T20:51:12+09:00",
     "https://simonwillison.net/2026/Apr/18/extract-system-prompts/#atom-everything": "2026-04-19T20:51:12+09:00",
-    "https://simonwillison.net/2026/Apr/19/headless-everything/#atom-everything": "2026-04-20T08:31:15+09:00"
+    "https://simonwillison.net/2026/Apr/19/headless-everything/#atom-everything": "2026-04-20T08:31:15+09:00",
+    "https://github.blog/news-insights/company-news/changes-to-github-copilot-individual-plans/": "2026-04-21T08:39:06+09:00",
+    "https://github.blog/open-source/git/highlights-from-git-2-54/": "2026-04-21T08:39:06+09:00",
+    "https://www.interconnects.ai/p/reading-todays-open-closed-performance": "2026-04-21T08:39:06+09:00",
+    "https://www.latent.space/p/noetik": "2026-04-21T08:39:06+09:00",
+    "https://openai.com/index/hyatt-advances-ai-with-chatgpt-enterprise": "2026-04-21T08:39:06+09:00",
+    "https://simonwillison.net/2026/Apr/20/datasette-sql/#atom-everything": "2026-04-21T08:39:06+09:00",
+    "https://simonwillison.net/2026/Apr/20/claude-token-counts/#atom-everything": "2026-04-21T08:39:06+09:00"
   },
   "threads": {}
 }
