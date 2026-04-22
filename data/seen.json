@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-22T08:32:03+09:00",
+  "last_updated": "2026-04-23T08:43:00+09:00",
   "news": {
     "https://n.news.naver.com/article/016/0002631841?ntype=RANKING": "2026-04-19T20:51:12+09:00",
     "https://n.news.naver.com/article/016/0002631763?ntype=RANKING": "2026-04-19T20:51:12+09:00",
@@ -49,7 +49,17 @@
     "https://n.news.naver.com/article/015/0005277970?ntype=RANKING": "2026-04-22T08:32:03+09:00",
     "https://n.news.naver.com/article/015/0005277924?ntype=RANKING": "2026-04-22T08:32:03+09:00",
     "https://n.news.naver.com/article/015/0005277898?ntype=RANKING": "2026-04-22T08:32:03+09:00",
-    "https://n.news.naver.com/article/015/0005277955?ntype=RANKING": "2026-04-22T08:32:03+09:00"
+    "https://n.news.naver.com/article/015/0005277955?ntype=RANKING": "2026-04-22T08:32:03+09:00",
+    "https://n.news.naver.com/article/009/0005670047?ntype=RANKING": "2026-04-23T08:43:00+09:00",
+    "https://n.news.naver.com/article/009/0005669975?ntype=RANKING": "2026-04-23T08:43:00+09:00",
+    "https://n.news.naver.com/article/009/0005670078?ntype=RANKING": "2026-04-23T08:43:00+09:00",
+    "https://n.news.naver.com/article/009/0005670056?ntype=RANKING": "2026-04-23T08:43:00+09:00",
+    "https://n.news.naver.com/article/009/0005670086?ntype=RANKING": "2026-04-23T08:43:00+09:00",
+    "https://n.news.naver.com/article/015/0005278533?ntype=RANKING": "2026-04-23T08:43:00+09:00",
+    "https://n.news.naver.com/article/015/0005278526?ntype=RANKING": "2026-04-23T08:43:00+09:00",
+    "https://n.news.naver.com/article/015/0005278430?ntype=RANKING": "2026-04-23T08:43:00+09:00",
+    "https://n.news.naver.com/article/015/0005278534?ntype=RANKING": "2026-04-23T08:43:00+09:00",
+    "https://n.news.naver.com/article/015/0005278536?ntype=RANKING": "2026-04-23T08:43:00+09:00"
   },
   "dev_blog": {
     "https://www.anthropic.com/news/claude-opus-4-7": "2026-04-19T20:51:12+09:00",
@@ -80,7 +90,19 @@
     "https://openai.com/index/scaling-codex-to-enterprises-worldwide": "2026-04-22T08:32:03+09:00",
     "https://simonwillison.net/2026/Apr/21/gpt-image-2/#atom-everything": "2026-04-22T08:32:03+09:00",
     "https://simonwillison.net/2026/Apr/21/andreas-pahlsson-notini/#atom-everything": "2026-04-22T08:32:03+09:00",
-    "https://simonwillison.net/2026/Apr/21/scosman/#atom-everything": "2026-04-22T08:32:03+09:00"
+    "https://simonwillison.net/2026/Apr/21/scosman/#atom-everything": "2026-04-22T08:32:03+09:00",
+    "https://huggingface.co/blog/nvidia/gemma4": "2026-04-23T08:43:00+09:00",
+    "https://www.latent.space/p/shopify": "2026-04-23T08:43:00+09:00",
+    "https://www.latent.space/p/ainews-openai-launches-gpt-image": "2026-04-23T08:43:00+09:00",
+    "https://openai.com/index/making-chatgpt-better-for-clinicians": "2026-04-23T08:43:00+09:00",
+    "https://openai.com/index/introducing-workspace-agents-in-chatgpt": "2026-04-23T08:43:00+09:00",
+    "https://openai.com/academy/workspace-agents": "2026-04-23T08:43:00+09:00",
+    "https://openai.com/index/speeding-up-agentic-workflows-with-websockets": "2026-04-23T08:43:00+09:00",
+    "https://openai.com/index/introducing-openai-privacy-filter": "2026-04-23T08:43:00+09:00",
+    "https://simonwillison.net/2026/Apr/22/qwen36-27b/#atom-everything": "2026-04-23T08:43:00+09:00",
+    "https://simonwillison.net/2026/Apr/22/bobby-holley/#atom-everything": "2026-04-23T08:43:00+09:00",
+    "https://simonwillison.net/2026/Apr/22/changes-to-github-copilot/#atom-everything": "2026-04-23T08:43:00+09:00",
+    "https://simonwillison.net/2026/Apr/22/claude-code-confusion/#atom-everything": "2026-04-23T08:43:00+09:00"
   },
   "threads": {}
 }
