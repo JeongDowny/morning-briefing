@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-25T08:36:44+09:00",
+  "last_updated": "2026-04-26T08:32:45+09:00",
   "news": {
     "https://n.news.naver.com/article/016/0002631841?ntype=RANKING": "2026-04-19T20:51:12+09:00",
     "https://n.news.naver.com/article/016/0002631763?ntype=RANKING": "2026-04-19T20:51:12+09:00",
@@ -79,7 +79,17 @@
     "https://n.news.naver.com/article/277/0005754584?ntype=RANKING": "2026-04-25T08:36:44+09:00",
     "https://n.news.naver.com/article/277/0005754547?ntype=RANKING": "2026-04-25T08:36:44+09:00",
     "https://n.news.naver.com/article/277/0005754220?ntype=RANKING": "2026-04-25T08:36:44+09:00",
-    "https://n.news.naver.com/article/277/0005754288?ntype=RANKING": "2026-04-25T08:36:44+09:00"
+    "https://n.news.naver.com/article/277/0005754288?ntype=RANKING": "2026-04-25T08:36:44+09:00",
+    "https://n.news.naver.com/article/009/0005671319?ntype=RANKING": "2026-04-26T08:32:45+09:00",
+    "https://n.news.naver.com/article/009/0005671268?ntype=RANKING": "2026-04-26T08:32:45+09:00",
+    "https://n.news.naver.com/article/009/0005671294?ntype=RANKING": "2026-04-26T08:32:45+09:00",
+    "https://n.news.naver.com/article/009/0005671282?ntype=RANKING": "2026-04-26T08:32:45+09:00",
+    "https://n.news.naver.com/article/009/0005671298?ntype=RANKING": "2026-04-26T08:32:45+09:00",
+    "https://n.news.naver.com/article/366/0001159809?ntype=RANKING": "2026-04-26T08:32:45+09:00",
+    "https://n.news.naver.com/article/366/0001159810?ntype=RANKING": "2026-04-26T08:32:45+09:00",
+    "https://n.news.naver.com/article/366/0001159793?ntype=RANKING": "2026-04-26T08:32:45+09:00",
+    "https://n.news.naver.com/article/366/0001159796?ntype=RANKING": "2026-04-26T08:32:45+09:00",
+    "https://n.news.naver.com/article/366/0001159803?ntype=RANKING": "2026-04-26T08:32:45+09:00"
   },
   "dev_blog": {
     "https://www.anthropic.com/news/claude-opus-4-7": "2026-04-19T20:51:12+09:00",
@@ -149,7 +159,12 @@
     "https://simonwillison.net/2026/Apr/24/weekly/#atom-everything": "2026-04-25T08:36:44+09:00",
     "https://simonwillison.net/2026/Apr/24/honker/#atom-everything": "2026-04-25T08:36:44+09:00",
     "https://simonwillison.net/2026/Apr/24/recent-claude-code-quality-reports/#atom-everything": "2026-04-25T08:36:44+09:00",
-    "https://simonwillison.net/2026/Apr/24/serving-the-for-you-feed/#atom-everything": "2026-04-25T08:36:44+09:00"
+    "https://simonwillison.net/2026/Apr/24/serving-the-for-you-feed/#atom-everything": "2026-04-25T08:36:44+09:00",
+    "https://www.latent.space/p/ainews-deepseek-v4-pro-16t-a49b-and": "2026-04-26T08:32:45+09:00",
+    "https://simonwillison.net/2026/Apr/25/why-are-you-like-this/#atom-everything": "2026-04-26T08:32:45+09:00",
+    "https://simonwillison.net/2026/Apr/25/romain-huet/#atom-everything": "2026-04-26T08:32:45+09:00",
+    "https://simonwillison.net/2026/Apr/25/gpt-5-5-prompting-guide/#atom-everything": "2026-04-26T08:32:45+09:00",
+    "https://simonwillison.net/2026/Apr/24/llm/#atom-everything": "2026-04-26T08:32:45+09:00"
   },
   "threads": {}
 }
