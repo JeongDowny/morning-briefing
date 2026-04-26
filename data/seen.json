@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-26T08:32:45+09:00",
+  "last_updated": "2026-04-27T08:34:46+09:00",
   "news": {
     "https://n.news.naver.com/article/016/0002631841?ntype=RANKING": "2026-04-19T20:51:12+09:00",
     "https://n.news.naver.com/article/016/0002631763?ntype=RANKING": "2026-04-19T20:51:12+09:00",
@@ -89,7 +89,16 @@
     "https://n.news.naver.com/article/366/0001159810?ntype=RANKING": "2026-04-26T08:32:45+09:00",
     "https://n.news.naver.com/article/366/0001159793?ntype=RANKING": "2026-04-26T08:32:45+09:00",
     "https://n.news.naver.com/article/366/0001159796?ntype=RANKING": "2026-04-26T08:32:45+09:00",
-    "https://n.news.naver.com/article/366/0001159803?ntype=RANKING": "2026-04-26T08:32:45+09:00"
+    "https://n.news.naver.com/article/366/0001159803?ntype=RANKING": "2026-04-26T08:32:45+09:00",
+    "https://n.news.naver.com/article/015/0005279816?ntype=RANKING": "2026-04-27T08:34:46+09:00",
+    "https://n.news.naver.com/article/015/0005279819?ntype=RANKING": "2026-04-27T08:34:46+09:00",
+    "https://n.news.naver.com/article/015/0005279644?ntype=RANKING": "2026-04-27T08:34:46+09:00",
+    "https://n.news.naver.com/article/015/0005279809?ntype=RANKING": "2026-04-27T08:34:46+09:00",
+    "https://n.news.naver.com/article/015/0005279783?ntype=RANKING": "2026-04-27T08:34:46+09:00",
+    "https://n.news.naver.com/article/009/0005671598?ntype=RANKING": "2026-04-27T08:34:46+09:00",
+    "https://n.news.naver.com/article/009/0005671413?ntype=RANKING": "2026-04-27T08:34:46+09:00",
+    "https://n.news.naver.com/article/009/0005671350?ntype=RANKING": "2026-04-27T08:34:46+09:00",
+    "https://n.news.naver.com/article/009/0005671617?ntype=RANKING": "2026-04-27T08:34:46+09:00"
   },
   "dev_blog": {
     "https://www.anthropic.com/news/claude-opus-4-7": "2026-04-19T20:51:12+09:00",
@@ -164,7 +173,8 @@
     "https://simonwillison.net/2026/Apr/25/why-are-you-like-this/#atom-everything": "2026-04-26T08:32:45+09:00",
     "https://simonwillison.net/2026/Apr/25/romain-huet/#atom-everything": "2026-04-26T08:32:45+09:00",
     "https://simonwillison.net/2026/Apr/25/gpt-5-5-prompting-guide/#atom-everything": "2026-04-26T08:32:45+09:00",
-    "https://simonwillison.net/2026/Apr/24/llm/#atom-everything": "2026-04-26T08:32:45+09:00"
+    "https://simonwillison.net/2026/Apr/24/llm/#atom-everything": "2026-04-26T08:32:45+09:00",
+    "https://openai.com/index/our-principles": "2026-04-27T08:34:46+09:00"
   },
   "threads": {}
 }
