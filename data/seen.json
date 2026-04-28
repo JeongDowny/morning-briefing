@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-28T08:47:55+09:00",
+  "last_updated": "2026-04-29T08:51:34+09:00",
   "news": {
     "https://n.news.naver.com/article/016/0002631841?ntype=RANKING": "2026-04-19T20:51:12+09:00",
     "https://n.news.naver.com/article/016/0002631763?ntype=RANKING": "2026-04-19T20:51:12+09:00",
@@ -108,7 +108,17 @@
     "https://n.news.naver.com/article/366/0001160177?ntype=RANKING": "2026-04-28T08:47:55+09:00",
     "https://n.news.naver.com/article/366/0001160168?ntype=RANKING": "2026-04-28T08:47:55+09:00",
     "https://n.news.naver.com/article/366/0001160176?ntype=RANKING": "2026-04-28T08:47:55+09:00",
-    "https://n.news.naver.com/article/366/0001160183?ntype=RANKING": "2026-04-28T08:47:55+09:00"
+    "https://n.news.naver.com/article/366/0001160183?ntype=RANKING": "2026-04-28T08:47:55+09:00",
+    "https://n.news.naver.com/article/009/0005672856?ntype=RANKING": "2026-04-29T08:51:34+09:00",
+    "https://n.news.naver.com/article/009/0005672859?ntype=RANKING": "2026-04-29T08:51:34+09:00",
+    "https://n.news.naver.com/article/009/0005672520?ntype=RANKING": "2026-04-29T08:51:34+09:00",
+    "https://n.news.naver.com/article/009/0005672278?ntype=RANKING": "2026-04-29T08:51:34+09:00",
+    "https://n.news.naver.com/article/009/0005672869?ntype=RANKING": "2026-04-29T08:51:34+09:00",
+    "https://n.news.naver.com/article/011/0004615686?ntype=RANKING": "2026-04-29T08:51:34+09:00",
+    "https://n.news.naver.com/article/011/0004615498?ntype=RANKING": "2026-04-29T08:51:34+09:00",
+    "https://n.news.naver.com/article/011/0004615651?ntype=RANKING": "2026-04-29T08:51:34+09:00",
+    "https://n.news.naver.com/article/011/0004615739?ntype=RANKING": "2026-04-29T08:51:34+09:00",
+    "https://n.news.naver.com/article/011/0004615725?ntype=RANKING": "2026-04-29T08:51:34+09:00"
   },
   "dev_blog": {
     "https://www.anthropic.com/news/claude-opus-4-7": "2026-04-19T20:51:12+09:00",
@@ -195,7 +205,18 @@
     "https://openai.com/index/open-source-codex-orchestration-symphony": "2026-04-28T08:47:55+09:00",
     "https://openai.com/index/choco": "2026-04-28T08:47:55+09:00",
     "https://simonwillison.net/2026/Apr/27/now-deceased-agi-clause/#atom-everything": "2026-04-28T08:47:55+09:00",
-    "https://simonwillison.net/2026/Apr/27/speech-translation-in-google-meet-is-now-rolling-out-to-mobile-d/#atom-everything": "2026-04-28T08:47:55+09:00"
+    "https://simonwillison.net/2026/Apr/27/speech-translation-in-google-meet-is-now-rolling-out-to-mobile-d/#atom-everything": "2026-04-28T08:47:55+09:00",
+    "https://www.anthropic.com/news/claude-for-creative-work": "2026-04-29T08:51:34+09:00",
+    "https://github.blog/developer-skills/github/github-for-beginners-getting-started-with-markdown/": "2026-04-29T08:51:34+09:00",
+    "https://github.blog/security/securing-the-git-push-pipeline-responding-to-a-critical-remote-code-execution-vulnerability/": "2026-04-29T08:51:34+09:00",
+    "https://github.blog/news-insights/company-news/an-update-on-github-availability/": "2026-04-29T08:51:34+09:00",
+    "https://huggingface.co/blog/nvidia/nemotron-3-nano-omni-multimodal-intelligence": "2026-04-29T08:51:34+09:00",
+    "https://www.latent.space/p/ainews-imagegen-is-on-the-path-to": "2026-04-29T08:51:34+09:00",
+    "https://openai.com/index/openai-on-aws": "2026-04-29T08:51:34+09:00",
+    "https://simonwillison.net/2026/Apr/28/openai-codex/#atom-everything": "2026-04-29T08:51:34+09:00",
+    "https://simonwillison.net/2026/Apr/28/matthew-yglesias/#atom-everything": "2026-04-29T08:51:34+09:00",
+    "https://simonwillison.net/2026/Apr/28/pip-261/#atom-everything": "2026-04-29T08:51:34+09:00",
+    "https://simonwillison.net/2026/Apr/28/talkie/#atom-everything": "2026-04-29T08:51:34+09:00"
   },
   "threads": {}
 }
