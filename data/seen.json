@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-04-30T08:51:26+09:00",
+  "last_updated": "2026-05-01T08:47:42+09:00",
   "news": {
     "https://n.news.naver.com/article/016/0002631841?ntype=RANKING": "2026-04-19T20:51:12+09:00",
     "https://n.news.naver.com/article/016/0002631763?ntype=RANKING": "2026-04-19T20:51:12+09:00",
@@ -128,7 +128,17 @@
     "https://n.news.naver.com/article/011/0004616130?ntype=RANKING": "2026-04-30T08:51:26+09:00",
     "https://n.news.naver.com/article/011/0004616195?ntype=RANKING": "2026-04-30T08:51:26+09:00",
     "https://n.news.naver.com/article/011/0004616192?ntype=RANKING": "2026-04-30T08:51:26+09:00",
-    "https://n.news.naver.com/article/011/0004616200?ntype=RANKING": "2026-04-30T08:51:26+09:00"
+    "https://n.news.naver.com/article/011/0004616200?ntype=RANKING": "2026-04-30T08:51:26+09:00",
+    "https://n.news.naver.com/article/011/0004616460?ntype=RANKING": "2026-05-01T08:47:42+09:00",
+    "https://n.news.naver.com/article/011/0004616576?ntype=RANKING": "2026-05-01T08:47:42+09:00",
+    "https://n.news.naver.com/article/011/0004616582?ntype=RANKING": "2026-05-01T08:47:42+09:00",
+    "https://n.news.naver.com/article/011/0004616597?ntype=RANKING": "2026-05-01T08:47:42+09:00",
+    "https://n.news.naver.com/article/011/0004616567?ntype=RANKING": "2026-05-01T08:47:42+09:00",
+    "https://n.news.naver.com/article/009/0005674103?ntype=RANKING": "2026-05-01T08:47:42+09:00",
+    "https://n.news.naver.com/article/009/0005674060?ntype=RANKING": "2026-05-01T08:47:42+09:00",
+    "https://n.news.naver.com/article/009/0005674097?ntype=RANKING": "2026-05-01T08:47:42+09:00",
+    "https://n.news.naver.com/article/009/0005674109?ntype=RANKING": "2026-05-01T08:47:42+09:00",
+    "https://n.news.naver.com/article/009/0005674119?ntype=RANKING": "2026-05-01T08:47:42+09:00"
   },
   "dev_blog": {
     "https://www.anthropic.com/news/claude-opus-4-7": "2026-04-19T20:51:12+09:00",
@@ -233,7 +243,18 @@
     "https://www.latent.space/p/ainews-not-much-happened-today": "2026-04-30T08:51:26+09:00",
     "https://openai.com/index/building-the-compute-infrastructure-for-the-intelligence-age": "2026-04-30T08:51:26+09:00",
     "https://openai.com/index/cybersecurity-in-the-intelligence-age": "2026-04-30T08:51:26+09:00",
-    "https://simonwillison.net/2026/Apr/29/llm/#atom-everything": "2026-04-30T08:51:26+09:00"
+    "https://simonwillison.net/2026/Apr/29/llm/#atom-everything": "2026-04-30T08:51:26+09:00",
+    "https://karpathy.bearblog.dev/sequoia-ascent-2026/": "2026-05-01T08:47:42+09:00",
+    "https://github.blog/ai-and-ml/github-copilot/github-copilot-cli-for-beginners-interactive-v-non-interactive-mode/": "2026-05-01T08:47:42+09:00",
+    "https://deepmind.google/blog/ai-co-clinician/": "2026-05-01T08:47:42+09:00",
+    "https://www.latent.space/p/ainews-the-inference-inflection": "2026-05-01T08:47:42+09:00",
+    "https://openai.com/index/advanced-account-security": "2026-05-01T08:47:42+09:00",
+    "https://simonwillison.net/2026/Apr/30/codex-goals/#atom-everything": "2026-05-01T08:47:42+09:00",
+    "https://simonwillison.net/2026/Apr/30/gpt-55-cyber-capabilities/#atom-everything": "2026-05-01T08:47:42+09:00",
+    "https://simonwillison.net/2026/Apr/30/andrew-kelley/#atom-everything": "2026-05-01T08:47:42+09:00",
+    "https://simonwillison.net/2026/Apr/30/rss-vibe-coded-apps/#atom-everything": "2026-05-01T08:47:42+09:00",
+    "https://simonwillison.net/2026/Apr/30/zig-anti-ai/#atom-everything": "2026-05-01T08:47:42+09:00",
+    "https://simonwillison.net/2026/Apr/29/llm-3/#atom-everything": "2026-05-01T08:47:42+09:00"
   },
   "threads": {}
 }
