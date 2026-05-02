@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-02T08:45:29+09:00",
+  "last_updated": "2026-05-03T08:37:59+09:00",
   "news": {
     "https://n.news.naver.com/article/016/0002631841?ntype=RANKING": "2026-04-19T20:51:12+09:00",
     "https://n.news.naver.com/article/016/0002631763?ntype=RANKING": "2026-04-19T20:51:12+09:00",
@@ -148,7 +148,17 @@
     "https://n.news.naver.com/article/277/0005757573?ntype=RANKING": "2026-05-02T08:45:29+09:00",
     "https://n.news.naver.com/article/277/0005757649?ntype=RANKING": "2026-05-02T08:45:29+09:00",
     "https://n.news.naver.com/article/277/0005757638?ntype=RANKING": "2026-05-02T08:45:29+09:00",
-    "https://n.news.naver.com/article/277/0005757627?ntype=RANKING": "2026-05-02T08:45:29+09:00"
+    "https://n.news.naver.com/article/277/0005757627?ntype=RANKING": "2026-05-02T08:45:29+09:00",
+    "https://n.news.naver.com/article/015/0005282388?ntype=RANKING": "2026-05-03T08:37:59+09:00",
+    "https://n.news.naver.com/article/015/0005282411?ntype=RANKING": "2026-05-03T08:37:59+09:00",
+    "https://n.news.naver.com/article/015/0005282414?ntype=RANKING": "2026-05-03T08:37:59+09:00",
+    "https://n.news.naver.com/article/015/0005282378?ntype=RANKING": "2026-05-03T08:37:59+09:00",
+    "https://n.news.naver.com/article/015/0005282413?ntype=RANKING": "2026-05-03T08:37:59+09:00",
+    "https://n.news.naver.com/article/009/0005674550?ntype=RANKING": "2026-05-03T08:37:59+09:00",
+    "https://n.news.naver.com/article/009/0005674434?ntype=RANKING": "2026-05-03T08:37:59+09:00",
+    "https://n.news.naver.com/article/009/0005674527?ntype=RANKING": "2026-05-03T08:37:59+09:00",
+    "https://n.news.naver.com/article/009/0005674552?ntype=RANKING": "2026-05-03T08:37:59+09:00",
+    "https://n.news.naver.com/article/009/0005674562?ntype=RANKING": "2026-05-03T08:37:59+09:00"
   },
   "dev_blog": {
     "https://www.anthropic.com/news/claude-opus-4-7": "2026-04-19T20:51:12+09:00",
@@ -266,7 +276,9 @@
     "https://simonwillison.net/2026/Apr/30/zig-anti-ai/#atom-everything": "2026-05-01T08:47:42+09:00",
     "https://simonwillison.net/2026/Apr/29/llm-3/#atom-everything": "2026-05-01T08:47:42+09:00",
     "https://www.latent.space/p/ainews-agents-for-everything-else": "2026-05-02T08:45:29+09:00",
-    "https://simonwillison.net/2026/May/1/inat-sightings/#atom-everything": "2026-05-02T08:45:29+09:00"
+    "https://simonwillison.net/2026/May/1/inat-sightings/#atom-everything": "2026-05-02T08:45:29+09:00",
+    "https://www.latent.space/p/ainews-ai-engineer-worlds-fair-autoresearch": "2026-05-03T08:37:59+09:00",
+    "https://simonwillison.net/2026/May/2/sightings/#atom-everything": "2026-05-03T08:37:59+09:00"
   },
   "threads": {}
 }
