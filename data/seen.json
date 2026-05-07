@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-07T08:45:24+09:00",
+  "last_updated": "2026-05-08T08:49:32+09:00",
   "news": {
     "https://n.news.naver.com/article/016/0002631841?ntype=RANKING": "2026-04-19T20:51:12+09:00",
     "https://n.news.naver.com/article/016/0002631763?ntype=RANKING": "2026-04-19T20:51:12+09:00",
@@ -198,7 +198,17 @@
     "https://n.news.naver.com/article/366/0001162315?ntype=RANKING": "2026-05-07T08:45:24+09:00",
     "https://n.news.naver.com/article/366/0001162317?ntype=RANKING": "2026-05-07T08:45:24+09:00",
     "https://n.news.naver.com/article/366/0001162310?ntype=RANKING": "2026-05-07T08:45:24+09:00",
-    "https://n.news.naver.com/article/366/0001162060?ntype=RANKING": "2026-05-07T08:45:24+09:00"
+    "https://n.news.naver.com/article/366/0001162060?ntype=RANKING": "2026-05-07T08:45:24+09:00",
+    "https://n.news.naver.com/article/016/0002640001?ntype=RANKING": "2026-05-08T08:49:32+09:00",
+    "https://n.news.naver.com/article/016/0002640416?ntype=RANKING": "2026-05-08T08:49:32+09:00",
+    "https://n.news.naver.com/article/016/0002640363?ntype=RANKING": "2026-05-08T08:49:32+09:00",
+    "https://n.news.naver.com/article/016/0002640385?ntype=RANKING": "2026-05-08T08:49:32+09:00",
+    "https://n.news.naver.com/article/016/0002640390?ntype=RANKING": "2026-05-08T08:49:32+09:00",
+    "https://n.news.naver.com/article/366/0001162656?ntype=RANKING": "2026-05-08T08:49:32+09:00",
+    "https://n.news.naver.com/article/366/0001162654?ntype=RANKING": "2026-05-08T08:49:32+09:00",
+    "https://n.news.naver.com/article/366/0001162660?ntype=RANKING": "2026-05-08T08:49:32+09:00",
+    "https://n.news.naver.com/article/366/0001162672?ntype=RANKING": "2026-05-08T08:49:32+09:00",
+    "https://n.news.naver.com/article/366/0001162669?ntype=RANKING": "2026-05-08T08:49:32+09:00"
   },
   "dev_blog": {
     "https://www.anthropic.com/news/claude-opus-4-7": "2026-04-19T20:51:12+09:00",
@@ -351,7 +361,21 @@
     "https://openai.com/index/uber": "2026-05-07T08:45:24+09:00",
     "https://simonwillison.net/2026/May/6/code-w-claude-2026/#atom-everything": "2026-05-07T08:45:24+09:00",
     "https://simonwillison.net/2026/May/6/vibe-coding-and-agentic-engineering/#atom-everything": "2026-05-07T08:45:24+09:00",
-    "https://simonwillison.net/2026/May/5/datasette-referrer-policy/#atom-everything": "2026-05-07T08:45:24+09:00"
+    "https://simonwillison.net/2026/May/5/datasette-referrer-policy/#atom-everything": "2026-05-07T08:45:24+09:00",
+    "https://github.blog/ai-and-ml/github-copilot/improving-token-efficiency-in-github-agentic-workflows/": "2026-05-08T08:49:32+09:00",
+    "https://github.blog/ai-and-ml/generative-ai/agent-pull-requests-are-everywhere-heres-how-to-review-them/": "2026-05-08T08:49:32+09:00",
+    "https://www.interconnects.ai/p/notes-from-inside-chinas-ai-labs": "2026-05-08T08:49:32+09:00",
+    "https://www.latent.space/p/ainews-anthropic-spacexais-300mw5byr": "2026-05-08T08:49:32+09:00",
+    "https://openai.com/index/gpt-5-5-with-trusted-access-for-cyber": "2026-05-08T08:49:32+09:00",
+    "https://openai.com/index/parloa": "2026-05-08T08:49:32+09:00",
+    "https://openai.com/index/advancing-voice-intelligence-with-new-models-in-the-api": "2026-05-08T08:49:32+09:00",
+    "https://openai.com/index/introducing-trusted-contact-in-chatgpt": "2026-05-08T08:49:32+09:00",
+    "https://openai.com/index/testing-ads-in-chatgpt": "2026-05-08T08:49:32+09:00",
+    "https://simonwillison.net/2026/May/7/llm-gemini/#atom-everything": "2026-05-08T08:49:32+09:00",
+    "https://simonwillison.net/2026/May/7/big-words/#atom-everything": "2026-05-08T08:49:32+09:00",
+    "https://simonwillison.net/2026/May/7/firefox-claude-mythos/#atom-everything": "2026-05-08T08:49:32+09:00",
+    "https://simonwillison.net/2026/May/7/xai-anthropic/#atom-everything": "2026-05-08T08:49:32+09:00",
+    "https://simonwillison.net/2026/May/7/github-repo-stats/#atom-everything": "2026-05-08T08:49:32+09:00"
   },
   "threads": {}
 }
