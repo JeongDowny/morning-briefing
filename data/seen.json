@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-08T08:49:32+09:00",
+  "last_updated": "2026-05-09T08:53:23+09:00",
   "news": {
     "https://n.news.naver.com/article/016/0002631841?ntype=RANKING": "2026-04-19T20:51:12+09:00",
     "https://n.news.naver.com/article/016/0002631763?ntype=RANKING": "2026-04-19T20:51:12+09:00",
@@ -208,7 +208,17 @@
     "https://n.news.naver.com/article/366/0001162654?ntype=RANKING": "2026-05-08T08:49:32+09:00",
     "https://n.news.naver.com/article/366/0001162660?ntype=RANKING": "2026-05-08T08:49:32+09:00",
     "https://n.news.naver.com/article/366/0001162672?ntype=RANKING": "2026-05-08T08:49:32+09:00",
-    "https://n.news.naver.com/article/366/0001162669?ntype=RANKING": "2026-05-08T08:49:32+09:00"
+    "https://n.news.naver.com/article/366/0001162669?ntype=RANKING": "2026-05-08T08:49:32+09:00",
+    "https://n.news.naver.com/article/014/0005519105?ntype=RANKING": "2026-05-09T08:53:23+09:00",
+    "https://n.news.naver.com/article/014/0005519110?ntype=RANKING": "2026-05-09T08:53:23+09:00",
+    "https://n.news.naver.com/article/014/0005519123?ntype=RANKING": "2026-05-09T08:53:23+09:00",
+    "https://n.news.naver.com/article/014/0005519097?ntype=RANKING": "2026-05-09T08:53:23+09:00",
+    "https://n.news.naver.com/article/014/0005519114?ntype=RANKING": "2026-05-09T08:53:23+09:00",
+    "https://n.news.naver.com/article/015/0005284788?ntype=RANKING": "2026-05-09T08:53:23+09:00",
+    "https://n.news.naver.com/article/015/0005284780?ntype=RANKING": "2026-05-09T08:53:23+09:00",
+    "https://n.news.naver.com/article/015/0005284895?ntype=RANKING": "2026-05-09T08:53:23+09:00",
+    "https://n.news.naver.com/article/015/0005284894?ntype=RANKING": "2026-05-09T08:53:23+09:00",
+    "https://n.news.naver.com/article/015/0005284796?ntype=RANKING": "2026-05-09T08:53:23+09:00"
   },
   "dev_blog": {
     "https://www.anthropic.com/news/claude-opus-4-7": "2026-04-19T20:51:12+09:00",
@@ -375,7 +385,14 @@
     "https://simonwillison.net/2026/May/7/big-words/#atom-everything": "2026-05-08T08:49:32+09:00",
     "https://simonwillison.net/2026/May/7/firefox-claude-mythos/#atom-everything": "2026-05-08T08:49:32+09:00",
     "https://simonwillison.net/2026/May/7/xai-anthropic/#atom-everything": "2026-05-08T08:49:32+09:00",
-    "https://simonwillison.net/2026/May/7/github-repo-stats/#atom-everything": "2026-05-08T08:49:32+09:00"
+    "https://simonwillison.net/2026/May/7/github-repo-stats/#atom-everything": "2026-05-08T08:49:32+09:00",
+    "https://github.blog/news-insights/policy-news-and-insights/why-age-assurance-laws-matter-for-developers/": "2026-05-09T08:53:23+09:00",
+    "https://github.blog/news-insights/policy-news-and-insights/how-researchers-are-using-github-innovation-graph-data-to-reveal-the-digital-complexity-of-nations/": "2026-05-09T08:53:23+09:00",
+    "https://huggingface.co/blog/lablab-ai-amd-developer-hackathon/cybersecqwen-4b": "2026-05-09T08:53:23+09:00",
+    "https://huggingface.co/blog/allenai/emo": "2026-05-09T08:53:23+09:00",
+    "https://www.latent.space/p/ainews-gpt-realtime-2-translate-and": "2026-05-09T08:53:23+09:00",
+    "https://openai.com/index/running-codex-safely": "2026-05-09T08:53:23+09:00",
+    "https://simonwillison.net/2026/May/8/unreasonable-effectiveness-of-html/#atom-everything": "2026-05-09T08:53:23+09:00"
   },
   "threads": {}
 }
