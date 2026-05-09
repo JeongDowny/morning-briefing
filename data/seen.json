@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-09T08:53:23+09:00",
+  "last_updated": "2026-05-10T08:41:57+09:00",
   "news": {
     "https://n.news.naver.com/article/016/0002631841?ntype=RANKING": "2026-04-19T20:51:12+09:00",
     "https://n.news.naver.com/article/016/0002631763?ntype=RANKING": "2026-04-19T20:51:12+09:00",
@@ -218,7 +218,17 @@
     "https://n.news.naver.com/article/015/0005284780?ntype=RANKING": "2026-05-09T08:53:23+09:00",
     "https://n.news.naver.com/article/015/0005284895?ntype=RANKING": "2026-05-09T08:53:23+09:00",
     "https://n.news.naver.com/article/015/0005284894?ntype=RANKING": "2026-05-09T08:53:23+09:00",
-    "https://n.news.naver.com/article/015/0005284796?ntype=RANKING": "2026-05-09T08:53:23+09:00"
+    "https://n.news.naver.com/article/015/0005284796?ntype=RANKING": "2026-05-09T08:53:23+09:00",
+    "https://n.news.naver.com/article/277/0005760309?ntype=RANKING": "2026-05-10T08:41:57+09:00",
+    "https://n.news.naver.com/article/277/0005760365?ntype=RANKING": "2026-05-10T08:41:57+09:00",
+    "https://n.news.naver.com/article/277/0005760302?ntype=RANKING": "2026-05-10T08:41:57+09:00",
+    "https://n.news.naver.com/article/277/0005760352?ntype=RANKING": "2026-05-10T08:41:57+09:00",
+    "https://n.news.naver.com/article/277/0005760303?ntype=RANKING": "2026-05-10T08:41:57+09:00",
+    "https://n.news.naver.com/article/009/0005677565?ntype=RANKING": "2026-05-10T08:41:57+09:00",
+    "https://n.news.naver.com/article/009/0005677560?ntype=RANKING": "2026-05-10T08:41:57+09:00",
+    "https://n.news.naver.com/article/009/0005677543?ntype=RANKING": "2026-05-10T08:41:57+09:00",
+    "https://n.news.naver.com/article/009/0005677569?ntype=RANKING": "2026-05-10T08:41:57+09:00",
+    "https://n.news.naver.com/article/009/0005677464?ntype=RANKING": "2026-05-10T08:41:57+09:00"
   },
   "dev_blog": {
     "https://www.anthropic.com/news/claude-opus-4-7": "2026-04-19T20:51:12+09:00",
@@ -392,7 +402,10 @@
     "https://huggingface.co/blog/allenai/emo": "2026-05-09T08:53:23+09:00",
     "https://www.latent.space/p/ainews-gpt-realtime-2-translate-and": "2026-05-09T08:53:23+09:00",
     "https://openai.com/index/running-codex-safely": "2026-05-09T08:53:23+09:00",
-    "https://simonwillison.net/2026/May/8/unreasonable-effectiveness-of-html/#atom-everything": "2026-05-09T08:53:23+09:00"
+    "https://simonwillison.net/2026/May/8/unreasonable-effectiveness-of-html/#atom-everything": "2026-05-09T08:53:23+09:00",
+    "https://huggingface.co/blog/lablab-ai-amd-developer-hackathon/oncoagent-official-paper": "2026-05-10T08:41:57+09:00",
+    "https://www.latent.space/p/ainews-anthropic-growing-10xyear": "2026-05-10T08:41:57+09:00",
+    "https://simonwillison.net/2026/May/9/luke-curley/#atom-everything": "2026-05-10T08:41:57+09:00"
   },
   "threads": {}
 }
