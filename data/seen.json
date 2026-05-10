@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-10T08:41:57+09:00",
+  "last_updated": "2026-05-11T08:44:47+09:00",
   "news": {
     "https://n.news.naver.com/article/016/0002631841?ntype=RANKING": "2026-04-19T20:51:12+09:00",
     "https://n.news.naver.com/article/016/0002631763?ntype=RANKING": "2026-04-19T20:51:12+09:00",
@@ -228,7 +228,17 @@
     "https://n.news.naver.com/article/009/0005677560?ntype=RANKING": "2026-05-10T08:41:57+09:00",
     "https://n.news.naver.com/article/009/0005677543?ntype=RANKING": "2026-05-10T08:41:57+09:00",
     "https://n.news.naver.com/article/009/0005677569?ntype=RANKING": "2026-05-10T08:41:57+09:00",
-    "https://n.news.naver.com/article/009/0005677464?ntype=RANKING": "2026-05-10T08:41:57+09:00"
+    "https://n.news.naver.com/article/009/0005677464?ntype=RANKING": "2026-05-10T08:41:57+09:00",
+    "https://n.news.naver.com/article/015/0005285130?ntype=RANKING": "2026-05-11T08:44:47+09:00",
+    "https://n.news.naver.com/article/015/0005285156?ntype=RANKING": "2026-05-11T08:44:47+09:00",
+    "https://n.news.naver.com/article/015/0005285163?ntype=RANKING": "2026-05-11T08:44:47+09:00",
+    "https://n.news.naver.com/article/015/0005285125?ntype=RANKING": "2026-05-11T08:44:47+09:00",
+    "https://n.news.naver.com/article/015/0005285161?ntype=RANKING": "2026-05-11T08:44:47+09:00",
+    "https://n.news.naver.com/article/016/0002641294?ntype=RANKING": "2026-05-11T08:44:47+09:00",
+    "https://n.news.naver.com/article/016/0002641276?ntype=RANKING": "2026-05-11T08:44:47+09:00",
+    "https://n.news.naver.com/article/016/0002641180?ntype=RANKING": "2026-05-11T08:44:47+09:00",
+    "https://n.news.naver.com/article/016/0002641318?ntype=RANKING": "2026-05-11T08:44:47+09:00",
+    "https://n.news.naver.com/article/016/0002641281?ntype=RANKING": "2026-05-11T08:44:47+09:00"
   },
   "dev_blog": {
     "https://www.anthropic.com/news/claude-opus-4-7": "2026-04-19T20:51:12+09:00",
@@ -405,7 +415,9 @@
     "https://simonwillison.net/2026/May/8/unreasonable-effectiveness-of-html/#atom-everything": "2026-05-09T08:53:23+09:00",
     "https://huggingface.co/blog/lablab-ai-amd-developer-hackathon/oncoagent-official-paper": "2026-05-10T08:41:57+09:00",
     "https://www.latent.space/p/ainews-anthropic-growing-10xyear": "2026-05-10T08:41:57+09:00",
-    "https://simonwillison.net/2026/May/9/luke-curley/#atom-everything": "2026-05-10T08:41:57+09:00"
+    "https://simonwillison.net/2026/May/9/luke-curley/#atom-everything": "2026-05-10T08:41:57+09:00",
+    "https://huggingface.co/blog/lablab-ai-amd-developer-hackathon/machinacheck": "2026-05-11T08:44:47+09:00",
+    "https://simonwillison.net/2026/May/10/andrew-quinn/#atom-everything": "2026-05-11T08:44:47+09:00"
   },
   "threads": {}
 }
