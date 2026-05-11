@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-11T08:44:47+09:00",
+  "last_updated": "2026-05-12T08:54:02+09:00",
   "news": {
     "https://n.news.naver.com/article/016/0002631841?ntype=RANKING": "2026-04-19T20:51:12+09:00",
     "https://n.news.naver.com/article/016/0002631763?ntype=RANKING": "2026-04-19T20:51:12+09:00",
@@ -238,7 +238,17 @@
     "https://n.news.naver.com/article/016/0002641276?ntype=RANKING": "2026-05-11T08:44:47+09:00",
     "https://n.news.naver.com/article/016/0002641180?ntype=RANKING": "2026-05-11T08:44:47+09:00",
     "https://n.news.naver.com/article/016/0002641318?ntype=RANKING": "2026-05-11T08:44:47+09:00",
-    "https://n.news.naver.com/article/016/0002641281?ntype=RANKING": "2026-05-11T08:44:47+09:00"
+    "https://n.news.naver.com/article/016/0002641281?ntype=RANKING": "2026-05-11T08:44:47+09:00",
+    "https://n.news.naver.com/article/008/0005356032?ntype=RANKING": "2026-05-12T08:54:02+09:00",
+    "https://n.news.naver.com/article/008/0005356050?ntype=RANKING": "2026-05-12T08:54:02+09:00",
+    "https://n.news.naver.com/article/008/0005356056?ntype=RANKING": "2026-05-12T08:54:02+09:00",
+    "https://n.news.naver.com/article/008/0005356040?ntype=RANKING": "2026-05-12T08:54:02+09:00",
+    "https://n.news.naver.com/article/008/0005356051?ntype=RANKING": "2026-05-12T08:54:02+09:00",
+    "https://n.news.naver.com/article/015/0005285629?ntype=RANKING": "2026-05-12T08:54:02+09:00",
+    "https://n.news.naver.com/article/015/0005285657?ntype=RANKING": "2026-05-12T08:54:02+09:00",
+    "https://n.news.naver.com/article/015/0005285664?ntype=RANKING": "2026-05-12T08:54:02+09:00",
+    "https://n.news.naver.com/article/015/0005285654?ntype=RANKING": "2026-05-12T08:54:02+09:00",
+    "https://n.news.naver.com/article/015/0005285660?ntype=RANKING": "2026-05-12T08:54:02+09:00"
   },
   "dev_blog": {
     "https://www.anthropic.com/news/claude-opus-4-7": "2026-04-19T20:51:12+09:00",
@@ -417,7 +427,18 @@
     "https://www.latent.space/p/ainews-anthropic-growing-10xyear": "2026-05-10T08:41:57+09:00",
     "https://simonwillison.net/2026/May/9/luke-curley/#atom-everything": "2026-05-10T08:41:57+09:00",
     "https://huggingface.co/blog/lablab-ai-amd-developer-hackathon/machinacheck": "2026-05-11T08:44:47+09:00",
-    "https://simonwillison.net/2026/May/10/andrew-quinn/#atom-everything": "2026-05-11T08:44:47+09:00"
+    "https://simonwillison.net/2026/May/10/andrew-quinn/#atom-everything": "2026-05-11T08:44:47+09:00",
+    "https://github.blog/developer-skills/github/github-for-beginners-getting-started-with-oss-contributions/": "2026-05-12T08:54:02+09:00",
+    "https://huggingface.co/blog/amazon/foundation-model-building-blocks": "2026-05-12T08:54:02+09:00",
+    "https://openai.com/signals/research/2026q1-update": "2026-05-12T08:54:02+09:00",
+    "https://openai.com/business/guides-and-resources/how-enterprises-are-scaling-ai": "2026-05-12T08:54:02+09:00",
+    "https://openai.com/index/openai-campus-network-student-club-interest-form": "2026-05-12T08:54:02+09:00",
+    "https://openai.com/index/openai-launches-the-deployment-company": "2026-05-12T08:54:02+09:00",
+    "https://simonwillison.net/2026/May/11/james-shore/#atom-everything": "2026-05-12T08:54:02+09:00",
+    "https://simonwillison.net/2026/May/11/zombie-internet/#atom-everything": "2026-05-12T08:54:02+09:00",
+    "https://simonwillison.net/2026/May/11/llm-shebang/#atom-everything": "2026-05-12T08:54:02+09:00",
+    "https://simonwillison.net/2026/May/11/learning-on-the-shop-floor/#atom-everything": "2026-05-12T08:54:02+09:00",
+    "https://simonwillison.net/2026/May/10/new-york-times-editors-note/#atom-everything": "2026-05-12T08:54:02+09:00"
   },
   "threads": {}
 }
