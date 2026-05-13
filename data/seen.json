@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-13T08:56:48+09:00",
+  "last_updated": "2026-05-14T08:52:57+09:00",
   "news": {
     "https://n.news.naver.com/article/016/0002631841?ntype=RANKING": "2026-04-19T20:51:12+09:00",
     "https://n.news.naver.com/article/016/0002631763?ntype=RANKING": "2026-04-19T20:51:12+09:00",
@@ -258,7 +258,17 @@
     "https://n.news.naver.com/article/277/0005761825?ntype=RANKING": "2026-05-13T08:56:48+09:00",
     "https://n.news.naver.com/article/277/0005761660?ntype=RANKING": "2026-05-13T08:56:48+09:00",
     "https://n.news.naver.com/article/277/0005761784?ntype=RANKING": "2026-05-13T08:56:48+09:00",
-    "https://n.news.naver.com/article/277/0005761814?ntype=RANKING": "2026-05-13T08:56:48+09:00"
+    "https://n.news.naver.com/article/277/0005761814?ntype=RANKING": "2026-05-13T08:56:48+09:00",
+    "https://n.news.naver.com/article/009/0005679653?ntype=RANKING": "2026-05-14T08:52:57+09:00",
+    "https://n.news.naver.com/article/009/0005679671?ntype=RANKING": "2026-05-14T08:52:57+09:00",
+    "https://n.news.naver.com/article/009/0005679677?ntype=RANKING": "2026-05-14T08:52:57+09:00",
+    "https://n.news.naver.com/article/009/0005679648?ntype=RANKING": "2026-05-14T08:52:57+09:00",
+    "https://n.news.naver.com/article/009/0005679552?ntype=RANKING": "2026-05-14T08:52:57+09:00",
+    "https://n.news.naver.com/article/277/0005762238?ntype=RANKING": "2026-05-14T08:52:57+09:00",
+    "https://n.news.naver.com/article/277/0005762333?ntype=RANKING": "2026-05-14T08:52:57+09:00",
+    "https://n.news.naver.com/article/277/0005762007?ntype=RANKING": "2026-05-14T08:52:57+09:00",
+    "https://n.news.naver.com/article/277/0005762445?ntype=RANKING": "2026-05-14T08:52:57+09:00",
+    "https://n.news.naver.com/article/277/0005762123?ntype=RANKING": "2026-05-14T08:52:57+09:00"
   },
   "dev_blog": {
     "https://www.anthropic.com/news/claude-opus-4-7": "2026-04-19T20:51:12+09:00",
@@ -461,7 +471,13 @@
     "https://simonwillison.net/2026/May/12/mo-bitar/#atom-everything": "2026-05-13T08:56:48+09:00",
     "https://simonwillison.net/2026/May/12/mitchell-hashimoto/#atom-everything": "2026-05-13T08:56:48+09:00",
     "https://simonwillison.net/2026/May/12/llm/#atom-everything": "2026-05-13T08:56:48+09:00",
-    "https://simonwillison.net/2026/May/11/gitlab-act-2/#atom-everything": "2026-05-13T08:56:48+09:00"
+    "https://simonwillison.net/2026/May/11/gitlab-act-2/#atom-everything": "2026-05-13T08:56:48+09:00",
+    "https://www.anthropic.com/news/claude-for-small-business": "2026-05-14T08:52:57+09:00",
+    "https://github.blog/open-source/gaming/dungeons-desktops-10-roguelikes-that-never-die-because-their-communities-wont-let-them/": "2026-05-14T08:52:57+09:00",
+    "https://www.latent.space/p/ainews-the-end-of-finetuning": "2026-05-14T08:52:57+09:00",
+    "https://openai.com/index/building-codex-windows-sandbox": "2026-05-14T08:52:57+09:00",
+    "https://simonwillison.net/2026/May/13/boris-mann/#atom-everything": "2026-05-14T08:52:57+09:00",
+    "https://simonwillison.net/2026/May/13/csp-allow/#atom-everything": "2026-05-14T08:52:57+09:00"
   },
   "threads": {}
 }
