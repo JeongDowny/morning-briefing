@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-05-17T08:46:32+09:00",
+  "last_updated": "2026-05-18T08:53:42+09:00",
   "news": {
     "https://n.news.naver.com/article/016/0002631841?ntype=RANKING": "2026-04-19T20:51:12+09:00",
     "https://n.news.naver.com/article/016/0002631763?ntype=RANKING": "2026-04-19T20:51:12+09:00",
@@ -298,7 +298,17 @@
     "https://n.news.naver.com/article/015/0005287761?ntype=RANKING": "2026-05-17T08:46:32+09:00",
     "https://n.news.naver.com/article/015/0005287759?ntype=RANKING": "2026-05-17T08:46:32+09:00",
     "https://n.news.naver.com/article/015/0005287763?ntype=RANKING": "2026-05-17T08:46:32+09:00",
-    "https://n.news.naver.com/article/015/0005287740?ntype=RANKING": "2026-05-17T08:46:32+09:00"
+    "https://n.news.naver.com/article/015/0005287740?ntype=RANKING": "2026-05-17T08:46:32+09:00",
+    "https://n.news.naver.com/article/008/0005358970?ntype=RANKING": "2026-05-18T08:53:42+09:00",
+    "https://n.news.naver.com/article/008/0005358955?ntype=RANKING": "2026-05-18T08:53:42+09:00",
+    "https://n.news.naver.com/article/008/0005358940?ntype=RANKING": "2026-05-18T08:53:42+09:00",
+    "https://n.news.naver.com/article/008/0005358960?ntype=RANKING": "2026-05-18T08:53:42+09:00",
+    "https://n.news.naver.com/article/008/0005358972?ntype=RANKING": "2026-05-18T08:53:42+09:00",
+    "https://n.news.naver.com/article/011/0004621541?ntype=RANKING": "2026-05-18T08:53:42+09:00",
+    "https://n.news.naver.com/article/011/0004621610?ntype=RANKING": "2026-05-18T08:53:42+09:00",
+    "https://n.news.naver.com/article/011/0004621566?ntype=RANKING": "2026-05-18T08:53:42+09:00",
+    "https://n.news.naver.com/article/011/0004621762?ntype=RANKING": "2026-05-18T08:53:42+09:00",
+    "https://n.news.naver.com/article/011/0004621759?ntype=RANKING": "2026-05-18T08:53:42+09:00"
   },
   "dev_blog": {
     "https://www.anthropic.com/news/claude-opus-4-7": "2026-04-19T20:51:12+09:00",
@@ -532,7 +542,8 @@
     "https://openai.com/index/malta-chatgpt-plus-partnership": "2026-05-17T08:46:32+09:00",
     "https://simonwillison.net/2026/May/16/openclaw-names/#atom-everything": "2026-05-17T08:46:32+09:00",
     "https://simonwillison.net/2026/May/16/julia-evans/#atom-everything": "2026-05-17T08:46:32+09:00",
-    "https://simonwillison.net/2026/May/15/inaturalist-clumper/#atom-everything": "2026-05-17T08:46:32+09:00"
+    "https://simonwillison.net/2026/May/15/inaturalist-clumper/#atom-everything": "2026-05-17T08:46:32+09:00",
+    "https://simonwillison.net/2026/May/17/gds-weighs-in/#atom-everything": "2026-05-18T08:53:42+09:00"
   },
   "threads": {}
 }
