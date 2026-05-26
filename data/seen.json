@@ -1,16 +1,6 @@
 {
-  "last_updated": "2026-05-25T08:55:40+09:00",
+  "last_updated": "2026-05-26T09:01:00+09:00",
   "news": {
-    "https://n.news.naver.com/article/009/0005671319?ntype=RANKING": "2026-04-26T08:32:45+09:00",
-    "https://n.news.naver.com/article/009/0005671268?ntype=RANKING": "2026-04-26T08:32:45+09:00",
-    "https://n.news.naver.com/article/009/0005671294?ntype=RANKING": "2026-04-26T08:32:45+09:00",
-    "https://n.news.naver.com/article/009/0005671282?ntype=RANKING": "2026-04-26T08:32:45+09:00",
-    "https://n.news.naver.com/article/009/0005671298?ntype=RANKING": "2026-04-26T08:32:45+09:00",
-    "https://n.news.naver.com/article/366/0001159809?ntype=RANKING": "2026-04-26T08:32:45+09:00",
-    "https://n.news.naver.com/article/366/0001159810?ntype=RANKING": "2026-04-26T08:32:45+09:00",
-    "https://n.news.naver.com/article/366/0001159793?ntype=RANKING": "2026-04-26T08:32:45+09:00",
-    "https://n.news.naver.com/article/366/0001159796?ntype=RANKING": "2026-04-26T08:32:45+09:00",
-    "https://n.news.naver.com/article/366/0001159803?ntype=RANKING": "2026-04-26T08:32:45+09:00",
     "https://n.news.naver.com/article/015/0005279816?ntype=RANKING": "2026-04-27T08:34:46+09:00",
     "https://n.news.naver.com/article/015/0005279819?ntype=RANKING": "2026-04-27T08:34:46+09:00",
     "https://n.news.naver.com/article/015/0005279644?ntype=RANKING": "2026-04-27T08:34:46+09:00",
@@ -299,14 +289,19 @@
     "https://n.news.naver.com/article/277/0005767171?ntype=RANKING": "2026-05-25T08:55:40+09:00",
     "https://n.news.naver.com/article/277/0005767120?ntype=RANKING": "2026-05-25T08:55:40+09:00",
     "https://n.news.naver.com/article/277/0005767170?ntype=RANKING": "2026-05-25T08:55:40+09:00",
-    "https://n.news.naver.com/article/277/0005767133?ntype=RANKING": "2026-05-25T08:55:40+09:00"
+    "https://n.news.naver.com/article/277/0005767133?ntype=RANKING": "2026-05-25T08:55:40+09:00",
+    "https://n.news.naver.com/article/011/0004624271?ntype=RANKING": "2026-05-26T09:01:00+09:00",
+    "https://n.news.naver.com/article/011/0004624291?ntype=RANKING": "2026-05-26T09:01:00+09:00",
+    "https://n.news.naver.com/article/011/0004624316?ntype=RANKING": "2026-05-26T09:01:00+09:00",
+    "https://n.news.naver.com/article/011/0004624332?ntype=RANKING": "2026-05-26T09:01:00+09:00",
+    "https://n.news.naver.com/article/011/0004624308?ntype=RANKING": "2026-05-26T09:01:00+09:00",
+    "https://n.news.naver.com/article/018/0006290279?ntype=RANKING": "2026-05-26T09:01:00+09:00",
+    "https://n.news.naver.com/article/018/0006290311?ntype=RANKING": "2026-05-26T09:01:00+09:00",
+    "https://n.news.naver.com/article/018/0006290223?ntype=RANKING": "2026-05-26T09:01:00+09:00",
+    "https://n.news.naver.com/article/018/0006290293?ntype=RANKING": "2026-05-26T09:01:00+09:00",
+    "https://n.news.naver.com/article/018/0006290291?ntype=RANKING": "2026-05-26T09:01:00+09:00"
   },
   "dev_blog": {
-    "https://www.latent.space/p/ainews-deepseek-v4-pro-16t-a49b-and": "2026-04-26T08:32:45+09:00",
-    "https://simonwillison.net/2026/Apr/25/why-are-you-like-this/#atom-everything": "2026-04-26T08:32:45+09:00",
-    "https://simonwillison.net/2026/Apr/25/romain-huet/#atom-everything": "2026-04-26T08:32:45+09:00",
-    "https://simonwillison.net/2026/Apr/25/gpt-5-5-prompting-guide/#atom-everything": "2026-04-26T08:32:45+09:00",
-    "https://simonwillison.net/2026/Apr/24/llm/#atom-everything": "2026-04-26T08:32:45+09:00",
     "https://openai.com/index/our-principles": "2026-04-27T08:34:46+09:00",
     "https://www.anthropic.com/news/theo-hourmouzis-general-manager-australia-new-zealand": "2026-04-28T08:47:55+09:00",
     "https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/": "2026-04-28T08:47:55+09:00",
@@ -516,7 +511,9 @@
     "https://simonwillison.net/2026/May/23/on-the-dl/#atom-everything": "2026-05-24T08:54:23+09:00",
     "https://simonwillison.net/2026/May/24/datasette/#atom-everything": "2026-05-25T08:55:40+09:00",
     "https://simonwillison.net/2026/May/24/armin-ronacher/#atom-everything": "2026-05-25T08:55:40+09:00",
-    "https://simonwillison.net/2026/May/24/usborne-mad-house/#atom-everything": "2026-05-25T08:55:40+09:00"
+    "https://simonwillison.net/2026/May/24/usborne-mad-house/#atom-everything": "2026-05-25T08:55:40+09:00",
+    "https://www.anthropic.com/news/chris-olah-pope-leo-encyclical": "2026-05-26T09:01:00+09:00",
+    "https://github.blog/developer-skills/github/github-for-beginners-getting-started-with-git-and-github-in-vs-code/": "2026-05-26T09:01:00+09:00"
   },
   "threads": {}
 }
