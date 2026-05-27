@@ -1,15 +1,6 @@
 {
-  "last_updated": "2026-05-26T09:01:00+09:00",
+  "last_updated": "2026-05-27T09:00:15+09:00",
   "news": {
-    "https://n.news.naver.com/article/015/0005279816?ntype=RANKING": "2026-04-27T08:34:46+09:00",
-    "https://n.news.naver.com/article/015/0005279819?ntype=RANKING": "2026-04-27T08:34:46+09:00",
-    "https://n.news.naver.com/article/015/0005279644?ntype=RANKING": "2026-04-27T08:34:46+09:00",
-    "https://n.news.naver.com/article/015/0005279809?ntype=RANKING": "2026-04-27T08:34:46+09:00",
-    "https://n.news.naver.com/article/015/0005279783?ntype=RANKING": "2026-04-27T08:34:46+09:00",
-    "https://n.news.naver.com/article/009/0005671598?ntype=RANKING": "2026-04-27T08:34:46+09:00",
-    "https://n.news.naver.com/article/009/0005671413?ntype=RANKING": "2026-04-27T08:34:46+09:00",
-    "https://n.news.naver.com/article/009/0005671350?ntype=RANKING": "2026-04-27T08:34:46+09:00",
-    "https://n.news.naver.com/article/009/0005671617?ntype=RANKING": "2026-04-27T08:34:46+09:00",
     "https://n.news.naver.com/article/009/0005672238?ntype=RANKING": "2026-04-28T08:47:55+09:00",
     "https://n.news.naver.com/article/009/0005671667?ntype=RANKING": "2026-04-28T08:47:55+09:00",
     "https://n.news.naver.com/article/009/0005672262?ntype=RANKING": "2026-04-28T08:47:55+09:00",
@@ -299,10 +290,19 @@
     "https://n.news.naver.com/article/018/0006290311?ntype=RANKING": "2026-05-26T09:01:00+09:00",
     "https://n.news.naver.com/article/018/0006290223?ntype=RANKING": "2026-05-26T09:01:00+09:00",
     "https://n.news.naver.com/article/018/0006290293?ntype=RANKING": "2026-05-26T09:01:00+09:00",
-    "https://n.news.naver.com/article/018/0006290291?ntype=RANKING": "2026-05-26T09:01:00+09:00"
+    "https://n.news.naver.com/article/018/0006290291?ntype=RANKING": "2026-05-26T09:01:00+09:00",
+    "https://n.news.naver.com/article/016/0002648392?ntype=RANKING": "2026-05-27T09:00:15+09:00",
+    "https://n.news.naver.com/article/016/0002648434?ntype=RANKING": "2026-05-27T09:00:15+09:00",
+    "https://n.news.naver.com/article/016/0002648383?ntype=RANKING": "2026-05-27T09:00:15+09:00",
+    "https://n.news.naver.com/article/016/0002648363?ntype=RANKING": "2026-05-27T09:00:15+09:00",
+    "https://n.news.naver.com/article/016/0002648357?ntype=RANKING": "2026-05-27T09:00:15+09:00",
+    "https://n.news.naver.com/article/277/0005767917?ntype=RANKING": "2026-05-27T09:00:15+09:00",
+    "https://n.news.naver.com/article/277/0005767977?ntype=RANKING": "2026-05-27T09:00:15+09:00",
+    "https://n.news.naver.com/article/277/0005767883?ntype=RANKING": "2026-05-27T09:00:15+09:00",
+    "https://n.news.naver.com/article/277/0005767929?ntype=RANKING": "2026-05-27T09:00:15+09:00",
+    "https://n.news.naver.com/article/277/0005767983?ntype=RANKING": "2026-05-27T09:00:15+09:00"
   },
   "dev_blog": {
-    "https://openai.com/index/our-principles": "2026-04-27T08:34:46+09:00",
     "https://www.anthropic.com/news/theo-hourmouzis-general-manager-australia-new-zealand": "2026-04-28T08:47:55+09:00",
     "https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/": "2026-04-28T08:47:55+09:00",
     "https://deepmind.google/blog/announcing-our-partnership-with-the-republic-of-korea/": "2026-04-28T08:47:55+09:00",
@@ -513,7 +513,13 @@
     "https://simonwillison.net/2026/May/24/armin-ronacher/#atom-everything": "2026-05-25T08:55:40+09:00",
     "https://simonwillison.net/2026/May/24/usborne-mad-house/#atom-everything": "2026-05-25T08:55:40+09:00",
     "https://www.anthropic.com/news/chris-olah-pope-leo-encyclical": "2026-05-26T09:01:00+09:00",
-    "https://github.blog/developer-skills/github/github-for-beginners-getting-started-with-git-and-github-in-vs-code/": "2026-05-26T09:01:00+09:00"
+    "https://github.blog/developer-skills/github/github-for-beginners-getting-started-with-git-and-github-in-vs-code/": "2026-05-26T09:01:00+09:00",
+    "https://www.anthropic.com/news/kiyoung-choi-representative-director-anthropic-korea": "2026-05-27T09:00:15+09:00",
+    "https://www.interconnects.ai/p/some-ideas-for-what-comes-next-may": "2026-05-27T09:00:15+09:00",
+    "https://simonwillison.net/2026/May/26/the-pressure/#atom-everything": "2026-05-27T09:00:15+09:00",
+    "https://simonwillison.net/2026/May/26/copilot-cowork-exfiltrates-files/#atom-everything": "2026-05-27T09:00:15+09:00",
+    "https://simonwillison.net/2026/May/26/paul-graham/#atom-everything": "2026-05-27T09:00:15+09:00",
+    "https://simonwillison.net/2026/May/26/corey-quinn/#atom-everything": "2026-05-27T09:00:15+09:00"
   },
   "threads": {}
 }
