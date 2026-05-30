@@ -1,16 +1,6 @@
 {
-  "last_updated": "2026-05-29T09:07:47+09:00",
+  "last_updated": "2026-05-30T09:05:18+09:00",
   "news": {
-    "https://n.news.naver.com/article/015/0005281541?ntype=RANKING": "2026-04-30T08:51:26+09:00",
-    "https://n.news.naver.com/article/015/0005281547?ntype=RANKING": "2026-04-30T08:51:26+09:00",
-    "https://n.news.naver.com/article/015/0005281557?ntype=RANKING": "2026-04-30T08:51:26+09:00",
-    "https://n.news.naver.com/article/015/0005281500?ntype=RANKING": "2026-04-30T08:51:26+09:00",
-    "https://n.news.naver.com/article/015/0005281553?ntype=RANKING": "2026-04-30T08:51:26+09:00",
-    "https://n.news.naver.com/article/011/0004616138?ntype=RANKING": "2026-04-30T08:51:26+09:00",
-    "https://n.news.naver.com/article/011/0004616130?ntype=RANKING": "2026-04-30T08:51:26+09:00",
-    "https://n.news.naver.com/article/011/0004616195?ntype=RANKING": "2026-04-30T08:51:26+09:00",
-    "https://n.news.naver.com/article/011/0004616192?ntype=RANKING": "2026-04-30T08:51:26+09:00",
-    "https://n.news.naver.com/article/011/0004616200?ntype=RANKING": "2026-04-30T08:51:26+09:00",
     "https://n.news.naver.com/article/011/0004616460?ntype=RANKING": "2026-05-01T08:47:42+09:00",
     "https://n.news.naver.com/article/011/0004616576?ntype=RANKING": "2026-05-01T08:47:42+09:00",
     "https://n.news.naver.com/article/011/0004616582?ntype=RANKING": "2026-05-01T08:47:42+09:00",
@@ -300,16 +290,19 @@
     "https://n.news.naver.com/article/015/0005292619?ntype=RANKING": "2026-05-29T09:07:47+09:00",
     "https://n.news.naver.com/article/015/0005292622?ntype=RANKING": "2026-05-29T09:07:47+09:00",
     "https://n.news.naver.com/article/015/0005292629?ntype=RANKING": "2026-05-29T09:07:47+09:00",
-    "https://n.news.naver.com/article/015/0005292630?ntype=RANKING": "2026-05-29T09:07:47+09:00"
+    "https://n.news.naver.com/article/015/0005292630?ntype=RANKING": "2026-05-29T09:07:47+09:00",
+    "https://n.news.naver.com/article/011/0004625959?ntype=RANKING": "2026-05-30T09:05:18+09:00",
+    "https://n.news.naver.com/article/011/0004625919?ntype=RANKING": "2026-05-30T09:05:18+09:00",
+    "https://n.news.naver.com/article/011/0004625862?ntype=RANKING": "2026-05-30T09:05:18+09:00",
+    "https://n.news.naver.com/article/011/0004626009?ntype=RANKING": "2026-05-30T09:05:18+09:00",
+    "https://n.news.naver.com/article/011/0004626005?ntype=RANKING": "2026-05-30T09:05:18+09:00",
+    "https://n.news.naver.com/article/015/0005293047?ntype=RANKING": "2026-05-30T09:05:18+09:00",
+    "https://n.news.naver.com/article/015/0005293042?ntype=RANKING": "2026-05-30T09:05:18+09:00",
+    "https://n.news.naver.com/article/015/0005293090?ntype=RANKING": "2026-05-30T09:05:18+09:00",
+    "https://n.news.naver.com/article/015/0005293041?ntype=RANKING": "2026-05-30T09:05:18+09:00",
+    "https://n.news.naver.com/article/015/0005293091?ntype=RANKING": "2026-05-30T09:05:18+09:00"
   },
   "dev_blog": {
-    "https://huggingface.co/blog/evaleval/eval-costs-bottleneck": "2026-04-30T08:51:26+09:00",
-    "https://huggingface.co/blog/ibm-granite/granite-4-1": "2026-04-30T08:51:26+09:00",
-    "https://huggingface.co/blog/inference-providers-deepinfra": "2026-04-30T08:51:26+09:00",
-    "https://www.latent.space/p/ainews-not-much-happened-today": "2026-04-30T08:51:26+09:00",
-    "https://openai.com/index/building-the-compute-infrastructure-for-the-intelligence-age": "2026-04-30T08:51:26+09:00",
-    "https://openai.com/index/cybersecurity-in-the-intelligence-age": "2026-04-30T08:51:26+09:00",
-    "https://simonwillison.net/2026/Apr/29/llm/#atom-everything": "2026-04-30T08:51:26+09:00",
     "https://karpathy.bearblog.dev/sequoia-ascent-2026/": "2026-05-01T08:47:42+09:00",
     "https://github.blog/ai-and-ml/github-copilot/github-copilot-cli-for-beginners-interactive-v-non-interactive-mode/": "2026-05-01T08:47:42+09:00",
     "https://deepmind.google/blog/ai-co-clinician/": "2026-05-01T08:47:42+09:00",
@@ -517,7 +510,13 @@
     "https://www.latent.space/p/cognition": "2026-05-29T09:07:47+09:00",
     "https://www.latent.space/p/ainews-cognition-raises-1b-in-26b": "2026-05-29T09:07:47+09:00",
     "https://openai.com/index/endava": "2026-05-29T09:07:47+09:00",
-    "https://simonwillison.net/2026/May/28/claude-opus-4-8/#atom-everything": "2026-05-29T09:07:47+09:00"
+    "https://simonwillison.net/2026/May/28/claude-opus-4-8/#atom-everything": "2026-05-29T09:07:47+09:00",
+    "https://www.latent.space/p/ainews-anthropic-raises-965b-series": "2026-05-30T09:05:18+09:00",
+    "https://openai.com/index/boston-childrens-hospital": "2026-05-30T09:05:18+09:00",
+    "https://openai.com/index/braintrust": "2026-05-30T09:05:18+09:00",
+    "https://openai.com/index/strengthening-societal-resilience-with-rosalind-biodefense": "2026-05-30T09:05:18+09:00",
+    "https://simonwillison.net/2026/May/29/datasette/#atom-everything": "2026-05-30T09:05:18+09:00",
+    "https://simonwillison.net/2026/May/29/anthropic/#atom-everything": "2026-05-30T09:05:18+09:00"
   },
   "threads": {}
 }
