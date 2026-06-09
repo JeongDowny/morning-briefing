@@ -1,16 +1,6 @@
 {
-  "last_updated": "2026-06-08T09:02:20+09:00",
+  "last_updated": "2026-06-09T09:00:28+09:00",
   "news": {
-    "https://n.news.naver.com/article/277/0005760309?ntype=RANKING": "2026-05-10T08:41:57+09:00",
-    "https://n.news.naver.com/article/277/0005760365?ntype=RANKING": "2026-05-10T08:41:57+09:00",
-    "https://n.news.naver.com/article/277/0005760302?ntype=RANKING": "2026-05-10T08:41:57+09:00",
-    "https://n.news.naver.com/article/277/0005760352?ntype=RANKING": "2026-05-10T08:41:57+09:00",
-    "https://n.news.naver.com/article/277/0005760303?ntype=RANKING": "2026-05-10T08:41:57+09:00",
-    "https://n.news.naver.com/article/009/0005677565?ntype=RANKING": "2026-05-10T08:41:57+09:00",
-    "https://n.news.naver.com/article/009/0005677560?ntype=RANKING": "2026-05-10T08:41:57+09:00",
-    "https://n.news.naver.com/article/009/0005677543?ntype=RANKING": "2026-05-10T08:41:57+09:00",
-    "https://n.news.naver.com/article/009/0005677569?ntype=RANKING": "2026-05-10T08:41:57+09:00",
-    "https://n.news.naver.com/article/009/0005677464?ntype=RANKING": "2026-05-10T08:41:57+09:00",
     "https://n.news.naver.com/article/015/0005285130?ntype=RANKING": "2026-05-11T08:44:47+09:00",
     "https://n.news.naver.com/article/015/0005285156?ntype=RANKING": "2026-05-11T08:44:47+09:00",
     "https://n.news.naver.com/article/015/0005285163?ntype=RANKING": "2026-05-11T08:44:47+09:00",
@@ -300,12 +290,19 @@
     "https://n.news.naver.com/article/008/0005368272?ntype=RANKING": "2026-06-08T09:02:20+09:00",
     "https://n.news.naver.com/article/008/0005368180?ntype=RANKING": "2026-06-08T09:02:20+09:00",
     "https://n.news.naver.com/article/008/0005368263?ntype=RANKING": "2026-06-08T09:02:20+09:00",
-    "https://n.news.naver.com/article/008/0005368276?ntype=RANKING": "2026-06-08T09:02:20+09:00"
+    "https://n.news.naver.com/article/008/0005368276?ntype=RANKING": "2026-06-08T09:02:20+09:00",
+    "https://n.news.naver.com/article/009/0005691060?ntype=RANKING": "2026-06-09T09:00:28+09:00",
+    "https://n.news.naver.com/article/009/0005690566?ntype=RANKING": "2026-06-09T09:00:28+09:00",
+    "https://n.news.naver.com/article/009/0005691075?ntype=RANKING": "2026-06-09T09:00:28+09:00",
+    "https://n.news.naver.com/article/009/0005691069?ntype=RANKING": "2026-06-09T09:00:28+09:00",
+    "https://n.news.naver.com/article/009/0005691074?ntype=RANKING": "2026-06-09T09:00:28+09:00",
+    "https://n.news.naver.com/article/277/0005772910?ntype=RANKING": "2026-06-09T09:00:28+09:00",
+    "https://n.news.naver.com/article/277/0005773373?ntype=RANKING": "2026-06-09T09:00:28+09:00",
+    "https://n.news.naver.com/article/277/0005773149?ntype=RANKING": "2026-06-09T09:00:28+09:00",
+    "https://n.news.naver.com/article/277/0005773560?ntype=RANKING": "2026-06-09T09:00:28+09:00",
+    "https://n.news.naver.com/article/277/0005773548?ntype=RANKING": "2026-06-09T09:00:28+09:00"
   },
   "dev_blog": {
-    "https://huggingface.co/blog/lablab-ai-amd-developer-hackathon/oncoagent-official-paper": "2026-05-10T08:41:57+09:00",
-    "https://www.latent.space/p/ainews-anthropic-growing-10xyear": "2026-05-10T08:41:57+09:00",
-    "https://simonwillison.net/2026/May/9/luke-curley/#atom-everything": "2026-05-10T08:41:57+09:00",
     "https://huggingface.co/blog/lablab-ai-amd-developer-hackathon/machinacheck": "2026-05-11T08:44:47+09:00",
     "https://simonwillison.net/2026/May/10/andrew-quinn/#atom-everything": "2026-05-11T08:44:47+09:00",
     "https://github.blog/developer-skills/github/github-for-beginners-getting-started-with-oss-contributions/": "2026-05-12T08:54:02+09:00",
@@ -509,7 +506,11 @@
     "https://www.latent.space/p/ainews-not-much-happened-today-6b8": "2026-06-07T08:59:50+09:00",
     "https://simonwillison.net/2026/Jun/6/micropython-wasm/#atom-everything": "2026-06-07T08:59:50+09:00",
     "https://simonwillison.net/2026/Jun/6/micropython-in-a-sandbox/#atom-everything": "2026-06-07T08:59:50+09:00",
-    "https://huggingface.co/blog/build-small-hackathon/amazingdigitaldentures": "2026-06-08T09:02:20+09:00"
+    "https://huggingface.co/blog/build-small-hackathon/amazingdigitaldentures": "2026-06-08T09:02:20+09:00",
+    "https://github.blog/developer-skills/github/github-for-beginners-answers-to-some-common-questions/": "2026-06-09T09:00:28+09:00",
+    "https://openai.com/index/openai-submits-confidential-s-1": "2026-06-09T09:00:28+09:00",
+    "https://openai.com/index/built-to-benefit-everyone-our-plan": "2026-06-09T09:00:28+09:00",
+    "https://simonwillison.net/2026/Jun/8/wwdc/#atom-everything": "2026-06-09T09:00:28+09:00"
   },
   "threads": {}
 }
