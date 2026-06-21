@@ -1,16 +1,6 @@
 {
-  "last_updated": "2026-06-20T09:04:45+09:00",
+  "last_updated": "2026-06-21T09:02:15+09:00",
   "news": {
-    "https://n.news.naver.com/article/277/0005766479?ntype=RANKING": "2026-05-22T08:57:41+09:00",
-    "https://n.news.naver.com/article/277/0005766471?ntype=RANKING": "2026-05-22T08:57:41+09:00",
-    "https://n.news.naver.com/article/277/0005766526?ntype=RANKING": "2026-05-22T08:57:41+09:00",
-    "https://n.news.naver.com/article/277/0005766377?ntype=RANKING": "2026-05-22T08:57:41+09:00",
-    "https://n.news.naver.com/article/277/0005766464?ntype=RANKING": "2026-05-22T08:57:41+09:00",
-    "https://n.news.naver.com/article/018/0006287449?ntype=RANKING": "2026-05-22T08:57:41+09:00",
-    "https://n.news.naver.com/article/018/0006287501?ntype=RANKING": "2026-05-22T08:57:41+09:00",
-    "https://n.news.naver.com/article/018/0006287541?ntype=RANKING": "2026-05-22T08:57:41+09:00",
-    "https://n.news.naver.com/article/018/0006287564?ntype=RANKING": "2026-05-22T08:57:41+09:00",
-    "https://n.news.naver.com/article/018/0006287565?ntype=RANKING": "2026-05-22T08:57:41+09:00",
     "https://n.news.naver.com/article/014/0005525405?ntype=RANKING": "2026-05-23T09:02:05+09:00",
     "https://n.news.naver.com/article/014/0005525472?ntype=RANKING": "2026-05-23T09:02:05+09:00",
     "https://n.news.naver.com/article/014/0005525473?ntype=RANKING": "2026-05-23T09:02:05+09:00",
@@ -300,19 +290,19 @@
     "https://n.news.naver.com/article/014/0005537386?ntype=RANKING": "2026-06-20T09:04:45+09:00",
     "https://n.news.naver.com/article/014/0005537382?ntype=RANKING": "2026-06-20T09:04:45+09:00",
     "https://n.news.naver.com/article/014/0005537387?ntype=RANKING": "2026-06-20T09:04:45+09:00",
-    "https://n.news.naver.com/article/014/0005537397?ntype=RANKING": "2026-06-20T09:04:45+09:00"
+    "https://n.news.naver.com/article/014/0005537397?ntype=RANKING": "2026-06-20T09:04:45+09:00",
+    "https://n.news.naver.com/article/015/0005300938?ntype=RANKING": "2026-06-21T09:02:15+09:00",
+    "https://n.news.naver.com/article/015/0005300947?ntype=RANKING": "2026-06-21T09:02:15+09:00",
+    "https://n.news.naver.com/article/015/0005300936?ntype=RANKING": "2026-06-21T09:02:15+09:00",
+    "https://n.news.naver.com/article/015/0005300931?ntype=RANKING": "2026-06-21T09:02:15+09:00",
+    "https://n.news.naver.com/article/015/0005300920?ntype=RANKING": "2026-06-21T09:02:15+09:00",
+    "https://n.news.naver.com/article/277/0005779074?ntype=RANKING": "2026-06-21T09:02:15+09:00",
+    "https://n.news.naver.com/article/277/0005779084?ntype=RANKING": "2026-06-21T09:02:15+09:00",
+    "https://n.news.naver.com/article/277/0005778998?ntype=RANKING": "2026-06-21T09:02:15+09:00",
+    "https://n.news.naver.com/article/277/0005779083?ntype=RANKING": "2026-06-21T09:02:15+09:00",
+    "https://n.news.naver.com/article/277/0005779075?ntype=RANKING": "2026-06-21T09:02:15+09:00"
   },
   "dev_blog": {
-    "https://github.blog/open-source/gaming/beyond-the-engine-10-open-source-projects-shaping-how-games-actually-get-made/": "2026-05-22T08:57:41+09:00",
-    "https://github.blog/open-source/building-githubs-next-chapter-in-accessibility/": "2026-05-22T08:57:41+09:00",
-    "https://deepmind.google/blog/were-launching-the-google-deepmind-accelerator-program-in-asia-pacific-to-tackle-environmental-risks/": "2026-05-22T08:57:41+09:00",
-    "https://www.latent.space/p/daytona": "2026-05-22T08:57:41+09:00",
-    "https://www.latent.space/p/ainews-openai-gpt-next-disproves": "2026-05-22T08:57:41+09:00",
-    "https://openai.com/index/adventhealth": "2026-05-22T08:57:41+09:00",
-    "https://simonwillison.net/2026/May/21/datasette-agent/#atom-everything": "2026-05-22T08:57:41+09:00",
-    "https://simonwillison.net/2026/May/21/datasette-agent-sprites/#atom-everything": "2026-05-22T08:57:41+09:00",
-    "https://simonwillison.net/2026/May/21/datasette-agent-charts/#atom-everything": "2026-05-22T08:57:41+09:00",
-    "https://simonwillison.net/2026/May/21/datasette-agent-2/#atom-everything": "2026-05-22T08:57:41+09:00",
     "https://github.blog/ai-and-ml/github-copilot/github-recognized-as-a-leader-in-the-gartner-magic-quadrant-for-enterprise-ai-coding-agents-for-the-third-year-in-a-row/": "2026-05-23T09:02:05+09:00",
     "https://huggingface.co/blog/Dharma-AI/specialization-beats-scale": "2026-05-23T09:02:05+09:00",
     "https://www.latent.space/p/ainews-new-ai-infra-unicorns-exa": "2026-05-23T09:02:05+09:00",
@@ -510,7 +500,8 @@
     "https://github.blog/ai-and-ml/github-copilot/how-we-built-an-internal-data-analytics-agent/": "2026-06-20T09:04:45+09:00",
     "https://www.interconnects.ai/p/banning-open-source-ai-would-be-a": "2026-06-20T09:04:45+09:00",
     "https://www.latent.space/p/ainews-glm-gpt-glm-52-passes-vibe": "2026-06-20T09:04:45+09:00",
-    "https://simonwillison.net/2026/Jun/19/sean-lynch/#atom-everything": "2026-06-20T09:04:45+09:00"
+    "https://simonwillison.net/2026/Jun/19/sean-lynch/#atom-everything": "2026-06-20T09:04:45+09:00",
+    "https://www.latent.space/p/ainews-not-much-happened-today-e7b": "2026-06-21T09:02:15+09:00"
   },
   "threads": {}
 }
