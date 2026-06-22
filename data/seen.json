@@ -1,16 +1,6 @@
 {
-  "last_updated": "2026-06-21T09:02:15+09:00",
+  "last_updated": "2026-06-22T09:06:58+09:00",
   "news": {
-    "https://n.news.naver.com/article/014/0005525405?ntype=RANKING": "2026-05-23T09:02:05+09:00",
-    "https://n.news.naver.com/article/014/0005525472?ntype=RANKING": "2026-05-23T09:02:05+09:00",
-    "https://n.news.naver.com/article/014/0005525473?ntype=RANKING": "2026-05-23T09:02:05+09:00",
-    "https://n.news.naver.com/article/014/0005525457?ntype=RANKING": "2026-05-23T09:02:05+09:00",
-    "https://n.news.naver.com/article/014/0005525477?ntype=RANKING": "2026-05-23T09:02:05+09:00",
-    "https://n.news.naver.com/article/018/0006288279?ntype=RANKING": "2026-05-23T09:02:05+09:00",
-    "https://n.news.naver.com/article/018/0006288518?ntype=RANKING": "2026-05-23T09:02:05+09:00",
-    "https://n.news.naver.com/article/018/0006288779?ntype=RANKING": "2026-05-23T09:02:05+09:00",
-    "https://n.news.naver.com/article/018/0006288284?ntype=RANKING": "2026-05-23T09:02:05+09:00",
-    "https://n.news.naver.com/article/018/0006288785?ntype=RANKING": "2026-05-23T09:02:05+09:00",
     "https://n.news.naver.com/article/009/0005684075?ntype=RANKING": "2026-05-24T08:54:23+09:00",
     "https://n.news.naver.com/article/009/0005684133?ntype=RANKING": "2026-05-24T08:54:23+09:00",
     "https://n.news.naver.com/article/009/0005684086?ntype=RANKING": "2026-05-24T08:54:23+09:00",
@@ -300,14 +290,19 @@
     "https://n.news.naver.com/article/277/0005779084?ntype=RANKING": "2026-06-21T09:02:15+09:00",
     "https://n.news.naver.com/article/277/0005778998?ntype=RANKING": "2026-06-21T09:02:15+09:00",
     "https://n.news.naver.com/article/277/0005779083?ntype=RANKING": "2026-06-21T09:02:15+09:00",
-    "https://n.news.naver.com/article/277/0005779075?ntype=RANKING": "2026-06-21T09:02:15+09:00"
+    "https://n.news.naver.com/article/277/0005779075?ntype=RANKING": "2026-06-21T09:02:15+09:00",
+    "https://n.news.naver.com/article/009/0005696806?ntype=RANKING": "2026-06-22T09:06:58+09:00",
+    "https://n.news.naver.com/article/009/0005696789?ntype=RANKING": "2026-06-22T09:06:58+09:00",
+    "https://n.news.naver.com/article/009/0005696805?ntype=RANKING": "2026-06-22T09:06:58+09:00",
+    "https://n.news.naver.com/article/009/0005696792?ntype=RANKING": "2026-06-22T09:06:58+09:00",
+    "https://n.news.naver.com/article/009/0005696702?ntype=RANKING": "2026-06-22T09:06:58+09:00",
+    "https://n.news.naver.com/article/018/0006311652?ntype=RANKING": "2026-06-22T09:06:58+09:00",
+    "https://n.news.naver.com/article/018/0006311629?ntype=RANKING": "2026-06-22T09:06:58+09:00",
+    "https://n.news.naver.com/article/018/0006311645?ntype=RANKING": "2026-06-22T09:06:58+09:00",
+    "https://n.news.naver.com/article/018/0006311642?ntype=RANKING": "2026-06-22T09:06:58+09:00",
+    "https://n.news.naver.com/article/018/0006311480?ntype=RANKING": "2026-06-22T09:06:58+09:00"
   },
   "dev_blog": {
-    "https://github.blog/ai-and-ml/github-copilot/github-recognized-as-a-leader-in-the-gartner-magic-quadrant-for-enterprise-ai-coding-agents-for-the-third-year-in-a-row/": "2026-05-23T09:02:05+09:00",
-    "https://huggingface.co/blog/Dharma-AI/specialization-beats-scale": "2026-05-23T09:02:05+09:00",
-    "https://www.latent.space/p/ainews-new-ai-infra-unicorns-exa": "2026-05-23T09:02:05+09:00",
-    "https://simonwillison.net/2026/May/22/memory-shortage/#atom-everything": "2026-05-23T09:02:05+09:00",
-    "https://simonwillison.net/2026/May/22/ftc-active-listening/#atom-everything": "2026-05-23T09:02:05+09:00",
     "https://huggingface.co/blog/nvidia/nemotron-labs-diffusion": "2026-05-24T08:54:23+09:00",
     "https://www.latent.space/p/ainews-all-model-labs-are-now-agent": "2026-05-24T08:54:23+09:00",
     "https://simonwillison.net/2026/May/23/on-the-dl/#atom-everything": "2026-05-24T08:54:23+09:00",
@@ -501,7 +496,12 @@
     "https://www.interconnects.ai/p/banning-open-source-ai-would-be-a": "2026-06-20T09:04:45+09:00",
     "https://www.latent.space/p/ainews-glm-gpt-glm-52-passes-vibe": "2026-06-20T09:04:45+09:00",
     "https://simonwillison.net/2026/Jun/19/sean-lynch/#atom-everything": "2026-06-20T09:04:45+09:00",
-    "https://www.latent.space/p/ainews-not-much-happened-today-e7b": "2026-06-21T09:02:15+09:00"
+    "https://www.latent.space/p/ainews-not-much-happened-today-e7b": "2026-06-21T09:02:15+09:00",
+    "https://www.latent.space/p/exclusive-250-off-ai-engineer-tix": "2026-06-22T09:06:58+09:00",
+    "https://openai.com/index/samsung-electronics-chatgpt-codex-deployment": "2026-06-22T09:06:58+09:00",
+    "https://simonwillison.net/2026/Jun/21/sqlite-utils-40rc1/#atom-everything": "2026-06-22T09:06:58+09:00",
+    "https://simonwillison.net/2026/Jun/21/sqlite-utils/#atom-everything": "2026-06-22T09:06:58+09:00",
+    "https://simonwillison.net/2026/Jun/21/temporary-cloudflare-accounts/#atom-everything": "2026-06-22T09:06:58+09:00"
   },
   "threads": {}
 }
