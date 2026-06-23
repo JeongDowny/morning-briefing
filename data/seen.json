@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-23T09:01:52+09:00",
+  "last_updated": "2026-06-24T08:53:02+09:00",
   "news": {
     "https://n.news.naver.com/article/366/0001166854?ntype=RANKING": "2026-05-25T08:55:40+09:00",
     "https://n.news.naver.com/article/366/0001166878?ntype=RANKING": "2026-05-25T08:55:40+09:00",
@@ -300,7 +300,17 @@
     "https://n.news.naver.com/article/014/0005538287?ntype=RANKING": "2026-06-23T09:01:52+09:00",
     "https://n.news.naver.com/article/014/0005538283?ntype=RANKING": "2026-06-23T09:01:52+09:00",
     "https://n.news.naver.com/article/014/0005538220?ntype=RANKING": "2026-06-23T09:01:52+09:00",
-    "https://n.news.naver.com/article/014/0005538297?ntype=RANKING": "2026-06-23T09:01:52+09:00"
+    "https://n.news.naver.com/article/014/0005538297?ntype=RANKING": "2026-06-23T09:01:52+09:00",
+    "https://n.news.naver.com/article/009/0005697892?ntype=RANKING": "2026-06-24T08:53:02+09:00",
+    "https://n.news.naver.com/article/009/0005697874?ntype=RANKING": "2026-06-24T08:53:02+09:00",
+    "https://n.news.naver.com/article/009/0005697871?ntype=RANKING": "2026-06-24T08:53:02+09:00",
+    "https://n.news.naver.com/article/009/0005697876?ntype=RANKING": "2026-06-24T08:53:02+09:00",
+    "https://n.news.naver.com/article/009/0005697895?ntype=RANKING": "2026-06-24T08:53:02+09:00",
+    "https://n.news.naver.com/article/015/0005302093?ntype=RANKING": "2026-06-24T08:53:02+09:00",
+    "https://n.news.naver.com/article/015/0005302083?ntype=RANKING": "2026-06-24T08:53:02+09:00",
+    "https://n.news.naver.com/article/015/0005302088?ntype=RANKING": "2026-06-24T08:53:02+09:00",
+    "https://n.news.naver.com/article/015/0005302086?ntype=RANKING": "2026-06-24T08:53:02+09:00",
+    "https://n.news.naver.com/article/015/0005302038?ntype=RANKING": "2026-06-24T08:53:02+09:00"
   },
   "dev_blog": {
     "https://simonwillison.net/2026/May/24/datasette/#atom-everything": "2026-05-25T08:55:40+09:00",
@@ -505,7 +515,20 @@
     "https://www.latent.space/p/gray-swan": "2026-06-23T09:01:52+09:00",
     "https://openai.com/index/daybreak-securing-the-world": "2026-06-23T09:01:52+09:00",
     "https://openai.com/index/patch-the-planet": "2026-06-23T09:01:52+09:00",
-    "https://simonwillison.net/2026/Jun/22/porting-moebius/#atom-everything": "2026-06-23T09:01:52+09:00"
+    "https://simonwillison.net/2026/Jun/22/porting-moebius/#atom-everything": "2026-06-23T09:01:52+09:00",
+    "https://www.anthropic.com/news/introducing-claude-tag": "2026-06-24T08:53:02+09:00",
+    "https://github.blog/developer-skills/github/i-automated-my-job-and-it-made-me-a-better-leader/": "2026-06-24T08:53:02+09:00",
+    "https://github.blog/news-insights/policy-news-and-insights/github-joins-coalition-advocating-for-fixes-to-california-ai-transparency-act-to-protect-open-source/": "2026-06-24T08:53:02+09:00",
+    "https://huggingface.co/blog/ibm-research/cuga-apps": "2026-06-24T08:53:02+09:00",
+    "https://huggingface.co/blog/huggingface-hub-release-ci": "2026-06-24T08:53:02+09:00",
+    "https://huggingface.co/blog/cross-origin-storage": "2026-06-24T08:53:02+09:00",
+    "https://www.latent.space/p/ainews-spacex-is-already-a-28byr": "2026-06-24T08:53:02+09:00",
+    "https://openai.com/index/helping-build-shared-standards-for-advanced-ai": "2026-06-24T08:53:02+09:00",
+    "https://openai.com/index/gpt-5-immunology-mystery": "2026-06-24T08:53:02+09:00",
+    "https://openai.com/index/omio": "2026-06-24T08:53:02+09:00",
+    "https://simonwillison.net/2026/Jun/23/datasette/#atom-everything": "2026-06-24T08:53:02+09:00",
+    "https://simonwillison.net/2026/Jun/23/opfs-pyodide/#atom-everything": "2026-06-24T08:53:02+09:00",
+    "https://simonwillison.net/2026/Jun/22/prompt-injection-as-role-confusion/#atom-everything": "2026-06-24T08:53:02+09:00"
   },
   "threads": {}
 }
