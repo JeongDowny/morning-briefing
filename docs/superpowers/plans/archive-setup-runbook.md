@@ -1,5 +1,11 @@
 # 아카이브 webhook 1회 셋업 런북
 
+## 0. 전제 — repo 공개 여부
+
+웹훅(`api/telegram.py`)은 manifest 를 `raw.githubusercontent.com` 에서 읽는다. **이 repo 가 public 이어야 정상 동작**한다. private repo 면 raw 접근이 `Authorization: Bearer` 헤더를 무시/차단해 manifest fetch 가 404 → 버튼이 전부 "⏳ 만료된 항목" 으로 응답한다.
+
+→ private 으로 운영하려면 `fetch_manifest_item` 을 GitHub Contents API(`api.github.com/repos/{repo}/contents/...`) + base64 디코딩으로 바꿔야 한다. public 이면 그대로 진행.
+
 ## 1. GitHub fine-grained PAT 발급
 - Settings → Developer settings → Fine-grained tokens → Generate
 - Repository access: 이 repo 하나만
