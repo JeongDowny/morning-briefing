@@ -99,31 +99,63 @@ def parse_response(text: str) -> dict[str, dict[str, str]]:
     return out
 
 
-def summarize_source(client, items: list[dict[str, Any]], instruction: str, model: str) -> list[dict[str, Any]]:
-    if not items or not instruction:
-        return items
-    user_msg = build_user_message(items, instruction)
+def fallback_summary(lead: str) -> str:
+    lead = (lead or "").strip()
+    if not lead:
+        return ""
+    return lead[:150] + ("…" if len(lead) > 150 else "")
 
+
+def _summarize_once(client, items: list[dict[str, Any]], instruction: str, model: str) -> dict[int, dict[str, str]]:
+    """items 1회 배치 요약 → {로컬인덱스: {summary, title_ko}}. 빈 dict 가능."""
+    if not items or not instruction:
+        return {}
+    user_msg = build_user_message(items, instruction)
     from google.genai import types
     config = types.GenerateContentConfig(
         response_mime_type="application/json",
         max_output_tokens=DEFAULT_MAX_TOKENS,
         temperature=0.3,
     )
-    resp = client.models.generate_content(
-        model=model,
-        contents=user_msg,
-        config=config,
-    )
-    text = (resp.text or "").strip()
-    parsed = parse_response(text)
+    resp = client.models.generate_content(model=model, contents=user_msg, config=config)
+    parsed = parse_response((resp.text or "").strip())  # {"item_0": {...}}
+    out: dict[int, dict[str, str]] = {}
+    for i in range(len(items)):
+        entry = parsed.get(f"item_{i}")
+        if entry:
+            out[i] = entry
+    return out
 
+
+def summarize_source(client, items: list[dict[str, Any]], instruction: str, model: str) -> list[dict[str, Any]]:
+    if not items or not instruction:
+        return items
+
+    # 1차
+    got = _summarize_once(client, items, instruction, model)
     for i, item in enumerate(items):
-        entry = parsed.get(f"item_{i}", {})
+        entry = got.get(i, {})
         item["summary"] = entry.get("summary", "")
-        title_ko = entry.get("title_ko", "")
-        if title_ko:
-            item["title_ko"] = title_ko
+        if entry.get("title_ko"):
+            item["title_ko"] = entry["title_ko"]
+
+    # 재시도: summary 빈 항목만 (로컬→원본 인덱스 매핑)
+    missing_idx = [i for i, it in enumerate(items) if not it.get("summary")]
+    if missing_idx:
+        sub = [items[i] for i in missing_idx]
+        retry = _summarize_once(client, sub, instruction, model)  # {로컬j: {...}}
+        for j, orig_i in enumerate(missing_idx):
+            entry = retry.get(j, {})
+            if entry.get("summary"):
+                items[orig_i]["summary"] = entry["summary"]
+            if entry.get("title_ko") and not items[orig_i].get("title_ko"):
+                items[orig_i]["title_ko"] = entry["title_ko"]
+
+    # 폴백: 그래도 비면 lead 앞부분
+    for it in items:
+        if not it.get("summary"):
+            it["summary"] = fallback_summary(it.get("lead", ""))
+
     return items
 
 
@@ -197,5 +229,16 @@ def main() -> int:
     return 0
 
 
+def _self_check() -> None:
+    assert fallback_summary("a" * 200) == "a" * 150 + "…"
+    assert fallback_summary("짧은리드") == "짧은리드"
+    assert fallback_summary("") == ""
+    assert fallback_summary("   spaced   ") == "spaced"
+    print("[summarize] self-check OK")
+
+
 if __name__ == "__main__":
+    if "--self-check" in sys.argv:
+        _self_check()
+        sys.exit(0)
     sys.exit(main())
