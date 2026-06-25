@@ -1,142 +1,184 @@
 {
   "date": "2026-06-25",
   "items": {
-    "20260625-8ffed250": {
-      "title": "Introducing Claude Opus 4.7",
-      "url": "https://www.anthropic.com/news/claude-opus-4-7",
-      "summary": "Anthropic 이 Opus 4.7 을 4/16 공개. 코딩·에이전트·비전·다단계 작업 성능이 향상되고, 이전 Opus 대비 정확도와 일관성에서 개선을 보였다고 밝혔다.",
-      "source": "Anthropic"
-    },
-    "20260625-afabafae": {
-      "title": "Introducing Claude Design by Anthropic Labs",
-      "url": "https://www.anthropic.com/news/claude-design-anthropic-labs",
-      "summary": "Anthropic Labs 가 Claude Design 을 출시. Claude 와 협력하여 디자인, 프로토타입, 슬라이드, 원페이지 문서 등 시각적 작업을 생성할 수 있는 신제품이다.",
-      "source": "Anthropic"
-    },
-    "20260625-26de9866": {
-      "title": "Claude is a space to think",
-      "url": "https://www.anthropic.com/news/claude-is-a-space-to-think",
-      "summary": "Anthropic 은 Claude 를 광고 없이 운영할 것이라고 발표했다. 광고 인센티브가 유용한 AI 어시스턴트와 양립할 수 없으며, 사용자 신뢰를 해치지 않고 접근성을 확대할 계획이라고 설명했다.",
-      "source": "Anthropic"
-    },
-    "20260625-7871fe69": {
-      "title": "Anthropic’s Long-Term Benefit Trust appoints Vas Narasimhan to Board of Directors",
-      "url": "https://www.anthropic.com/news/narasimhan-board",
-      "summary": "Anthropic 의 Long-Term Benefit Trust 가 4/14, Vas Narasimhan 을 이사회 이사로 임명했다고 발표했다.",
-      "source": "Anthropic"
-    },
-    "20260625-63b83b32": {
-      "title": "Anthropic expands partnership with Google and Broadcom for multiple gigawatts of next-generation compute",
-      "url": "https://www.anthropic.com/news/google-broadcom-partnership-compute",
-      "summary": "Anthropic 이 4/6, Google 및 Broadcom 과 차세대 컴퓨팅 분야 파트너십을 확장한다고 발표했다. 이는 다수의 기가와트급 컴퓨팅 자원 확보를 위한 협력이다.",
-      "source": "Anthropic"
-    },
-    "20260625-39850945": {
-      "title": "Australian government and Anthropic sign MOU for AI safety and research",
-      "url": "https://www.anthropic.com/news/australia-MOU",
-      "summary": "호주 정부와 Anthropic 이 3/31, AI 안전성 및 연구 협력을 위한 MOU 를 체결했다고 발표했다.",
-      "source": "Anthropic"
-    },
-    "20260625-32733402": {
-      "title": "Anthropic invests $100 million into the Claude Partner Network",
-      "url": "https://www.anthropic.com/news/claude-partner-network",
-      "summary": "Anthropic 이 3/12, Claude Partner Network 에 1억 달러를 투자한다고 발표했다.",
-      "source": "Anthropic"
-    },
-    "20260625-37ba8ec5": {
-      "title": "Introducing The Anthropic Institute",
-      "url": "https://www.anthropic.com/news/the-anthropic-institute",
-      "summary": "Anthropic 이 3/11, The Anthropic Institute 를 공개한다고 발표했다.",
-      "source": "Anthropic"
-    },
-    "20260625-367e4c40": {
-      "title": "Sydney will become Anthropic’s fourth office in Asia-Pacific",
-      "url": "https://www.anthropic.com/news/sydney-fourth-office-asia-pacific",
-      "summary": "Anthropic 이 3/10, 시드니가 아시아 태평양 지역의 네 번째 사무소가 될 것이라고 발표했다.",
-      "source": "Anthropic"
-    },
-    "20260625-e89abcac": {
-      "title": "Partnering with Mozilla to improve Firefox’s security",
-      "url": "https://www.anthropic.com/news/mozilla-firefox-security",
-      "summary": "Anthropic 이 3/6, Mozilla 와 협력하여 Firefox 의 보안을 강화할 것이라고 발표했다.",
-      "source": "Anthropic"
-    },
-    "20260625-cf337023": {
-      "title": "Where things stand with the Department of War",
-      "url": "https://www.anthropic.com/news/where-stand-department-war",
-      "summary": "Anthropic 이 3/5, 국방부(Department of War)와의 현황에 대해 발표했다.",
-      "source": "Anthropic"
-    },
-    "20260625-3a4ec288": {
-      "title": "“너는 아무것도 하지 마” 전역 겨우 14일 앞두고 삶을 등진 아들…법원 “국가가 1000만원 배상” [세상&]",
-      "url": "https://n.news.naver.com/article/016/0002631841?ntype=RANKING",
-      "summary": "전역을 14일 앞두고 사망한 아들의 사건에 대해 법원이 국가에 1000만원을 배상하라고 판결했다.",
+    "20260625-6f24ae33": {
+      "title": "\"주식 팔 줄 몰라\" 2만원대 SK하닉 매수한 김문수…'100배 수익설' 화제",
+      "url": "https://n.news.naver.com/article/277/0005781137?ntype=RANKING",
+      "summary": "김문수 전 경기도지사가 2만원대에 SK하이닉스 주식을 매수해 100배 수익을 거뒀다는 주장이 온라인에서 화제가 되고 있다.",
       "source": ""
     },
-    "20260625-8a2d25fa": {
-      "title": "이란 협상대표 “이란이 호르무즈 통제 중…미국과 협상, 최종 합의까진 멀어”",
-      "url": "https://n.news.naver.com/article/016/0002631763?ntype=RANKING",
-      "summary": "이란 협상대표는 이란이 호르무즈 해협을 통제 중이며, 미국과의 협상은 최종 합의에 이르기까지는 아직 멀다고 밝혔다.",
+    "20260625-6de14809": {
+      "title": "\"새벽 2시까지 노래방\" 결혼 앞두고 숨진 여성 소방관, 음주 회식 시달려",
+      "url": "https://n.news.naver.com/article/277/0005781196?ntype=RANKING",
+      "summary": "결혼을 앞두고 숨진 여성 소방관이 새벽 2시까지 이어진 노래방 등 음주 회식에 시달렸다는 주장이 제기됐다.",
       "source": ""
     },
-    "20260625-696f6df6": {
-      "title": "송중기·케이티, 결혼 3년만에 첫 부부동반 깜짝 근황…연주회 내레이터 참여",
-      "url": "https://n.news.naver.com/article/016/0002631862?ntype=RANKING",
-      "summary": "송중기와 케이티 부부가 결혼 3년 만에 처음으로 부부 동반 근황을 공개, 연주회 내레이터로 참여했다.",
+    "20260625-c63e9175": {
+      "title": "\"말리면 킹크랩보다 비싸\" 집 앞 잔디밭에서 발견한 中 산해진미의 정체",
+      "url": "https://n.news.naver.com/article/277/0005781323?ntype=RANKING",
+      "summary": "집 앞 잔디밭에서 발견된 정체불명의 해산물이 중국의 고급 식재료인 '말린 해삼'으로 확인되어 관심을 모은다.",
       "source": ""
     },
-    "20260625-66469e75": {
-      "title": "“14K 금배지 하나가 150만원”…금값 급등에 금배지 떼는 日 지방의원들",
-      "url": "https://n.news.naver.com/article/016/0002631847?ntype=RANKING",
-      "summary": "금값 급등으로 14K 금배지 하나가 150만원에 달하자, 일본 지방의원들이 금배지를 떼는 현상이 나타나고 있다.",
+    "20260625-8a79af08": {
+      "title": "[속보] 홍명보호, 남아공에 0-1 충격패… 조 3위 추락",
+      "url": "https://n.news.naver.com/article/016/0002661536?ntype=RANKING",
+      "summary": "홍명보 감독이 이끄는 축구 대표팀이 남아프리카공화국과의 경기에서 0-1로 충격패하며 조 3위로 추락했다.",
       "source": ""
     },
-    "20260625-facbc908": {
-      "title": "“400만원 간다” 효성중공업, 역대 세번째 ‘300만원 주식’ 등극 [종목Pick]",
-      "url": "https://n.news.naver.com/article/016/0002631758?ntype=RANKING",
-      "summary": "효성중공업이 역대 세 번째로 '300만원 주식'에 등극하며, 400만원 돌파에 대한 관심이 커지고 있다.",
+    "20260625-2108ed5b": {
+      "title": "하루만에 48% 폭락, 말이 돼?…삼전닉스 레버리지 ‘간 큰 투자’ 무섭다[투자360]",
+      "url": "https://n.news.naver.com/article/016/0002661148?ntype=RANKING",
+      "summary": "삼성전자와 SK하이닉스 관련 레버리지 투자 상품이 하루 만에 48% 폭락하며 고위험 투자의 위험성을 보여주고 있다.",
       "source": ""
     },
-    "20260625-8d841808": {
-      "title": "삼겹살도 타이레놀도 못 먹는다?…최악의 시나리오 대비하는 영국 “선택지 줄어들지도”",
-      "url": "https://n.news.naver.com/article/011/0004612184?ntype=RANKING",
-      "summary": "영국이 최악의 시나리오에 대비하며 삼겹살이나 타이레놀을 먹지 못하는 상황 등 선택지가 줄어들 가능성을 언급했다.",
+    "20260625-077ae3f0": {
+      "title": "홍명보 “최선 다했다 생각…결과는 감독의 책임”",
+      "url": "https://n.news.naver.com/article/016/0002661539?ntype=RANKING",
+      "summary": "홍명보 감독이 경기 후 인터뷰에서 선수들이 최선을 다했다고 평가하며, 경기 결과에 대한 책임은 감독에게 있다고 밝혔다.",
       "source": ""
     },
-    "20260625-5662bc30": {
-      "title": "“꼭 복수할 거야”…1년 동안 헬스장서 힘 키운 60대, 전 남편 살해했다 [오늘의 그날]",
-      "url": "https://n.news.naver.com/article/011/0004612091?ntype=RANKING",
-      "summary": "60대 여성이 복수를 위해 1년 동안 헬스장에서 힘을 키운 뒤 전 남편을 살해하는 사건이 발생했다.",
+    "20260625-d47c2802": {
+      "title": "“무조건 오래 먹으면 간 박살 난다”…의사 경고한 영양제",
+      "url": "https://n.news.naver.com/article/016/0002661081?ntype=RANKING",
+      "summary": "한 의사가 특정 영양제를 장기간 복용할 경우 간 손상을 유발할 수 있다고 경고했다.",
       "source": ""
     },
-    "20260625-83ef3281": {
-      "title": "“1인당 100만원”…또 돈뿌리는 與野",
-      "url": "https://n.news.naver.com/article/011/0004612272?ntype=RANKING",
-      "summary": "여야가 1인당 100만원 지급을 논의하며 또다시 현금 지원 정책을 추진하고 있다.",
+    "20260625-7169225b": {
+      "title": "‘코스피 최대 1만5000까지 간다’…JP모건 “조정 때마다 비중 확대 권고” [투자360]",
+      "url": "https://n.news.naver.com/article/016/0002661392?ntype=RANKING",
+      "summary": "JP모건이 코스피 지수가 최대 1만5000까지 상승할 수 있다고 전망하며, 조정 시마다 주식 비중 확대를 권고했다.",
       "source": ""
     },
-    "20260625-5c63c550": {
-      "title": "2주 만에 금 간 휴전…‘3차 대전’ 경고까지 나왔다 [美-이란 전쟁]",
-      "url": "https://n.news.naver.com/article/011/0004612141?ntype=RANKING",
-      "summary": "2주 만에 휴전이 깨지면서 미국-이란 갈등 속에 '3차 대전' 경고까지 나왔다.",
-      "source": ""
-    },
-    "20260625-6c1bdb1f": {
-      "title": "“우리 애 점심에 밥 못 먹었었는데”…‘양파껍질 못 벗겨’ 또다시 빵 먹나",
-      "url": "https://n.news.naver.com/article/011/0004612170?ntype=RANKING",
-      "summary": "학교 급식에서 양파껍질을 벗기지 못해 아이들이 밥 대신 빵을 먹는 상황이 발생, 부실 급식 우려가 제기된다.",
-      "source": ""
-    },
-    "20260625-f48dd2ad": {
-      "title": "Changes in the system prompt between Claude Opus 4.6 and 4.7",
-      "url": "https://simonwillison.net/2026/Apr/18/opus-system-prompt/#atom-everything",
+    "20260625-255a8bc1": {
+      "title": "Code as Agent Harness — 코드를 에이전트의 실행 기반으로 보는 102페이지 서베이",
+      "url": "https://news.hada.io/topic?id=30815",
       "summary": "",
-      "source": "Simon Willison"
+      "source": "GeekNews"
     },
-    "20260625-72116227": {
-      "title": "Claude system prompts as a git timeline",
-      "url": "https://simonwillison.net/2026/Apr/18/extract-system-prompts/#atom-everything",
+    "20260625-37c50b7c": {
+      "title": "AI시대, 나의 전문성을 재설계하는 법 [구글 슬라이드, 165P]",
+      "url": "https://news.hada.io/topic?id=30814",
       "summary": "",
+      "source": "GeekNews"
+    },
+    "20260625-7879b542": {
+      "title": "Cafe24, LLM Router 공개",
+      "url": "https://news.hada.io/topic?id=30813",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260625-0c14db60": {
+      "title": "RubyLLM: 주요 AI 제공자를 하나로 묶는 Ruby 프레임워크",
+      "url": "https://news.hada.io/topic?id=30811",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260625-701d2ec0": {
+      "title": "Quake 개발자 존 카맥의 초기 시절 실수들",
+      "url": "https://news.hada.io/topic?id=30810",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260625-75991c95": {
+      "title": "Anthropic, Claude Tag 공개",
+      "url": "https://news.hada.io/topic?id=30809",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260625-f453837f": {
+      "title": "독일에서 회사 설립하기: 9,600유로와 152일, 아직 인보이스도 못 보냄",
+      "url": "https://news.hada.io/topic?id=30808",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260625-05735ff8": {
+      "title": "Bunny DNS 무료 전환",
+      "url": "https://news.hada.io/topic?id=30807",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260625-5c873db7": {
+      "title": "OpenAI, Broadcom과 만든 첫 자체 추론 칩 Jalapeño 공개",
+      "url": "https://news.hada.io/topic?id=30806",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260625-42dcfed3": {
+      "title": "bumblebee - 공급망 침해 노출 점검용 스캐너",
+      "url": "https://news.hada.io/topic?id=30805",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260625-05a77925": {
+      "title": "SSH 터널 실전 가이드: 로컬 및 원격 포트 포워딩",
+      "url": "https://news.hada.io/topic?id=30804",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260625-cbd97c3e": {
+      "title": "GIMP 0.54.1용 Flatpak 패키지 (1996)",
+      "url": "https://news.hada.io/topic?id=30803",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260625-c1098d17": {
+      "title": "비타민 D의 무가치함은 약간 과장됐다",
+      "url": "https://news.hada.io/topic?id=30802",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260625-9fa92a20": {
+      "title": "극한 폭염 컨퍼런스, 폭염 경고로 취소",
+      "url": "https://news.hada.io/topic?id=30801",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260625-e0c88ccf": {
+      "title": "VibeThinker-3B: SFT+GRPO로 Opus 4.5 추론 성능을 넘긴 3B 모델",
+      "url": "https://news.hada.io/topic?id=30800",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260625-d8345f0a": {
+      "title": "다가오는 루프",
+      "url": "https://news.hada.io/topic?id=30799",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260625-fff68a5c": {
+      "title": "TikZ Editor: LaTeX 그림용 WYSIWYG 편집기",
+      "url": "https://news.hada.io/topic?id=30798",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260625-e0b2498a": {
+      "title": "단어 아래 빨간색·초록색 물결선을 남긴 Tony Krueger를 추모하며",
+      "url": "https://news.hada.io/topic?id=30795",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260625-9716e299": {
+      "title": "Jerry&#039;s Map: 4,000개 넘는 패널로 만든 상상 도시 지도",
+      "url": "https://news.hada.io/topic?id=30794",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260625-9b5f3472": {
+      "title": "Google Workspace CLI를 만든 개발자, 구글에서 해고됨",
+      "url": "https://news.hada.io/topic?id=30790",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260625-0a8a361a": {
+      "title": "[AINews] It's Meta-Harness Summer",
+      "url": "https://www.latent.space/p/ainews-its-meta-harness-summer",
+      "summary": "AI 분야에서 기존 '하네스 엔지니어링'을 넘어선 '메타-하네스' 개념이 부상하고 있다. 이는 여러 하네스를 관리하는 상위 시스템으로, 새로운 기술 트렌드를 형성한다.",
+      "source": "Latent Space"
+    },
+    "20260625-ff39842e": {
+      "title": "simonw/browser-compat-db",
+      "url": "https://simonwillison.net/2026/Jun/24/browser-compat-db/#atom-everything",
+      "summary": "Simon Willison이 Mozilla의 `mdn/browser-compat-data`를 약 `66MB` 크기의 SQLite 데이터베이스로 변환했다. `Claude Code for web (Opus 4.8)` 스크립트와 `Codex Desktop (GPT-5.5)`이 만든 GitHub Actions 워크플로우를 활용. GitHub CDN을 통해 CORS 헤더가 열린 상태로 데이터베이스를 제공하는 것이 목표다.",
       "source": "Simon Willison"
     }
   }
