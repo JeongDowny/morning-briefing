@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-06-25T09:04:52+09:00",
+  "last_updated": "2026-06-25T13:55:32+09:00",
   "news": {
     "https://n.news.naver.com/article/016/0002648392?ntype=RANKING": "2026-05-27T09:00:15+09:00",
     "https://n.news.naver.com/article/016/0002648434?ntype=RANKING": "2026-05-27T09:00:15+09:00",
@@ -300,7 +300,15 @@
     "https://n.news.naver.com/article/277/0005780495?ntype=RANKING": "2026-06-25T09:04:52+09:00",
     "https://n.news.naver.com/article/277/0005781036?ntype=RANKING": "2026-06-25T09:04:52+09:00",
     "https://n.news.naver.com/article/277/0005781035?ntype=RANKING": "2026-06-25T09:04:52+09:00",
-    "https://n.news.naver.com/article/277/0005781048?ntype=RANKING": "2026-06-25T09:04:52+09:00"
+    "https://n.news.naver.com/article/277/0005781048?ntype=RANKING": "2026-06-25T09:04:52+09:00",
+    "https://n.news.naver.com/article/277/0005781137?ntype=RANKING": "2026-06-25T13:55:32+09:00",
+    "https://n.news.naver.com/article/277/0005781196?ntype=RANKING": "2026-06-25T13:55:32+09:00",
+    "https://n.news.naver.com/article/277/0005781323?ntype=RANKING": "2026-06-25T13:55:32+09:00",
+    "https://n.news.naver.com/article/016/0002661536?ntype=RANKING": "2026-06-25T13:55:32+09:00",
+    "https://n.news.naver.com/article/016/0002661148?ntype=RANKING": "2026-06-25T13:55:32+09:00",
+    "https://n.news.naver.com/article/016/0002661539?ntype=RANKING": "2026-06-25T13:55:32+09:00",
+    "https://n.news.naver.com/article/016/0002661081?ntype=RANKING": "2026-06-25T13:55:32+09:00",
+    "https://n.news.naver.com/article/016/0002661392?ntype=RANKING": "2026-06-25T13:55:32+09:00"
   },
   "dev_blog": {
     "https://www.anthropic.com/news/kiyoung-choi-representative-director-anthropic-korea": "2026-05-27T09:00:15+09:00",
@@ -519,7 +527,29 @@
     "https://www.latent.space/p/databricks": "2026-06-25T09:04:52+09:00",
     "https://www.latent.space/p/ainews-claude-tag-multiplayer-proactive": "2026-06-25T09:04:52+09:00",
     "https://openai.com/index/openai-broadcom-jalapeno-inference-chip": "2026-06-25T09:04:52+09:00",
-    "https://simonwillison.net/2026/Jun/24/tom-macwright/#atom-everything": "2026-06-25T09:04:52+09:00"
+    "https://simonwillison.net/2026/Jun/24/tom-macwright/#atom-everything": "2026-06-25T09:04:52+09:00",
+    "https://news.hada.io/topic?id=30815": "2026-06-25T13:55:32+09:00",
+    "https://news.hada.io/topic?id=30814": "2026-06-25T13:55:32+09:00",
+    "https://news.hada.io/topic?id=30813": "2026-06-25T13:55:32+09:00",
+    "https://news.hada.io/topic?id=30811": "2026-06-25T13:55:32+09:00",
+    "https://news.hada.io/topic?id=30810": "2026-06-25T13:55:32+09:00",
+    "https://news.hada.io/topic?id=30809": "2026-06-25T13:55:32+09:00",
+    "https://news.hada.io/topic?id=30808": "2026-06-25T13:55:32+09:00",
+    "https://news.hada.io/topic?id=30807": "2026-06-25T13:55:32+09:00",
+    "https://news.hada.io/topic?id=30806": "2026-06-25T13:55:32+09:00",
+    "https://news.hada.io/topic?id=30805": "2026-06-25T13:55:32+09:00",
+    "https://news.hada.io/topic?id=30804": "2026-06-25T13:55:32+09:00",
+    "https://news.hada.io/topic?id=30803": "2026-06-25T13:55:32+09:00",
+    "https://news.hada.io/topic?id=30802": "2026-06-25T13:55:32+09:00",
+    "https://news.hada.io/topic?id=30801": "2026-06-25T13:55:32+09:00",
+    "https://news.hada.io/topic?id=30800": "2026-06-25T13:55:32+09:00",
+    "https://news.hada.io/topic?id=30799": "2026-06-25T13:55:32+09:00",
+    "https://news.hada.io/topic?id=30798": "2026-06-25T13:55:32+09:00",
+    "https://news.hada.io/topic?id=30795": "2026-06-25T13:55:32+09:00",
+    "https://news.hada.io/topic?id=30794": "2026-06-25T13:55:32+09:00",
+    "https://news.hada.io/topic?id=30790": "2026-06-25T13:55:32+09:00",
+    "https://www.latent.space/p/ainews-its-meta-harness-summer": "2026-06-25T13:55:32+09:00",
+    "https://simonwillison.net/2026/Jun/24/browser-compat-db/#atom-everything": "2026-06-25T13:55:32+09:00"
   },
   "threads": {}
 }
