@@ -31,13 +31,6 @@ MAX_MESSAGE_LEN = 4000  # 4096 한계에서 안전 마진
 BUTTONS_PER_ROW = 4
 MANIFEST_DIR = ROOT / "data"
 
-SECTION_ORDER = [
-    ("naver_", "📈 경제뉴스"),
-    ("openai_rss", "🤖 AI / 개발 소식"),
-    ("anthropic_html", "🤖 AI / 개발 소식"),
-    ("threads_", "🧵 Threads 하이라이트"),
-]
-
 # MarkdownV2 이스케이프가 필요한 문자들
 MDV2_ESCAPE_CHARS = r"_*[]()~`>#+-=|{}.!"
 
@@ -89,12 +82,15 @@ def group_by_section(sources: list[dict[str, Any]]) -> dict[str, list[dict[str, 
     grouped: dict[str, list[dict[str, Any]]] = {}
     for src in sources:
         source_name = src.get("source", "")
-        section_label = None
-        for prefix, label in SECTION_ORDER:
-            if source_name.startswith(prefix) or source_name == prefix:
-                section_label = label
-                break
-        if section_label is None:
+        # render_daily 와 동일한 제네릭 규칙: *_rss/*_html 은 전부 AI/개발 섹션으로.
+        # (소스가 추가될 때마다 목록을 갱신하지 않아도 되도록 prefix 하드코딩을 제거)
+        if source_name.startswith("naver_"):
+            section_label = "📈 경제뉴스"
+        elif source_name.startswith("threads_"):
+            section_label = "🧵 Threads 하이라이트"
+        elif source_name.endswith("_rss") or source_name.endswith("_html"):
+            section_label = "🤖 AI / 개발 소식"
+        else:
             section_label = "📰 기타"
         grouped.setdefault(section_label, []).append(src)
     return grouped
@@ -251,6 +247,20 @@ def _self_check() -> None:
     assert "1\\. " in text or "1. " in text  # 번호 prefix 존재 (이스케이프 무관 느슨 체크)
     labels = [b["text"] for row in kb2["inline_keyboard"] for b in row]
     assert labels == ["📥 1", "📥 3"], f"id 있는 1,3 만 버튼: {labels}"
+
+    # 섹션 분류: *_rss/*_html 은 전부 AI/개발 (기타로 안 떨어짐)
+    g = group_by_section([
+        {"source": "naver_ranking", "items": []},
+        {"source": "geeknews_rss", "items": []},
+        {"source": "anthropic_html", "items": []},
+        {"source": "google-deepmind_rss", "items": []},
+        {"source": "weird_source", "items": []},
+    ])
+    assert "📈 경제뉴스" in g and "🤖 AI / 개발 소식" in g and "📰 기타" in g
+    ai = g["🤖 AI / 개발 소식"]
+    ai_keys = {s["source"] for s in ai}
+    assert ai_keys == {"geeknews_rss", "anthropic_html", "google-deepmind_rss"}, ai_keys
+    assert {s["source"] for s in g["📰 기타"]} == {"weird_source"}
     print("[send_telegram] self-check OK")
 
 

@@ -45,7 +45,8 @@ def build_manifest(data: dict[str, Any], date_compact: str) -> dict[str, Any]:
                 "title": (item.get("title") or "").strip(),
                 "url": url,
                 "summary": (item.get("summary") or "").strip(),
-                "source": (item.get("source_name") or "").strip(),
+                # 네이버 경제뉴스는 source_name 대신 press 필드를 씀 → 폴백
+                "source": (item.get("source_name") or item.get("press") or "").strip(),
             }
     return {"date": date_iso, "items": items}
 
@@ -123,6 +124,13 @@ def _self_check() -> None:
     assert m["items"][only_id] == {
         "title": "T1", "url": "https://x.com/1", "summary": "S1", "source": "GeekNews",
     }
+
+    # 네이버 경제뉴스: source_name 없고 press 만 있어도 source 채워짐
+    naver = build_manifest({"sources": [{"items": [
+        {"title": "경제", "originallink": "https://n.com/1", "summary": "S", "press": "매일경제"},
+    ]}]}, "20260625")
+    nid = next(iter(naver["items"]))
+    assert naver["items"][nid]["source"] == "매일경제", naver["items"][nid]
     print("[build_manifest] self-check OK")
 
 
