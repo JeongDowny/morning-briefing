@@ -114,6 +114,12 @@
         "type": "rss",
         "url": "https://lilianweng.github.io/index.xml",
         "_note": "OpenAI 출신 연구자의 long-form 기술 에세이."
+      },
+      {
+        "name": "GeekNews",
+        "type": "rss",
+        "url": "https://news.hada.io/rss/news",
+        "_note": "hada.io. 한국 개발자 커뮤니티가 큐레이션하는 개발/기술/스타트업 뉴스. 해외 AI 랩 중심 소스를 국내 관점으로 보완."
       }
     ]
   },
