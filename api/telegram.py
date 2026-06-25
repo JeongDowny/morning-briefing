@@ -6,6 +6,7 @@ env: WEBHOOK_SECRET, TELEGRAM_BOT_TOKEN, GITHUB_TOKEN(repo contents:write), GITH
 from __future__ import annotations
 
 import base64
+import hmac
 import json
 import os
 import re
@@ -63,7 +64,8 @@ def build_note_markdown(item: dict[str, Any], date_iso: str) -> str:
 
 def secret_ok(headers: dict[str, str], expected: str) -> bool:
     got = headers.get("x-telegram-bot-api-secret-token", "")
-    return bool(expected) and got == expected
+    # 상수 시간 비교 — 토큰 길이/내용 타이밍 누출 방지
+    return bool(expected) and hmac.compare_digest(got, expected)
 
 
 # ---- 네트워크 (self-check 제외) ----
@@ -110,6 +112,8 @@ def answer(cb_id: str, text: str) -> None:
 
 def mark_done(chat_id: int, message_id: int, reply_markup: dict[str, Any], iid: str) -> None:
     """누른 버튼 라벨을 ✅ 로 교체."""
+    if not (chat_id and message_id):  # inline_message_id 형태 등 message 없는 콜백 방어
+        return
     rows = reply_markup.get("inline_keyboard", [])
     for row in rows:
         for b in row:
