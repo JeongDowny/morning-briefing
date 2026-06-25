@@ -67,6 +67,20 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         continue-on-error: true
 
+      - name: Build manifest and push (발송 전 필수)
+        run: |
+          python scripts/build_manifest.py
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/manifest-*.json
+          if git diff --cached --quiet; then
+            echo "manifest 변경 없음 — 커밋 스킵"
+          else
+            git commit -m "archive: manifest $(TZ='Asia/Seoul' date +%Y-%m-%d)"
+            git push
+          fi
+        continue-on-error: false
+
       - name: Render Daily note
         run: python scripts/render_daily.py
         continue-on-error: true
