@@ -1,0 +1,359 @@
+{
+  "date": "2026-07-04",
+  "items": {
+    "20260704-50819ea9": {
+      "title": "More details on Fable 5’s cyber safeguards and our jailbreak framework",
+      "url": "https://www.anthropic.com/news/fable-safeguards-jailbreak-framework",
+      "summary": "Anthropic이 Fable 5의 사이버 보안 조치와 탈옥(jailbreak) 프레임워크에 대한 상세 정보를 7/2에 발표했다.",
+      "source": "Anthropic"
+    },
+    "20260704-0582f8c3": {
+      "title": "\"아빠가 의사\" 넘사벽 전교 1등, 알고 보니…교사·엄마 시험지 도둑질[뉴스속오늘]",
+      "url": "https://n.news.naver.com/article/008/0005381349?ntype=RANKING",
+      "summary": "",
+      "source": "머니투데이"
+    },
+    "20260704-96bd1e3e": {
+      "title": "'선점한 자가 승리한다'…성수·홍대 땅따먹기 나선 올영·무신사",
+      "url": "https://n.news.naver.com/article/008/0005381340?ntype=RANKING",
+      "summary": "",
+      "source": "머니투데이"
+    },
+    "20260704-03f60cb9": {
+      "title": "\"캣맘 임명합니다\"…한겨울 냥이 내쫓던 그 아파트, 이유 있는 변신",
+      "url": "https://n.news.naver.com/article/008/0005381350?ntype=RANKING",
+      "summary": "",
+      "source": "머니투데이"
+    },
+    "20260704-3e24bae8": {
+      "title": "\"공포에 산 사람이 승자\" 급반등 끝 '8천피 탈환'...삼전 실적 주목",
+      "url": "https://n.news.naver.com/article/008/0005381271?ntype=RANKING",
+      "summary": "",
+      "source": "머니투데이"
+    },
+    "20260704-bab86787": {
+      "title": "유재석 리딩방 이어 이지혜 속옷까지…\"감쪽같이 당한다\" 초상권 '비상'",
+      "url": "https://n.news.naver.com/article/008/0005381358?ntype=RANKING",
+      "summary": "",
+      "source": "머니투데이"
+    },
+    "20260704-65c0a8ab": {
+      "title": "\"배 타면 돈 번다던 말, 진짜였다\"…380억 거상 된 한국인 [이광식의 거상열전]",
+      "url": "https://n.news.naver.com/article/015/0005306178?ntype=RANKING",
+      "summary": "",
+      "source": "한국경제"
+    },
+    "20260704-eedce589": {
+      "title": "주가 출렁이자 1조 '풀매수'…폭락장에 '간큰 개미들' 몰렸다",
+      "url": "https://n.news.naver.com/article/015/0005305999?ntype=RANKING",
+      "summary": "",
+      "source": "한국경제"
+    },
+    "20260704-2465d23a": {
+      "title": "\"손님은 없고 어르신 민원만\"…동네 휴대폰 매장 사라진다",
+      "url": "https://n.news.naver.com/article/015/0005306179?ntype=RANKING",
+      "summary": "",
+      "source": "한국경제"
+    },
+    "20260704-12039764": {
+      "title": "국산 삼겹살 3분의 1 가격…마트서 '이것' 불티나게 팔렸다 [프라이스&]",
+      "url": "https://n.news.naver.com/article/015/0005306177?ntype=RANKING",
+      "summary": "",
+      "source": "한국경제"
+    },
+    "20260704-bad96357": {
+      "title": "지드래곤도 '좋아요' 눌렀다…\"절대 가지마\" 이곳 어디길래 [현장+]",
+      "url": "https://n.news.naver.com/article/015/0005306140?ntype=RANKING",
+      "summary": "",
+      "source": "한국경제"
+    },
+    "20260704-67aad345": {
+      "title": "Zuckerberg가 Meta 해고가 효과 없었음을 ‘인정’",
+      "url": "https://news.hada.io/topic?id=31099",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260704-3c50bcd1": {
+      "title": "스위스는 왜 25Gbit 인터넷이 가능하고 미국은 아닌가",
+      "url": "https://news.hada.io/topic?id=31098",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260704-317f3a7a": {
+      "title": "백도어 위험 의혹으로 직장 내 Claude Code 사용을 금지하려는 알리바바 방침, 소식통 전언",
+      "url": "https://news.hada.io/topic?id=31097",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260704-6f28799c": {
+      "title": "Half-Baked Product: 반쯤 구운 제품",
+      "url": "https://news.hada.io/topic?id=31096",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260704-05f24e25": {
+      "title": "Valve, Steam Machine e-ink 전면을 오픈소스로 공개",
+      "url": "https://news.hada.io/topic?id=31095",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260704-4c2bf884": {
+      "title": "CarPlay는 부가적이다",
+      "url": "https://news.hada.io/topic?id=31094",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260704-c66e260c": {
+      "title": "멘탈 모델을 전달하는 도구나 기법은?",
+      "url": "https://news.hada.io/topic?id=31093",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260704-8e2ad070": {
+      "title": "로컬 인텔리전스에 대한 권리",
+      "url": "https://news.hada.io/topic?id=31092",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260704-1e01a1e4": {
+      "title": "jj v0.43.0 공개",
+      "url": "https://news.hada.io/topic?id=31091",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260704-a682f0fe": {
+      "title": "계란 담합 업체들, 벌금의 1,000배를 벌었다",
+      "url": "https://news.hada.io/topic?id=31090",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260704-8f9ed609": {
+      "title": "Immich 3.0",
+      "url": "https://news.hada.io/topic?id=31089",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260704-56c52bfa": {
+      "title": "crustc: rustc 전체를 C로 변환",
+      "url": "https://news.hada.io/topic?id=31088",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260704-2d8b3f97": {
+      "title": "Linux 6.9 이후 LUKS suspend가 디스크 암호화 키를 메모리에서 지우지 못함",
+      "url": "https://news.hada.io/topic?id=31087",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260704-7e354fae": {
+      "title": "모르는 사람에게 도움을 요청하는 방법",
+      "url": "https://news.hada.io/topic?id=31086",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260704-bd02d48f": {
+      "title": "Show GN: 한글 GWEB 문학적 프로그래밍으로 단편을 써보세요.",
+      "url": "https://news.hada.io/topic?id=31085",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260704-df79d1bf": {
+      "title": "의존성에 LLM 생성 코드 금지",
+      "url": "https://news.hada.io/topic?id=31084",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260704-fb0860ab": {
+      "title": "Show GN: Open api 및 데이터셋 모음",
+      "url": "https://news.hada.io/topic?id=31083",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260704-f0e3050a": {
+      "title": "inshellisense - IDE 스타일의 셸 명령어 자동완성 도구",
+      "url": "https://news.hada.io/topic?id=31082",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260704-e0f5bfa8": {
+      "title": "탈(脫)fedify – 떠나보니 알게 된 fedify의 좋은 점들",
+      "url": "https://news.hada.io/topic?id=31081",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260704-3c84ae68": {
+      "title": "Show GN: VHK - 모델·에이전트를 갈아타도 안 무너지는 풀사이클 AI 코딩 하네스",
+      "url": "https://news.hada.io/topic?id=31080",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260704-04204d3a": {
+      "title": "Show GN: ControllerTest.io - 브라우저에서 바로 쓰는 게임패드 테스트 툴",
+      "url": "https://news.hada.io/topic?id=31079",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260704-ac2b17ec": {
+      "title": "버지니아주, 위치정보 데이터 판매 금지",
+      "url": "https://news.hada.io/topic?id=31077",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260704-668dd8cf": {
+      "title": "2026 상반기 말아먹었을 때 쓰는 글",
+      "url": "https://news.hada.io/topic?id=31076",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260704-8ddf8074": {
+      "title": "Senior SWE-Bench: 시니어 엔지니어급 에이전트 평가용 오픈소스 벤치마크",
+      "url": "https://news.hada.io/topic?id=31075",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260704-63be2b5b": {
+      "title": "CursorBench 3.1 모델 평가 결과",
+      "url": "https://news.hada.io/topic?id=31074",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260704-21e7967d": {
+      "title": "Vite+ 베타 공개",
+      "url": "https://news.hada.io/topic?id=31073",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260704-64720d09": {
+      "title": "스페인, 공공·국영 통제 기업에 Palantir 블랙리스트 지시",
+      "url": "https://news.hada.io/topic?id=31072",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260704-364363e7": {
+      "title": "Weave Robotics, $7,999 가정용 로봇 Isaac 1 출시 (2026년 가을 배송 예정)",
+      "url": "https://news.hada.io/topic?id=31071",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260704-83ee69e4": {
+      "title": "Podman v6.0.0 공개",
+      "url": "https://news.hada.io/topic?id=31070",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260704-b2b3d3bd": {
+      "title": "databow - ADBC로 데이터베이스를 조회하는 CLI 도구",
+      "url": "https://news.hada.io/topic?id=31069",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260704-7ec184e6": {
+      "title": "Google, 연령 확인용 영지식 증명(ZKP) 라이브러리 오픈소스 공개",
+      "url": "https://news.hada.io/topic?id=31068",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260704-043b7243": {
+      "title": "코드 리뷰의 주된 목적은 유지보수하기 어려운 코드를 찾는 것",
+      "url": "https://news.hada.io/topic?id=31067",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260704-9ea420e5": {
+      "title": "일본 최고재판소, AI는 특허 발명자로 기재될 수 없다고 판결",
+      "url": "https://news.hada.io/topic?id=31066",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260704-76a1a849": {
+      "title": "Wordgard 0.1 릴리스",
+      "url": "https://news.hada.io/topic?id=31065",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260704-b0f7bb05": {
+      "title": "Kimi K2.7 Code, GitHub Copilot에서 정식 제공",
+      "url": "https://news.hada.io/topic?id=31064",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260704-0cc18eb6": {
+      "title": "PeerTube - 무료 탈중앙화·연합형 비디오 플랫폼",
+      "url": "https://news.hada.io/topic?id=31063",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260704-47a33499": {
+      "title": "AI와 함께한 모험",
+      "url": "https://news.hada.io/topic?id=31062",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260704-32e94381": {
+      "title": "허접한 웹 포럼을 되살리자",
+      "url": "https://news.hada.io/topic?id=31061",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260704-5ba1f0fc": {
+      "title": "Oomwoo - 직접 만드는 오픈소스 로봇 청소기",
+      "url": "https://news.hada.io/topic?id=31060",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260704-f2d969c5": {
+      "title": "모던 앱 (The Modern App)",
+      "url": "https://news.hada.io/topic?id=31059",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260704-e9f6c1b1": {
+      "title": "Android 개발자 검증: 보호로 위장한 위협",
+      "url": "https://news.hada.io/topic?id=31058",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260704-e29a8bbb": {
+      "title": "Google DeepMind and A24 announce first-of-its-kind research partnership",
+      "url": "https://deepmind.google/blog/google-deepmind-and-a24-announce-first-of-its-kind-research-partnership/",
+      "summary": "",
+      "source": "Google DeepMind"
+    },
+    "20260704-9cba500f": {
+      "title": "AIEWF Daily Dispatch: The great loops debate and the state of AI engineering",
+      "url": "https://www.latent.space/p/aiewf-daily-dispatch-locomotives",
+      "summary": "",
+      "source": "Latent Space"
+    },
+    "20260704-a18ac96c": {
+      "title": "Vercel's Andrew Qu on why agents are a new kind of software",
+      "url": "https://www.latent.space/p/vercel-agents-new-software",
+      "summary": "",
+      "source": "Latent Space"
+    },
+    "20260704-4c8e751a": {
+      "title": "Open Source AI Gap Map",
+      "url": "https://simonwillison.net/2026/Jul/3/open-source-ai-gap-map/#atom-everything",
+      "summary": "",
+      "source": "Simon Willison"
+    },
+    "20260704-35ed231c": {
+      "title": "Quoting Josh W. Comeau",
+      "url": "https://simonwillison.net/2026/Jul/3/josh-w-comeau/#atom-everything",
+      "summary": "",
+      "source": "Simon Willison"
+    },
+    "20260704-01284d03": {
+      "title": "Fable's judgement",
+      "url": "https://simonwillison.net/2026/Jul/3/judgement/#atom-everything",
+      "summary": "",
+      "source": "Simon Willison"
+    },
+    "20260704-76cf026f": {
+      "title": "June 2026 newsletter",
+      "url": "https://simonwillison.net/2026/Jul/3/june-newsletter/#atom-everything",
+      "summary": "",
+      "source": "Simon Willison"
+    }
+  }
+}
