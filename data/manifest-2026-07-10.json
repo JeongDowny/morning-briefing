@@ -1,0 +1,299 @@
+{
+  "date": "2026-07-10",
+  "items": {
+    "20260710-5e689a64": {
+      "title": "Inviting hard questions",
+      "url": "https://www.anthropic.com/news/hard-questions",
+      "summary": "Anthropic은 7/9, AI에 대한 대중의 가장 어려운 질문들을 요청하고, 이에 대한 답변 과정을 공개하겠다고 밝혔다.",
+      "source": "Anthropic"
+    },
+    "20260710-d015b138": {
+      "title": "Ben Bernanke appointed to Anthropic’s Long-Term Benefit Trust",
+      "url": "https://www.anthropic.com/news/ben-bernanke",
+      "summary": "Anthropic은 7/9, 벤 버냉키 전 연준 의장을 자사의 장기 이익 신탁(Long-Term Benefit Trust) 이사로 임명했다고 발표했다.",
+      "source": "Anthropic"
+    },
+    "20260710-d7ccf9cc": {
+      "title": "Introducing a way to reflect on how you use Claude",
+      "url": "https://www.anthropic.com/news/reflect-with-claude",
+      "summary": "Anthropic은 7/9, 사용자들이 Claude 사용 방식을 되돌아볼 수 있는 새로운 기능을 도입했다고 발표했다.",
+      "source": "Anthropic"
+    },
+    "20260710-2cce0587": {
+      "title": "\"우리 회사에서 일해주세요\"…60대 러브콜 쏟아진 이유",
+      "url": "https://n.news.naver.com/article/015/0005308407?ntype=RANKING",
+      "summary": "60대 인력에 대한 기업들의 채용 요청이 증가하고 있다. 특정 배경으로 인해 고령층 고용이 활발해지는 현상이다.",
+      "source": "한국경제"
+    },
+    "20260710-0780143f": {
+      "title": "'폭락장인데 돈 벌었네'…수익률 1위 휩쓸더니 개미 '우르르' [분석+]",
+      "url": "https://n.news.naver.com/article/015/0005308413?ntype=RANKING",
+      "summary": "폭락장에도 불구하고 높은 수익률을 기록한 투자처에 개인 투자자들의 관심이 집중되고 있다. 이로 인해 개미 투자자들의 자금 유입이 늘어나는 현상이다.",
+      "source": "한국경제"
+    },
+    "20260710-aa8ea4f8": {
+      "title": "아재옷인 줄 알았는데…\"입자마자 감탄\" 폭염 필수템 뭐길래 [장서우의 하입:hype]",
+      "url": "https://n.news.naver.com/article/015/0005308419?ntype=RANKING",
+      "summary": "특정 의류 제품이 폭염 필수템으로 인기를 얻고 있다. '아재옷'이라는 기존 인식을 넘어 착용 만족도가 높아 주목받는 현상이다.",
+      "source": "한국경제"
+    },
+    "20260710-18bd4789": {
+      "title": "4800원 휴게소 커피, 2000원 됐다…갑자기 반토막 난 까닭",
+      "url": "https://n.news.naver.com/article/015/0005308376?ntype=RANKING",
+      "summary": "휴게소 커피 가격이 4800원에서 2000원으로 인하되었다. 갑작스러운 가격 하락의 구체적인 원인에 관심이 집중된다.",
+      "source": "한국경제"
+    },
+    "20260710-4f3c6a3d": {
+      "title": "\"문체부 감사 뒤집나\"…경찰, 홍명보 선임 의혹 전방위 수사",
+      "url": "https://n.news.naver.com/article/015/0005308415?ntype=RANKING",
+      "summary": "경찰이 홍명보 감독 선임 의혹에 대해 전방위 수사에 착수했다. 이는 문화체육관광부 감사 결과와 상반될 가능성이 제기된다.",
+      "source": "한국경제"
+    },
+    "20260710-41cef2da": {
+      "title": "“그냥 일요일에도 일하자”…먹고살기 힘들어지자 달라진 ‘이 나라’ 사람들, 무슨 일?",
+      "url": "https://n.news.naver.com/article/011/0004639766?ntype=RANKING",
+      "summary": "특정 국가에서 경제적 어려움으로 인해 일요일에도 일하는 현상이 증가하고 있다. 이는 생계 유지를 위한 사회적 변화로 나타난다.",
+      "source": "서울경제"
+    },
+    "20260710-5477ab35": {
+      "title": "SK하이닉스 美ADR 공모가 149달러 확정...‘역대 2위’ 40조원 조달",
+      "url": "https://n.news.naver.com/article/011/0004640139?ntype=RANKING",
+      "summary": "SK하이닉스의 미국 ADR 공모가가 149달러로 확정되어 40조 원을 조달한다. 이는 역대 두 번째로 큰 규모의 자금 조달로 기록된다.",
+      "source": "서울경제"
+    },
+    "20260710-1552b92f": {
+      "title": "“4일 만에 50% 급등” 개미들 폭풍 매수하더니…상한가 찍고 상폐 위기서 벗어난 ‘이 기업’",
+      "url": "https://n.news.naver.com/article/011/0004640071?ntype=RANKING",
+      "summary": "특정 기업 주가가 4일 만에 50% 급등하며 개인 투자자들의 매수를 유도했다. 상한가를 기록하며 상장 폐지 위기에서 벗어나는 현상이다.",
+      "source": "서울경제"
+    },
+    "20260710-503bcd42": {
+      "title": "“삼전닉스 함부로 줍줍하지 마라”…‘역대급 바닥’에도 신중하라는 보고서, 왜?",
+      "url": "https://n.news.naver.com/article/011/0004639934?ntype=RANKING",
+      "summary": "삼성전자와 SK하이닉스 주식이 '역대급 바닥' 수준임에도 신중한 투자를 권고하는 보고서가 발표되었다. 보고서가 경고하는 구체적인 이유에 관심이 집중된다.",
+      "source": "서울경제"
+    },
+    "20260710-da2961a6": {
+      "title": "‘하늘 나는 백악관’ 극찬 일주일 만에…트럼프가 구형 갈아탄 진짜 이유 [박시진의 글로벌 픽]",
+      "url": "https://n.news.naver.com/article/011/0004640118?ntype=RANKING",
+      "summary": "도널드 트럼프 전 대통령이 '하늘 나는 백악관'으로 불린 새 전용기를 극찬한 지 일주일 만에 구형으로 교체했다. 트럼프 전 대통령이 기종을 바꾼 구체적인 이유에 관심이 집중된다.",
+      "source": "서울경제"
+    },
+    "20260710-a71ec91a": {
+      "title": "Synology, QNAP, TrueNAS 없이 최소 ZFS NAS 구축하기 (2024)",
+      "url": "https://news.hada.io/topic?id=31276",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260710-eef5d644": {
+      "title": "OpenAI GPT 5.6 출시",
+      "url": "https://news.hada.io/topic?id=31275",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260710-8c169a3f": {
+      "title": "Tenda 펌웨어 여러 버전에 숨겨진 인증 백도어 발견",
+      "url": "https://news.hada.io/topic?id=31274",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260710-39200a2e": {
+      "title": "EU, 비공개 메시지 스캔 규칙 부활까지 한 단계",
+      "url": "https://news.hada.io/topic?id=31273",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260710-dd13f0bc": {
+      "title": "FAANG 시뮬레이터",
+      "url": "https://news.hada.io/topic?id=31272",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260710-728d133d": {
+      "title": "Mistral, 단일 카메라 로봇 내비게이션 모델 Robostral Navigate 공개",
+      "url": "https://news.hada.io/topic?id=31271",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260710-3e6520f0": {
+      "title": "Cloudflare Drop",
+      "url": "https://news.hada.io/topic?id=31270",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260710-e13415bb": {
+      "title": "Show GN: Agentic FC - AI 에이전트가 MCP로 플레이하는 오픈소스 축구 매니지먼트 시뮬레이션",
+      "url": "https://news.hada.io/topic?id=31268",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260710-e08dc512": {
+      "title": "Show GN: 듀얼 넘버 부가 서비스 관련 유틸 어플을 만들었습니다.",
+      "url": "https://news.hada.io/topic?id=31267",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260710-928ac8f0": {
+      "title": "Show GN: 고전 게임을 한글화하는 방법론을 담은 에이전트 스킬",
+      "url": "https://news.hada.io/topic?id=31266",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260710-db90ce88": {
+      "title": "John Deere 소유주, FTC 합의로 농기계 직접 수리권 확보",
+      "url": "https://news.hada.io/topic?id=31265",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260710-e59041a2": {
+      "title": "Show GN: ts6to7 - TypeScript 5/6 → 7(tsgo) 마이그레이션 자동화 codemod",
+      "url": "https://news.hada.io/topic?id=31264",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260710-8ca6fa17": {
+      "title": "Bun을 Rust로 다시 작성하기",
+      "url": "https://news.hada.io/topic?id=31263",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260710-b23c9b1b": {
+      "title": "디지털 시대의 돈 — 화폐 진화와 디지털 화폐의 제도적 선택",
+      "url": "https://news.hada.io/topic?id=31262",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260710-21c237d6": {
+      "title": "Show GN: 소셜 아카이버(업데이트) - 소셜 플랫폼의 글들도 깔끔하게 읽게 해드립니다",
+      "url": "https://news.hada.io/topic?id=31260",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260710-9dfc16ba": {
+      "title": "Show GN: Lucene search core 기여 팀이 만든 Local-first AI Memory Workspace, Maek",
+      "url": "https://news.hada.io/topic?id=31259",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260710-c430f8be": {
+      "title": "Grok 4.5 공개",
+      "url": "https://news.hada.io/topic?id=31256",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260710-37161227": {
+      "title": "GitLost: GitHub AI 에이전트를 속여 비공개 저장소 유출",
+      "url": "https://news.hada.io/topic?id=31255",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260710-ece092c0": {
+      "title": "OpenAI, GPT‑Live 공개",
+      "url": "https://news.hada.io/topic?id=31254",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260710-e8881cee": {
+      "title": "Chatto, 이제 오픈소스로 공개되어 셀프 호스팅 가능",
+      "url": "https://news.hada.io/topic?id=31253",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260710-92cd28ef": {
+      "title": "Uniqlo 티셔츠의 난독화된 bash 스크립트 해독하기",
+      "url": "https://news.hada.io/topic?id=31252",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260710-443a51fd": {
+      "title": "Weave Router - 프롬프트마다 최적의 모델로 라우팅하는 에이전트용 모델 라우터",
+      "url": "https://news.hada.io/topic?id=31251",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260710-23414d2a": {
+      "title": "왼손잡이 사용자에게만 영향을 준 WordPress 버그",
+      "url": "https://news.hada.io/topic?id=31250",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260710-e945413f": {
+      "title": "TypeScript 7.0 발표",
+      "url": "https://news.hada.io/topic?id=31249",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260710-e11621f8": {
+      "title": "내가 좋아하는 소프트웨어 엔지니어링 인터뷰 질문: 중앙값 계산",
+      "url": "https://news.hada.io/topic?id=31248",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260710-08f8f6b9": {
+      "title": "TrueType QR Code 폰트 - 폰트만으로 QR코드 만들기",
+      "url": "https://news.hada.io/topic?id=31247",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260710-99556cee": {
+      "title": "How GitHub gave every repository a durable owner",
+      "url": "https://github.blog/security/application-security/how-github-gave-every-repository-a-durable-owner/",
+      "summary": "",
+      "source": "GitHub Blog"
+    },
+    "20260710-d9aedbf9": {
+      "title": "[AINews] SpaceXAI launches Grok 4.5, first Opus-class model post Cursor acquisition",
+      "url": "https://www.latent.space/p/ainews-spacexai-launches-grok-45",
+      "summary": "",
+      "source": "Latent Space"
+    },
+    "20260710-e799563c": {
+      "title": "GPT-5.6 is now the preferred model in Microsoft 365 Copilot",
+      "url": "https://openai.com/index/gpt-5-6-preferred-model-microsoft-365-copilot",
+      "summary": "",
+      "source": "OpenAI"
+    },
+    "20260710-5941cef1": {
+      "title": "ChatGPT is now a partner for your most ambitious work",
+      "url": "https://openai.com/index/chatgpt-for-your-most-ambitious-work",
+      "summary": "",
+      "source": "OpenAI"
+    },
+    "20260710-8fd74bd3": {
+      "title": "GPT-5.5 Bio Bug Bounty",
+      "url": "https://openai.com/index/bio-bug-bounty",
+      "summary": "",
+      "source": "OpenAI"
+    },
+    "20260710-54ee76ae": {
+      "title": "GPT-5.6: Frontier intelligence that scales with your ambition",
+      "url": "https://openai.com/index/gpt-5-6",
+      "summary": "",
+      "source": "OpenAI"
+    },
+    "20260710-c223296e": {
+      "title": "The new GPT-5.6 family: Luna, Terra, Sol",
+      "url": "https://simonwillison.net/2026/Jul/9/gpt-5-6/#atom-everything",
+      "summary": "",
+      "source": "Simon Willison"
+    },
+    "20260710-917d665e": {
+      "title": "Introducing Muse Spark 1.1",
+      "url": "https://simonwillison.net/2026/Jul/9/muse-spark-1-1/#atom-everything",
+      "summary": "",
+      "source": "Simon Willison"
+    },
+    "20260710-8dc70844": {
+      "title": "llm-meta-ai 0.1",
+      "url": "https://simonwillison.net/2026/Jul/9/llm-meta-ai/#atom-everything",
+      "summary": "",
+      "source": "Simon Willison"
+    },
+    "20260710-89dd0faf": {
+      "title": "llm 0.31.1",
+      "url": "https://simonwillison.net/2026/Jul/9/llm/#atom-everything",
+      "summary": "",
+      "source": "Simon Willison"
+    }
+  }
+}
