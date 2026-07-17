@@ -1,0 +1,227 @@
+{
+  "date": "2026-07-18",
+  "items": {
+    "20260718-d68a0ff1": {
+      "title": "[르포] 골프 대신 셔플댄스… 댄스학원 몰리는 5060",
+      "url": "https://n.news.naver.com/article/366/0001180030?ntype=RANKING",
+      "summary": "5060세대가 골프 대신 댄스학원으로 몰려 셔플댄스 등을 배우는 새로운 여가 트렌드가 확산되고 있다.",
+      "source": "조선비즈"
+    },
+    "20260718-38336299": {
+      "title": "“추매”vs“현금확보”…AI 피크아웃 논란에 엇갈린 개미 생존전략",
+      "url": "https://n.news.naver.com/article/366/0001180028?ntype=RANKING",
+      "summary": "AI 피크아웃 논란이 불거지면서 개인 투자자들 사이에서 주식 추가 매수와 현금 확보를 두고 생존 전략이 엇갈리고 있다.",
+      "source": "조선비즈"
+    },
+    "20260718-053133cc": {
+      "title": "호주산 무관세에 가격 ‘뚝’…복날 보양식 강자로 뜬 ‘흑염소’",
+      "url": "https://n.news.naver.com/article/366/0001180024?ntype=RANKING",
+      "summary": "호주산 흑염소에 무관세가 적용되면서 가격이 하락, 복날 보양식으로 흑염소가 새로운 강자로 부상하고 있다.",
+      "source": "조선비즈"
+    },
+    "20260718-1e12eb2d": {
+      "title": "호남 반도체 클러스터 계기로 원전 추진하는 정부… 부지 확보까지는 ‘첩첩산중’",
+      "url": "https://n.news.naver.com/article/366/0001180020?ntype=RANKING",
+      "summary": "정부가 호남 반도체 클러스터 조성을 계기로 원전 추진을 모색하고 있으나, 부지 확보에 어려움이 크다.",
+      "source": "조선비즈"
+    },
+    "20260718-6b382f0c": {
+      "title": "대구·경북 100㎜ 넘는 ‘극한 호우’… 주택 침수·고립 속출",
+      "url": "https://n.news.naver.com/article/366/0001180014?ntype=RANKING",
+      "summary": "대구와 경북 지역에 100mm가 넘는 극한 호우가 쏟아져 주택 침수와 고립 피해가 잇따르고 있다.",
+      "source": "조선비즈"
+    },
+    "20260718-1980b248": {
+      "title": "\"성과 국민과 나누겠다\" 삼성에 움직였나…'4조 잭팟' 터졌다",
+      "url": "https://n.news.naver.com/article/015/0005311190?ntype=RANKING",
+      "summary": "삼성이 \"성과를 국민과 나누겠다\"는 기조 아래 4조 원 규모의 '잭팟'을 터뜨린 것으로 알려졌다.",
+      "source": "한국경제"
+    },
+    "20260718-8294d1ea": {
+      "title": "\"주식 계좌 녹아요\" 눈물 흘리더니…개미 돈 다시 몰리는 곳 [투자톡]",
+      "url": "https://n.news.naver.com/article/015/0005311147?ntype=RANKING",
+      "summary": "개인 투자자들이 주식 시장에서 손실을 겪은 후, 특정 투자처로 자금을 다시 집중하고 있는 현상이 나타나고 있다.",
+      "source": "한국경제"
+    },
+    "20260718-1416d8bd": {
+      "title": "\"한국인 조상은 중국인\" 논란 장위안…어떻게 지내나 봤더니",
+      "url": "https://n.news.naver.com/article/015/0005311149?ntype=RANKING",
+      "summary": "\"한국인 조상은 중국인\" 발언으로 논란이 된 방송인 장위안의 근황이 공개되었다.",
+      "source": "한국경제"
+    },
+    "20260718-289d8f33": {
+      "title": "아침 공복 '물 한잔'도 독…이렇게 마시면 위 망가진다",
+      "url": "https://n.news.naver.com/article/015/0005311159?ntype=RANKING",
+      "summary": "아침 공복에 물을 잘못 마시면 오히려 위에 해로울 수 있으며, 올바른 물 섭취 방법이 중요하다.",
+      "source": "한국경제"
+    },
+    "20260718-87e63a2a": {
+      "title": "\"7월 그냥 보냈다간 세금폭탄 맞는다\"…전문가들 신신당부 [고정삼의 절세GPT]",
+      "url": "https://n.news.naver.com/article/015/0005311191?ntype=RANKING",
+      "summary": "전문가들이 7월에 세금 관련 조치를 소홀히 할 경우 '세금 폭탄'을 맞을 수 있다며 주의를 당부했다.",
+      "source": "한국경제"
+    },
+    "20260718-0c54806c": {
+      "title": "Forgejo v16.0 출시 — 알림·PR 리뷰·Actions 기능 확장",
+      "url": "https://news.hada.io/topic?id=31531",
+      "summary": "Forgejo v16.0이 2026년 7월 16일 출시되어 저장소별 알림 제어, PR 리뷰, Actions 및 API 기능을 확장했다. Git 미러의 HTTP 리디렉션 차단으로 SSRF 방어를 강화했다.",
+      "source": "GeekNews"
+    },
+    "20260718-57320443": {
+      "title": "Immersive Linear Algebra - 인터랙티브 도형으로 배우는 선형대수학 (2015)",
+      "url": "https://news.hada.io/topic?id=31530",
+      "summary": "2015년 공개된 Immersive Linear Algebra는 정적인 그림을 넘어 직접 조작 가능한 인터랙티브 도형으로 선형대수학 개념을 이해하도록 구성된 책이다.",
+      "source": "GeekNews"
+    },
+    "20260718-0b5f4577": {
+      "title": "Rust로 Postgres 만들기 — 데이터베이스의 LLVM을 활용한 접근",
+      "url": "https://news.hada.io/topic?id=31529",
+      "summary": "Turso는 Rust 기반 코어에 Postgres 호환 프런트엔드를 연결, 하나의 실행 엔진이 여러 DB 언어를 처리하는 LLVM 구조로 확장했다. Postgres SQL을 공통 AST로 파싱해 VDBE 바이트코드로 컴파일한다.",
+      "source": "GeekNews"
+    },
+    "20260718-216a2139": {
+      "title": "LLM 비판론자들이 옳다. 그래도 나는 LLM을 쓴다",
+      "url": "https://news.hada.io/topic?id=31528",
+      "summary": "LLM의 저작권, 윤리, 저품질 등 비판론을 인정하면서도, 사고의 품질을 높이는 도구로 계속 활용한다. LLM은 사람의 판단 없이는 유창한 쓰레기를 대량 생산할 수 있다.",
+      "source": "GeekNews"
+    },
+    "20260718-c9bfd93a": {
+      "title": "OpenAI·Anthropic에서 일한 전 YC 창업자, 최소 105명",
+      "url": "https://news.hada.io/topic?id=31527",
+      "summary": "YC 창업자 최소 105명이 OpenAI 또는 Anthropic에서 근무한 것으로 집계됐다. 이들 중 63명(60%)이 Member of Technical Staff 직무를 맡고 있다.",
+      "source": "GeekNews"
+    },
+    "20260718-3c32ae9c": {
+      "title": "LM Studio Bionic: 오픈 모델을 위한 AI 에이전트",
+      "url": "https://news.hada.io/topic?id=31525",
+      "summary": "LM Studio Bionic은 코딩, 조사, 문서 작업을 로컬 또는 클라우드의 오픈 모델로 처리하는 AI 에이전트 앱이다. 개인정보와 AI 사용 비용을 직접 통제할 수 있다.",
+      "source": "GeekNews"
+    },
+    "20260718-864b46a2": {
+      "title": "Show GN: browser-rs-mcp - 초경량 멀티 에이전트 스텔스 브라우저 컨트롤러",
+      "url": "https://news.hada.io/topic?id=31524",
+      "summary": "browser-rs-mcp는 에이전트당 500MB~1GB RAM을 소모하는 기존 브라우저 컨트롤러의 높은 메모리 사용 문제를 해결하는 초경량 멀티 에이전트 스텔스 브라우저 컨트롤러다.",
+      "source": "GeekNews"
+    },
+    "20260718-a66c88a9": {
+      "title": "SpaceX 주가, 장중 IPO 공모가 아래로 밀리며 상승분 모두 반납",
+      "url": "https://news.hada.io/topic?id=31523",
+      "summary": "SpaceX 주가가 장중 공모가 135달러 아래로 내려가며 지난달 상승분을 모두 반납했다. 이후 135.27달러로 마감했으나, IPO 당시 시가총액 2조 2,000억 달러의 초기 열기는 약해졌다.",
+      "source": "GeekNews"
+    },
+    "20260718-c0a19a7f": {
+      "title": "100달러 AI 뮤직비디오 제작 대결: Claude Fable 5 vs. GPT-5.6 Sol",
+      "url": "https://news.hada.io/topic?id=31522",
+      "summary": "Claude Fable 5와 GPT-5.6 Sol이 25·100달러 예산으로 뮤직비디오 제작 대결을 펼쳐, 네 번 모두 원곡을 결합한 완전한 길이의 영상을 자율적으로 완성했다.",
+      "source": "GeekNews"
+    },
+    "20260718-f164e5d4": {
+      "title": "Show GN: 코드 대신 한국어 명세를 커밋하고 있습니다 — 명세 3장으로 PWA 앱+서버",
+      "url": "https://news.hada.io/topic?id=31521",
+      "summary": "AI 코딩 시 코드 생성 의도가 소실되는 문제를 해결하기 위해, 한국어 명세를 git에 커밋하고 코드를 빌드 산출물로 취급하는 방식을 제안한다.",
+      "source": "GeekNews"
+    },
+    "20260718-701fd678": {
+      "title": "우리는 떼돈을 벌게 될 것이다",
+      "url": "https://news.hada.io/topic?id=31518",
+      "summary": "약 5년에 걸친 시나리오에 따르면, AI 코딩 확산은 주니어 채용을 줄이고 코드 복잡성을 누적시켜 숙련된 시니어 개발자의 몸값을 크게 끌어올릴 수 있다.",
+      "source": "GeekNews"
+    },
+    "20260718-ce22208b": {
+      "title": "Uber, 독일 딜리버리 히어로(배달의 민족 모회사) 약 22조원에 인수",
+      "url": "https://news.hada.io/topic?id=31517",
+      "summary": "우버가 독일 배달 기업 Delivery Hero를 1480억 달러(주당 41.50유로)에 인수하며, 99개국을 아우르는 글로벌 음식 배달 대기업이 탄생했다.",
+      "source": "GeekNews"
+    },
+    "20260718-bec14b3d": {
+      "title": "Pandas 창시자가 말하는 AI·Apache Arrow·소프트웨어 엔지니어링의 미래 [유튜브]",
+      "url": "https://news.hada.io/topic?id=31516",
+      "summary": "Pandas와 Apache Arrow 창시자는 AI 시대에도 고성능 데이터 시스템 설계의 전문성, 판단력, 취향이 핵심이라고 강조했다. Apache Arrow는 표 형식 데이터의 시스템 간 전송과 처리를 표준화하는 인메모리 기반 계층이다.",
+      "source": "GeekNews"
+    },
+    "20260718-a9cab1ed": {
+      "title": "Patreon이 팬아웃으로 알림 시스템을 확장한 방법",
+      "url": "https://news.hada.io/topic?id=31515",
+      "summary": "Patreon은 연간 수십억 건을 처리하던 13년 된 알림 시스템이 대형 크리에이터의 수백만 건 알림으로 타임아웃에 직면하자, 수신자별 알림을 미리 생성하는 팬아웃 계층으로 재설계했다.",
+      "source": "GeekNews"
+    },
+    "20260718-40d269e1": {
+      "title": "개발자를 해킹하는 LinkedIn 채용 과제 사기",
+      "url": "https://news.hada.io/topic?id=31514",
+      "summary": "LinkedIn에서 소프트웨어 엔지니어 채용을 위장한 사기가 발생, 정상적인 React/Web3 과제처럼 보이는 GitHub 저장소에 JavaScript 악성코드가 숨겨져 있었다.",
+      "source": "GeekNews"
+    },
+    "20260718-26abc97d": {
+      "title": "Decoy Font: 입력 내용을 숨기는 TTF 글꼴",
+      "url": "https://news.hada.io/topic?id=31513",
+      "summary": "Decoy Font는 한 글자 공간에 실제 문자와 미끼 문자를 함께 배치해, 사람에게는 원래 메시지를 보여주고 AI/OCR에는 다른 문자를 읽히게 하는 TTF 글꼴이다.",
+      "source": "GeekNews"
+    },
+    "20260718-f1ba316f": {
+      "title": "OnePlus, 미국·유럽 운영 중단",
+      "url": "https://news.hada.io/topic?id=31512",
+      "summary": "OnePlus가 글로벌 전략 조정에 따라 유럽과 북미에서 신제품 출시를 종료한다. 기존 기기 지원과 일부 현지 서비스는 OPPO의 지원 아래 계속 운영된다.",
+      "source": "GeekNews"
+    },
+    "20260718-c7cc9fe2": {
+      "title": "Sony, ‘구매한’ 영화·TV 프로그램 551편을 사용자 계정에서 또 삭제",
+      "url": "https://news.hada.io/topic?id=31511",
+      "summary": "Sony와 StudioCanal의 라이선스 계약 문제로 PlayStation Store에서 구매한 영화·TV 프로그램 551편이 9월 1일 삭제될 예정이다. 이는 디지털 구매가 회사가 철회할 수 있는 이용권에 가깝다는 현실을 보여준다.",
+      "source": "GeekNews"
+    },
+    "20260718-89130071": {
+      "title": "LeafWiki – 서버와 DB없이 단일 바이너리로 실행하는 셀프 호스팅 위키",
+      "url": "https://news.hada.io/topic?id=31510",
+      "summary": "LeafWiki는 런북, 튜토리얼 등을 폴더 트리 구조로 정리하는 셀프 호스팅 위키다. 서버와 DB 없이 단일 Go 바이너리로 실행되며, 콘텐츠를 .md 파일로 저장한다.",
+      "source": "GeekNews"
+    },
+    "20260718-21819fe4": {
+      "title": "커널 개발에서 LLM 사용에 관한 Linus Torvalds의 견해",
+      "url": "https://news.hada.io/topic?id=31509",
+      "summary": "Linus Torvalds는 Linux 커널이 반AI 프로젝트가 아니며, AI는 다른 도구와 마찬가지로 유용하다고 밝혔다. LLM에 대한 반감이 있지만, 최상위 메인테이너로서 단호한 입장을 취한다.",
+      "source": "GeekNews"
+    },
+    "20260718-ed5e9585": {
+      "title": "The cost of saying yes has changed",
+      "url": "https://github.blog/engineering/the-cost-of-saying-yes-has-changed/",
+      "summary": "AI 시대에 코드 작성 비용은 줄었지만, 코드 소유 비용은 그대로다. 이는 어떤 변경사항이 실제로 저렴한지 판단하는 새로운 프레임워크가 필요함을 시사한다.",
+      "source": "GitHub Blog"
+    },
+    "20260718-a0bbc2c6": {
+      "title": "Fine-tune video and image models at scale with NVIDIA NeMo Automodel and 🤗 Diffusers",
+      "url": "https://huggingface.co/blog/nvidia/scale-diffusers-finetuning-nemo-automodel",
+      "summary": "NVIDIA NeMo Automodel과 Hugging Face Diffusers를 활용하여 비디오 및 이미지 모델을 대규모로 미세 조정할 수 있는 기능이 발표되었다. 이는 AI 모델 학습의 효율성을 높이는 데 기여한다.",
+      "source": "Hugging Face"
+    },
+    "20260718-08f77354": {
+      "title": "[AINews] Kimi K3 2.8T-A50B: the largest open model ever released; Opus 4.8-class at Sonnet 5 pricing",
+      "url": "https://www.latent.space/p/ainews-kimi-k3-28t-a50b-the-largest",
+      "summary": "Kimi K3 2.8T-A50B 모델이 역대 최대 규모의 오픈 모델로 공개되었다. Sonnet 5 가격으로 Opus 4.8급 성능을 제공하는 것이 특징이다.",
+      "source": "Latent Space"
+    },
+    "20260718-3ebda52f": {
+      "title": "A scorecard for the AI age",
+      "url": "https://openai.com/index/a-scorecard-for-the-ai-age",
+      "summary": "OpenAI CFO Sarah Friar가 AI 시대의 ROI를 측정하기 위한 실용적인 AI 스코어카드를 소개했다. 이 스코어카드는 유용한 작업, 성공적인 작업당 비용, 신뢰성, 컴퓨팅 투자 수익률을 통해 ROI를 평가한다.",
+      "source": "OpenAI"
+    },
+    "20260718-103bc7df": {
+      "title": "Quoting Kimi K3",
+      "url": "https://simonwillison.net/2026/Jul/17/kimi-k3/#atom-everything",
+      "summary": "",
+      "source": "Simon Willison"
+    },
+    "20260718-64131661": {
+      "title": "LLM cliché highlighter",
+      "url": "https://simonwillison.net/2026/Jul/17/llm-cliche-highlighter/#atom-everything",
+      "summary": "",
+      "source": "Simon Willison"
+    },
+    "20260718-88406739": {
+      "title": "Spot birds not golf",
+      "url": "https://simonwillison.net/2026/Jul/17/spot-birds-not-golf/#atom-everything",
+      "summary": "",
+      "source": "Simon Willison"
+    }
+  }
+}
