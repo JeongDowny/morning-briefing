@@ -1,0 +1,155 @@
+{
+  "date": "2026-07-26",
+  "items": {
+    "20260726-e2a0bc1c": {
+      "title": "\"빵 10개, 단돈 900원에 팝니다\"…파격 세일 이유는 '태풍'? [일본 엿보기]",
+      "url": "https://n.news.naver.com/article/018/0006336832?ntype=RANKING",
+      "summary": "일본에서 빵 10개를 900원에 판매하는 파격 세일이 진행된다. 태풍으로 인한 재고 소진이 이례적인 할인 행사의 배경이다.",
+      "source": "이데일리"
+    },
+    "20260726-7a1c268d": {
+      "title": "美 이란 공습, 2주만에 멈췄나...트럼프 \"이란이 협상 원해\"",
+      "url": "https://n.news.naver.com/article/018/0006336833?ntype=RANKING",
+      "summary": "미국이 이란 공습을 2주 만에 멈춘 것으로 알려졌다. 도널드 트럼프 전 대통령은 이란이 협상을 원한다고 밝혔다.",
+      "source": "이데일리"
+    },
+    "20260726-be46ab0d": {
+      "title": "로또 1234회 1등 18명…당첨금 각 15억 9512만원(종합)",
+      "url": "https://n.news.naver.com/article/018/0006336831?ntype=RANKING",
+      "summary": "로또 1234회 추첨 결과 1등 당첨자가 18명 나왔다. 각 당첨자는 15억 9512만원의 당첨금을 받게 된다.",
+      "source": "이데일리"
+    },
+    "20260726-fd1012ff": {
+      "title": "\"한국 개미는 도박꾼, 후회해도 늦었다\"...뼈 때린 외신",
+      "url": "https://n.news.naver.com/article/018/0006336808?ntype=RANKING",
+      "summary": "한 외신이 한국 개인 투자자들을 '도박꾼'으로 지칭하며, 투자 실패에 대한 비판적 시각을 제시했다.",
+      "source": "이데일리"
+    },
+    "20260726-4ed8289d": {
+      "title": "젤렌스키 “러, 북한군 3만명 추가 파병 추진” 주장",
+      "url": "https://n.news.naver.com/article/018/0006336851?ntype=RANKING",
+      "summary": "볼로디미르 젤렌스키 우크라이나 대통령이 러시아가 북한군 3만 명을 추가 파병하려 한다고 주장했다.",
+      "source": "이데일리"
+    },
+    "20260726-adef08e5": {
+      "title": "포켓몬 카드 1장이 무려 ‘220억원’…日정부, 결국 칼 빼들었다 [나우, 어스]",
+      "url": "https://n.news.naver.com/article/016/0002674973?ntype=RANKING",
+      "summary": "포켓몬 카드 1장이 220억원에 거래되는 등 과열 양상을 보이자, 일본 정부가 관련 규제 조치를 시작했다.",
+      "source": "헤럴드경제"
+    },
+    "20260726-bf221663": {
+      "title": "“결국 속았다” “안 산 사람이 승자” 지옥 된 ‘삼전닉스’…월요일이 ‘공포’",
+      "url": "https://n.news.naver.com/article/016/0002674982?ntype=RANKING",
+      "summary": "삼성전자와 SK하이닉스 주식 투자자들이 큰 손실을 입으며 불만을 표출한다. 월요일 주식 시장에 대한 우려가 커진다.",
+      "source": "헤럴드경제"
+    },
+    "20260726-3c9a826c": {
+      "title": "길바닥에 가득 쏟아진 메로나 아이스크림…장애아 부모들이 격분한 이유 [세상&]",
+      "url": "https://n.news.naver.com/article/016/0002674984?ntype=RANKING",
+      "summary": "길바닥에 쏟아진 메로나 아이스크림 사건이 장애아 부모들의 격분을 샀다. 이 사건은 장애인 관련 사회적 문제와 연관되어 있다.",
+      "source": "헤럴드경제"
+    },
+    "20260726-d8c508da": {
+      "title": "“회당 출연료 5억 줬는데” 쏟아지는 ‘뭇매’…궁지에 몰린 디즈니+",
+      "url": "https://n.news.naver.com/article/016/0002674992?ntype=RANKING",
+      "summary": "디즈니+가 회당 5억 원의 출연료를 지급했음에도 시청자들의 비판을 받으며 어려움을 겪는다.",
+      "source": "헤럴드경제"
+    },
+    "20260726-708142da": {
+      "title": "[단독] 문재인 전 대통령 ‘서해 공무원 피격 사건’ 직권남용·허위공문서, 검찰 불기소[세상&]",
+      "url": "https://n.news.naver.com/article/016/0002674972?ntype=RANKING",
+      "summary": "문재인 전 대통령의 '서해 공무원 피격 사건' 관련 직권남용 및 허위공문서 혐의에 대해 검찰이 불기소 처분을 내렸다.",
+      "source": "헤럴드경제"
+    },
+    "20260726-c0917702": {
+      "title": "Android가 기기 내 ADB를 곧 제한할 수 있음",
+      "url": "https://news.hada.io/topic?id=31813",
+      "summary": "Google IssueTracker에서 ADB 핵심 유지보수 담당자가 악용 방지를 위해 기기 내 ADB 로컬 연결을 제한하고 wlan0에만 바인딩하는 방안을 논의 중이다. 이는 루프백 주소 127.0.0.1을 사용하는 기기 내 연결을 막을 수 있다.",
+      "source": "GeekNews"
+    },
+    "20260726-617f647e": {
+      "title": "오픈 웨이트 AI가 Kubernetes의 순간을 맞고 있음",
+      "url": "https://news.hada.io/topic?id=31812",
+      "summary": "충분한 성능과 이식성을 갖춘 오픈 웨이트 모델이 개발자, 클라우드, 기업의 확장 기반이 되어 혁신 생태계를 만들고 있다. 이는 Kubernetes처럼 AI 모델 서빙, 미세조정 등의 공통 인터페이스를 제공할 수 있다.",
+      "source": "GeekNews"
+    },
+    "20260726-f706dcc8": {
+      "title": "Half-Life 2가 HaikuOS에서 네이티브로 실행됨",
+      "url": "https://news.hada.io/topic?id=31811",
+      "summary": "Nvidia 드라이버 포팅으로 HaikuOS가 실제 운영체제로 활용 가능해졌다는 사용자 반응이 나왔다. RTX 2060은 2560×1440 해상도에서 60Hz, 120Hz, 144Hz로 정상 작동한다.",
+      "source": "GeekNews"
+    },
+    "20260726-7849fa92": {
+      "title": "IRGC, 바레인의 Amazon 데이터 센터를 파괴했다고 주장",
+      "url": "https://news.hada.io/topic?id=31809",
+      "summary": "IRGC는 2026년 7월 21일 Operation Nasr-2 공세에서 AWS 바레인 데이터 센터를 순항미사일로 파괴했다고 주장했다. 하지만 Amazon, 바레인 정부, CENTCOM은 이 주장을 확인하지 않았다.",
+      "source": "GeekNews"
+    },
+    "20260726-79080874": {
+      "title": "Postgres LISTEN/NOTIFY는 실제로 확장 가능함",
+      "url": "https://news.hada.io/topic?id=31808",
+      "summary": "Postgres LISTEN/NOTIFY의 전역 배타적 잠금은 처리량을 제한하지만, 알림을 버퍼링해 일괄 전송하면 단일 서버에서 초당 최대 6만 건의 스트림 쓰기를 처리할 수 있다. 이는 알림의 커밋 순서를 보장한다.",
+      "source": "GeekNews"
+    },
+    "20260726-471aff16": {
+      "title": "Claude Opus 5, Artificial Analysis 지능 리더보드 1위",
+      "url": "https://news.hada.io/topic?id=31807",
+      "summary": "Artificial Analysis 지능 리더보드에서 Claude Opus 5 Adaptive Reasoning·Max Effort가 Intelligence Index 61점으로 1위를 차지했다. 총 170개 모델이 평가되었으며, Xhigh Effort와 Claude Fable 5가 각각 60점으로 뒤를 이었다.",
+      "source": "GeekNews"
+    },
+    "20260726-8b1ded53": {
+      "title": "Chrome이 Gemini 팝업용 전역 단축키를 무단 등록",
+      "url": "https://news.hada.io/topic?id=31806",
+      "summary": "Chrome이 사용자 동의 없이 Mac의 Ctrl+G 전역 단축키를 등록해 다른 앱에서도 Gemini 팝업이 열리도록 했다. 이 단축키는 코딩 편집기와 충돌하며, 팝업에는 식별 정보와 비활성화 기능이 명확히 드러나지 않는다.",
+      "source": "GeekNews"
+    },
+    "20260726-95d94353": {
+      "title": "Show GN: 캐치마인드 좋아하세요?",
+      "url": "https://news.hada.io/topic?id=31803",
+      "summary": "캐치마인드를 친구들과 함께하기 어려워 직접 그림 문제를 만들고 풀 수 있는 서비스를 개발했다.",
+      "source": "GeekNews"
+    },
+    "20260726-5cf08c0b": {
+      "title": "Show GN: 에이전트의 토큰낭비를 잡는 CLI를 만들었습니다! (공개 트레이스 6,780개)",
+      "url": "https://news.hada.io/topic?id=31802",
+      "summary": "에이전트의 토큰 낭비가 중복 작업 때문에 발생한다는 점에 착안하여, 끝난 트레이스를 분석해 중복된 스텝을 찾아주는 CLI 도구를 개발했다.",
+      "source": "GeekNews"
+    },
+    "20260726-a7a3c202": {
+      "title": "인도 정부, GitHub에 Bluetooth 채팅 앱 Bitchat 삭제 명령",
+      "url": "https://news.hada.io/topic?id=31800",
+      "summary": "인도 내무부 산하 Indian Cybercrime Coordination Centre가 보안 우려로 GitHub에 Bluetooth 기반 메시징 앱 Bitchat의 삭제를 명령했다. Bitchat 개발자 Jack Dorsey는 2026년 7월 24일 X에서 정부 통지서를 공개했다.",
+      "source": "GeekNews"
+    },
+    "20260726-3c0e9095": {
+      "title": "databasement - 웹UI 기반 셀프호스팅 DB 백업 관리자",
+      "url": "https://news.hada.io/topic?id=31799",
+      "summary": "databasement는 MySQL, PostgreSQL 등 여러 종류의 DB를 단일 웹 UI에서 백업, 복원, 스케줄링하는 셀프 호스팅 관리자다. SSH 터널을 통해 사설망 내 DB에 접속할 수 있다.",
+      "source": "GeekNews"
+    },
+    "20260726-8c5de38f": {
+      "title": "블랙 필을 먹지 마라",
+      "url": "https://news.hada.io/topic?id=31798",
+      "summary": "'블랙 필'은 세상이 조작돼 아무것도 바꿀 수 없다는 허무주의로, 기술자가 자신의 선택권과 변화시킬 힘을 포기하게 만든다. 소프트웨어 품질은 기술보다 경영진의 우선순위와 엔지니어의 협상력에 좌우된다.",
+      "source": "GeekNews"
+    },
+    "20260726-801eea52": {
+      "title": "[AINews] Claude Opus 5: Fable-level performance at Opus price (half Fable)",
+      "url": "https://www.latent.space/p/ainews-claude-opus-5-fable-level",
+      "summary": "Anthropic의 Claude Opus 5가 Fable 모델 수준의 성능을 Fable 가격의 절반인 Opus 가격으로 구현하며, 관련 기술 분야에서 독보적인 경쟁력을 과시했다.",
+      "source": "Latent Space"
+    },
+    "20260726-56eddc9d": {
+      "title": "Ruff v0.16.0",
+      "url": "https://simonwillison.net/2026/Jul/25/ruff/#atom-everything",
+      "summary": "Ruff v0.16.0 버전이 7월 23일 출시되며 기본 활성화 규칙이 59개에서 413개로 대폭 증가했다. 이로 인해 CI 작업 실패 사례가 발생했으며, 전체 규칙 수는 708개에서 968개로 늘었다. 새로운 규칙들은 심각한 오류를 포착한다.",
+      "source": "Simon Willison"
+    },
+    "20260726-9e10b8bb": {
+      "title": "Quoting Boris Cherny",
+      "url": "https://simonwillison.net/2026/Jul/25/boris-cherny/#atom-everything",
+      "summary": "Boris Cherny에 따르면, Claude Opus 5 모델이 현재까지 가장 프롬프트 주입에 강한 것으로 나타났다. 시스템 카드 73페이지에 명시된 바와 같이, PI 평가 및 레드팀 테스트에서 Opus 5는 프롬프트 주입이 매우 어렵다.",
+      "source": "Simon Willison"
+    }
+  }
+}
