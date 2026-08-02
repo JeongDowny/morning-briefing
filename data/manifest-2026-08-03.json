@@ -1,0 +1,233 @@
+{
+  "date": "2026-08-03",
+  "items": {
+    "20260803-ff1300aa": {
+      "title": "Redeploying Fable 5",
+      "url": "https://www.anthropic.com/news/redeploying-fable-5",
+      "summary": "Anthropic 이 Fable 5 를 7/1 전 세계적으로 재배포한다. 또한 Amazon, Microsoft, Google 등 Glasswing 파트너들과 함께 탈옥(jailbreak) 심각도 평가를 위한 산업 전반의 프레임워크를 제안했다.",
+      "source": "Anthropic"
+    },
+    "20260803-cd8d89be": {
+      "title": "지진 대피했는데 \"금고에 돈 넣어라\"...20대 이온몰 직원, 가스폭발 '참변'",
+      "url": "https://n.news.naver.com/article/008/0005394552?ntype=RANKING",
+      "summary": "",
+      "source": "머니투데이"
+    },
+    "20260803-7facea4e": {
+      "title": "\"나이가 몇인데\" 애들 장난감 딸깍?...2030 '힐링템' 된 왁뿌·말랑이",
+      "url": "https://n.news.naver.com/article/008/0005394550?ntype=RANKING",
+      "summary": "",
+      "source": "머니투데이"
+    },
+    "20260803-5990c906": {
+      "title": "증시·상품·개미, 삼전닉스만 바라본다...아차 하는 순간 와르르",
+      "url": "https://n.news.naver.com/article/008/0005394532?ntype=RANKING",
+      "summary": "",
+      "source": "머니투데이"
+    },
+    "20260803-5e91760b": {
+      "title": "한국인 여성 추행한 외국인...\"입국 불허 풀어달라\" 소송 냈다 '패소'",
+      "url": "https://n.news.naver.com/article/008/0005394558?ntype=RANKING",
+      "summary": "",
+      "source": "머니투데이"
+    },
+    "20260803-606f4090": {
+      "title": "\"강간 아니잖아\" 17명 소녀 성매매하고도 황당한 감형 주장...매를 벌었다",
+      "url": "https://n.news.naver.com/article/008/0005394562?ntype=RANKING",
+      "summary": "",
+      "source": "머니투데이"
+    },
+    "20260803-1d7c7f82": {
+      "title": "설마했는데…“방시혁 어쩌다 1조원 증발” 믿었던 투자자들 ‘망연자실’",
+      "url": "https://n.news.naver.com/article/016/0002678414?ntype=RANKING",
+      "summary": "",
+      "source": "헤럴드경제"
+    },
+    "20260803-583139c2": {
+      "title": "“미역국, 한국인은 많이 먹지 마세요” 왜? [식탐]",
+      "url": "https://n.news.naver.com/article/016/0002678300?ntype=RANKING",
+      "summary": "",
+      "source": "헤럴드경제"
+    },
+    "20260803-5265bf46": {
+      "title": "[증시 예보] ‘과도한 공포였나’…폭락장 넘긴 코스피, 다음 주 반등 시험대",
+      "url": "https://n.news.naver.com/article/016/0002678411?ntype=RANKING",
+      "summary": "",
+      "source": "헤럴드경제"
+    },
+    "20260803-1dd80dcf": {
+      "title": "[속보] 李대통령 지지율, 45.9% 취임 후 ‘최저’…“부동산 세제·증시 폭락·연임 개헌 논란때문”",
+      "url": "https://n.news.naver.com/article/016/0002678484?ntype=RANKING",
+      "summary": "",
+      "source": "헤럴드경제"
+    },
+    "20260803-d6fd4c99": {
+      "title": "“하루 남았다” 3일까지 193만원→78만원…파격 할인에 난리난 삼성 ‘신제품’",
+      "url": "https://n.news.naver.com/article/016/0002678424?ntype=RANKING",
+      "summary": "",
+      "source": "헤럴드경제"
+    },
+    "20260803-f8195fd9": {
+      "title": "자동화하지 말고 없애라",
+      "url": "https://news.hada.io/topic?id=32076",
+      "summary": "USV는 기존 시장을 자동화하는 대신 시장 구조와 사업 모델을 없애는 스타트업을 좋은 투자 기회로 평가한다. AI는 에이전트를 통해 누구나 전문지식을 직접 활용하게 만들어 새로운 변화를 이끌 것으로 본다.",
+      "source": "GeekNews"
+    },
+    "20260803-6daf3cbf": {
+      "title": "가장 빠른 AI 우선 기업은 실제로 어떻게 일하는가",
+      "url": "https://news.hada.io/topic?id=32075",
+      "summary": "빠른 AI 우선 기업은 AI를 동료로 취급하며 훌륭한 제품이라는 공동 목표에 맞춰 사람과 시스템을 구성한다. AI로 초안을 만드는 0→1보다 프로토타입 출시 후 검증·학습·반복하는 1→2 단계에 집중한다.",
+      "source": "GeekNews"
+    },
+    "20260803-a937eced": {
+      "title": "미국의 오픈 모델 역설",
+      "url": "https://news.hada.io/topic?id=32074",
+      "summary": "미국은 폐쇄형 프런티어 모델을 선도하지만, 자국 모델 출력을 학습에 활용하기 어려워 오픈 모델 계층에서 중국 의존도가 커지는 역설에 직면했다. 신규 오픈 모델 미세조정·변형에서 Qwen의 점유율은 2024년 1월 1%에서 2026년 2월 69%로 급증했다.",
+      "source": "GeekNews"
+    },
+    "20260803-9010944b": {
+      "title": "Diátaxis - 기술 문서 작성을 위한 체계적 접근법",
+      "url": "https://news.hada.io/topic?id=32073",
+      "summary": "Diátaxis는 문서 사용자의 서로 다른 요구를 기준으로 기술 문서의 내용, 형식, 구조를 설계하는 체계적 접근법이다. 사용자의 요구를 튜토리얼, 방법 안내서, 기술 참조, 설명 네 가지로 구분하고 각 문서 유형의 역할에 따라 전체 체계를 구성한다.",
+      "source": "GeekNews"
+    },
+    "20260803-1671ad18": {
+      "title": "Show GN: 온글 – 브라우저 안에서 작동하는 로컬 AI 번역 및 TTS 크롬 익스텐션",
+      "url": "https://news.hada.io/topic?id=32072",
+      "summary": "'온글'은 웹페이지를 한국어로 번역하고 음성으로 읽어주는 로컬 AI 기반 크롬 확장 프로그램이다. 보안 문제로 기존 번역 기능 사용이 어려운 환경을 위해 개발되었으며, 선택 텍스트, 전체 웹페이지, 유튜브 자막 번역을 지원한다.",
+      "source": "GeekNews"
+    },
+    "20260803-c800cc77": {
+      "title": "Karpathy의 펠리컨",
+      "url": "https://news.hada.io/topic?id=32070",
+      "summary": "LLM 평가는 단일 결과물에서 벗어나 세계와 게임을 절차적으로 구현하는 장시간 작업으로 확장되기 시작했다. Opus 5에 《The Lord of the Rings》 첫 문단과 100만 토큰 예산을 주고 Three.js 렌더링을 요청하자 약 2시간이 소요됐다.",
+      "source": "GeekNews"
+    },
+    "20260803-022913b3": {
+      "title": "실리콘밸리의 창업자 고기 분쇄기",
+      "url": "https://news.hada.io/topic?id=32069",
+      "summary": "개발 부트캠프 출신 'Jim'은 인맥을 발판 삼아 스타트업 취업, 인수, YC 합격, 연쇄 창업까지 빠르게 성공했으나 몇 년 만에 돈과 관계를 잃고 자취를 감췄다. 첫 고액 연봉 이후 생활 수준을 무리하게 높인 것이 원인으로 지목된다.",
+      "source": "GeekNews"
+    },
+    "20260803-020710f7": {
+      "title": "BMW, 구매한 차량 화면에 Spider-Man 광고 배포",
+      "url": "https://news.hada.io/topic?id=32068",
+      "summary": "BMW가 고객이 이미 구매한 차량의 Control Display에 Spider-Man: Brand New Day 전체 화면 광고를 배포하여 논란이 커지고 있다. 이는 차량 소유권과 화면 사용 권한을 둘러싼 문제를 제기한다.",
+      "source": "GeekNews"
+    },
+    "20260803-81cc7555": {
+      "title": "RamenHaus",
+      "url": "https://news.hada.io/topic?id=32067",
+      "summary": "'RamenHaus'는 쿠키, 자바스크립트 없이 회전하는 라멘 그릇 사진만 보여주는 웹사이트다. 국가/도시별로 정리된 총 114개의 라멘 사진이 포함되어 있으며, 'Rotating Sandwiches'에서 영감을 받아 제작되었다.",
+      "source": "GeekNews"
+    },
+    "20260803-7c24d7d1": {
+      "title": "Wikimedia Foundation, 노조 인정 거부하고 노조 저지 전문 로펌 선임",
+      "url": "https://news.hada.io/topic?id=32063",
+      "summary": "Wikimedia Foundation(WMF)은 직원 대다수가 서명한 Wiki Workers United U.S.의 자발적 노조 인정을 거부하고 NLRB 비밀투표를 요구했다. 노조는 WMF가 중립을 표방하면서 노조 저지 전문 로펌 Littler Mendelson을 선임해 투표를 지연시키려 한다고 비판했다.",
+      "source": "GeekNews"
+    },
+    "20260803-bb3e61b9": {
+      "title": "Matrix에서의 일주일",
+      "url": "https://news.hada.io/topic?id=32062",
+      "summary": "실제 커뮤니티를 Matrix로 운영하자 Spaces 권한, 서버 간 동기화, 차단 정책, 페더레이션이 연이어 고장 나 단순한 관리 작업에도 장시간의 조사와 우회가 필요했다. Spaces가 일반 룸으로 구현된 구조와 홈서버별 상태 불일치로 권한 변경이 전파되지 않는 문제가 발생했다.",
+      "source": "GeekNews"
+    },
+    "20260803-ac550585": {
+      "title": "Show HN: 엔지니어를 꿈꾸는 15살인 제가 만든 사이클로이드 감속기",
+      "url": "https://news.hada.io/topic?id=32061",
+      "summary": "15세 엔지니어가 Python 생성기로 설계한 3D 프린팅 사이클로이드 감속기를 공개했다. 세 차례 버전을 거쳐 NEMA 17에서 구동되는 설계를 완성했으며, Version 3는 외부 핀 10개와 로터 로브 9개로 1:9 감속비를 구현한다.",
+      "source": "GeekNews"
+    },
+    "20260803-0189a0a8": {
+      "title": "Show GN: 클로드코드 세션 탐색기 만들어 봤습니다.",
+      "url": "https://news.hada.io/topic?id=32060",
+      "summary": "여러 프로젝트에서 흩어진 Claude 코드 세션을 효율적으로 탐색하기 위한 '클로드코드 세션 탐색기'가 개발됐다. 기존 `claude --resume`의 제한적인 탐색 범위를 개선하여, 과거 대화에서 필요한 내용을 쉽게 찾고 반복 논의를 줄이는 데 도움을 준다.",
+      "source": "GeekNews"
+    },
+    "20260803-3a69aa14": {
+      "title": "Go 1.27 인터랙티브 투어",
+      "url": "https://news.hada.io/topic?id=32059",
+      "summary": "Go 1.27 릴리스는 제네릭 메서드를 중심으로 구조체 리터럴과 타입 추론을 개선하고, 표준 라이브러리, 런타임, 도구 체계까지 폭넓게 확장했다. 80바이트 미만 일부 할당은 최대 30% 빨라지고, 할당이 많은 실제 프로그램은 약 1% 성능 향상이 예상된다.",
+      "source": "GeekNews"
+    },
+    "20260803-01eea10e": {
+      "title": "wiff",
+      "url": "https://news.hada.io/topic?id=32056",
+      "summary": "'wiff'는 diff를 캡처해 구문 강조로 탐색하고 주석을 남길 수 있는 터미널 코드 리뷰 도구이다. 리뷰를 로컬 세션에 저장하며, 사람(TUI)과 에이전트(CLI, 스킬) 모두 같은 세션을 읽고 쓸 수 있다.",
+      "source": "GeekNews"
+    },
+    "20260803-9d3320da": {
+      "title": "질문을 제대로 하면 AI 금융 조언은 놀라울 정도로 좋아짐",
+      "url": "https://news.hada.io/topic?id=32055",
+      "summary": "22~89세 재무 결정 시뮬레이션 결과, LLM 금융 조언은 30세 이상 거의 모든 사람에게 저축 완충 자금 마련, 저축 및 주식시장 참여, 분산투자 확대에 도움을 줬다. 근로 기간 저축, 은퇴 후 자산 인출, 45세 이후 주식 비중 축소를 권고했다.",
+      "source": "GeekNews"
+    },
+    "20260803-d513d533": {
+      "title": "Seedance 2.5 - 30초 원테이크 생성과 유연한 참조",
+      "url": "https://news.hada.io/topic?id=32054",
+      "summary": "ByteDance Seed 팀이 단편 생성에서 완성된 창작물 제작으로 범위를 넓힌 차세대 영상 모델 Seedance 2.5를 출시했다. 음성과 영상을 포함한 최대 30초 분량을 한 번에 생성하고 여러 차례 연장해 수분 길이 콘텐츠 제작이 가능하다.",
+      "source": "GeekNews"
+    },
+    "20260803-2eb99f7c": {
+      "title": "바이브코딩 국민스택 Next.js + Supabase에 대한 오해",
+      "url": "https://news.hada.io/topic?id=32053",
+      "summary": "이 글은 바이브코딩의 국민스택인 Next.js와 Supabase를 다룰 때, 편리해 보이는 추상화 뒤에 숨겨진 동작 원리를 직접 이해해야 할 필요성을 강조한다.",
+      "source": "GeekNews"
+    },
+    "20260803-fe8538a7": {
+      "title": "NetBSD 11.0 출시",
+      "url": "https://news.hada.io/topic?id=32052",
+      "summary": "여러 차례 지연된 NetBSD 11.0이 공개됐으며, 아키텍처별 설치 안내와 CDN 설치 이미지를 제공한다. 설치 매체에 따라 CD-ROM에는 700MB 미만 분할 ISO 또는 -dvd.iso를, USB 같은 플래시 미디어에는 압축을 푼 .img를 사용한다.",
+      "source": "GeekNews"
+    },
+    "20260803-03f682c2": {
+      "title": "Ripgrep musl 바이너리가 초대형 검색 중 간헐적으로 세그멘테이션 오류를 일으킴",
+      "url": "https://news.hada.io/topic?id=32051",
+      "summary": "Ripgrep 15.2.0의 x86_64-unknown-linux-musl 바이너리가 대규모 파일 트리를 높은 동시성으로 검색할 때 간헐적으로 SIGSEGV 오류와 함께 종료된다. 이 충돌은 opendir가 호출한 calloc 내부에서 발생하며, musl mallocng의 힙 메타데이터 손상과 관련이 있다.",
+      "source": "GeekNews"
+    },
+    "20260803-1eb60bf5": {
+      "title": "Google은 Google News를 방치했나?",
+      "url": "https://news.hada.io/topic?id=32049",
+      "summary": "관심 주제의 미국 뉴스를 찾는 데 쓰던 Google News 검색이 지정 조건과 무관한 결과를 내놓으면서 신뢰하기 어려워졌다. Tools 메뉴에서 발행 기간, 언어, 지역을 지정할 수 있지만, 이들 검색 필터가 제대로 작동하지 않는 문제가 발생한다.",
+      "source": "GeekNews"
+    },
+    "20260803-116f2ce9": {
+      "title": "Flint - AI 시대를 위한 시각화 언어",
+      "url": "https://news.hada.io/topic?id=32048",
+      "summary": "'Flint'는 AI 시대를 위한 시각화 언어로, 데이터 필드의 의미를 바탕으로 파싱, 축, 서식, 색상을 자동 결정한다. Rank, YearMonth, Delta, Temperature 같은 의미 타입(semantic type)을 활용하여 저수준 설정 없이 차트를 만들고 수정할 수 있다.",
+      "source": "GeekNews"
+    },
+    "20260803-9e0e7ecb": {
+      "title": "Lexxy - Rails를 위한 현대적인 리치 텍스트 에디터",
+      "url": "https://news.hada.io/topic?id=32047",
+      "summary": "37signals가 개발한 'Lexxy'는 Rails를 위한 현대적인 리치 텍스트 에디터로, Basecamp를 비롯한 수백 개 제품에서 실제 운영에 사용 중이다. Meta의 확장 가능한 텍스트 에디터 프레임워크 Lexical 기반으로 구축되었으며, 문단을 실제 `<p>` 태그로 생성하여 깔끔한 HTML 시맨틱을 제공한다.",
+      "source": "GeekNews"
+    },
+    "20260803-266ea959": {
+      "title": "Latest open artifacts (#23): Laguna S2.1, Inkling, & Kimi K3 show the utility of open models on the Pareto frontier",
+      "url": "https://www.interconnects.ai/p/latest-open-artifacts-23-laguna-s21",
+      "summary": "Laguna S2.1, Inkling, Kimi K3와 같은 최신 오픈 모델들이 파레토 최전선에서 오픈 모델의 유용성을 보여주며, 강력한 모델 훈련 역량의 확산을 입증한다.",
+      "source": "Interconnects"
+    },
+    "20260803-9af221d9": {
+      "title": "condense-json 1.0",
+      "url": "https://simonwillison.net/2026/Aug/2/condense-json/#atom-everything",
+      "summary": "Simon Willison이 1년 반 만에 'condense-json' 라이브러리 1.0 버전을 출시했다. 이 라이브러리는 JSON 데이터를 압축하고 특정 문자열을 대체하는 기능을 제공한다.",
+      "source": "Simon Willison"
+    },
+    "20260803-44e3e0fe": {
+      "title": "Open letters about AI development",
+      "url": "https://simonwillison.net/2026/Aug/2/open-letters/#atom-everything",
+      "summary": "Microsoft가 주도하고 NVIDIA, Amazon 등 235개 AI 관련 기업이 서명한 'Open Weights and American AI Leadership' 공개 서한이 7월 24일 발표됐다. 이는 미국 정부의 오픈 웨이트 모델 규제 움직임에 대응하기 위함이다.",
+      "source": "Simon Willison"
+    },
+    "20260803-4f08835b": {
+      "title": "July 2026 newsletter",
+      "url": "https://simonwillison.net/2026/Aug/2/july-newsletter/#atom-everything",
+      "summary": "Simon Willison의 스폰서 전용 월간 뉴스레터 6월호가 발행됐다. 이번 호에는 OpenAI 및 Anthropic 모델의 사이버 공격, GPT-5.6, Claude Opus 5 등 다양한 AI 모델과 AI 개발 관련 공개 서한 내용이 포함됐다.",
+      "source": "Simon Willison"
+    }
+  }
+}
