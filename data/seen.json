@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-07T10:42:23+09:00",
+  "last_updated": "2026-08-08T08:29:12+09:00",
   "news": {
     "https://n.news.naver.com/article/008/0005383454?ntype=RANKING": "2026-07-09T09:06:14+09:00",
     "https://n.news.naver.com/article/008/0005383487?ntype=RANKING": "2026-07-09T09:06:14+09:00",
@@ -290,7 +290,17 @@
     "https://n.news.naver.com/article/011/0004649377?ntype=RANKING": "2026-08-07T10:42:23+09:00",
     "https://n.news.naver.com/article/011/0004649149?ntype=RANKING": "2026-08-07T10:42:23+09:00",
     "https://n.news.naver.com/article/011/0004649456?ntype=RANKING": "2026-08-07T10:42:23+09:00",
-    "https://n.news.naver.com/article/011/0004649445?ntype=RANKING": "2026-08-07T10:42:23+09:00"
+    "https://n.news.naver.com/article/011/0004649445?ntype=RANKING": "2026-08-07T10:42:23+09:00",
+    "https://n.news.naver.com/article/015/0005318669?ntype=RANKING": "2026-08-08T08:29:12+09:00",
+    "https://n.news.naver.com/article/015/0005318672?ntype=RANKING": "2026-08-08T08:29:12+09:00",
+    "https://n.news.naver.com/article/015/0005318673?ntype=RANKING": "2026-08-08T08:29:12+09:00",
+    "https://n.news.naver.com/article/015/0005318639?ntype=RANKING": "2026-08-08T08:29:12+09:00",
+    "https://n.news.naver.com/article/015/0005318670?ntype=RANKING": "2026-08-08T08:29:12+09:00",
+    "https://n.news.naver.com/article/009/0005718230?ntype=RANKING": "2026-08-08T08:29:12+09:00",
+    "https://n.news.naver.com/article/009/0005718237?ntype=RANKING": "2026-08-08T08:29:12+09:00",
+    "https://n.news.naver.com/article/009/0005718218?ntype=RANKING": "2026-08-08T08:29:12+09:00",
+    "https://n.news.naver.com/article/009/0005717946?ntype=RANKING": "2026-08-08T08:29:12+09:00",
+    "https://n.news.naver.com/article/009/0005718236?ntype=RANKING": "2026-08-08T08:29:12+09:00"
   },
   "dev_blog": {
     "https://news.hada.io/topic?id=31246": "2026-07-09T09:06:14+09:00",
@@ -1322,7 +1332,34 @@
     "https://openai.com/index/openai-and-apa-partner-to-advance-responsible-ai": "2026-08-07T10:42:23+09:00",
     "https://simonwillison.net/2026/Aug/6/datasette/#atom-everything": "2026-08-07T10:42:23+09:00",
     "https://simonwillison.net/2026/Aug/6/datasette-2/#atom-everything": "2026-08-07T10:42:23+09:00",
-    "https://simonwillison.net/2026/Aug/6/simon-willison-on-technical-blogging/#atom-everything": "2026-08-07T10:42:23+09:00"
+    "https://simonwillison.net/2026/Aug/6/simon-willison-on-technical-blogging/#atom-everything": "2026-08-07T10:42:23+09:00",
+    "https://www.anthropic.com/news/improving-fable-5-s-biology-safeguards": "2026-08-08T08:29:12+09:00",
+    "https://news.hada.io/topic?id=32250": "2026-08-08T08:29:12+09:00",
+    "https://news.hada.io/topic?id=32249": "2026-08-08T08:29:12+09:00",
+    "https://news.hada.io/topic?id=32248": "2026-08-08T08:29:12+09:00",
+    "https://news.hada.io/topic?id=32247": "2026-08-08T08:29:12+09:00",
+    "https://news.hada.io/topic?id=32246": "2026-08-08T08:29:12+09:00",
+    "https://news.hada.io/topic?id=32245": "2026-08-08T08:29:12+09:00",
+    "https://news.hada.io/topic?id=32244": "2026-08-08T08:29:12+09:00",
+    "https://news.hada.io/topic?id=32243": "2026-08-08T08:29:12+09:00",
+    "https://news.hada.io/topic?id=32242": "2026-08-08T08:29:12+09:00",
+    "https://news.hada.io/topic?id=32240": "2026-08-08T08:29:12+09:00",
+    "https://news.hada.io/topic?id=32239": "2026-08-08T08:29:12+09:00",
+    "https://news.hada.io/topic?id=32237": "2026-08-08T08:29:12+09:00",
+    "https://news.hada.io/topic?id=32236": "2026-08-08T08:29:12+09:00",
+    "https://news.hada.io/topic?id=32235": "2026-08-08T08:29:12+09:00",
+    "https://news.hada.io/topic?id=32234": "2026-08-08T08:29:12+09:00",
+    "https://news.hada.io/topic?id=32232": "2026-08-08T08:29:12+09:00",
+    "https://news.hada.io/topic?id=32231": "2026-08-08T08:29:12+09:00",
+    "https://news.hada.io/topic?id=32230": "2026-08-08T08:29:12+09:00",
+    "https://news.hada.io/topic?id=32229": "2026-08-08T08:29:12+09:00",
+    "https://news.hada.io/topic?id=32228": "2026-08-08T08:29:12+09:00",
+    "https://huggingface.co/blog/allenai/tutormoments": "2026-08-08T08:29:12+09:00",
+    "https://www.latent.space/p/ainews-amd-buys-taalas": "2026-08-08T08:29:12+09:00",
+    "https://openai.com/index/responding-next-frontier-critical-cyber-capabilities": "2026-08-08T08:29:12+09:00",
+    "https://openai.com/index/hsp-gruppe": "2026-08-08T08:29:12+09:00",
+    "https://simonwillison.net/2026/Aug/7/moonlight-mayhem/#atom-everything": "2026-08-08T08:29:12+09:00",
+    "https://simonwillison.net/2026/Aug/7/pdfs-are-terrible/#atom-everything": "2026-08-08T08:29:12+09:00"
   },
   "threads": {}
 }
