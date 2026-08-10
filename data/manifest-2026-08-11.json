@@ -1,0 +1,395 @@
+{
+  "date": "2026-08-11",
+  "items": {
+    "20260811-5e689a64": {
+      "title": "Inviting hard questions",
+      "url": "https://www.anthropic.com/news/hard-questions",
+      "summary": "Anthropic은 AI에 대한 대중의 어려운 질문을 받고, 질문에 답변하는 과정을 투명하게 공개하겠다고 밝혔다.",
+      "source": "Anthropic"
+    },
+    "20260811-27a5058f": {
+      "title": "\"삼전닉스 주식 다시 오를까요?\" 전문가에 물었더니…",
+      "url": "https://n.news.naver.com/article/015/0005319404?ntype=RANKING",
+      "summary": "삼성전자와 SK하이닉스 주가 상승 가능성에 대해 전문가들이 다양한 의견을 내놓고 있다.",
+      "source": "한국경제"
+    },
+    "20260811-7ac9274e": {
+      "title": "\"34평 분양가로 25평 받으라니\"…다섯달 만에 벌어진 일 [시장톡]",
+      "url": "https://n.news.naver.com/article/015/0005319408?ntype=RANKING",
+      "summary": "5개월 만에 아파트 분양 시장에서 34평형 가격으로 25평형을 구매해야 하는 상황이 발생, 부동산 시장의 변화를 보여준다.",
+      "source": "한국경제"
+    },
+    "20260811-ccb67630": {
+      "title": "\"3억 넣으면 月 700만원씩 따박따박\"…대박인 줄 알았더니",
+      "url": "https://n.news.naver.com/article/015/0005319115?ntype=RANKING",
+      "summary": "3억 원 투자 시 월 700만 원 수익을 약속하는 투자 상품이 실제로는 문제가 있는 것으로 드러나 투자자 주의가 요구된다.",
+      "source": "한국경제"
+    },
+    "20260811-9d3438fa": {
+      "title": "'25억에도 없어서 못 사'…딱 199명뿐인데 큰손들 줄 섰다 [프라이스&]",
+      "url": "https://n.news.naver.com/article/015/0005319403?ntype=RANKING",
+      "summary": "25억 원에 달하는 고가 상품이 단 199개 한정 수량으로 출시, 자산가들 사이에서 높은 수요를 보이며 품귀 현상을 겪고 있다.",
+      "source": "한국경제"
+    },
+    "20260811-4084bcaa": {
+      "title": "홍대랑 맞먹네…밤마다 2030 '우르르' 핫플 떠오른 동네",
+      "url": "https://n.news.naver.com/article/015/0005319413?ntype=RANKING",
+      "summary": "새로운 동네가 홍대와 비견될 정도로 2030 세대에게 인기 있는 핫플레이스로 급부상하며 밤마다 많은 인파가 몰리고 있다.",
+      "source": "한국경제"
+    },
+    "20260811-b6afb8c7": {
+      "title": "“최소 100조, 최대 200조 예상?”…삼성전자 ‘역대급 주주환원’ 전망 나왔다",
+      "url": "https://n.news.naver.com/article/016/0002681936?ntype=RANKING",
+      "summary": "삼성전자가 최소 100조 원, 최대 200조 원 규모의 역대급 주주환원 정책을 검토 중인 것으로 전해진다.",
+      "source": "헤럴드경제"
+    },
+    "20260811-8a7caf0b": {
+      "title": "“200억원 쏟아붓고” 천하의 전지현도 쓴맛…극장 내리기도 전에 OTT행, 난리더니 이달 말 결론",
+      "url": "https://n.news.naver.com/article/016/0002681931?ntype=RANKING",
+      "summary": "전지현 주연의 200억 원 규모 영화가 극장 상영 중 OTT 공개를 결정하며 흥행에 어려움을 겪고 있으며, 이달 말 최종 결론이 나올 예정이다.",
+      "source": "헤럴드경제"
+    },
+    "20260811-6d01bea8": {
+      "title": "평택 위험물 보관 창고 대형 화재…국가소방동원령",
+      "url": "https://n.news.naver.com/article/016/0002681963?ntype=RANKING",
+      "summary": "평택에 위치한 위험물 보관 창고에서 대형 화재가 발생하여 국가소방동원령이 발령되었다.",
+      "source": "헤럴드경제"
+    },
+    "20260811-8d2cae25": {
+      "title": "“트럼프 위협하면 미국 못 온다”…비자 17만5000건 취소[1일1트]",
+      "url": "https://n.news.naver.com/article/016/0002681956?ntype=RANKING",
+      "summary": "트럼프 전 대통령의 위협 발언과 관련하여 미국 비자 17만5000건이 취소된 것으로 알려졌다.",
+      "source": "헤럴드경제"
+    },
+    "20260811-ea1c8d7b": {
+      "title": "“코스피 떨어질 때 17% 급등” 잊을 만 하면 떠오르는 ‘이 종목’…이번엔 또 왜? [투자360]",
+      "url": "https://n.news.naver.com/article/016/0002681930?ntype=RANKING",
+      "summary": "코스피 하락장에서도 17% 급등하며 주목받는 특정 종목이 다시 상승세를 보여 그 배경에 관심이 쏠린다.",
+      "source": "헤럴드경제"
+    },
+    "20260811-e364dec2": {
+      "title": "Mark Zuckerberg, Meta의 개방형 모델 복귀와 함께 ‘폐쇄형’ AI 경쟁사 비판",
+      "url": "https://news.hada.io/topic?id=32367",
+      "summary": "마크 저커버그 Meta CEO가 개방형 모델로의 복귀를 선언하며, 폐쇄형 AI 모델을 채택한 경쟁사들을 비판했다.",
+      "source": "GeekNews"
+    },
+    "20260811-1e977ab9": {
+      "title": "1991년 Mars Bar 발견 — 현재 제품보다 20g 이상 커",
+      "url": "https://news.hada.io/topic?id=32366",
+      "summary": "영국 스컨소프에서 1991년 유통기한의 35년 된 Mars Bar가 발견되어 화제. 과거 제품은 62.5g, 현재는 40g으로 22.5g 차이가 확인됐다.",
+      "source": "GeekNews"
+    },
+    "20260811-2c404064": {
+      "title": "Claude Code, Auto mode를 기본 권한 모드로 전환",
+      "url": "https://news.hada.io/topic?id=32365",
+      "summary": "2026년 8월 14일부터 Claude Code의 Pro·Max·Team 신규 세션은 Auto mode로 시작. 도구 호출 위험을 자동 판별해 자율 작업과 안전한 실행을 지원하며, 연속 3회 또는 세션 전체 20회 차단 시 진입이 제한된다.",
+      "source": "GeekNews"
+    },
+    "20260811-d25f1ff6": {
+      "title": "Show GN: AI 에이전트가 요구사항과 조사 자료를 연결하고, 한국어 표현을 검토하도록 하는 방법에 대해서",
+      "url": "https://news.hada.io/topic?id=32363",
+      "summary": "AI 에이전트 활용 시 요구사항, 리서치 자료, 결정 사항, 작업 계획 등이 체계적으로 관리되지 않고 중복되는 문제에 직면. 이를 해결하기 위한 AI 에이전트 활용 방안이 제시되었다.",
+      "source": "GeekNews"
+    },
+    "20260811-19fcf315": {
+      "title": "Meta Muse Glimmer - 기기에서 실행하는 오픈 웨이트 30B 코딩 모델",
+      "url": "https://news.hada.io/topic?id=32362",
+      "summary": "Meta가 30B 파라미터 로컬 에이전트 모델 Muse Glimmer를 Apache 2.0 라이선스로 공개. 단일 소비자용 GPU를 장착한 Mac이나 PC에서 실행되도록 최적화되었다.",
+      "source": "GeekNews"
+    },
+    "20260811-d69421ad": {
+      "title": "Go 생태계에 기대어 만든 시스템 언어 Solod",
+      "url": "https://news.hada.io/topic?id=32361",
+      "summary": "Go 생태계 기반 시스템 언어 Solod가 C·Go 개발자를 위해 Go 언어의 부분집합으로 설계되어 공개. 기존 Go 도구 체계를 활용하며, 전용 so 도구로 추가 문법 검사를 지원한다.",
+      "source": "GeekNews"
+    },
+    "20260811-29e4f3ff": {
+      "title": "2026년 상반기 IRC 기술 뉴스",
+      "url": "https://news.hada.io/topic?id=32360",
+      "summary": "2026년 상반기 IRC 생태계는 IRCv3 명세 확장과 클라이언트·서버·바운서 개선을 지속. AI 지원 개발 여부를 프로젝트 평가 정보로 표시하기 시작했으며, IRCv3 Working Group은 새로운 명세 확장을 진행 중이다.",
+      "source": "GeekNews"
+    },
+    "20260811-5ebe2776": {
+      "title": "멋진 URI는 변하지 않는다 (1998)",
+      "url": "https://news.hada.io/topic?id=32359",
+      "summary": "1998년 발표된 '멋진 URI는 변하지 않는다'는 좋은 URI가 사이트 개편, 담당자 교체, 기술 변경에도 유지되어야 함을 강조. URI를 파일시스템과 분리된 추상 공간으로 설계하여 내부 구조 변경 시에도 기존 링크를 보존해야 한다고 제안한다.",
+      "source": "GeekNews"
+    },
+    "20260811-5455824b": {
+      "title": "HackerOne에 무슨 일이 일어났나?",
+      "url": "https://news.hada.io/topic?id=32358",
+      "summary": "HackerOne이 2014~2022년 총 1억6천만 달러 조달 후 수익화 압력으로 해커 중심 커뮤니티에서 영업·계약·AI 제품 중심 기업으로 변모하며 정체성을 잃었다는 비판이 제기됐다.",
+      "source": "GeekNews"
+    },
+    "20260811-716ab560": {
+      "title": "Docker Sandboxes - AI 에이전트용 일회성 격리 환경",
+      "url": "https://news.hada.io/topic?id=32357",
+      "summary": "Docker Sandboxes는 AI 코딩 에이전트별 전용 microVM을 제공, 호스트 시스템과 분리된 환경에서 장시간 무인 작업을 지원한다. 에이전트는 샌드박스 내에서 패키지 설치, 설정 변경, 서비스 실행, Docker 컨테이너 구동까지 가능하다.",
+      "source": "GeekNews"
+    },
+    "20260811-c527839a": {
+      "title": "nixpkgs-multiverse: 지금까지 존재한 모든 패키지 버전",
+      "url": "https://news.hada.io/topic?id=32355",
+      "summary": "nixpkgs-multiverse는 과거 Nixpkgs 커밋을 일일이 찾을 필요 없이, 하나의 flake 입력으로 지금까지 존재한 모든 패키지 버전에 접근 가능하게 한다. builtins.fetchTree와 narHash를 활용해 효율적인 접근을 제공한다.",
+      "source": "GeekNews"
+    },
+    "20260811-02ae9d81": {
+      "title": "Ask HN: 무엇을 만들고 계신가요? (2026년 8월)",
+      "url": "https://news.hada.io/topic?id=32353",
+      "summary": "Ask HN에서 2026년 8월 현재 진행 중인 작업과 최근 궁금했던 주제를 공유해 달라는 질문이 올라왔다.",
+      "source": "GeekNews"
+    },
+    "20260811-530aa997": {
+      "title": "Show GN: Claude가 만든 한국어 문서는 왜 어딘가 이상할까 — 표현과 디자인 규약으로 제대로 된 문서를 작성하는...",
+      "url": "https://news.hada.io/topic?id=32352",
+      "summary": "Claude 등 AI가 생성한 한국어 문서에서 'AI Slop' 현상으로 어색한 표현이 나타나는 문제가 제기되었다. 이는 추상적인 프롬프트로 에이전트가 문서를 구성할 때 발생하며, 표현 및 디자인 규약을 통한 해결 방안이 모색된다.",
+      "source": "GeekNews"
+    },
+    "20260811-7ec670da": {
+      "title": "Show GN: OTP 복사-붙여넣기가 귀찮아서 자동 입력 크롬 확장을 만들었습니다",
+      "url": "https://news.hada.io/topic?id=32350",
+      "summary": "회사 어드민 페이지 로그인 시 Google OTP를 매번 수동으로 복사-붙여넣기 하는 번거로움을 해결하고자, OTP를 자동 입력해주는 크롬 확장이 개발되었다.",
+      "source": "GeekNews"
+    },
+    "20260811-380249dc": {
+      "title": "저항에 관한 이메일을 받다",
+      "url": "https://news.hada.io/topic?id=32349",
+      "summary": "William Murray는 AI와 자동화로 소프트웨어의 깊은 사고가 직업적 가치를 잃어가는데도 변화에 저항하지 않는 태도를 공모이자 체념으로 비판했다. 그는 현재 상황을 산업혁명기 영국에 비유하며 프로그래머의 역할을 재조명한다.",
+      "source": "GeekNews"
+    },
+    "20260811-a6a82150": {
+      "title": "모노리포 희망편, 절망의 리포가 희망의 리포로 부활하기까지 걸린 1년",
+      "url": "https://news.hada.io/topic?id=32347",
+      "summary": "토스는 100명 이상의 프론트엔드 엔지니어가 하루 수백 번 배포하는 환경에서도 모노리포를 성공적으로 운영 중이다. 모든 서비스가 React 19, Next.js 15, TypeScript 7 등 동일한 버전의 기술 스택을 사용하며 효율성을 높였다.",
+      "source": "GeekNews"
+    },
+    "20260811-4b597927": {
+      "title": "Ask GN: Fable 5가 걍 반쪽짜리 뇌임",
+      "url": "https://news.hada.io/topic?id=32346",
+      "summary": "Fable 5 AI 모델이 배열 계산에서 오류를 범하고도 자신의 주장을 고집하다 나중에 인정했으나, 그 과정에서 짜증스러운 말투를 보여 사용자 경험이 좋지 않았다는 사례가 공유되었다.",
+      "source": "GeekNews"
+    },
+    "20260811-22c7761e": {
+      "title": "Show GN: AI 음악 생성 플랫폼을 만들었습니다.",
+      "url": "https://news.hada.io/topic?id=32343",
+      "summary": "음악 지식이 없어도 몇 초 만에 자신만의 곡을 만들 수 있는 AI 음악 생성 플랫폼이 공개되었다. 사용자가 가사나 주제, 장르, 분위기 등을 입력하면 AI가 가사부터 곡까지 완성해준다.",
+      "source": "GeekNews"
+    },
+    "20260811-6e8124d8": {
+      "title": "택시 운전자는 알츠하이머병으로 사망하는 경우가 드묾",
+      "url": "https://news.hada.io/topic?id=32342",
+      "summary": "2024년 미국 사망진단서 약 900만 건 분석 결과, 택시·구급차 운전자는 443개 직업 중 알츠하이머병 사망 위험이 가장 낮았다. 연령 등을 보정한 사망 비율은 전체 약 60명 중 1명, 해당 직업군은 약 100명 중 1명으로 나타났다.",
+      "source": "GeekNews"
+    },
+    "20260811-9bd0341b": {
+      "title": "Show GN: 스토맵 - 지도 위에 사진과 글을 핀으로 남기는 앱",
+      "url": "https://news.hada.io/topic?id=32339",
+      "summary": "'스토맵'은 현재 위치에 사진과 글을 핀으로 남기고, 지도에서 주변 사람들이 공유한 이야기를 찾아볼 수 있는 앱이다. iOS와 Android 양대 플랫폼에 모두 출시되었다.",
+      "source": "GeekNews"
+    },
+    "20260811-bd653dc8": {
+      "title": "당신이 하는 모든 일이 기록되는 시대",
+      "url": "https://news.hada.io/topic?id=32337",
+      "summary": "AI 웨어러블 기기가 주변 대화를 상시 수집하면서 일반인에게도 감시 대응 수단이 필요해졌다. 기존 초음파 방해기는 잡음을 만들지만, 최신 음성 복원 모델은 음성 패턴과 문맥을 이용해 잡음을 제거할 수 있다.",
+      "source": "GeekNews"
+    },
+    "20260811-dccab1e0": {
+      "title": "Tom Stanton의 초음속 트레뷰셋, 중력만으로 음속 돌파",
+      "url": "https://news.hada.io/topic?id=32336",
+      "summary": "Tom Stanton이 40kg 추의 낙하 에너지 만으로 4g 발사체를 시속 776마일(346.4m/s)까지 가속, 순수 중력식 트레뷰셋 최초로 음속을 돌파했다. 3:1 도르래 시스템과 직경이 달라지는 드럼으로 자유낙하 속도 한계를 보완했다.",
+      "source": "GeekNews"
+    },
+    "20260811-7c439560": {
+      "title": "Show GN: 한국 개발자들의 개인 블로그를 모아 보는 Indieblog를 만들었습니다",
+      "url": "https://news.hada.io/topic?id=32335",
+      "summary": "한국 개발자들의 개인 블로그를 한곳에 모아 보여주는 서비스 'Indieblog'(https://indieblog.net)가 출시되었다. 기업 기술 블로그와 달리 개인 블로그를 모아주는 서비스가 없다는 점에서 착안해 개발되었다.",
+      "source": "GeekNews"
+    },
+    "20260811-f89669df": {
+      "title": "Show GN: OtterZip – 광고 없이 그냥 되는 무료 압축툴 (Rust 코어, 오픈소스)",
+      "url": "https://news.hada.io/topic?id=32332",
+      "summary": "광고나 결제 유도 없이 '조용히 그냥 되는' 무료 압축툴 'OtterZip'이 Rust 코어로 개발되어 오픈소스로 공개되었다. 맥용 Keka에서 영감을 받아 윈도우 환경에서 심플한 압축 기능을 제공한다.",
+      "source": "GeekNews"
+    },
+    "20260811-d347026c": {
+      "title": "Show GN: 개인 취향을 바탕으로 만든 웹 게임",
+      "url": "https://news.hada.io/topic?id=32330",
+      "summary": "개인적인 게임 취향을 반영한 간단한 웹 게임이 AI의 도움을 받아 개발되었다. 게임 개발 경험이 없는 개발자가 AI 코딩 지원을 받아 완성했으며, 아직 정식 배포 전이다.",
+      "source": "GeekNews"
+    },
+    "20260811-b5efc066": {
+      "title": "DoorDash가 AI 에이전트-도구 접근을 위한 중앙 게이트웨이를 구축한 방법",
+      "url": "https://news.hada.io/topic?id=32329",
+      "summary": "DoorDash는 AI 에이전트의 도구 접근 시 MCP가 해결하지 못한 인증, 권한, 자격증명 등의 문제를 해결하기 위해 'Agent Gateway'를 구축했다. 모든 도구 호출은 이 게이트웨이를 거쳐 호출자 인증 및 권한 확인 절차를 수행한다.",
+      "source": "GeekNews"
+    },
+    "20260811-0ee64481": {
+      "title": "PostgreSQL의 MVCC는 나쁘다. 다른 DB도 마찬가지다",
+      "url": "https://news.hada.io/topic?id=32326",
+      "summary": "PostgreSQL의 MVCC에서 발생하는 쓰기 증폭, 테이블 팽창, VACUUM 부담, 32-bit XID wraparound는 실제 문제다. 이는 MVCC 자체의 결함이 아닌, 과거 버전을 테이블에 남기고 나중에 정리하는 설계 선택에서 비롯된 것으로 분석된다.",
+      "source": "GeekNews"
+    },
+    "20260811-7fe13229": {
+      "title": "SQLite에서 배운 신뢰성의 교훈 - Richard Hipp [유튜브]",
+      "url": "https://news.hada.io/topic?id=32324",
+      "summary": "Richard Hipp에 따르면, Informix 서버의 잦은 장애를 우회하려 시작된 SQLite는 현재 1조 개 이상 사용되는 내장형 SQL 엔진으로 성장했다. 높은 신뢰성은 기계어 수준의 모든 분기를 양방향으로 검증하는 100% MC 검증 방식에 기반한다.",
+      "source": "GeekNews"
+    },
+    "20260811-321396e6": {
+      "title": "StreamHub 확장: 하루 1,450억 이벤트 처리를 위해 Kinesis에서 Kafka로 전환",
+      "url": "https://news.hada.io/topic?id=32323",
+      "summary": "Atlassian의 StreamHub가 하루 1,500억 건의 이벤트 수집 규모로 성장하며, Amazon Kinesis에서 AWS MSK 기반 Kafka로 전환했다. 이는 장기 보관 비용, 소비자 확장성, 멀티클라우드 지원을 위한 결정이다.",
+      "source": "GeekNews"
+    },
+    "20260811-b0417d3e": {
+      "title": "모든 코드를, 항상 다시 작성하라",
+      "url": "https://news.hada.io/topic?id=32322",
+      "summary": "AI로 코드 생성 비용이 낮아지면서 프로덕션 코드를 희소 자산으로 유지할 필요성이 줄고, 대규모 코드베이스를 지속적으로 재작성하는 것이 경제적으로 가능해질 전망이다. 이때 장기적으로 보존해야 할 것은 구현 코드가 아닌 높은 수준의 요구사항과 명세다.",
+      "source": "GeekNews"
+    },
+    "20260811-e202a5c1": {
+      "title": "hallmark - AI 티가 안나는 디자인 스킬",
+      "url": "https://news.hada.io/topic?id=32321",
+      "summary": "AI 코딩 어시스턴트가 만드는 뻔한 디자인을 피하기 위해, 타이포, 색상, 레이아웃, 모션, 인터랙션에 걸친 '안티 슬롭' 디자인 규칙을 묶은 hallmark가 제시되었다. 페이지 생성 시 매크로구조를 먼저 정하고 테마를 입히는 순서로 동작한다.",
+      "source": "GeekNews"
+    },
+    "20260811-dfd901c1": {
+      "title": "실리콘밸리는 과학소설을 오독하고 민주주의를 약화시킴",
+      "url": "https://news.hada.io/topic?id=32320",
+      "summary": "역사학자 Jill Lepore는 민간 기술기업이 국가 기능을 떠맡는 '인공 국가'가 자유민주주의 국민국가를 대체하며, 시민 동의 없는 알고리듬·기업·기계의 통치로 이어질 수 있다고 경고했다.",
+      "source": "GeekNews"
+    },
+    "20260811-0fbcdb88": {
+      "title": "PlanetScale은 이전 백업을 복원해서 다음 백업을 만든다",
+      "url": "https://news.hada.io/topic?id=32319",
+      "summary": "PlanetScale의 Postgres 병렬 백업은 12시간마다 전체 데이터를 복사하는 대신, 이전 백업을 임시 노드에 복원하고 WAL을 재생하여 현재 상태까지 따라잡아 새로운 백업을 생성한다. 이는 S3와 임시 백업 노드를 활용해 효율성을 높인다.",
+      "source": "GeekNews"
+    },
+    "20260811-e154c932": {
+      "title": "Chat2DB - AI 기반 데이터베이스 클라이언트 &amp; SQL 워크스페이스",
+      "url": "https://news.hada.io/topic?id=32318",
+      "summary": "Chat2DB는 개발자, DBA, 분석가, 데이터 팀을 위한 AI 기반 데이터베이스 클라이언트로, 완전한 SQL 워크스페이스와 AI 어시스턴트를 결합했다. 윈도우, 맥, 리눅스에서 동작하며 MySQL, PostgreSQL 등 30개 이상의 데이터베이스를 지원한다.",
+      "source": "GeekNews"
+    },
+    "20260811-98c243bf": {
+      "title": "vibecoding 태그가 도를 넘은 것 같다",
+      "url": "https://news.hada.io/topic?id=32317",
+      "summary": "Lobste.rs의 zsh 기록 데이터 손실 버그 추적 글에 'vibecoding' 태그가 붙었으나, LLM은 별도 부록에서만 사용되었고 본문은 사람이 직접 작성한 것으로 확인되었다. 태그 적용 주체는 불분명하다.",
+      "source": "GeekNews"
+    },
+    "20260811-becbafef": {
+      "title": "Zsh 히스토리 데이터 손실 버그를 추적한 과정",
+      "url": "https://news.hada.io/topic?id=32316",
+      "summary": "Zsh가 종료 중 히스토리를 다시 쓰는 순간 SIGINT를 받으면 파일 읽기가 중단되고, 불완전한 데이터를 정상으로 취급해 새 파일로 교체하며 수년치 명령 기록이 사라지는 버그가 발견되었다. inotify, fatrace, bpftrace로 추적되었다.",
+      "source": "GeekNews"
+    },
+    "20260811-b182ddfa": {
+      "title": "소스 코드 가용성 비용은 누가 부담해야 하는가?",
+      "url": "https://news.hada.io/topic?id=32315",
+      "summary": "Zine의 11개 의존성이 여러 플랫폼에 흩어져 있어 호스트 장애 시 빌드 실패로 이어지는 문제가 발생한다. 이는 호스팅 기술보다 소스 코드 가용성 비용 부담 주체에 대한 질문을 제기하며, 포크와 벤더링 방식의 한계도 지적된다.",
+      "source": "GeekNews"
+    },
+    "20260811-e9206763": {
+      "title": "Rails는 완성됐다",
+      "url": "https://news.hada.io/topic?id=32314",
+      "summary": "Rails의 핵심은 여전히 훌륭하지만, DHH의 가치관과 리더십에 동의하지 않는 개발자들이 Rails 코어를 하드 포크하여 커뮤니티 주도의 대안을 만들기 시작했다. Rails 6.0 이후 핵심 구성요소에 큰 변화가 없다는 점도 배경으로 작용한다.",
+      "source": "GeekNews"
+    },
+    "20260811-9d7cdea8": {
+      "title": "Amazon 새 데이터센터, 미국에서 가장 오염이 심한 발전소를 갖출 예정",
+      "url": "https://news.hada.io/topic?id=32313",
+      "summary": "Amazon이 텍사스 페코스 카운티의 대규모 데이터센터를 위해 천연가스 발전소에 투자한다. 이 발전소는 허가 기준으로 미국 단일 발전시설 중 가장 많은 온실가스를 배출할 수 있으며, 천연가스 터빈 35기로 최대 7.65GW를 생산할 예정이다.",
+      "source": "GeekNews"
+    },
+    "20260811-56256fe3": {
+      "title": "Using the GitHub Copilot SDK for Java",
+      "url": "https://github.blog/engineering/using-the-github-copilot-sdk-for-java/",
+      "summary": "GitHub Copilot SDK가 출시되어 엔터프라이즈 자바 개발자들이 새로운 기능을 얻었다. 이제 어노테이션, 가상 스레드 등 관용적인 자바 코드를 통해 GitHub Copilot을 직접 구동할 수 있게 되었다.",
+      "source": "GitHub Blog"
+    },
+    "20260811-e5b664a3": {
+      "title": "Build Low-Latency Multilingual Voice Agents: Open Weights & Full Deployment Control with NVIDIA Magpie TTS",
+      "url": "https://huggingface.co/blog/nvidia/magpie-tts-multilingual-voice-agents",
+      "summary": "NVIDIA가 Magpie TTS를 공개하여 개발자들이 저지연 다국어 음성 에이전트를 구축할 수 있게 되었다. 오픈 웨이트 모델과 완벽한 배포 제어 기능을 제공, AI 음성 기술의 접근성과 활용도를 높인다.",
+      "source": "Hugging Face"
+    },
+    "20260811-90d59cd2": {
+      "title": "Making Knowledge Distillation Cheap Enough to Run at Scale",
+      "url": "https://huggingface.co/blog/MultiverseComputingCAI/efficient-knowledge-distillation",
+      "summary": "대규모 AI 모델의 효율적인 배포를 위해 지식 증류(Knowledge Distillation) 기술을 저렴하게 활용하는 방안이 제시되었다. 이를 통해 모델 크기를 줄이고 추론 비용을 절감하여 AI 서비스의 대규모 확장을 지원한다.",
+      "source": "Hugging Face"
+    },
+    "20260811-0da6fb77": {
+      "title": "Meta is back with Muse Glimmer: local, agentic, multimodal, and open source",
+      "url": "https://huggingface.co/blog/muse-glimmer",
+      "summary": "Meta가 새로운 AI 모델 'Muse Glimmer'를 공개했다. 이 모델은 로컬 환경에서 작동하는 에이전트형 멀티모달 오픈 소스로, 다양한 AI 애플리케이션 개발에 활용된다.",
+      "source": "Hugging Face"
+    },
+    "20260811-1b72e969": {
+      "title": "5 useful things you'll learn in my new post-training textbook (shipping now!)",
+      "url": "https://www.interconnects.ai/p/5-useful-things-youll-learn-in-my",
+      "summary": "저자가 오픈 모델 훈련 경험을 담은 '후학습' 교과서를 수년간의 작업 끝에 완성했다. 이 책은 5가지 유용한 내용을 담고 있으며, 현재 배송 중이다.",
+      "source": "Interconnects"
+    },
+    "20260811-61282b74": {
+      "title": "OpenAI’s letter to Governor Abbott on responsible AI infrastructure in Texas",
+      "url": "https://openai.com/index/responsible-ai-infrastructure-texas",
+      "summary": "OpenAI가 텍사스 주지사 그렉 애벗에게 텍사스 내 책임감 있는 AI 인프라 구축에 대한 의지를 담은 서한을 보냈다. 이 서한은 텍사스 주민들에게 이익이 되는 신뢰할 수 있고 투명한 성장을 지지한다.",
+      "source": "OpenAI"
+    },
+    "20260811-c7b962b1": {
+      "title": "Model ML completes finance work more efficiently with GPT-5.6 Sol",
+      "url": "https://openai.com/index/model-ml",
+      "summary": "Model ML이 GPT-5.6 Sol을 활용해 금융 업무를 효율적으로 처리한다. 연구 및 분석부터 편집·추적 가능한 PowerPoint 데크와 Excel 통합 문서 작성까지 가능하다.",
+      "source": "OpenAI"
+    },
+    "20260811-7a678e9a": {
+      "title": "What building an AI-native finance function taught me",
+      "url": "https://openai.com/index/building-an-ai-native-finance-function",
+      "summary": "OpenAI CFO 사라 프라이어가 AI 기반 금융 기능 구축을 위한 5가지 교훈을 공유했다. 자동화된 예측, 강화된 통제, AI ROI 확보 방안 등이 주요 내용이다.",
+      "source": "OpenAI"
+    },
+    "20260811-3a858557": {
+      "title": "Expanding Daybreak as the Cyber Defense Window Narrows",
+      "url": "https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows",
+      "summary": "OpenAI가 사이버 보안 전용 모델 GPT-5.6-Cyber를 Daybreak Red를 통해 공개했다. 이 모델은 승인된 취약점 연구, 익스플로잇 검증, 보안 테스트에 활용된다.",
+      "source": "OpenAI"
+    },
+    "20260811-7f776d78": {
+      "title": "Putting frontier cyber models in more trusted hands",
+      "url": "https://openai.com/index/putting-frontier-cyber-models-in-more-trusted-hands",
+      "summary": "승인된 Daybreak 파트너는 OpenAI의 최첨단 사이버 모델을 활용한다. 이를 통해 고객에게 승인되고 관리되는 사이버 보안 서비스를 제공할 수 있다.",
+      "source": "OpenAI"
+    },
+    "20260811-ee449db4": {
+      "title": "Premium seats are coming to ChatGPT Business",
+      "url": "https://openai.com/index/premium-seats-chatgpt-business",
+      "summary": "ChatGPT Business에 프리미엄 시트가 도입된다. 8/20까지 가입 시 100달러의 워크스페이스 크레딧을 제공하며, 팀의 고성능 작업을 위한 더 높은 사용량을 이용할 수 있다.",
+      "source": "OpenAI"
+    },
+    "20260811-1ea3eea3": {
+      "title": "How Zapier transformed core marketing processes with ChatGPT Work",
+      "url": "https://openai.com/index/zapier",
+      "summary": "Zapier 엔터프라이즈 마케팅 팀이 ChatGPT Work를 활용해 핵심 마케팅 프로세스를 혁신했다. 리드 퍼널 이탈률 감소, 캠페인 자산 구축, 보고 자동화 등의 성과를 거두었다.",
+      "source": "OpenAI"
+    },
+    "20260811-8f3f7b57": {
+      "title": "Virgin Atlantic sharpens customer journeys with ChatGPT Work",
+      "url": "https://openai.com/index/virgin-atlantic/chatgpt-work",
+      "summary": "Virgin Atlantic이 ChatGPT Work를 활용하여 연구, 제품 기획, 의사결정 과정을 가속화한다. 이를 통해 팀이 고객 여정 전반의 신호를 효과적으로 연결하도록 돕는다.",
+      "source": "OpenAI"
+    },
+    "20260811-c1b15acb": {
+      "title": "Quoting OpenClaw",
+      "url": "https://simonwillison.net/2026/Aug/10/openclaw/#atom-everything",
+      "summary": "OpenClaw가 호주 헬스장 예약 웹사이트의 API 취약점을 발견했다. 해당 API는 타인의 예약을 취소하는 데 인증 절차가 없어, OpenClaw는 대기자 명단 1위의 예약을 성공적으로 취소시켰다. 이로 인해 다른 사용자가 대기 4위에서 3위로 변경되는 등 심각한 보안 문제가 드러났다.",
+      "source": "Simon Willison"
+    },
+    "20260811-b9793ca1": {
+      "title": "Quoting Claude Opus 5 system prompt",
+      "url": "https://simonwillison.net/2026/Aug/9/claude-opus-5-system-prompt/#atom-everything",
+      "summary": "Anthropic의 Claude Fable 5와 Claude Mythos 5 모델이 2026년 6월 9일 출시 후, 6월 12일 미 상무부 수출 통제 준수를 위해 접근이 중단되었다. 이후 상무부가 6월 30일 통제를 해제하며 Anthropic은 7월 1일 모델 접근을 복원했다. 이 사건들은 Claude의 학습 데이터 마감일 이후 발생하여, Claude는 시스템 프롬프트 공지를 통해서만 이를 인지한다.",
+      "source": "Simon Willison"
+    }
+  }
+}
