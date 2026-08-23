@@ -1,0 +1,281 @@
+{
+  "date": "2026-08-24",
+  "items": {
+    "20260824-6d76bdb9": {
+      "title": "A research agenda for the Economic Futures Research Fund",
+      "url": "https://www.anthropic.com/news/economic-futures-research-fund-agenda",
+      "summary": "Anthropic 이 7/22, Economic Futures Research Fund 의 연구 의제를 공개했다. 이는 경제 연구 분야의 주요 방향을 제시하는 내용이다.",
+      "source": "Anthropic"
+    },
+    "20260824-85aa09c1": {
+      "title": "Ask Claude about the Anthropic Economic Index",
+      "url": "https://www.anthropic.com/news/anthropic-economic-index-connector",
+      "summary": "Anthropic 이 7/22, Claude 에 Anthropic Economic Index 관련 질문 기능을 추가했다. 사용자는 이를 통해 경제 지수에 대한 정보를 얻을 수 있다.",
+      "source": "Anthropic"
+    },
+    "20260824-92c58c1b": {
+      "title": "Anthropic is donating another $20 million to Public First Action",
+      "url": "https://www.anthropic.com/news/donation-public-first-action",
+      "summary": "Anthropic 이 7/21, Public First Action 에 2,000만 달러를 추가 기부한다고 밝혔다. 이는 사회 공헌 활동의 일환으로 진행된다.",
+      "source": "Anthropic"
+    },
+    "20260824-50149461": {
+      "title": "\"왜 이렇게 오래 싱싱했나 했더니\"…배추에 흠뻑 묻힌 액체에 '충격'",
+      "url": "https://n.news.naver.com/article/277/0005806150?ntype=RANKING",
+      "summary": "배추의 신선도를 오래 유지하는 데 사용된 액체가 드러나 충격을 주고 있다.",
+      "source": "아시아경제"
+    },
+    "20260824-b53dd14d": {
+      "title": "한 달에 주식 1000번 사고팔았다…트럼프가 쓸어 담은 종목 봤더니",
+      "url": "https://n.news.naver.com/article/277/0005806103?ntype=RANKING",
+      "summary": "도널드 트럼프 전 미국 대통령이 한 달간 주식을 1000번 사고팔며 투자한 종목들이 공개됐다.",
+      "source": "아시아경제"
+    },
+    "20260824-40a76360": {
+      "title": "\"차 한 대에 이렇게까지?\"…GV90, 사람 눈 6배로 보고 160km 바람 맞힌다",
+      "url": "https://n.news.naver.com/article/277/0005806039?ntype=RANKING",
+      "summary": "제네시스 GV90이 사람 눈의 6배 시야 확보 및 160km/h 바람 감지 등 고도화된 기술을 선보인다.",
+      "source": "아시아경제"
+    },
+    "20260824-167c9fe0": {
+      "title": "\"둘 다 받는 줄 알았는데\"…내 연금이냐 유족연금이냐, 90% 이상은 '이것' 선택",
+      "url": "https://n.news.naver.com/article/277/0005806057?ntype=RANKING",
+      "summary": "국민연금 수급자들이 본인 연금과 유족연금 중 하나를 선택해야 하는 상황에서 90% 이상이 특정 연금을 선택하는 것으로 나타났다.",
+      "source": "아시아경제"
+    },
+    "20260824-398e7aa4": {
+      "title": "\"한국인도 이렇게는 안 먹는데\"…컵라면 국물까지 싹 써먹는 외국인들[K홀릭]",
+      "url": "https://n.news.naver.com/article/277/0005806026?ntype=RANKING",
+      "summary": "외국인들이 컵라면 국물까지 남김없이 먹는 모습이 한국인들에게도 놀라움을 주며 K-푸드의 인기를 보여준다.",
+      "source": "아시아경제"
+    },
+    "20260824-8c341790": {
+      "title": "“불륜이라니?” 욕 많이 먹을 줄 알았더니…‘압도적 1위’ 난리 난 쿠팡플레이",
+      "url": "https://n.news.naver.com/article/016/0002687218?ntype=RANKING",
+      "summary": "쿠팡플레이의 특정 콘텐츠가 '불륜'이라는 논란에도 불구하고 압도적인 시청률 1위를 기록하며 큰 화제를 모으고 있다.",
+      "source": "헤럴드경제"
+    },
+    "20260824-5d6113ed": {
+      "title": "“20만원→240만원, 700% 폭등” 전국민 난리더니…‘국민 황제주’ 추락, 무슨 일이",
+      "url": "https://n.news.naver.com/article/016/0002687194?ntype=RANKING",
+      "summary": "한때 20만원에서 240만원으로 700% 폭등하며 '국민 황제주'로 불리던 주식이 최근 급락하며 그 배경에 관심이 쏠린다.",
+      "source": "헤럴드경제"
+    },
+    "20260824-ba505da4": {
+      "title": "“하이닉스 주식 너무 비싸” 삼성전자처럼 못 해?…250만→5만원 ‘액면분할’ 소환 [투자360]",
+      "url": "https://n.news.naver.com/article/016/0002687123?ntype=RANKING",
+      "summary": "SK하이닉스 주가가 250만원대로 높아지면서 삼성전자처럼 5만원대 액면분할 가능성이 제기되며 투자자들의 관심이 집중되고 있다.",
+      "source": "헤럴드경제"
+    },
+    "20260824-e2fb66b0": {
+      "title": "“주한미군 빼고 北 핵보유국 인정?”…트럼프 ‘핵 포커게임’에 쏟아진 경고[1일1트]",
+      "url": "https://n.news.naver.com/article/016/0002687251?ntype=RANKING",
+      "summary": "도널드 트럼프 전 대통령이 주한미군 철수와 북한 핵보유국 인정 가능성을 시사하며 이에 대한 강한 경고가 쏟아지고 있다.",
+      "source": "헤럴드경제"
+    },
+    "20260824-b8c0831e": {
+      "title": "수영복 몸매 공개한 유이…172㎝·51㎏ 유지하는 습관은 ‘이 운동’",
+      "url": "https://n.news.naver.com/article/016/0002687284?ntype=RANKING",
+      "summary": "배우 유이가 172cm 키에 51kg 몸무게를 유지하는 비결로 특정 운동 습관을 공개하며 수영복 몸매를 선보였다.",
+      "source": "헤럴드경제"
+    },
+    "20260824-2efe365b": {
+      "title": "debloat.dev - 비대해진 소프트웨어를 대체할 오픈소스 모음",
+      "url": "https://news.hada.io/topic?id=32816",
+      "summary": "debloat.dev는 제조사 앱과 독점 클라우드 서비스를 대체할 간결한 오픈소스 프로젝트를 탐색, 평가, 공유하는 디렉터리다. 현재 200개 이상의 프로젝트를 포함하며, 대체 대상, 라이선스, 사용자 평점 등을 제공한다.",
+      "source": "GeekNews"
+    },
+    "20260824-134c6c07": {
+      "title": "[팟캐스트] OAuth, 제대로 이해하고 쓰고 있나요?",
+      "url": "https://news.hada.io/topic?id=32814",
+      "summary": "팟캐스트 에피소드는 OAuth의 필요성, 구성 요소(사용자, 클라이언트, 인가 서버, 자원 서버)의 역할, Authorization Code Grant 동작 과정, OAuth 2.1의 PKCE 등 인증·인가 절차의 보안적 이유를 다룬다.",
+      "source": "GeekNews"
+    },
+    "20260824-67bc36e3": {
+      "title": "하네스란 무엇인가?",
+      "url": "https://news.hada.io/topic?id=32813",
+      "summary": "에이전트 하네스는 AI 모델 작동 환경을 제공하고 지침과 도구를 부여해 작업을 반복 수행하게 하는 소프트웨어다. 시스템 프롬프트, 도구, 에이전트 루프, 모델 간 번역 계층을 제공하며 다양한 인터페이스로 이용된다.",
+      "source": "GeekNews"
+    },
+    "20260824-2e0e69e6": {
+      "title": "Wi-Fi 8, 수년 만에 속도 경쟁에서 벗어난 무선 업그레이드",
+      "url": "https://news.hada.io/topic?id=32812",
+      "summary": "IEEE가 Ultra High Reliability로 명명한 Wi-Fi 8은 최고 속도보다 간섭 환경에서의 신뢰성, 실효 처리량, 지연시간 개선에 집중한다. Wi-Fi 7과 유사한 사양에도 불구하고 SINR별 처리량이 25% 향상되었다.",
+      "source": "GeekNews"
+    },
+    "20260824-275cb45e": {
+      "title": "GLM-5.3 오픈 웨이트, Anthropic·OpenAI 모델을 5분의 1 비용으로 제침",
+      "url": "https://news.hada.io/topic?id=32811",
+      "summary": "GLM-5.3은 28개 실무 과제를 통과하며 품질 점수 9.3을 기록했고, 전체 비용은 약 $0.28로 gpt-5.5의 약 5분의 1 수준이다. 17개 모델에 동일한 조건으로 평가를 진행했다.",
+      "source": "GeekNews"
+    },
+    "20260824-dcc69a8b": {
+      "title": "슬로바키아, 과속 단속 카메라에서 러시아 백도어 발견",
+      "url": "https://news.hada.io/topic?id=32810",
+      "summary": "슬로바키아 국가안보국(NBU)은 NERO R-ONE 과속 단속 카메라에서 SMS로 셸·네트워크 접근을 허용하는 백도어를 발견해 사용을 경고했다. 러시아 전화번호에서 SMS를 받으면 작동하며, 해당 장비는 러시아 Semicon의 CORDON PRO.M을 리브랜딩한 제품이다.",
+      "source": "GeekNews"
+    },
+    "20260824-0dcfe005": {
+      "title": "태블릿 소유권을 되찾는 데 266달러와 AI 모델 4개를 썼고, GLM-5.3이 하루 만에 끝냈다",
+      "url": "https://news.hada.io/topic?id=32809",
+      "summary": "Amazon Fire HD 10 태블릿의 보호된 패키지를 제거하기 위해 5개월간 AI 모델 4개를 동원하고 266.15달러를 지출했다. Kimi K3는 Fire OS 7.3.2.6의 CVE-2022-38181 취약점을 30시간 만에 찾아냈다.",
+      "source": "GeekNews"
+    },
+    "20260824-ee722e3f": {
+      "title": "Qwen 3.8 27B, 리버스 엔지니어링 작업을 30분 만에 완료",
+      "url": "https://news.hada.io/topic?id=32808",
+      "summary": "단일 머신에서 Qwen 3.8 27B가 상용 앱의 라이선스 체계를 정적 분석하여 약 30분 만에 인증 우회 개념증명을 만들었다. 앱 실행 없이 수천 줄의 arm64 코드와 보안 함수 호출 지점을 분석했다.",
+      "source": "GeekNews"
+    },
+    "20260824-f943092e": {
+      "title": "Linus Torvalds가 AI로 Intel GPU 드라이버 버그를 추적한 과정",
+      "url": "https://news.hada.io/topic?id=32807",
+      "summary": "Intel Xe GPU 드라이버가 압축 하드웨어용 flat CCS 저장공간 일부를 VRAM으로 잘못 할당하여 Battlemage G21 시스템에서 검은 화면과 gdm 재시작 루프가 발생했다. get_flat_ccs_offset() 함수가 CCS 시작 주소를 128KiB 단위로 올리면서 문제가 발생했다.",
+      "source": "GeekNews"
+    },
+    "20260824-73f1309c": {
+      "title": "끌어들이고, 붙잡고, 수집하고, 숨긴다: 중대 재판 첫 주에 공개된 Meta의 혐의 전략",
+      "url": "https://news.hada.io/topic?id=32805",
+      "summary": "캘리포니아를 포함한 미국 29개 주는 Meta가 아동을 중독성 서비스에 붙잡아 데이터를 수집하고 피해를 숨겼다는 혐의로 소송을 제기했다. 핵심 쟁점은 부모 동의 없이 13세 미만 아동의 데이터를 수집한 것이다.",
+      "source": "GeekNews"
+    },
+    "20260824-7872785a": {
+      "title": "성숙 과정에서 얻은 세 가지 중요한 깨달음",
+      "url": "https://news.hada.io/topic?id=32804",
+      "summary": "아버지를 잃고 젊은 동료가 많은 회사로 이직하며 20대 이후 세계관을 바꾼 세 가지 깨달음을 돌아본다. 신념은 인정과 물질적 욕구 같은 인센티브 구조에 영향을 받으므로, 스스로 만든 영웅 서사를 의심하고 자신이 악역일 가능성도 살펴야 한다.",
+      "source": "GeekNews"
+    },
+    "20260824-5fb6abee": {
+      "title": "칸트 관점에서 본 Justin Bieber의 「Sorry」",
+      "url": "https://news.hada.io/topic?id=32802",
+      "summary": "Justin Bieber의 2015년 곡 「Sorry」의 \"사과하기엔 너무 늦었나?\"는 사과를 용서와 재결합 수단으로 취급하는 도덕적 형식의 문제다. 칸트 관점에서 이는 결과와 무관한 의무가 아닌 목적 달성을 위한 사과로 분류된다.",
+      "source": "GeekNews"
+    },
+    "20260824-c8463e29": {
+      "title": "Claude보다 Codex를 더 많이 써본 일주일",
+      "url": "https://news.hada.io/topic?id=32801",
+      "summary": "일주일간 비교 결과, Claude는 사용자 의도를 추측해 요청 이상으로 확장하는 반면, Codex는 명시된 범위에 집중하고 완료 가능성이 보이면 멈추는 차이를 보였다. Ruby/Rails 작업에서 Codex는 더 단순한 코드를 생성했다.",
+      "source": "GeekNews"
+    },
+    "20260824-79311bdc": {
+      "title": "Python으로 사고하기",
+      "url": "https://news.hada.io/topic?id=32800",
+      "summary": "Python의 통찰, 관용구, 패턴을 기초부터 효과 관리까지 체계적으로 익힐 수 있는 온라인 도서다. 47개 장이 기초, 기법, 패턴, 함수형 프로그래밍, 효과의 5부로 구성되며, 정적 타이핑, 테스트, 패턴 매칭, 메타프로그래밍, 성능, 동시성 등 주요 개발 기법을 다룬다.",
+      "source": "GeekNews"
+    },
+    "20260824-29fa4967": {
+      "title": "2026년 Rust GUI 라이브러리 조사",
+      "url": "https://news.hada.io/topic?id=32799",
+      "summary": "macOS를 중심으로 여러 Rust GUI 라이브러리에서 텍스트 입력으로 QR 코드를 생성하는 과제를 구현하며 상태 관리, 개발 편의성, IME, 접근성을 비교했다. 최종 승자는 유지 모드의 Slint와 즉시 모드의 egui다.",
+      "source": "GeekNews"
+    },
+    "20260824-284a275e": {
+      "title": "소프트웨어가 계속 느린 데는 이유가 있다",
+      "url": "https://news.hada.io/topic?id=32798",
+      "summary": "LLM이 최적화 비용을 낮춰도 성능 예산, 우선순위, 프로덕션 출시 비용은 해결하지 못해 소프트웨어가 느려지는 경우가 많다. 에이전트 작업 비동기화와 기능 증가로 사용자의 지연 허용 범위는 넓어지지만, 기업은 여전히 비용 문제를 겪는다.",
+      "source": "GeekNews"
+    },
+    "20260824-c295ed1f": {
+      "title": "더 나은 작가가 되려면 가능한 한 많이 읽어라",
+      "url": "https://news.hada.io/topic?id=32797",
+      "summary": "작가마다 창작 방식은 다르지만, 폭넓고 꾸준한 독서는 모든 작가에게 통하는 원칙이다. 좋은 책뿐 아니라 평범하거나 나쁜 책도 장르, 인물, 구조, 문체를 익히게 하며, 기존 작가 모방은 자신만의 목소리를 만드는 데 도움을 준다.",
+      "source": "GeekNews"
+    },
+    "20260824-e628a409": {
+      "title": "NetBSD와 내 삶(2005)",
+      "url": "https://news.hada.io/topic?id=32796",
+      "summary": "2005년, 영국의 한 대기업이 NetBSD 2.0.2 서버 29대로 4,800명 이상을 지원하며 관리자의 개인 생활이 개선되었다. 반복되는 Windows 서버 장애를 계기로 MySQL·HTTP 서버 2대에서 NetBSD를 시험했다.",
+      "source": "GeekNews"
+    },
+    "20260824-ee714b27": {
+      "title": "Racket 친절한 입문",
+      "url": "https://news.hada.io/topic?id=32795",
+      "summary": "Racket은 Lisp와 Scheme 계보를 잇는 언어로, 코드와 데이터를 같은 구조로 다루며 문제에 맞는 언어와 문법을 만들 수 있다. 모든 코드는 (연산자 인수...) 형태의 표현식이며, 괄호가 프로그램 구조 전체를 나타낸다.",
+      "source": "GeekNews"
+    },
+    "20260824-bc4a373c": {
+      "title": "프론트엔드 상태 관리의 네 가지 난제",
+      "url": "https://news.hada.io/topic?id=32794",
+      "summary": "프론트엔드 생태계에는 다양한 상태 관리 도구가 있지만, 상태의 공유 범위를 바꾸기 어려운 난제가 존재한다. 지역 상태와 전역 상태만으로는 깔끔하게 분류되지 않는 상태들이 있어 문제다.",
+      "source": "GeekNews"
+    },
+    "20260824-8a508f0f": {
+      "title": "기억해 둘 만한 작은 네이티브 웹 기법",
+      "url": "https://news.hada.io/topic?id=32793",
+      "summary": "별도 라이브러리 없이 브라우저가 제공하는 HTML/CSS/JS만으로 UI와 상호작용을 네이티브하게 구현하는 기법을 정리한 레퍼런스 사이트다. :has(), @scope, Container Query 등 컴포넌트 구조를 단순화하는 CSS와 dialog, Popover 같은 요소들을 다룬다.",
+      "source": "GeekNews"
+    },
+    "20260824-2c868fb2": {
+      "title": "로컬 LLM이 실제 성능보다 더 멍청하게 느껴지는 이유",
+      "url": "https://news.hada.io/topic?id=32791",
+      "summary": "같은 LLM 모델이라도 GPU, 추론 엔진, 어텐션 구현, 양자화 방식에 따라 계산 결과가 달라지며, 긴 문맥에서는 실제 응답과 도구 호출 실패로 이어진다. 약 10만 토큰 에이전트 작업에서 Qwen3.6-27B를 비교한 결과, 어텐션 백엔드만 바꿔도 후반부에 차이가 발생했다.",
+      "source": "GeekNews"
+    },
+    "20260824-d653edb1": {
+      "title": "Show GN: CachyOS 와 Omarchy 의 혼종을 만들고 있습니다.",
+      "url": "https://news.hada.io/topic?id=32789",
+      "summary": "게이밍 PC로 사용 중인 미니 PC에 게이밍 OS인 CachyOS를 설치한 후, 타일링 윈도우 매니저 Hyprland를 사용하고 싶어 Omarchy까지 튜닝하려는 시도를 하고 있다.",
+      "source": "GeekNews"
+    },
+    "20260824-ff52571b": {
+      "title": "Munder Difflin - 나를 복제한 직원들로 사무실을 운영하는 에이전트 하네스",
+      "url": "https://news.hada.io/topic?id=32788",
+      "summary": "Munder Difflin은 기존 에이전트 CLI와 구독을 활용해 사용자의 업무 방식, 도구, 지식을 공유하는 복제 에이전트를 로컬에서 실행하는 무료 오픈소스 하네스다. Claude Code, Codex, Copilot 등 12개 에이전트 CLI를 감싸며 에이전트들이 기억과 맥락을 공유한다.",
+      "source": "GeekNews"
+    },
+    "20260824-07297744": {
+      "title": "Show GN: 일섬 — 일봉 거가중100 밀착·돌파 코인 스크리너",
+      "url": "https://news.hada.io/topic?id=32787",
+      "summary": "일섬은 일봉 거래량가중이동평균(거가중100)에 밀착·돌파하는 코인을 매일 훑는 웹 스크리너다. 업비트와 바이낸스 공개 일봉 데이터를 사용하며, 밀착, 돌파, 시도, 접근으로 분류해 '오늘 매수 후보'와 추천 진입 구간을 제시한다.",
+      "source": "GeekNews"
+    },
+    "20260824-af3952d9": {
+      "title": "고철",
+      "url": "https://news.hada.io/topic?id=32786",
+      "summary": "2006년, Pittsburgh의 낡은 집을 수리하던 중 고철 수집상들과의 소동을 겪었다. 뒤뜰에 둔 주철 욕조가 24시간 내 사라지면서 생활용품보다 원재료 금속을 노리는 수집 문화를 알게 되었다.",
+      "source": "GeekNews"
+    },
+    "20260824-7e771c5b": {
+      "title": "gomacro - Generics와 Macro를 지원하는 인터랙티브 Go 인터프리터/디버거",
+      "url": "https://news.hada.io/topic?id=32785",
+      "summary": "gomacro는 Go로 구현된 인터랙티브 Go 인터프리터로, 대화형 REPL과 스크립트 실행을 모두 지원한다. 일반적인 REPL 사용 시 Go 툴체인 없이 실행 가능하며, 라인 편집과 Tab 자동 완성을 제공한다.",
+      "source": "GeekNews"
+    },
+    "20260824-e2b68a69": {
+      "title": "OTel은 잘되고 있지 않다 — 스프레드시트로 분석한 병목",
+      "url": "https://news.hada.io/topic?id=32784",
+      "summary": "OpenTelemetry는 벤더 중립성을 달성했으나, 엄격한 안정성 약속, 광범위한 지원, 부족한 유지관리자로 인해 기능 전달이 느리다. 작업은 Core와 Contrib로 나뉘며, 새 기능은 OTEP, 명세, 시맨틱 규약, 언어별 SDK, 계측 패키지, Collector, OTLP 등 복잡한 과정을 거친다.",
+      "source": "GeekNews"
+    },
+    "20260824-0501d928": {
+      "title": "Gleam의 멋진 점들",
+      "url": "https://news.hada.io/topic?id=32783",
+      "summary": "Gleam은 폐기 예정 표시, 할 일, 제네릭, 패턴 매칭, 오류 처리를 언어 차원에서 일관되게 제공하여 단순성과 가독성을 높인다. @deprecated와 todo를 통해 새 API 이동 경로와 미완성 작업 세부 사항을 코드에 직접 남길 수 있다.",
+      "source": "GeekNews"
+    },
+    "20260824-206c7d55": {
+      "title": "직장에서 화내지 말아야 하는 이유",
+      "url": "https://news.hada.io/topic?id=32782",
+      "summary": "직장에서 드러낸 분노는 동료를 위축시키고 의사결정을 비공식 채널로 밀어내며, 당사자의 협업 기회와 영향력을 줄인다. 분노가 일에 대한 관심에서 비롯될 수 있으나, 유능함만으로 감정적 불안정성이 초래하는 문화적 손실을 상쇄할 수는 없다.",
+      "source": "GeekNews"
+    },
+    "20260824-e034cead": {
+      "title": "GPT-5.6 Sol 가격 20% 인하",
+      "url": "https://news.hada.io/topic?id=32781",
+      "summary": "OpenAI는 GPT-5.6 Sol의 API 가격을 입력 기준 20%, 출력 기준 33% 인하하여 100만 토큰당 입력 $4, 출력 $20으로 조정했다. Cached Input은 100만 토큰당 $0.40이며, 이 프로모션 가격은 최소 2026년 11월 21일까지 유지될 예정이다.",
+      "source": "GeekNews"
+    },
+    "20260824-fc0f1755": {
+      "title": "Anthropic’s best AI model struggles to attract users as cheaper tools thrive",
+      "url": "https://simonwillison.net/2026/Aug/23/anthropics-best-ai-model-struggles-to-attract-users-as-cheaper-t/",
+      "summary": "Anthropic의 최고 AI 모델이 저렴한 도구들에 밀려 사용자 유치에 어려움을 겪는 상황. 7월 연간 매출은 650억 달러로 늘었지만, 연간 10만 달러 이상 지출 고객은 6천 명에 그친다. 경쟁사 OpenAI는 분기 매출 35% 증가로 400억 달러를 돌파했다.",
+      "source": "Simon Willison"
+    },
+    "20260824-0e890f2d": {
+      "title": "Quoting Drew Breunig",
+      "url": "https://simonwillison.net/2026/Aug/23/drew-breunig/",
+      "summary": "Drew Breunig는 Fable 출시 전에는 코딩 전략 개선에 시간을 낭비하는 것이 무의미했다고 언급했다. Fable의 높은 비용 때문에 Opus 등 다른 모델로 작업을 분배하는 고민이 시작되었다고 밝혔다.",
+      "source": "Simon Willison"
+    }
+  }
+}
