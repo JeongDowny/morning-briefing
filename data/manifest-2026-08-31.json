@@ -1,0 +1,263 @@
+{
+  "date": "2026-08-31",
+  "items": {
+    "20260831-d382e1db": {
+      "title": "Investigating three real-world incidents in our cybersecurity evaluations",
+      "url": "https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals",
+      "summary": "Anthropic 이 7/30, 사이버 보안 평가 중 발생한 세 가지 실제 사고를 조사한 내용을 발표했다.",
+      "source": "Anthropic"
+    },
+    "20260831-210e9b76": {
+      "title": "\"사자니 취득세, 살자니 종부세, 주자니 증여세, 죽자니 상속세\"  [돈앤톡]",
+      "url": "https://n.news.naver.com/article/015/0005326475?ntype=RANKING",
+      "summary": "부동산 취득, 보유, 증여, 상속 등 전 과정에서 발생하는 세금 부담에 대한 불만이 제기된다.",
+      "source": "한국경제"
+    },
+    "20260831-e9e85bb4": {
+      "title": "고종 치료했다더니…하영 증조부, '독살 연루' 기록 나왔다",
+      "url": "https://n.news.naver.com/article/015/0005326478?ntype=RANKING",
+      "summary": "고종 황제를 치료했다고 알려진 하영의 증조부가 실제로는 고종 독살 사건에 연루되었다는 기록이 발견되었다.",
+      "source": "한국경제"
+    },
+    "20260831-55ffb040": {
+      "title": "'한 달을 못 버텨요\" 백기 들었다…서민들 비명 터진 이유",
+      "url": "https://n.news.naver.com/article/015/0005326473?ntype=RANKING",
+      "summary": "서민들이 한 달 생활비를 감당하지 못할 정도로 경제적 어려움에 직면하며 고통을 호소하고 있다.",
+      "source": "한국경제"
+    },
+    "20260831-cd6cac9d": {
+      "title": "참가비 20만원인데…1시간 만에 매진된 '이 운동' 정체",
+      "url": "https://n.news.naver.com/article/015/0005326487?ntype=RANKING",
+      "summary": "참가비 20만원의 특정 운동 프로그램이 1시간 만에 매진되며 큰 인기를 끌었다.",
+      "source": "한국경제"
+    },
+    "20260831-bc20c3d1": {
+      "title": "\"사방이 물보라\"…구조된 두산 현장소장이 밝힌 네팔의 그날",
+      "url": "https://n.news.naver.com/article/015/0005326482?ntype=RANKING",
+      "summary": "네팔에서 구조된 두산 현장소장이 당시 상황을 '사방이 물보라'였다고 묘사하며 긴박했던 현장을 증언했다.",
+      "source": "한국경제"
+    },
+    "20260831-3f761906": {
+      "title": "“아파트 쑥대밭, ‘전기차 타는 죄인’ 됐다”…‘1억 벤츠’ 화재, 잊으면 또 당한다 [세상만車]",
+      "url": "https://n.news.naver.com/article/009/0005727855?ntype=RANKING",
+      "summary": "1억 원 상당의 벤츠 전기차 화재로 아파트가 크게 훼손되었으며, 전기차 운전자에 대한 부정적 인식이 확산되고 있다.",
+      "source": "매일경제"
+    },
+    "20260831-812a9871": {
+      "title": "“말릴 사람 없다”...최현욱, 아침부터 만취 방송해 과거 논란까지 재조명",
+      "url": "https://n.news.naver.com/article/009/0005727839?ntype=RANKING",
+      "summary": "최현욱이 아침부터 만취 상태로 방송을 진행해 과거 논란들이 다시 주목받고 있다.",
+      "source": "매일경제"
+    },
+    "20260831-ab7c1a0d": {
+      "title": "“난 앞으로도 혼자 안살 거야”…‘이혼 29년 차’ 76세 고두심, 돌발 발언",
+      "url": "https://n.news.naver.com/article/009/0005727860?ntype=RANKING",
+      "summary": "이혼 29년 차인 76세 배우 고두심이 앞으로 혼자 살지 않겠다는 돌발 발언을 해 이목을 끌었다.",
+      "source": "매일경제"
+    },
+    "20260831-46fd1367": {
+      "title": "[속보] 이 대통령 지지율 30%대 또 나왔다…“부동산 민심 악화” [리얼미터]",
+      "url": "https://n.news.naver.com/article/009/0005727865?ntype=RANKING",
+      "summary": "리얼미터 조사에서 이 대통령 지지율이 다시 30%대를 기록했으며, 부동산 민심 악화가 주요 원인으로 분석된다.",
+      "source": "매일경제"
+    },
+    "20260831-472d6c84": {
+      "title": "“SK하이닉스, 목표가 330만원→240만원”…증권가 낮춘 이유는",
+      "url": "https://n.news.naver.com/article/009/0005727872?ntype=RANKING",
+      "summary": "증권가에서 SK하이닉스의 목표주가를 330만원에서 240만원으로 하향 조정했다.",
+      "source": "매일경제"
+    },
+    "20260831-8b981b32": {
+      "title": "NVIDIA-labs OO Agents (NOOA) - Python 클래스로 에이전트를 정의하는 프레임워크",
+      "url": "https://news.hada.io/topic?id=33059",
+      "summary": "NVIDIA-labs가 에이전트의 상태, 기능, 프롬프트, 입출력 규칙을 하나의 Python 클래스에 정의하는 모델 독립적 프레임워크 NOOA를 공개했다. 클래스 필드는 상태, 메서드는 기능, 독스트링은 프롬프트, 타입 어노테이션은 입출력 계약 역할을 한다.",
+      "source": "GeekNews"
+    },
+    "20260831-243be371": {
+      "title": "The Agentic Awakening - 코딩이 10배 빨라져도 조직 생산성이 따라오지 않는 이유",
+      "url": "https://news.hada.io/topic?id=33058",
+      "summary": "AI로 개인 코딩 속도가 10배 이상 빨라져도, 기존 절차 때문에 조직 전체 생산성 향상은 25~30% 수준에 머물 수 있다. 여러 에이전트가 병렬로 일하는 개발 환경과 전담 AI Ops 조직이 필요하다.",
+      "source": "GeekNews"
+    },
+    "20260831-2c2820e5": {
+      "title": "Inter 대신 UI 글꼴을 고르는 두 가지 기준",
+      "url": "https://news.hada.io/topic?id=33057",
+      "summary": "Inter 폰트가 UI에서 쓰기 편한 이유는 깔끔함 외에, 대문자 높이가 글자 상자 중앙에 놓이는 vertical metrics를 갖췄기 때문이다. 이는 글자 상자의 위아래 여백 균형과 관련된다.",
+      "source": "GeekNews"
+    },
+    "20260831-4e8b600f": {
+      "title": "유럽의 극심한 여름 가뭄, 사막화 위협까지 키우고 있음",
+      "url": "https://news.hada.io/topic?id=33056",
+      "summary": "유럽 각지의 가뭄과 폭염으로 강, 호수, 양식장이 타격받고 생태계와 수산업이 위협받는다. 헝가리 국토 약 99%가 심각한 가뭄 상태이며, 고온과 강수량 부족으로 사막화가 헝가리 대평원 상당 부분에서 진행 중이다.",
+      "source": "GeekNews"
+    },
+    "20260831-4c897f66": {
+      "title": "IKEA 가구 개조해 작업대 만들기",
+      "url": "https://news.hada.io/topic?id=33055",
+      "summary": "IKEA Kallax 2×2와 남은 책상 상판을 조합해 사무실용 작업대 2개를 제작했다. 이는 작업대의 실용성과 거실 가구의 외관을 동시에 얻기 위한 것으로, 시판 제품의 단점을 보완한다.",
+      "source": "GeekNews"
+    },
+    "20260831-560e78a0": {
+      "title": "mu - 에이전트가 들어 있는 개인 서버",
+      "url": "https://news.hada.io/topic?id=33054",
+      "summary": "메일, 채팅, 파일, 노트, 캘린더, 연락처, 셸 및 AI 에이전트를 하나의 Go 바이너리로 직접 운영하는 개인 서버 'mu'가 공개됐다. 뉴스, 웹 검색 등 30여 개 서비스와 100여 개 도구를 웹, REST API, CLI 등에서 동일하게 제공한다.",
+      "source": "GeekNews"
+    },
+    "20260831-ea7f5836": {
+      "title": "AI로 가짜 화장품 식별하기",
+      "url": "https://news.hada.io/topic?id=33052",
+      "summary": "Gemini 3.6 Flash에 Rhode Peptide Lip Tint 포장 사진을 제공하여 가품 2개를 식별했으나, 정품 1개도 가품으로 오판정했다. AI는 유통업체 불일치, 잘못된 우편번호, 성분명 오탈자 등 사람이 놓치기 쉬운 포장 불일치를 몇 초 만에 찾아낸다.",
+      "source": "GeekNews"
+    },
+    "20260831-246f75e4": {
+      "title": "Tether - Linux에서 iMessage·SMS를 사용하는 iPhone 연동 도구",
+      "url": "https://news.hada.io/topic?id=33051",
+      "summary": "macOS Continuity의 iMessage, SMS 송수신 및 알림, 연락처, 파일, 클립보드, OTP 연동 기능을 Linux에서 구현하는 도구 'Tether'가 공개됐다. iOS와 Linux는 상호 TLS로 연결되며, 양쪽 기기 승인 시 통신 가능하다.",
+      "source": "GeekNews"
+    },
+    "20260831-8a095ed7": {
+      "title": "좋은 조직문화가 AI보다 큰 생산성 향상을 만드는 이유",
+      "url": "https://news.hada.io/topic?id=33050",
+      "summary": "AI 도구만으로는 엔지니어 생산성이 크게 오르지 않으며, 협력하고 의사결정하는 조직 환경이 우선이다. 경영진이 AI 사용을 강요하거나 인력 대체를 언급하면 심리적 안전감과 신뢰가 무너져 AI 도입 이익보다 손실이 클 수 있다.",
+      "source": "GeekNews"
+    },
+    "20260831-d33c8468": {
+      "title": "CPython, RISC-V를 Tier 3 공식 지원 플랫폼으로 추가",
+      "url": "https://news.hada.io/topic?id=33049",
+      "summary": "CPython이 64비트 RISC-V Linux를 PEP 11의 Tier 3 공식 지원 플랫폼으로 추가했다. Tier 3는 빌드봇과 담당 개발자를 갖추지만, 장애 대응 시간은 보장하지 않으며 빌드 실패가 Python 릴리스를 막지는 않는다.",
+      "source": "GeekNews"
+    },
+    "20260831-7315ec76": {
+      "title": "Rust 함수 오버로딩 실험 참여 요청",
+      "url": "https://news.hada.io/topic?id=33048",
+      "summary": "Rust Project가 FFI 바인딩에서 외부 오버로드 함수를 자연스럽게 호출하기 위해 nightly Rust의 splat 기능을 공개하고, 컴파일러 및 상호운용 도구 개발자의 실험 참여를 요청했다. 2026년 7월 31일 이후 nightly에서는 #[rustc_splat]이 적용된다.",
+      "source": "GeekNews"
+    },
+    "20260831-bbf03450": {
+      "title": "도구는 중립적이지 않다: 기술이 행동과 사고방식을 바꾸는 방식",
+      "url": "https://news.hada.io/topic?id=33047",
+      "summary": "도구는 사용자의 능력을 확장하고 행동 및 사고방식까지 바꾸므로 중립적 수단이 아니다. 손에 익은 도구일수록 사용자와 결합하여, 도구가 허용하고 제한하는 범위 안에서 판단하게 만든다.",
+      "source": "GeekNews"
+    },
+    "20260831-84dd3441": {
+      "title": "Show GN: Xazz - Rust 기반 AI 파이프라인 DSL (Polars+Burn 통합)",
+      "url": "https://news.hada.io/topic?id=33046",
+      "summary": "고등학생 개발자가 Rust 기반 AI 데이터 파이프라인 전용 언어 및 플랫폼 'Xazz'를 개발했다. 이는 파이썬 기반 AI 프로토타이핑에서 발생하는 타입 오류, NaN 런타임 문제 등을 해결하기 위함이다.",
+      "source": "GeekNews"
+    },
+    "20260831-e654dfca": {
+      "title": "TwelveLabs Jockey로 강의 검수 파이프라인 만들기, 한 달 실측기",
+      "url": "https://news.hada.io/topic?id=33045",
+      "summary": "인프런 강의 18편(편당 5~25분) 제작 시 병목은 검수였으며, 편집본 하나당 최소 2회 정주행으로 10시간 이상 소요됐다. TwelveLabs Jockey를 활용해 강의 검수 파이프라인을 구축하여 이 문제를 해결하려는 시도가 있었다.",
+      "source": "GeekNews"
+    },
+    "20260831-b1adcbb7": {
+      "title": "유럽연합 집행위원회, ProtectEU 전략으로 암호화 백도어 추진 재개",
+      "url": "https://news.hada.io/topic?id=33044",
+      "summary": "EU 집행위원회가 내부 보안 전략 ProtectEU를 통해 법 집행기관의 암호화 데이터 접근을 재추진한다. 이는 적대 국가, 범죄 조직, 테러리스트, 사이버 범죄 등에 대응하기 위한 6개 영역 중 하나로, 암호화 백도어 도입 가능성을 시사한다.",
+      "source": "GeekNews"
+    },
+    "20260831-a108443c": {
+      "title": "Omarchy의 모든 사용자 프로세스가 root 권한을 얻을 수 있었던 취약점",
+      "url": "https://news.hada.io/topic?id=33043",
+      "summary": "Omarchy의 기본 Docker 설정 취약점으로 데스크톱 세션의 모든 프로그램이 암호나 sudo 확인 없이 root 권한을 얻을 수 있었다. 이는 기본 사용자를 Linux docker 그룹에 추가해 root Docker 데몬 소켓에 접근시킨 것이 원인으로, 비공개 제보 후 수정되었다.",
+      "source": "GeekNews"
+    },
+    "20260831-8a8981e3": {
+      "title": "오프라인 LG TV를 연결했을 때 Windows의 제조사 앱 설치를 막는 방법",
+      "url": "https://news.hada.io/topic?id=33042",
+      "summary": "인터넷이 끊긴 LG TV를 Windows PC에 HDMI로 연결 시, Windows Update를 통해 LG 동반 앱과 McAfee 등 추가 소프트웨어 광고가 설치되는 문제가 발생했다. 이는 Windows가 TV의 EDID 정보를 장치 메타데이터 서비스에 활용하기 때문이다.",
+      "source": "GeekNews"
+    },
+    "20260831-1bf3b445": {
+      "title": "AI 없는 금요일",
+      "url": "https://news.hada.io/topic?id=33041",
+      "summary": "'No AI Fridays'는 소프트웨어 팀이 매주 하루 AI 코딩 도우미를 끄고 직접 코딩하며 기술 저하와 AI 의존을 점검하는 실천 방식이다. LLM 사용은 인지 부채를 쌓고 업무 몰입과 비판적 사고를 낮춰 기술 형성을 방해할 수 있다.",
+      "source": "GeekNews"
+    },
+    "20260831-1f0329bb": {
+      "title": "Show GN: typeboard — 팀 내에서 필요한 터미널을 직접 만들기",
+      "url": "https://news.hada.io/topic?id=33040",
+      "summary": "연구원 근무 중 로그 추적, 여러 셸 오가기, 긴 출력에서 문자열 찾기 등의 불편함을 해소하고자 팀 내에서 필요한 터미널 'typeboard'를 직접 개발했다. 탭 세션 분할 및 검색 기능을 외부 앱에 의존하지 않고 자체 구현했다.",
+      "source": "GeekNews"
+    },
+    "20260831-4f93e513": {
+      "title": "StemDeck - 음악을 보컬, 드럼 등 6개 트랙으로 나누는 로컬 앱",
+      "url": "https://news.hada.io/topic?id=33039",
+      "summary": "'StemDeck'은 계정, 업로드, 구독 없이 음원을 보컬, 드럼 등 최대 6개 스템으로 분리하는 무료 오픈소스 로컬 앱이다. MP3, WAV, FLAC 등 다양한 오디오 형식과 YouTube URL을 지원하며, Demucs htdemucs_6s를 활용한다.",
+      "source": "GeekNews"
+    },
+    "20260831-c343b60b": {
+      "title": "영국인 93% “개인 메시지는 비공개로 유지돼야”",
+      "url": "https://news.hada.io/topic?id=33038",
+      "summary": "영국 성인의 93%가 온라인 개인 대화의 비공개 권리를 주장했으며, 89%는 법원 명령 없는 개인 메시지 접근에 반대했다. 응답자의 3분의 2는 현 정부와 미래 정부 모두에게 암호화 메시지 접근 권한을 맡길 수 없다고 밝혔다.",
+      "source": "GeekNews"
+    },
+    "20260831-003f1a14": {
+      "title": "낸시 그레이스 로먼 우주망원경",
+      "url": "https://news.hada.io/topic?id=33037",
+      "summary": "NASA의 낸시 그레이스 로먼 우주망원경은 암흑에너지, 외계행성, 적외선 천체물리학 탐구를 위해 설계됐다. 허블보다 최소 100배 넓은 시야로 임무 기간 동안 최대 10억 개 은하의 빛을 측정할 잠재력을 가졌다.",
+      "source": "GeekNews"
+    },
+    "20260831-54f27e11": {
+      "title": "Samsung의 메모리 내 연산(PIM)",
+      "url": "https://news.hada.io/topic?id=33036",
+      "summary": "삼성의 LPDDR5X-PIM은 16개 DRAM 뱅크마다 곱셈 누산 연산기를 내장하여, 데이터를 프로세서로 옮기지 않고 메모리 내에서 AI 연산을 수행한다. 일반 LPDDR5X-9600의 외부 대역폭 76.8GB/s 대비 PIM은 16개 뱅크의 내부 대역폭을 동시에 활용한다.",
+      "source": "GeekNews"
+    },
+    "20260831-9fc2e8c1": {
+      "title": "버그 맹시 - 익숙해진 문제를 더 이상 버그로 보지 못하는 이유",
+      "url": "https://news.hada.io/topic?id=33034",
+      "summary": "사람들은 소프트웨어에서 반복되는 버그를 문제로 인식하지 못하고 무의식적으로 우회하며 정상 동작으로 받아들인다. 개발팀 내부에서도 망가진 제품을 잘 작동한다고 평가하는 경우가 있어, 실제 사용자의 불편함을 간과할 수 있다.",
+      "source": "GeekNews"
+    },
+    "20260831-bc32b325": {
+      "title": "Show GN: youdible - 청각장애인을 위한 인공 귀",
+      "url": "https://news.hada.io/topic?id=33033",
+      "summary": "중학교 3학년 학생이 청각장애인을 위한 안드로이드 실시간 자막 앱 'youdible'을 개발했다. 이 앱은 말소리를 자막으로 변환하며, 특히 사용자 이름이 불리면 해당 문장을 빨갛게 강조하고 화면 테두리를 번쩍이며 진동으로 알린다.",
+      "source": "GeekNews"
+    },
+    "20260831-dbd2e1fe": {
+      "title": "캘리포니아주 의회, 연령 확인법에서 Linux를 만장일치로 면제",
+      "url": "https://news.hada.io/topic?id=33031",
+      "summary": "캘리포니아주 의회가 AB 1856을 만장일치로 통과시켜 오픈소스 운영체제를 Digital Age Assurance Act 적용 대상에서 제외했다. 이에 따라 Linux 배포판은 연령 정보 수집 의무를 면제받으며, GPL, MIT, BSD, Apache 라이선스 기반 배포판이 해당된다.",
+      "source": "GeekNews"
+    },
+    "20260831-50be2d01": {
+      "title": "자동차 보험료에 붙인 1달러가 Texas 전역의 Flock 카메라 3,200대로 이어짐",
+      "url": "https://news.hada.io/topic?id=33030",
+      "summary": "텍사스주가 2023년 촉매 변환기 절도 대응을 위해 자동차 보험료를 연 1달러 인상했다. Motor Vehicle Crime Prevention Authority는 최소 3,000만 달러를 투입해 주 전역에 Flock 카메라 3,200대 이상을 보급했으며, 95개 보조금으로 지역 경찰 카메라 약 2,000대가 설치됐다.",
+      "source": "GeekNews"
+    },
+    "20260831-d9ed159c": {
+      "title": "Debian과 세이렌",
+      "url": "https://news.hada.io/topic?id=33028",
+      "summary": "Debian 프로젝트는 개발 과정에서 LLM 사용을 허용하기로 결정했다. 그러나 18년간 참여한 전 개발자는 이로 인해 누적된 복잡성을 근본적으로 제거하려는 동기가 약해질 수 있다고 우려한다.",
+      "source": "GeekNews"
+    },
+    "20260831-452146c7": {
+      "title": "Show GN: memnest, 세션이 바뀌어도 AI 코딩 에이전트가 기억을 잃지 않게 하는 로컬 메모리 서비스",
+      "url": "https://news.hada.io/topic?id=33025",
+      "summary": "AI 코딩 에이전트가 세션 종료 시 기억을 잃는 불편함을 해소하기 위해 로컬 메모리 서비스 'memnest'가 개발됐다. 이는 에이전트가 서비스 포트, 라이브러리 선택 이유, 버그 해결책 등을 지속적으로 기억하게 한다.",
+      "source": "GeekNews"
+    },
+    "20260831-61be2e4a": {
+      "title": "GrapheneOS 프로젝트, Pixel 11의 하드웨어 메모리 태깅(MTE) 미지원으로 포팅 중단",
+      "url": "https://news.hada.io/topic?id=33024",
+      "summary": "GrapheneOS 프로젝트가 Pixel 11 시리즈용 부분 포트를 구현했으나, ARM 하드웨어 메모리 태깅(MTE) 지원 부족으로 포팅을 중단했다. 소프트웨어와 펌웨어에서 MTE 지원이 빠져 있으며, 하드웨어 자체도 지원하지 않을 가능성이 높다고 판단했다.",
+      "source": "GeekNews"
+    },
+    "20260831-185fd144": {
+      "title": "Tencent Hy4 프리뷰 공개",
+      "url": "https://news.hada.io/topic?id=33023",
+      "summary": "텐센트가 전체 770B, 활성 49B 매개변수와 100만 토큰 이상의 컨텍스트 창을 갖춘 차세대 LLM 'Hy4' 프리뷰를 공개하고 오픈소스로 배포했다. 이는 코딩, 문서 작업, 게임 개발, 과학 연구 등 실제 생산성 작업에 초점을 맞췄다.",
+      "source": "GeekNews"
+    },
+    "20260831-51737074": {
+      "title": "Understanding ChatGPT Work",
+      "url": "https://simonwillison.net/2026/Aug/30/understanding-chatgpt-work/",
+      "summary": "OpenAI가 7월 9일 발표한 ChatGPT Work는 클라우드 버전과 데스크톱 앱 두 가지로 나뉜다. 클라우드 버전은 chatgpt.com 및 모바일 앱으로 접근 가능하며, 데스크톱 앱(구 Codex)은 파일 접근 및 프로그램 실행을 지원한다.",
+      "source": "Simon Willison"
+    }
+  }
+}
