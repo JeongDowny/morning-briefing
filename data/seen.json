@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-05T09:34:28+09:00",
+  "last_updated": "2026-09-06T09:31:28+09:00",
   "news": {
     "https://n.news.naver.com/article/009/0005717824?ntype=RANKING": "2026-08-07T10:42:23+09:00",
     "https://n.news.naver.com/article/009/0005717608?ntype=RANKING": "2026-08-07T10:42:23+09:00",
@@ -300,7 +300,17 @@
     "https://n.news.naver.com/article/015/0005328905?ntype=RANKING": "2026-09-05T09:34:28+09:00",
     "https://n.news.naver.com/article/015/0005328959?ntype=RANKING": "2026-09-05T09:34:28+09:00",
     "https://n.news.naver.com/article/015/0005328927?ntype=RANKING": "2026-09-05T09:34:28+09:00",
-    "https://n.news.naver.com/article/015/0005328945?ntype=RANKING": "2026-09-05T09:34:28+09:00"
+    "https://n.news.naver.com/article/015/0005328945?ntype=RANKING": "2026-09-05T09:34:28+09:00",
+    "https://n.news.naver.com/article/009/0005730875?ntype=RANKING": "2026-09-06T09:31:28+09:00",
+    "https://n.news.naver.com/article/009/0005730839?ntype=RANKING": "2026-09-06T09:31:28+09:00",
+    "https://n.news.naver.com/article/009/0005730714?ntype=RANKING": "2026-09-06T09:31:28+09:00",
+    "https://n.news.naver.com/article/009/0005730874?ntype=RANKING": "2026-09-06T09:31:28+09:00",
+    "https://n.news.naver.com/article/009/0005730879?ntype=RANKING": "2026-09-06T09:31:28+09:00",
+    "https://n.news.naver.com/article/366/0001190565?ntype=RANKING": "2026-09-06T09:31:28+09:00",
+    "https://n.news.naver.com/article/366/0001190573?ntype=RANKING": "2026-09-06T09:31:28+09:00",
+    "https://n.news.naver.com/article/366/0001190571?ntype=RANKING": "2026-09-06T09:31:28+09:00",
+    "https://n.news.naver.com/article/366/0001190574?ntype=RANKING": "2026-09-06T09:31:28+09:00",
+    "https://n.news.naver.com/article/366/0001190567?ntype=RANKING": "2026-09-06T09:31:28+09:00"
   },
   "dev_blog": {
     "https://news.hada.io/topic?id=32225": "2026-08-07T10:42:23+09:00",
@@ -1370,7 +1380,31 @@
     "https://www.latent.space/p/ainews-gpt-6-astra-openais-biggest": "2026-09-05T09:34:28+09:00",
     "https://simonwillison.net/2026/Sep/4/astra-pelicans/": "2026-09-05T09:34:28+09:00",
     "https://simonwillison.net/2026/Sep/4/rogue-agent-wikis/": "2026-09-05T09:34:28+09:00",
-    "https://simonwillison.net/2026/Sep/4/august-newsletter/": "2026-09-05T09:34:28+09:00"
+    "https://simonwillison.net/2026/Sep/4/august-newsletter/": "2026-09-05T09:34:28+09:00",
+    "https://news.hada.io/topic?id=33268": "2026-09-06T09:31:28+09:00",
+    "https://news.hada.io/topic?id=33267": "2026-09-06T09:31:28+09:00",
+    "https://news.hada.io/topic?id=33266": "2026-09-06T09:31:28+09:00",
+    "https://news.hada.io/topic?id=33265": "2026-09-06T09:31:28+09:00",
+    "https://news.hada.io/topic?id=33264": "2026-09-06T09:31:28+09:00",
+    "https://news.hada.io/topic?id=33263": "2026-09-06T09:31:28+09:00",
+    "https://news.hada.io/topic?id=33262": "2026-09-06T09:31:28+09:00",
+    "https://news.hada.io/topic?id=33261": "2026-09-06T09:31:28+09:00",
+    "https://news.hada.io/topic?id=33260": "2026-09-06T09:31:28+09:00",
+    "https://news.hada.io/topic?id=33259": "2026-09-06T09:31:28+09:00",
+    "https://news.hada.io/topic?id=33258": "2026-09-06T09:31:28+09:00",
+    "https://news.hada.io/topic?id=33257": "2026-09-06T09:31:28+09:00",
+    "https://news.hada.io/topic?id=33255": "2026-09-06T09:31:28+09:00",
+    "https://news.hada.io/topic?id=33254": "2026-09-06T09:31:28+09:00",
+    "https://news.hada.io/topic?id=33253": "2026-09-06T09:31:28+09:00",
+    "https://news.hada.io/topic?id=33252": "2026-09-06T09:31:28+09:00",
+    "https://news.hada.io/topic?id=33251": "2026-09-06T09:31:28+09:00",
+    "https://news.hada.io/topic?id=33250": "2026-09-06T09:31:28+09:00",
+    "https://news.hada.io/topic?id=33249": "2026-09-06T09:31:28+09:00",
+    "https://news.hada.io/topic?id=33248": "2026-09-06T09:31:28+09:00",
+    "https://news.hada.io/topic?id=33247": "2026-09-06T09:31:28+09:00",
+    "https://www.latent.space/p/grok-bot": "2026-09-06T09:31:28+09:00",
+    "https://simonwillison.net/2026/Sep/5/introducing-gpt-6-astra-for-developers/": "2026-09-06T09:31:28+09:00",
+    "https://simonwillison.net/2026/Sep/5/blender-coding-agents-macos/": "2026-09-06T09:31:28+09:00"
   },
   "threads": {}
 }
