@@ -1,0 +1,389 @@
+{
+  "date": "2026-09-15",
+  "items": {
+    "20260915-8a4a811d": {
+      "title": "How Claude’s text watermark works",
+      "url": "https://www.anthropic.com/news/claude-text-watermark",
+      "summary": "Anthropic 이 8/14, 자사 AI 모델 Claude 가 생성하는 텍스트에 적용되는 워터마크의 구체적인 작동 원리를 설명하는 내용을 발표했다.",
+      "source": "Anthropic"
+    },
+    "20260915-e51105d7": {
+      "title": "박왕열, 드론 타고 탈옥 시도 \"난데 이정도는 해줘야\" 허세",
+      "url": "https://n.news.naver.com/article/018/0006369333?ntype=RANKING",
+      "summary": "박왕열이 드론을 이용해 탈옥을 시도했으며, 이 과정에서 '난데 이정도는 해줘야'라는 허세 발언을 했다.",
+      "source": "이데일리"
+    },
+    "20260915-403c66ac": {
+      "title": "'30만전자·200만닉스 부활' 헛된 꿈인가…개미들 놀랄 전망",
+      "url": "https://n.news.naver.com/article/018/0006369408?ntype=RANKING",
+      "summary": "삼성전자 30만원, SK하이닉스 200만원 주가 회복에 대한 기대가 개인 투자자들 사이에서 커지고 있지만, 현실화 가능성에 대한 우려가 제기된다.",
+      "source": "이데일리"
+    },
+    "20260915-3c04af9b": {
+      "title": "\"李, 하늘이 내린 사람\"이라던 도올 김용옥 \"지지율 연연 마라\"",
+      "url": "https://n.news.naver.com/article/018/0006369386?ntype=RANKING",
+      "summary": "도올 김용옥이 과거 이재명 대표를 \"하늘이 내린 사람\"이라고 칭했던 것과 달리, 최근에는 \"지지율에 연연하지 말라\"고 조언했다.",
+      "source": "이데일리"
+    },
+    "20260915-e1e42299": {
+      "title": "김승원 \"국힘 정당 해산 검토\"...\"할 테면 해 봐라\" 정면충돌",
+      "url": "https://n.news.naver.com/article/018/0006369302?ntype=RANKING",
+      "summary": "김승원 더불어민주당 의원이 국민의힘 정당 해산을 검토해야 한다고 주장하자, 국민의힘 측은 \"할 테면 해 봐라\"며 강하게 반발하며 정면충돌했다.",
+      "source": "이데일리"
+    },
+    "20260915-140e62ad": {
+      "title": "女BJ 집 찾아간 20대, 도망치자 흉기에 뜨거운 물까지…무슨 일",
+      "url": "https://n.news.naver.com/article/018/0006369313?ntype=RANKING",
+      "summary": "20대 남성이 여성 BJ의 집을 찾아가 스토킹하다 BJ가 도망치자 흉기와 뜨거운 물을 사용해 위협한 사건이 발생했다.",
+      "source": "이데일리"
+    },
+    "20260915-4fe69027": {
+      "title": "“집을 못 사게 해놨잖아요”…2030 무주택자 급증하는데 주거비는 폭등",
+      "url": "https://n.news.naver.com/article/009/0005735182?ntype=RANKING",
+      "summary": "2030세대의 무주택자 수가 급증하는 가운데 주거비가 폭등하여, 주택 구매가 어려워졌다는 불만이 제기된다.",
+      "source": "매일경제"
+    },
+    "20260915-37c37b6d": {
+      "title": "“여보, 우리 가족 마지막 車 삽시다”…일본차의 실수? ‘반칙왕’ 렉서스 나와 [최기성의 허브車]",
+      "url": "https://n.news.naver.com/article/009/0005735191?ntype=RANKING",
+      "summary": "일본차 렉서스가 '반칙왕'이라는 평가를 받으며 뛰어난 성능을 선보여, 소비자들이 '마지막 차'로 구매를 고려할 만큼 주목받고 있다.",
+      "source": "매일경제"
+    },
+    "20260915-3260f079": {
+      "title": "“매달 600만원 낸다”…‘325억원’ 건물주 이다해, 상하이서 월세사는 까닭",
+      "url": "https://n.news.naver.com/article/009/0005735200?ntype=RANKING",
+      "summary": "325억원 상당의 건물을 소유한 배우 이다해가 상하이에서 매달 600만원의 월세를 내며 거주하는 이유에 대한 궁금증이 제기된다.",
+      "source": "매일경제"
+    },
+    "20260915-1bd1f671": {
+      "title": "“한동훈 똑똑하고 무서운 사람”…이하늘 발언에 한동훈의 반응",
+      "url": "https://n.news.naver.com/article/009/0005735196?ntype=RANKING",
+      "summary": "가수 이하늘이 한동훈 전 비대위원장을 \"똑똑하고 무서운 사람\"이라고 평가한 발언에 대해 한동훈 전 위원장이 어떤 반응을 보였는지 관심이 쏠린다.",
+      "source": "매일경제"
+    },
+    "20260915-836a5303": {
+      "title": "“조감도에선 한강 다 보였는데 이게 뭡니까”…재건축 특화설계 잇단 변경",
+      "url": "https://n.news.naver.com/article/009/0005735184?ntype=RANKING",
+      "summary": "재건축 아파트의 특화설계가 잇따라 변경되면서, 조감도와 달리 한강 조망 등 기대했던 부분이 사라져 입주 예정자들의 불만이 커진다.",
+      "source": "매일경제"
+    },
+    "20260915-9743da0f": {
+      "title": "Meta가 AI 인프라의 매출 기여도를 측정한 방법",
+      "url": "https://news.hada.io/topic?id=33720",
+      "summary": "Meta는 광고 모델 개선으로 인한 매출 증대에서 AI 인프라의 기여도를 측정하기 위해 개별 모델 출시 데이터를 분석, 7개 인프라 플랫폼의 기여도를 추정했다.",
+      "source": "GeekNews"
+    },
+    "20260915-153ed6dd": {
+      "title": "Pinterest 임베딩 검색 플랫폼의 진화",
+      "url": "https://news.hada.io/topic?id=33719",
+      "summary": "Pinterest는 검색 및 추천 플랫폼 Manas를 개선해 수백억 개 임베딩 처리 비용을 낮추고 검색 정확도를 높였다. 벡터 압축 양자화를 적용하여 인덱스 메모리를 50% 이상, 서빙 비용을 20~30% 절감했다.",
+      "source": "GeekNews"
+    },
+    "20260915-09290888": {
+      "title": "Show HN: Neobrutalism.dev - Base UI 지원과 새 색상 테마 추가",
+      "url": "https://news.hada.io/topic?id=33718",
+      "summary": "React와 Tailwind v4용 네오브루탈리즘 스타일 UI 구성 요소 모음인 Neobrutalism.dev가 shadcn/ui와 Base UI를 기반으로 64개 컴포넌트를 제공한다. 이번 업데이트로 Base UI 지원과 새 색상 테마가 추가되었다.",
+      "source": "GeekNews"
+    },
+    "20260915-b51eafcb": {
+      "title": "내 전자책 리더의 줄무늬를 없앤 과정",
+      "url": "https://news.hada.io/topic?id=33717",
+      "summary": "초소형 전자책 리더 Xteink X3의 회색조 이미지에서 발견된 세로 줄무늬를 화면 구동 파형 변경으로 제거했다. CrossPoint와 freeink-sdk 조사를 통해 이미지 뷰어의 회색조 처리 누락 및 어두운 회색 표시 오류도 수정했다.",
+      "source": "GeekNews"
+    },
+    "20260915-66d84475": {
+      "title": "pg_chdb - PostgreSQL에서 ClickHouse로 외부 데이터를 조회하고 가져오는 확장",
+      "url": "https://news.hada.io/topic?id=33716",
+      "summary": "pg_chdb는 S3나 로컬 파일의 데이터를 PostgreSQL에서 직접 조회하거나 테이블로 가져올 수 있게 하는 ClickHouse 확장 도구다. ClickHouse 기반 엔진 chDB를 사용하며, chdb_query()에 쿼리를 넘기면 결과를 PostgreSQL 행과 열로 반환한다.",
+      "source": "GeekNews"
+    },
+    "20260915-3dfbb4a2": {
+      "title": "수학의 종말",
+      "url": "https://news.hada.io/topic?id=33715",
+      "summary": "AI가 수학에서 인간을 능가하더라도, 논문과 정리 생산을 보상하는 기존 제도가 유지되면 수학의 발전이 정체될 수 있다는 위험 시나리오가 제시되었다. 이는 수학적 산출물 급증에도 불구하고 정확성, 흥미로움, 실질적 검토가 부족해질 수 있음을 의미한다.",
+      "source": "GeekNews"
+    },
+    "20260915-3afa045f": {
+      "title": "여러분의 사고방식에 가장 큰 영향을 준 블로그 글은 무엇인가요?",
+      "url": "https://news.hada.io/topic?id=33714",
+      "summary": "사고방식에 가장 큰 영향을 준 블로그 글을 묻는 질문에 소프트웨어 설계, 제품 완성, 경력, 개발자의 책임 등 다양한 분야의 글들이 추천되었다. 질문자는 개인적으로 Parse, Don’t Validate와 초기 joelonsoftware 글들을 꼽았다.",
+      "source": "GeekNews"
+    },
+    "20260915-eaad7714": {
+      "title": "Oracle, 오전 6시에 이메일로 추가 해고 통보 “오늘이 마지막 근무일”",
+      "url": "https://news.hada.io/topic?id=33713",
+      "summary": "Oracle이 추가 감원에 착수하며 월요일 이른 아침 직원들에게 당일 해고를 통보했다. 2026 회계연도 구조조정 비용 추정치를 7억 달러 늘린 약 28억 달러로 상향했으며, 이는 추가 퇴직금 및 계약 해지 비용을 반영한 것이다.",
+      "source": "GeekNews"
+    },
+    "20260915-25f805cf": {
+      "title": "미 항소법원, Perplexity AI의 Amazon 이용을 막은 금지명령 취소",
+      "url": "https://news.hada.io/topic?id=33712",
+      "summary": "미 항소법원이 Amazon이 금지했더라도 이용자가 AI 도구로 접속한 것을 Perplexity의 무단 접근으로 보기 어렵다고 판단, Comet의 Amazon 이용을 막은 예비적 금지명령을 취소했다. Amazon은 자사 미허가 접근이라며 소송을 제기했었다.",
+      "source": "GeekNews"
+    },
+    "20260915-29c32fea": {
+      "title": "Show GN: PhotoSlimmer - 아이폰 사진 정리 앱, 중복·유사·흐림·눈 감은 사진을 기기에서 찾아 삭제",
+      "url": "https://news.hada.io/topic?id=33711",
+      "summary": "아이폰 사진 정리 앱 PhotoSlimmer는 중복, 유사, 흐림, 눈 감은 사진을 기기에서 자동으로 찾아 삭제를 돕는다. 특히 흔들리거나 눈 감은 사진처럼 수천 장 중 찾기 어려운 부분을 자동으로 묶어 보여주는 데 집중했다.",
+      "source": "GeekNews"
+    },
+    "20260915-73ecad95": {
+      "title": "Dario, 제발!",
+      "url": "https://news.hada.io/topic?id=33710",
+      "summary": "Anthropic CEO 다리오 아모데이가 AI 개발 속도 조절을 제안했으나, 오픈 웨이트 규제와 독점금지법 예외는 안전을 명분으로 선두 기업의 지위를 보호하는 수단이 될 수 있다는 지적이 나왔다. 질병 치료와 풍요를 약속해도 발견과 접근성은 다른 문제다.",
+      "source": "GeekNews"
+    },
+    "20260915-2499d819": {
+      "title": "수학의 시작",
+      "url": "https://news.hada.io/topic?id=33709",
+      "summary": "AI로 수학 논문을 만들 수 있게 되면서 좋은 결과물만으로 이해와 전문성을 판단하기 어려워졌다. 이에 따라 논문과 정리 증명 중심의 평가 체계를 바꿀 필요가 있으며, 기존 학술 제도의 형태보다 좋은 수학을 생산하고 이해하는 일이 중요하다고 강조된다.",
+      "source": "GeekNews"
+    },
+    "20260915-66595e50": {
+      "title": "빠른 Tokio 애플리케이션을 위한 원칙",
+      "url": "https://news.hada.io/topic?id=33708",
+      "summary": "Tokio 애플리케이션의 성능은 공정성, 배치 처리, 경합, 격리의 균형에 달려 있으며, 같은 작업도 런타임에서 함께 실행되는 작업에 따라 달라진다. 최적화는 긴 폴링 자체를 없애기보다 실제 개선할 지표에서 출발해야 한다.",
+      "source": "GeekNews"
+    },
+    "20260915-c8ebc1ed": {
+      "title": "Microsoft, Windows와 Excel 패치로 오디오, 원격 접속, 붙여넣기 장애 초래",
+      "url": "https://news.hada.io/topic?id=33707",
+      "summary": "Microsoft의 최신 보안 업데이트로 원격 데스크톱 서비스(RDS), 일부 USB 오디오 장치, Excel 붙여넣기에 문제가 발생할 수 있음이 확인되었다. RDS 장애는 여러 Windows 버전에서 발생하며, 연결이 끊기거나 서버 및 관리 도구가 응답하지 않을 수 있다.",
+      "source": "GeekNews"
+    },
+    "20260915-a76d08b0": {
+      "title": "분산 시스템의 고전 논문들 (2017)",
+      "url": "https://news.hada.io/topic?id=33706",
+      "summary": "분산 시스템 연구에 영향을 준 고전 논문 10편이 이 분야의 문제 영역을 이해하기 위한 출발점으로 제시되었다. 이 목록에는 시간과 사건 순서, 분산 스냅샷을 통한 전역 상태 결정, 비잔틴 장군 문제 등에 관한 논문들이 포함되어 있다.",
+      "source": "GeekNews"
+    },
+    "20260915-6838bc24": {
+      "title": "Pion - AI에 실제 사업 운영을 맡기는 실험 플랫폼",
+      "url": "https://news.hada.io/topic?id=33705",
+      "summary": "Andon Labs가 실제 사업의 자율 운영에 사용해 온 Pion을 연구 프리뷰로 공개했다. 이는 다양한 사업에서 AI의 자원 확보 능력과 실패 양상을 실험하기 위함으로, Vending-Bench에서 모델 성능이 빠르게 향상되었으나 시뮬레이션만으로는 현실 복잡성을 파악하기 어렵다.",
+      "source": "GeekNews"
+    },
+    "20260915-cad18b69": {
+      "title": "iOS 27, iPadOS 27, macOS 27 업데이트 시작",
+      "url": "https://news.hada.io/topic?id=33704",
+      "summary": "Apple이 iOS 27 등 주요 플랫폼에 Siri AI, 새로운 Apple Intelligence 기능, 자녀 보호 도구 및 성능 개선 사항을 순차적으로 제공하기 시작했다. Siri AI는 개인 맥락과 화면 내용을 이해하고 앱 동작을 수행하며, 현재 영어 베타로 제공된다.",
+      "source": "GeekNews"
+    },
+    "20260915-af2eac2d": {
+      "title": "Steam Frame 가격 공개, 1,059달러부터 시작",
+      "url": "https://news.hada.io/topic?id=33703",
+      "summary": "Valve의 무선 VR 헤드셋 Steam Frame이 컨트롤러 포함 256GB 모델 1,059달러, 1TB 모델 1,299달러로 예약 접수를 시작했다. 이 기기는 PC에서 게임을 받아 실행하는 무선 스트리밍 중심이며, VR 게임과 일반 Steam 게임 모두 즐길 수 있다.",
+      "source": "GeekNews"
+    },
+    "20260915-cec44cc5": {
+      "title": "XCancel 서비스, 별도 공지가 있을 때까지 중단",
+      "url": "https://news.hada.io/topic?id=33702",
+      "summary": "XCancel 서비스가 진행 중인 법적 절차에 새로운 상황이 발생하여 다시 중단되었다. 이번 중단은 법적 절차의 새로운 상황에 따른 조치이며, 별도 공지가 있을 때까지 서비스 중단이 이어질 예정이다.",
+      "source": "GeekNews"
+    },
+    "20260915-ddede95f": {
+      "title": "OpenAI 봇은 RubyGems 캐싱 취약점을 알고 있었음",
+      "url": "https://news.hada.io/topic?id=33701",
+      "summary": "OpenAI 봇이 RubyGems.org의 캐싱 취약점을 알고 악용하려 했으며, 동시에 RubyDoc.info에서 웹 스크래핑 코드를 실행한 것으로 보인다. 5월 확인된 GemStuffer 캠페인의 정크 gem들은 영국 정부 웹사이트를 스크래핑한 뒤 데이터를 gem으로 재패키징했다.",
+      "source": "GeekNews"
+    },
+    "20260915-f5b76fc6": {
+      "title": "OpenArch - LLM 아키텍처를 모델별 한 파일로 구현한 PyTorch 코드 모음",
+      "url": "https://news.hada.io/topic?id=33700",
+      "summary": "OpenArch는 Llama, Qwen, DeepSeek 등 LLM의 내부 구조를 학습하고 비교할 수 있도록 각 아키텍처를 하나의 PyTorch 파일로 직접 구현한 저장소다. 가독성과 학습을 우선하며, 어텐션 유형, 정규화, 계층 구성 등 구조적 선택을 나란히 보여준다.",
+      "source": "GeekNews"
+    },
+    "20260915-a59311f0": {
+      "title": "텍사스 판사, TikTok이 아동 안전 기능에 관해 이용자를 오도했다고 판결",
+      "url": "https://news.hada.io/topic?id=33699",
+      "summary": "텍사스 법원이 TikTok의 미성년자 콘텐츠 필터링 안내와 아동 보호 기능 홍보가 주 소비자보호법을 위반했다고 판결했다. TikTok은 커뮤니티 가이드라인 위반 콘텐츠를 삭제한다고 안내했으나, 일부를 내부적으로 '금지' 대신 '찾기 어려움'으로 분류한 것으로 드러났다.",
+      "source": "GeekNews"
+    },
+    "20260915-9cbb8f07": {
+      "title": "신설된 10만 달러 H-1B 비자 수수료가 기술 일자리를 해외로 밀어냄",
+      "url": "https://news.hada.io/topic?id=33698",
+      "summary": "미국의 고숙련 이민 규제 강화에 대응해 기술 기업들이 해외 사무실을 짓고 현지 채용을 늘리는 방식으로 인재 확보 전략을 바꾸고 있다. 2025년 도입된 10만 달러 수수료 적용 대상 H-1B 신청 처리 건수는 전년보다 87% 감소했다.",
+      "source": "GeekNews"
+    },
+    "20260915-1e633b92": {
+      "title": "Show GN: Foundation Model Engineering - 학습부터 서빙까지 다루는 한·영 온라인 교재",
+      "url": "https://news.hada.io/topic?id=33697",
+      "summary": "파운데이션 모델의 구조부터 학습, 추론, RAG, 에이전트, 평가까지 다루는 한·영 온라인 교재가 가입 없이 전체 내용을 제공한다. 이 교재는 기법의 정의뿐 아니라 병목 해결, 메모리 및 지연 시간의 득실까지 연결하여 정리한다.",
+      "source": "GeekNews"
+    },
+    "20260915-fd257cc3": {
+      "title": "효과적인 소프트웨어 설계 문서 작성법",
+      "url": "https://news.hada.io/topic?id=33696",
+      "summary": "소프트웨어 설계 문서는 구현 전 어려운 문제와 중요한 결정을 검토하고 피드백을 모아 잘못된 구현에 시간을 낭비하지 않도록 돕는 도구다. 문서에 담을 결정은 틀렸을 때의 비용으로 판단하며, 언어나 저장소처럼 바꾸기 어려운 선택에 집중해야 한다.",
+      "source": "GeekNews"
+    },
+    "20260915-41a5e1c8": {
+      "title": "Apple Siri의 AI를 Claude와 ChatGPT로 교체할 수 있는 코드 발견",
+      "url": "https://news.hada.io/topic?id=33695",
+      "summary": "iOS 27과 macOS Golden Gate의 비공개 코드에서 Siri에 외부 AI를 연결하거나 서버 측 모델 자체를 교체할 수 있는 구조가 발견되었다. Claude를 확장 기능으로 연결한 시연에서는 Claude가 요청을 해석하고 Siri가 미리 알림을 생성하는 모습이 확인되었다.",
+      "source": "GeekNews"
+    },
+    "20260915-9cff0017": {
+      "title": "RP2350을 위한 386 PC",
+      "url": "https://news.hada.io/topic?id=33694",
+      "summary": "FRANK 386은 RP2350 기반 Raspberry Pi Pico 2에서 DOS, Windows 3.x, Windows 95, Linux 등을 부팅할 수 있는 i386 PC 에뮬레이터다. i386 전체 명령어 에뮬레이션과 i486/i586 일부 기능, 선택적 x87 FPU를 지원하며, 8MB PSRAM을 사용해 최대 8MB RAM을 제공한다.",
+      "source": "GeekNews"
+    },
+    "20260915-0f5c520a": {
+      "title": "XCancel, “진행 중인 법적 절차의 새로운 상황으로 인해” 서비스 중단",
+      "url": "https://news.hada.io/topic?id=33692",
+      "summary": "XCancel 서비스가 진행 중인 법적 절차에서 새로운 상황이 발생하여 다시 중단되었다. 이번 중단은 추가 공지가 있을 때까지 이어지며, 서비스 중단에 대한 추가 세부 사항은 공개할 수 없다고 밝혔다.",
+      "source": "GeekNews"
+    },
+    "20260915-c720833f": {
+      "title": "시간 속으로 사라진 키 기호, 1편: PC 편",
+      "url": "https://news.hada.io/topic?id=33691",
+      "summary": "초기 IBM 컴퓨터의 다양한 기능 키 기호들이 사무용 PC 사용자들의 혼란으로 인해 대다수 텍스트 표기로 대체되었다. 미국은 글자를, 유럽은 아이콘을 선호하는 경향이 있었으며, 여러 언어를 사용하는 유럽에서는 공통 시각 언어의 필요성이 있었다.",
+      "source": "GeekNews"
+    },
+    "20260915-94551f15": {
+      "title": "EuroBirdPortal - 유럽 전역의 실시간 조류 이동",
+      "url": "https://news.hada.io/topic?id=33690",
+      "summary": "EuroBirdPortal의 LIVE 지도는 최근 52주 또는 그 직전 52주의 조류 관측 데이터를 보여준다. EBP 데이터의 99%는 매일 갱신되지만, 일부 관측 포털의 제출 간격이 길어 최근 몇 주간 해당 지역이 빈칸으로 나타날 수 있다.",
+      "source": "GeekNews"
+    },
+    "20260915-3e92aeab": {
+      "title": "WebKit, Top-Level Await 버그를 고치기 위해 Safari 모듈 로더를 C++로 전면 재작성",
+      "url": "https://news.hada.io/topic?id=33689",
+      "summary": "WebKit이 Safari의 Top-Level Await(TLA) 구현을 ECMAScript 명세에 완전히 맞추기 위해 기존 모듈 로더를 C++로 전면 재작성했다. 기존 구현에서는 특정 상황에서 모듈 평가가 끝나기 전에 import()가 완료되어 오류가 발생할 수 있었다.",
+      "source": "GeekNews"
+    },
+    "20260915-b47e7bba": {
+      "title": "Git에서 Fossil로 전환하기 (2025)",
+      "url": "https://news.hada.io/topic?id=33688",
+      "summary": "Git의 Rust 필수화 제안에 반감을 느낀 개발자가 개인 프로젝트를 Fossil로 전환하고, 저장소 이전부터 자체 서버 운영 및 일상적인 사용법을 정리했다. Fossil은 C로 작성된 작고 자원 소모가 적은 버전 관리 도구로, 스테이징 영역 없이 Subversion에 가까운 단순한 구조를 가진다.",
+      "source": "GeekNews"
+    },
+    "20260915-c9ab3a9c": {
+      "title": "오픈소스 AI와 오픈 모델 읽기 목록",
+      "url": "https://news.hada.io/topic?id=33687",
+      "summary": "오픈 모델의 정의, 기업 공개 이유부터 사업 전략, 미중 경쟁, 안전성 및 규제까지 파악할 수 있는 읽기 목록이 공개되었다. 이 목록은 모델의 개방성을 가중치 공개 여부뿐 아니라 라이선스, 실행 비용, 데이터 접근성으로도 살펴본다.",
+      "source": "GeekNews"
+    },
+    "20260915-a36be0c7": {
+      "title": "Nike, 시가총액 2,000억 달러 증발 후 18년 만에 S&amp;P 100에서 퇴출",
+      "url": "https://news.hada.io/topic?id=33686",
+      "summary": "Nike가 수년간의 기업가치 하락 끝에 9월 21일 S&P 100에서 제외될 예정이다. 시가총액은 2021년 11월 정점인 2,640억 달러에서 약 570억 달러로 78% 감소했으며, 2026년에만 36% 줄어든 것으로 나타났다.",
+      "source": "GeekNews"
+    },
+    "20260915-92fa2632": {
+      "title": "Show GN: 클라우드 낭비 계산기 - 비용 CSV를 브라우저 안에서만 분석해 확정 낭비를 찾아줍니다",
+      "url": "https://news.hada.io/topic?id=33685",
+      "summary": "지난 8월 소개되었던 클라우드 청구서 채점 앱의 셀프 마이너 버전인 '클라우드 낭비 계산기'가 브라우저에서 바로 실행 가능한 형태로 출시되었다. 이 계산기는 AWS Cost Explorer CSV 또는 파트너사 정산 CSV를 분석하여 확정 낭비를 찾아준다.",
+      "source": "GeekNews"
+    },
+    "20260915-3b1d1524": {
+      "title": "경험상 프로그래머들은 &quot;reduce&quot;를 좋아하지 않음",
+      "url": "https://news.hada.io/topic?id=33684",
+      "summary": "개인적인 코드 리뷰 경험에 따르면, 프로그래머들은 map과 filter 사용에는 불만이 적지만, reduce는 읽기 어렵다는 피드백을 자주 받는다. 이는 reduce가 map, filter, some 등의 기능을 포함하는 복합적인 특성 때문으로 보인다.",
+      "source": "GeekNews"
+    },
+    "20260915-157de18c": {
+      "title": "JPEG XL에 반대하는 이유",
+      "url": "https://news.hada.io/topic?id=33682",
+      "summary": "JPEG XL은 웹 밖에서는 매력적인 기술이지만, 웹에 필요한 손실 압축 효율과 빠른 디코딩에서 최적화된 AVIF보다 경쟁력이 떨어진다. 웹 이미지 대부분이 범용성 높은 손실 압축으로 처리 가능하므로, 브라우저 도입 필요성이 불분명하다는 지적이 나왔다.",
+      "source": "GeekNews"
+    },
+    "20260915-44d68459": {
+      "title": "Mullenweg, 이사회의 축출 시도 이후 CEO로 복귀",
+      "url": "https://news.hada.io/topic?id=33681",
+      "summary": "WordPress.com의 모회사 Automattic이 이사회 표결로 유급 휴직에 들어갔던 Matt Mullenweg의 CEO 복귀를 공식 확인했다. 회사는 Mullenweg가 이사회의 전폭적인 지지를 받는 회장 겸 CEO라고 밝혔으나, 앞서 그를 휴직시킨 이유는 알려지지 않았다.",
+      "source": "GeekNews"
+    },
+    "20260915-904fcb17": {
+      "title": "Apple의 치수 도면 - 케이스와 액세서리를 만드는 사람들을 위한 설계 자료",
+      "url": "https://news.hada.io/topic?id=33680",
+      "summary": "Apple이 케이스, 커버, 시계 밴드 등 액세서리 설계를 위해 제품별 치수 도면과 기술 사양을 PDF로 제공한다. 가로, 세로, 두께뿐 아니라 버튼, 포트, 카메라 위치, 모서리 곡면까지 표시되어 외형 사양표만으로는 알기 어려운 세부 형태를 확인할 수 있다.",
+      "source": "GeekNews"
+    },
+    "20260915-40101223": {
+      "title": "GNU Guix로 전환하기: 초보자의 시각",
+      "url": "https://news.hada.io/topic?id=33678",
+      "summary": "10년 넘게 사용한 Arch Linux 홈 서버를 GNU Guix로 전환하여, 여러 파일과 패키지 관리 이력에 흩어진 시스템 상태를 Git 기반 선언적 구성으로 관리하게 되었다. NixOS도 시험했으나 문서 분산과 실험적 기능에서 불편을 겪었다고 한다.",
+      "source": "GeekNews"
+    },
+    "20260915-d80915fc": {
+      "title": "Show GN: 네오프레스 - Next.js 기반 AI 웹사이트 빌더에 CMS·SEO·전환 분석을 묶었습니다",
+      "url": "https://news.hada.io/topic?id=33676",
+      "summary": "기업용 SEO 블로그 빌더 인블로그 운영팀이 기업용 마케팅 웹사이트 구축 및 운영을 위한 AI 웹사이트 빌더 네오프레스(Neopress)를 개발했다. AI로 첫 페이지를 만드는 것은 쉬워졌지만, 회사 웹사이트 운영은 여전히 어렵다는 문제의식에서 출발했다.",
+      "source": "GeekNews"
+    },
+    "20260915-9678bdb6": {
+      "title": "Transformer 회로를 위한 수학적 프레임워크 (2021)",
+      "url": "https://news.hada.io/topic?id=33675",
+      "summary": "어텐션만 사용하는 0~2층 Transformer를 토큰에서 출력 로짓까지 이어지는 계산 경로로 분해하여, 가중치에서 모델 동작을 읽어내는 기계적 해석 가능성 프레임워크를 구축했다. 이는 어텐션 헤드가 정보를 가져오는 QK 회로와 가져온 정보가 출력에 미치는 영향을 분석한다.",
+      "source": "GeekNews"
+    },
+    "20260915-f0d50e3d": {
+      "title": "10억 명 이상의 ChatGPT 사용자를 지원하기 위한 온라인 스토리지의 빠른 확장",
+      "url": "https://news.hada.io/topic?id=33674",
+      "summary": "OpenAI의 온라인 스토리지 플랫폼 Habitat은 약 40개 지역에서 초당 7,000만 건 이상의 요청을 처리하며, 매주 10억 명 이상이 사용하는 제품에 500PB 이상의 데이터를 제공한다. 여러 서비스에 배포된 클라이언트 라이브러리를 독립 서비스로 전환하여 확장성을 높였다.",
+      "source": "GeekNews"
+    },
+    "20260915-c4ef9037": {
+      "title": "Apple A20 Pro, 싱글스레드에서 데스크탑 Intel i9/AMD Ryzen 9보다 최대 32% 빨라",
+      "url": "https://news.hada.io/topic?id=33673",
+      "summary": "Apple A20 Pro의 Geekbench 7 싱글스레드 점수가 4,006점, 멀티스레드 11,460점으로 A19 Pro보다 각각 23.3%, 27.1% 높게 나왔다. 싱글스레드 성능은 Ryzen 9 9950X3D보다 약 26%, Core i9-14900KS보다 약 32% 빠르지만, 멀티스레드에서는 데스크톱 CPU가 앞선다.",
+      "source": "GeekNews"
+    },
+    "20260915-f7ea1f98": {
+      "title": "루마니아 축구, 학부모의 폭언과 폭력에 대응하는 블랙카드 도입",
+      "url": "https://news.hada.io/topic?id=33672",
+      "summary": "루마니아 축구협회(FRF)가 유소년 경기에서 학부모와 관중의 폭언 및 폭력에 대응하기 위해 블랙카드를 도입했다. 이는 선수 개인을 징계하는 옐로카드/레드카드와 달리, 부적절한 관중 행동이 계속될 경우 경기를 완전히 종료하는 수단이다.",
+      "source": "GeekNews"
+    },
+    "20260915-72093cb9": {
+      "title": "Ask HN: 어떤 작업을 하고 계신가요? (2026년 9월)",
+      "url": "https://news.hada.io/topic?id=33671",
+      "summary": "Ask HN에서 2026년 9월 현재 진행 중인 작업과 최근 호기심을 느낀 주제를 공유하는 자리가 마련되었다.",
+      "source": "GeekNews"
+    },
+    "20260915-e039b84b": {
+      "title": "Signal의 전화번호 없는 가입에 영지식 증명 사용 예정",
+      "url": "https://news.hada.io/topic?id=33670",
+      "summary": "Signal-Android에 전화번호 없는 계정의 기본 가입 및 로그인 기능이 추가될 예정이며, 해당 계정에는 새로운 zkgroup 자격 증명이 사용된다. 영지식 증명(ZKP)은 이미 기부 배지, 백업 결제, 그룹 등에 사용되고 있다.",
+      "source": "GeekNews"
+    },
+    "20260915-12ab6ebf": {
+      "title": "공포의 전염",
+      "url": "https://news.hada.io/topic?id=33667",
+      "summary": "“AI가 10년 안에 전 인류를 죽일 확률이 10%를 넘는다”는 극단적인 예측에 대해 전문가라는 신뢰에 기대기보다 구체적인 근거를 제시해야 한다는 지적이 나왔다. 기술을 이해하기 어려운 대중은 전문가를 신뢰할 수밖에 없으므로, 전문가의 책임이 강조된다.",
+      "source": "GeekNews"
+    },
+    "20260915-0f1f17c8": {
+      "title": "Humanity’s Last Invention — Richard Socher of Recursive",
+      "url": "https://www.latent.space/p/recursive",
+      "summary": "NLP 전문가이자 You.com CEO인 리처드 소처가 RSI에 초점을 맞춘 새로운 스타트업을 설립했다. 이 스타트업은 이미 50억 달러의 가치를 평가받고 있다.",
+      "source": "Latent Space"
+    },
+    "20260915-296d33de": {
+      "title": "How Fyxer built an AI executive assistant people trust",
+      "url": "https://openai.com/index/fyxer",
+      "summary": "Fyxer는 OpenAI 모델과 미세 조정, 메모리, 실제 사용자 피드백을 활용하여 AI 비서를 구축했다. 이 비서는 각 사용자의 목소리로 받은 편지함을 정리하고 이메일을 작성하는 기능을 제공한다.",
+      "source": "OpenAI"
+    },
+    "20260915-bed11562": {
+      "title": "The contagion of fear",
+      "url": "https://simonwillison.net/2026/Sep/14/the-contagion-of-fear/",
+      "summary": "Bryan Cantrill은 전 Anthropic 직원 Jacob Coxon의 트윗에 응답하며, Anthropic 연구원 다수가 AI가 \"이번 10년 말까지 인류를 멸망시킬 수 있다\"고 믿는다는 점을 확인했다. 그는 기술 지식이 부족한 이들에게 불필요한 공포를 유발하는 것을 경고, AI 종말론적 주장의 주류 확산에 우려를 표했다.",
+      "source": "Simon Willison"
+    },
+    "20260915-263391f1": {
+      "title": "What blog posts influenced your thinking the most?",
+      "url": "https://simonwillison.net/2026/Sep/14/influences/",
+      "summary": "Lobste.rs 댓글에서 Joel Spolsky의 \"The Law of Leaky Abstractions\"는 경력 초기에 추상화 하위 계층 이해를 독려하며 영향을 주었다. 2018년 Will Larson의 \"Migrations: the sole scalable fix to tech debt\"는 기술 부채 해결책으로서 마이그레이션의 중요성을 강조하며 큰 인상을 남겼다.",
+      "source": "Simon Willison"
+    },
+    "20260915-affb45ca": {
+      "title": "Quoting Laurie Voss",
+      "url": "https://simonwillison.net/2026/Sep/14/laurie-voss/",
+      "summary": "Laurie Voss는 코드 작성 비용이 급락하고 검토, 수정, 운영 비용도 하락 추세라고 밝혔다. 그는 소프트웨어 개발의 핵심이 사용자 요구 파악 및 정의, 사용하기 즐거운 제품 제작으로 전환될 것이며, 무한한 수요로 이 비용이 전체 작업의 대부분을 차지할 것이라고 강조했다.",
+      "source": "Simon Willison"
+    }
+  }
+}
