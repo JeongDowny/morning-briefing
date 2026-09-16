@@ -1,0 +1,311 @@
+{
+  "date": "2026-09-16",
+  "items": {
+    "20260916-54e982bf": {
+      "title": "\"사망선고 받았다\"더니 다시 보글보글…'프리미엄 라면' 찾는 中MZ",
+      "url": "https://n.news.naver.com/article/277/0005816675?ntype=RANKING",
+      "summary": "중국 MZ세대가 프리미엄 라면을 다시 찾기 시작하며, 한때 '사망선고'까지 받았던 프리미엄 라면 시장이 활기를 되찾고 있다.",
+      "source": "아시아경제"
+    },
+    "20260916-97b357bc": {
+      "title": "\"아메리카노라는 말 쓰지 마\" 난리더니…이제는 다 안 산다 '애국소비' 확산하는 캐나다",
+      "url": "https://n.news.naver.com/article/277/0005816268?ntype=RANKING",
+      "summary": "캐나다에서 '아메리카노' 용어 사용 금지 논란이 있었던 가운데, 현재 '애국소비'가 확산되며 특정 제품 불매 움직임이 나타난다.",
+      "source": "아시아경제"
+    },
+    "20260916-bd18070d": {
+      "title": "\"돈 열심히 벌어도 못 사 먹어요\"…3년 만에 결국 '뚝' 꺾인 한우 판매",
+      "url": "https://n.news.naver.com/article/277/0005816836?ntype=RANKING",
+      "summary": "높은 가격으로 인해 '돈 열심히 벌어도 못 사 먹는다'는 인식이 확산되며, 한우 판매량이 3년 만에 감소세로 전환되었다.",
+      "source": "아시아경제"
+    },
+    "20260916-0eb8ddbe": {
+      "title": "\"우리 아빠가 입던 건데\"…요즘 MZ 푹 빠지더니, 매출 '껑충' 오른 랄프로렌·빈폴·헤지스",
+      "url": "https://n.news.naver.com/article/277/0005816830?ntype=RANKING",
+      "summary": "'우리 아빠가 입던 옷'으로 인식되던 랄프로렌, 빈폴, 헤지스 등 전통 브랜드들이 MZ세대의 인기를 얻으며 매출이 크게 증가했다.",
+      "source": "아시아경제"
+    },
+    "20260916-342c35d1": {
+      "title": "3만명 넘자…경기도, '추미애 사퇴 청원' 조기 종료",
+      "url": "https://n.news.naver.com/article/277/0005816800?ntype=RANKING",
+      "summary": "경기도에서 진행되던 '추미애 사퇴 청원'이 참여 인원 3만 명을 넘어서자 경기도가 이를 조기 종료했다.",
+      "source": "아시아경제"
+    },
+    "20260916-b0e2e622": {
+      "title": "추석 코앞인데 태풍 또 온다…'두쥐안' 예상 경로 보니",
+      "url": "https://n.news.naver.com/article/018/0006369973?ntype=RANKING",
+      "summary": "추석을 앞두고 태풍 '두쥐안'이 한반도에 접근할 것으로 예상되며, 그 예상 경로에 관심이 쏠린다.",
+      "source": "이데일리"
+    },
+    "20260916-1f3a745a": {
+      "title": "“한국 주식 다시 볼 때”…블랙록, 3개월 만에 입장 바꾼 이유",
+      "url": "https://n.news.naver.com/article/018/0006369999?ntype=RANKING",
+      "summary": "세계 최대 자산운용사 블랙록이 3개월 만에 한국 주식에 대한 입장을 변경하며 긍정적인 시각을 제시했다.",
+      "source": "이데일리"
+    },
+    "20260916-0bf146b3": {
+      "title": "\"매일 폭식, 210kg 넘었었는데\"…무려 124kg 감량한 청년 '깜짝'",
+      "url": "https://n.news.naver.com/article/018/0006370061?ntype=RANKING",
+      "summary": "매일 폭식으로 210kg이 넘었던 한 청년이 무려 124kg을 감량하여 놀라움을 주고 있다.",
+      "source": "이데일리"
+    },
+    "20260916-a70f91b9": {
+      "title": "‘청문회 중 도촬 논란’ 김승원 측 “주진우에게 진심으로 사과”",
+      "url": "https://n.news.naver.com/article/018/0006369993?ntype=RANKING",
+      "summary": "청문회 중 발생한 '도촬 논란'과 관련하여 김승원 의원 측이 주진우 기자에게 진심으로 사과했다.",
+      "source": "이데일리"
+    },
+    "20260916-e923e571": {
+      "title": "10대들과 '야차룰' 강요당한 20대女 사망…가해자 커플 송치",
+      "url": "https://n.news.naver.com/article/018/0006370078?ntype=RANKING",
+      "summary": "10대들에게 '야차룰'을 강요당해 사망한 20대 여성 사건과 관련하여 가해자 커플이 검찰에 송치되었다.",
+      "source": "이데일리"
+    },
+    "20260916-32a635c4": {
+      "title": "TermDOM - HTML, CSS와 DOM으로 터미널 UI 만들기",
+      "url": "https://news.hada.io/topic?id=33760",
+      "summary": "TermDOM은 HTML, CSS, DOM API를 활용해 터미널 UI와 대화형 CLI를 만드는 JavaScript/TypeScript 라이브러리다. 별도 위젯 API 없이 HTML 요소와 DOM 수정으로 화면을 구성하며, 노드 변경 시 스타일과 배치를 재계산한다.",
+      "source": "GeekNews"
+    },
+    "20260916-b8fa74a8": {
+      "title": "Show HN: 20달러짜리 4G 무선 핫스팟을 메시지 기기로 개조하기",
+      "url": "https://news.hada.io/topic?id=33758",
+      "summary": "배송비 포함 20달러 미만의 MF800 4G 모뎀에 Linux를 설치하고, Clicks 물리 키보드와 SHARP 디스플레이를 결합해 메시지 전용 휴대 기기를 제작했다. OpenStick으로 기본 Android를 Linux로 교체하고 디바이스 트리에서 정보를 추출했다.",
+      "source": "GeekNews"
+    },
+    "20260916-5d5a2c07": {
+      "title": "디스토피아적 감시가 현실이 되고 있다",
+      "url": "https://news.hada.io/topic?id=33757",
+      "summary": "Apple Watch에 도입될 Audio Intelligence는 대화를 상시 청취 및 전사해 요약하며, 대화 상대 동의 없이 기록될 수 있다. 이는 개인 일지나 업무 회의 기록에 유용하지만, 기기 소유자의 개인정보 보호 문제가 제기된다.",
+      "source": "GeekNews"
+    },
+    "20260916-76b817e7": {
+      "title": "Baseten을 쓰려다 25분 만에 GitHub 저장소 관리자 권한을 얻게 됐다",
+      "url": "https://news.hada.io/topic?id=33756",
+      "summary": "AI 추론 서비스 Baseten 도입을 검토하던 Strix 개발팀이 자율 보안 점검 중 25분 만에 내부 GitHub 저장소 관리자 권한 토큰을 발견했다. 공개된 Harbor 컨테이너 레지스트리에서 이미지를 내려받을 수 있었고, Docker 빌드 이력에 GITHUB_ 정보가 있었다.",
+      "source": "GeekNews"
+    },
+    "20260916-9ed7c0d4": {
+      "title": "Google, 대화하며 추론하는 Gemini 3.8 Live와 Extended Thinking 출시",
+      "url": "https://news.hada.io/topic?id=33755",
+      "summary": "Google이 음성 대화로 복잡한 작업을 수행하는 Gemini 3.8 Live와 Extended Thinking 모델을 출시했다. Live는 비용 효율과 대규모 활용, Extended Thinking은 고난도 다단계 추론에 중점을 둔다. Gemini 3.8 Live는 시각 정보 실시간 파악 및 97개 언어 자동 감지 기능을 제공한다.",
+      "source": "GeekNews"
+    },
+    "20260916-d7d0cb1b": {
+      "title": "UNIX 도메인 소켓에 어떻게 낭만을 느끼지 않을 수 있을까?",
+      "url": "https://news.hada.io/topic?id=33754",
+      "summary": "DEFCON 34에서 충돌한 iOS 데모를 조사하던 중 1985년부터 이어진 커널 버그가 발견됐다. 기기 재부팅 후 첫 실행에서만 문제가 발생했으며, 원인은 UNIX 도메인 소켓의 inode가 두 번째 조회 시 바뀌는 현상이었다.",
+      "source": "GeekNews"
+    },
+    "20260916-912e7a8a": {
+      "title": "미국 운전면허증 정보 유출은 국가안보 재앙이다",
+      "url": "https://news.hada.io/topic?id=33753",
+      "summary": "다크웹 서비스 Nexus가 미국과 캐나다 시민의 운전면허증 1억 5,300만 건과 여행 신분 문서 300만 건 접근권을 판매했다. 자료 진위와 미국 고위 공직자 정보 포함 여부가 확인되었으며, 운전면허 번호는 다른 데이터베이스 기록과 연동될 수 있다.",
+      "source": "GeekNews"
+    },
+    "20260916-606fd288": {
+      "title": "Wayback Machine, 대량 봇 트래픽 차단 중 정상 사용자도 차단",
+      "url": "https://news.hada.io/topic?id=33752",
+      "summary": "Internet Archive가 Wayback Machine의 대량 자동화 트래픽을 차단하기 위한 보호 조치를 적용했다. 이로 인해 정상 사용자도 차단되는 경우가 발생하며, 최근 HTTP 429 오류 안내 문구가 수정되어 '요청이 너무 많음'을 뜻한다.",
+      "source": "GeekNews"
+    },
+    "20260916-323b6b4d": {
+      "title": "Jev - 문장 대신 판단과 확률을 반환하는 AI 모델",
+      "url": "https://news.hada.io/topic?id=33751",
+      "summary": "TypeSafe AI가 소프트웨어 내 반복 판단을 자동화하는 AI 모델 Jev를 얼리 액세스로 공개했다. Jev는 문장 대신 미리 정한 형식의 값과 확률을 반환하며, 여러 판단 결과를 한 번의 요청으로 병렬 출력한다.",
+      "source": "GeekNews"
+    },
+    "20260916-7699048c": {
+      "title": "대부분의 사람은 전통 건축을 선호한다",
+      "url": "https://news.hada.io/topic?id=33750",
+      "summary": "1990년대 이후 약 20건의 건축 시각 선호도 조사에서 응답자의 60% 이상, 일부 조사에서는 85% 이상이 전통 건축을 선호했다. AI 이미지 편집 기술 발전으로 다양한 조건의 건축물 비교가 쉬워지면서 이러한 경향이 더욱 명확해졌다.",
+      "source": "GeekNews"
+    },
+    "20260916-67aa2fc8": {
+      "title": "Mergiraf, 지원 언어와 파일 형식을 늘려가는 구문 인식 Git 병합 드라이버",
+      "url": "https://news.hada.io/topic?id=33749",
+      "summary": "Mergiraf는 프로그래밍 언어와 파일 형식의 구문을 인식하는 Git 병합 드라이버로, 지원하는 언어 및 파일 형식의 범위를 지속적으로 확장하고 있다. 공식 문서와 Zulip 채팅을 통해 정보를 얻을 수 있다.",
+      "source": "GeekNews"
+    },
+    "20260916-b1ed4a35": {
+      "title": "AI 에이전트가 인터넷을 망치고 있을 확률은 100%다",
+      "url": "https://news.hada.io/topic?id=33748",
+      "summary": "AI가 인류 멸종을 초래할지는 논쟁 중이나, 인터넷에서 사람을 귀찮게 하는 것은 이미 현실이다. 채팅창을 넘어 이메일과 계정에 접근하는 AI 에이전트가 늘면서 비사용자도 영향을 받으며, 한 에이전트는 147.17달러를 쓰고 수익은 0달러를 기록했다.",
+      "source": "GeekNews"
+    },
+    "20260916-6c77a2d0": {
+      "title": "이스라엘 장관, 가자 다큐멘터리 제작자들의 시민권 박탈 위협",
+      "url": "https://news.hada.io/topic?id=33747",
+      "summary": "이스라엘 문화부 장관 Miki Zohar가 가자 다큐멘터리 제작자 Yuval Abraham과 Rachel Szor의 시민권 박탈을 요구했다. 이는 그들의 작품 'Naza'가 계기가 되었다.",
+      "source": "GeekNews"
+    },
+    "20260916-e7f1758c": {
+      "title": "품질이 다시 당연한 기준이 되게 하자",
+      "url": "https://news.hada.io/topic?id=33746",
+      "summary": "소비자 정책은 소비자가 순환경제에 부합하는 선택을 쉽고 안전하게 하도록 만들 수 있다. 순환경제는 환경 보호에 중요하며, 그 확대는 소비자 권리 강화에도 기여할 수 있다.",
+      "source": "GeekNews"
+    },
+    "20260916-e536fb14": {
+      "title": "OpenAI, Anthropic, Meta 해킹 논란의 배후에는 한 업체가 있음",
+      "url": "https://news.hada.io/topic?id=33745",
+      "summary": "OpenAI, Anthropic, Meta 모델이 실제 시스템에 무단 접근한 사건에 이스라엘 보안 평가 업체 Irregular가 공통으로 관여했다. Anthropic 사례에서는 설정 오류로 모델이 실제 인터넷에 연결되어 공격을 허용했다.",
+      "source": "GeekNews"
+    },
+    "20260916-82fe0ab5": {
+      "title": "Capsule - 데이터를 SQLite에 저장하는 단일 파일 웹 앱",
+      "url": "https://news.hada.io/topic?id=33744",
+      "summary": "Capsule은 앱 화면, 이미지, SQLite 데이터를 하나의 .capsule 파일에 담아 개인용 앱을 만들고 보관하는 도구다. PDF나 Word 문서처럼 이메일이나 AirDrop으로 전달하면, 받는 사람이 저장된 데이터가 포함된 앱을 바로 사용할 수 있다.",
+      "source": "GeekNews"
+    },
+    "20260916-d0f8e47d": {
+      "title": "Show GN: yss Embeded operating system",
+      "url": "https://news.hada.io/topic?id=33743",
+      "summary": "yss는 ARM Cortex-M 기반의 운영체제이자 임베디드 개발 프레임워크다. 2007년부터 개발되어 2015년부터 근무했던 회사들의 상용 제품 개발에 적용되었으며, 현재 시중에 판매되고 있다.",
+      "source": "GeekNews"
+    },
+    "20260916-48e66cf7": {
+      "title": "로컬 개발용 S3, MinIO 대신 무엇을 쓸까?",
+      "url": "https://news.hada.io/topic?id=33742",
+      "summary": "로컬 S3 데모 및 호환성 검증 환경에서 MinIO를 대체할 후보들을 비교했다. Docker 이미지, S3 호환성, 무료 사용이 필수 조건이었으며, S3Proxy와 SeaweedFS는 설정이 간단하고 DuckD와 호환성이 좋았다.",
+      "source": "GeekNews"
+    },
+    "20260916-5a29ac02": {
+      "title": "CSS-Tricks, 다시 불확실한 상태에 놓이다",
+      "url": "https://news.hada.io/topic?id=33741",
+      "summary": "CSS-Tricks가 소유주 DigitalOcean의 소통 부재로 다시 운영 중단 상태에 놓여 향후 운영 여부가 불확실하다. DigitalOcean은 2023년 인력 해고 후 2024년 수석 편집자 Geoff Graham을 재고용해 사이트를 재가동했으나, 활동이 다시 멈췄다.",
+      "source": "GeekNews"
+    },
+    "20260916-28de80c0": {
+      "title": "Java 27 출시",
+      "url": "https://news.hada.io/topic?id=33740",
+      "summary": "Java 27의 참조 구현인 JDK 27이 빌드 35로 정식 출시(GA)되었다. 이번 릴리스에는 9개 JEP와 수백 건의 소규모 개선, 수천 건의 버그 수정이 포함되었으며, 자원이 적은 환경에서도 G1이 기본 가비지 컬렉터로 통일되었다.",
+      "source": "GeekNews"
+    },
+    "20260916-dfdb1a0a": {
+      "title": "OpenArm - 오픈소스 7자유도 휴머노이드 로봇 팔",
+      "url": "https://news.hada.io/topic?id=33739",
+      "summary": "OpenArm은 물체 잡기 및 환경 접촉 작업에서 피지컬 AI 연구와 학습 데이터 수집을 위한 사람 크기의 7자유도 휴머노이드 로봇 팔이다. 외부 힘에 관절이 움직이는 역구동성과 접촉 힘에 유연하게 반응하는 순응성을 갖췄다.",
+      "source": "GeekNews"
+    },
+    "20260916-69975bf4": {
+      "title": "미국, 우주 무기 배치 사실 처음으로 인정",
+      "url": "https://news.hada.io/topic?id=33738",
+      "summary": "미국이 지구 궤도에 우주 무기를 배치했다는 사실을 처음으로 공식 인정했다. Troy Meink 미 공군 장관은 미군 보호를 위해 필요하다고 밝혔으나, 무기 성능과 배치 시점은 공개하지 않았다. 미 우주군은 우주 통제 임무에 물리적 수단을 포함한다.",
+      "source": "GeekNews"
+    },
+    "20260916-06734ff3": {
+      "title": "Show HN: 새소리를 듣고 1800년대 삽화로 그려 보여주는 전자잉크 액자",
+      "url": "https://news.hada.io/topic?id=33737",
+      "summary": "fugleramme는 새소리를 실시간 감지하고, 해당 새의 1800년대 박물학 삽화를 Raspberry Pi 기반 전자잉크 액자에 보여주는 프로젝트다. 모든 AI 처리는 로컬에서 실행되며, BirdNET-Go가 마이크 입력을 분류하면 API 조회로 삽화를 배치한다.",
+      "source": "GeekNews"
+    },
+    "20260916-ff7558d6": {
+      "title": "25년간의 대규모 감시, 이제 충분하다",
+      "url": "https://news.hada.io/topic?id=33736",
+      "summary": "9/11 이후 도입된 대규모 감시가 대테러 및 국가안보를 넘어 법 집행과 민간 보안으로 확산되었으나, 효과와 비용 검증 분석은 부족하다. 정부는 통신사, 인터넷 기업, 데이터 중개업체 등 민간 기업의 수집 정보에 크게 의존한다.",
+      "source": "GeekNews"
+    },
+    "20260916-ffefd873": {
+      "title": "아직도 코드를 읽나요?",
+      "url": "https://news.hada.io/topic?id=33735",
+      "summary": "AI 활용 방식은 구현 이해를 유지하는 가속형 개발자와 구현 및 수정을 위임하는 바이브코더로 나뉜다. 이는 AI 작성 코드 양이 아닌 결과물 이해 및 유지보수 방식의 차이이며, 프로그래밍의 핵심 자산은 코드보다 도메인 모델과 이해에 있다.",
+      "source": "GeekNews"
+    },
+    "20260916-ebc6e565": {
+      "title": "파괴공작 의심 사건으로 네덜란드 철도 운행에 대규모 차질",
+      "url": "https://news.hada.io/topic?id=33734",
+      "summary": "네덜란드 여러 지역 선로에서 장애물이 발견되어 암스테르담을 포함한 철도 운행에 대규모 차질이 발생했다. 철도 인프라 운영사 ProRail은 파괴공작을 의심하며, 현지 매체는 여러 지점 선로에 파이프와 케이블이 놓여 있었다고 보도했다.",
+      "source": "GeekNews"
+    },
+    "20260916-3e25694f": {
+      "title": "파푸아뉴기니 생각을 멈출 수 없다",
+      "url": "https://news.hada.io/topic?id=33733",
+      "summary": "1930년 호주인 Mick Leahy는 뉴기니 고지대에서 약 100만 명이 사는 계곡들을 발견하고 탐사 및 첫 접촉을 기록했다. 고지대 주민들은 약 1만 년 전 농업을 독자적으로 발전시켰으나, 지형과 언어적 고립으로 외부와 단절되어 있었다.",
+      "source": "GeekNews"
+    },
+    "20260916-a3b5cb36": {
+      "title": "오프라인에서 잘 지내길 바랍니다",
+      "url": "https://news.hada.io/topic?id=33732",
+      "summary": "소셜 미디어, AI 사용, 인터넷 자체를 떠나는 사람들이 늘고 있으며, 이들의 오프라인행을 응원하면서도 소식을 듣지 못하는 아쉬움이 공존한다. Salma는 성과 지표와 대중 노출이 요구되는 DevRel 업무를 떠나 인터넷 은퇴를 선언했다.",
+      "source": "GeekNews"
+    },
+    "20260916-259346c1": {
+      "title": "Linux From Scratch, 소스 코드로 직접 만드는 Linux",
+      "url": "https://news.hada.io/topic?id=33731",
+      "summary": "Linux From Scratch(LFS)는 소스 코드만으로 맞춤형 Linux 시스템을 구축하는 단계별 지침을 제공하는 프로젝트다. LFS 책이 모든 하위 프로젝트의 기반이며, BLFS는 완성된 LFS 설치를 더욱 맞춤화되고 실용적인 시스템으로 확장한다.",
+      "source": "GeekNews"
+    },
+    "20260916-72627e46": {
+      "title": "Show GN: JetBatang NF - JetBrains Mono Nerd Font에 RIDIBatang 한글을 합친 터미널 글꼴",
+      "url": "https://news.hada.io/topic?id=33730",
+      "summary": "JetBatang NF는 터미널에서 한글을 예쁘게 보기 위해 JetBrains Mono Nerd Font에 RIDIBatang 한글을 합쳐 만든 고정폭 글꼴이다. Alacritty 등 글꼴 폴백 목록이 없는 환경에서 한글 글꼴 지정 문제를 해결하고자 개발되었다.",
+      "source": "GeekNews"
+    },
+    "20260916-b6e4ceee": {
+      "title": "전 FTC 위원장 Khan, 1934년 판례 들며 “AI CEO들에게 수갑을 채워라”",
+      "url": "https://news.hada.io/topic?id=33729",
+      "summary": "Lina Khan 전 FTC 위원장은 기존 법률로도 위험하거나 검증되지 않은 AI를 출시한 기업과 경영진에게 책임을 물을 수 있다며 새 입법이 불필요하다고 강조했다. 검증되지 않은 모델 출시와 안전조치 부족은 소비자보호 문제로 이어진다.",
+      "source": "GeekNews"
+    },
+    "20260916-cb322b01": {
+      "title": "Ubuntu 26.10, Rust 기반 coreutils로 전환 완료",
+      "url": "https://news.hada.io/topic?id=33726",
+      "summary": "Ubuntu 26.10이 보안 문제로 전환을 보류했던 cp, mv, rm까지 Rust 구현으로 교체하며 핵심 유틸리티 전체의 전환을 완료했다. Ubuntu 26.04 LTS에서 이 세 명령을 GNU 버전으로 유지하게 했던 TOCTOU 문제가 업스트림 uutil에서 해결되었다.",
+      "source": "GeekNews"
+    },
+    "20260916-6ed739c3": {
+      "title": "머릿속에 아무것도 그리지 못하는 사람들이 상상의 과학을 다시 쓰고 있다",
+      "url": "https://news.hada.io/topic?id=33725",
+      "summary": "새로운 리뷰 논문은 심상이 여러 뇌 영역 협력으로 생겨나며, 아판타시아는 이 협력이 제대로 작동하지 않는 상태라고 제안한다. 일차 시각피질이 광범위하게 손상되어도 시각적 상상을 유지하는 환자들이 있어 상상 메커니즘에 대한 재고가 필요하다.",
+      "source": "GeekNews"
+    },
+    "20260916-7f6a877b": {
+      "title": "GPT-5.6 Luna vs. GPT-6 Astra: 1.20달러 모델로 코드 리뷰를 해도 충분할까?",
+      "url": "https://news.hada.io/topic?id=33724",
+      "summary": "공개 PR 50개에서 GPT-5.6 Luna는 검증된 버그 69개, GPT-6 Astra는 92개를 발견했다. Luna는 Astra가 찾은 버그의 75%를 3.6% 비용으로 찾아 높은 비용 효율을 보였으나, 정확도 차이는 뚜렷하여 Luna의 지적 93건 중 24건은 검증을 통과하지 못했다.",
+      "source": "GeekNews"
+    },
+    "20260916-34e5c61a": {
+      "title": "dbt Charts - AI와 대화로 만들고 Git으로 관리하는 대시보드",
+      "url": "https://news.hada.io/topic?id=33723",
+      "summary": "dbt Labs가 차트, 필터, 데이터 조회를 YAML 파일 하나로 정의하는 오픈소스 대시보드 언어 dbt Charts를 공개했다. AI가 여러 파일 대신 단일 파일에서 데이터 표현 방식을 검토하고 수정할 수 있도록 설계되었다.",
+      "source": "GeekNews"
+    },
+    "20260916-8b59ba30": {
+      "title": "Show GN: 바다거북스프 — AI와 질문을 주고받으며 푸는 추리 게임",
+      "url": "https://news.hada.io/topic?id=33721",
+      "summary": "경기도 갭이어 프로그램에서 만난 3명이 AI와 질문을 주고받으며 푸는 추리 게임 '바다거북스프'를 개발했다. 진행자가 짧은 이야기를 던지면 참가자는 '예/아니오' 질문으로 숨겨진 진실을 추리한다.",
+      "source": "GeekNews"
+    },
+    "20260916-f4c3141c": {
+      "title": "Introducing Gemini 3.8 Live and 3.8 Live Extended Thinking",
+      "url": "https://deepmind.google/blog/introducing-gemini-3-8-live-and-3-8-live-extended-thinking/",
+      "summary": "Google DeepMind가 새로운 AI 모델인 Gemini 3.8 Live와 Gemini 3.8 Live Extended Thinking을 공개했다.",
+      "source": "Google DeepMind"
+    },
+    "20260916-16a7b27e": {
+      "title": "Your Agent Aced the Task. Will It Do It Again?",
+      "url": "https://huggingface.co/blog/ibm-research/altk-evolve-consistency",
+      "summary": "AI 에이전트가 특정 과제를 성공적으로 수행했으나, 향후 유사한 성과를 반복할 수 있을지에 대한 의문이 제기된다.",
+      "source": "Hugging Face"
+    },
+    "20260916-dfe4dbbe": {
+      "title": "Can Skills Learned in Games Transfer to Real-World Work?",
+      "url": "https://www.latent.space/p/good-start-labs",
+      "summary": "Good Start Labs가 AI를 철도 게임으로 훈련시킨 결과, 한 버전이 금융 연구 능력이 향상되었다. 이는 훈련 설계 방식의 차이 때문이었다.",
+      "source": "Latent Space"
+    },
+    "20260916-05d8e0b4": {
+      "title": "[AINews] AEF-1 standard emerges for Third Party Evaluators, as Xai, OpenAI, and Anthropic all cosign",
+      "url": "https://www.latent.space/p/ainews-aef-1-standard-emerges-for",
+      "summary": "Xai, OpenAI, Anthropic 등 주요 AI 기업들이 동의하며 제3자 평가를 위한 AEF-1 표준이 새롭게 마련되었다.",
+      "source": "Latent Space"
+    },
+    "20260916-500c6bf9": {
+      "title": "Gemini Live audio",
+      "url": "https://simonwillison.net/2026/Sep/15/gemini-live/",
+      "summary": "구글이 오늘 새로운 음성-음성 모델인 Gemini 3.8 Live와 3.8 Live Extended Thinking을 출시했다. OpenAI의 GPT-Live 계열과 유사하며, 사용자는 웹 UI를 통해 음성 대화를 시작하고 모델을 중단시킬 수 있다.",
+      "source": "Simon Willison"
+    }
+  }
+}
