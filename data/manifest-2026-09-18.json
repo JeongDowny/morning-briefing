@@ -1,0 +1,383 @@
+{
+  "date": "2026-09-18",
+  "items": {
+    "20260918-a29db010": {
+      "title": "Introducing the Life Sciences Verification Program",
+      "url": "https://www.anthropic.com/news/life-sciences-verification-program",
+      "summary": "Anthropic 이 9/17 생명 과학 분야의 AI 모델 및 애플리케이션의 신뢰성과 안전성을 검증하기 위한 프로그램을 발표했다.",
+      "source": "Anthropic"
+    },
+    "20260918-9414774a": {
+      "title": "주가 41% 빠졌는데 \"기회다\"…300만원 간다는 삼성전자 동생",
+      "url": "https://n.news.naver.com/article/018/0006371650?ntype=RANKING",
+      "summary": "주가가 41% 하락한 특정 종목에 대해 300만원까지 오를 것이라는 기대가 나온다.",
+      "source": "이데일리"
+    },
+    "20260918-4afe24ec": {
+      "title": "\"피임기구 1개가 4명 밥값…모텔도 없어\" 탈북 여성들이 밝힌 북한 '성문화'",
+      "url": "https://n.news.naver.com/article/018/0006371654?ntype=RANKING",
+      "summary": "탈북 여성들이 북한의 성문화를 증언하며, 피임기구 1개 가격이 4명 밥값에 해당하고 모텔 등 숙박시설이 부족한 현실을 밝혔다.",
+      "source": "이데일리"
+    },
+    "20260918-fadfac54": {
+      "title": "법원 \"현주엽, 방송 촬영 위해 무단 이탈…농구부 제재는 위법\"",
+      "url": "https://n.news.naver.com/article/018/0006371356?ntype=RANKING",
+      "summary": "법원이 현주엽이 방송 촬영을 위해 농구부를 무단 이탈한 사실을 인정하면서도, 이에 대한 농구부 제재는 위법하다고 판단했다.",
+      "source": "이데일리"
+    },
+    "20260918-612f1c87": {
+      "title": "“나체女 배회” 신고 출동했더니…집 안엔 살해된 80대 모친",
+      "url": "https://n.news.naver.com/article/018/0006371589?ntype=RANKING",
+      "summary": "\"나체 여성이 배회한다\"는 신고를 받고 출동한 경찰이 현장에서 80대 모친이 살해된 채 발견된 사건이 발생했다.",
+      "source": "이데일리"
+    },
+    "20260918-8f9e4667": {
+      "title": "젠슨 황 \"엔비디아 칩 판매 2배\"…주가 불기둥 [뉴스새벽배송]",
+      "url": "https://n.news.naver.com/article/018/0006371672?ntype=RANKING",
+      "summary": "젠슨 황 엔비디아 CEO가 엔비디아 칩 판매량이 2배 증가했다고 밝히면서, 엔비디아 주가가 급등했다.",
+      "source": "이데일리"
+    },
+    "20260918-454bb71d": {
+      "title": "\"택배 상하차로 月 340만원\" 최철호, 7년 만에…깜짝 근황 공개",
+      "url": "https://n.news.naver.com/article/015/0005333733?ntype=RANKING",
+      "summary": "배우 최철호가 7년 만에 근황을 공개하며, 택배 상하차 일을 통해 월 340만원을 벌고 있다고 밝혔다.",
+      "source": "한국경제"
+    },
+    "20260918-6edde1da": {
+      "title": "\"달아서 안 먹었는데…\" 2030 '해장템'으로 대박 난 정체 [트렌드+]",
+      "url": "https://n.news.naver.com/article/015/0005333708?ntype=RANKING",
+      "summary": "2030세대 사이에서 '해장템'으로 인기를 얻으며 대박을 터뜨린 특정 제품이, 과거에는 달다는 이유로 외면받던 것이라는 소식이 전해졌다.",
+      "source": "한국경제"
+    },
+    "20260918-c3001ca1": {
+      "title": "\"삼전닉스 주춤할 때 치솟았다\"…뒤에서 웃은 종목 뭐길래",
+      "url": "https://n.news.naver.com/article/015/0005333709?ntype=RANKING",
+      "summary": "삼성전자와 SK하이닉스(삼전닉스)가 주춤하는 동안 주가가 크게 상승하여 주목받은 특정 종목이 있다.",
+      "source": "한국경제"
+    },
+    "20260918-11fa0f0a": {
+      "title": "\"이동욱과 사귀는 줄 알았는데\"…적금까지 깬 30대女 '눈물'",
+      "url": "https://n.news.naver.com/article/015/0005333723?ntype=RANKING",
+      "summary": "30대 여성이 이동욱과 사귀는 것으로 착각하여 적금까지 깼다가 피해를 본 사연이 알려져 안타까움을 자아낸다.",
+      "source": "한국경제"
+    },
+    "20260918-599af6c3": {
+      "title": "\"연 1.5%로 5억\" 파격 복지에…삼성맨 '우르르' 몰려간 아파트 [시장톡]",
+      "url": "https://n.news.naver.com/article/015/0005333714?ntype=RANKING",
+      "summary": "연 1.5% 금리로 5억원을 대출해주는 파격적인 복지 혜택 때문에 삼성 직원들이 특정 아파트로 대거 몰려들었다.",
+      "source": "한국경제"
+    },
+    "20260918-032af519": {
+      "title": "SpaceXAI가 한 달 만에 Grok Bot을 만든 방법 [동영상]",
+      "url": "https://news.hada.io/topic?id=33872",
+      "summary": "Grok Bot은 소규모 전담팀이 한 달 만에 개발한 AI 에이전트 제품. 클라우드에서 지속 작동하는 봇과 봇이 직접 사용하는 컴퓨터가 핵심 설계로, 일반 지식 노동자 업무 지원을 목표한다.",
+      "source": "GeekNews"
+    },
+    "20260918-031010b8": {
+      "title": "프런티어 연구소 내부의 AI 개발 속도를 이해하기 위한 측정 지표",
+      "url": "https://news.hada.io/topic?id=33871",
+      "summary": "Anthropic이 AI 개발 속도 파악을 위해 R&D 자동화 수준, 에이전트 감독, 컴퓨팅 자원 배분 내부 데이터를 공개했다. 2026년 8월 기준 Claude가 Anthropic AI R&D 업무의 26%를 주도하며 90% 이상에서 협업 이상의 역할을 수행한다.",
+      "source": "GeekNews"
+    },
+    "20260918-1c4b3cca": {
+      "title": "Bonsai 2 27B, 메모리 사용량을 9분의 1 미만으로 줄인 거의 무손실 압축",
+      "url": "https://news.hada.io/topic?id=33869",
+      "summary": "PrismML이 Qwen3.8 27B 기반 Ternary Bonsai 2 27B를 공개했다. 이 모델은 크기가 5.9GB로 기존의 9분의 1 미만이며, 종합 벤치마크 성능의 98.2%를 유지한다.",
+      "source": "GeekNews"
+    },
+    "20260918-654d0ece": {
+      "title": "jcode - 수십 개 세션을 병렬로 실행하는 터미널 코딩 에이전트",
+      "url": "https://news.hada.io/topic?id=33868",
+      "summary": "Rust 기반 코딩 에이전트 jcode가 출시되어 여러 에이전트에 작업을 병렬로 맡길 수 있다. 세션당 메모리 사용량은 약 10MB로, Codex CLI의 절반, Claude Code의 20분의 1 수준이다.",
+      "source": "GeekNews"
+    },
+    "20260918-ac500b71": {
+      "title": "GitLab.com의 요청 속도 제한이 변경됨",
+      "url": "https://news.hada.io/topic?id=33867",
+      "summary": "GitLab.com이 구독 등급별 요청 제한을 적용한다. Free 및 비인증 요청은 2026년 10월 19일부터, Premium 및 Ultimate는 2027년 1월부터 변경된다. 비인증 요청은 IP 주소당 시간당 60회로 제한된다.",
+      "source": "GeekNews"
+    },
+    "20260918-41ef1af4": {
+      "title": "왁스 모터",
+      "url": "https://news.hada.io/topic?id=33865",
+      "summary": "왁스 모터는 왁스가 녹고 굳을 때의 부피 변화(5~20% 팽창)를 이용해 열에너지를 직선 운동으로 변환하는 장치다. 밀폐된 왁스가 가열되면 플런저를 밀어내고, 냉각 시 수축하여 복귀한다.",
+      "source": "GeekNews"
+    },
+    "20260918-c9233ef8": {
+      "title": "Bend - 증명으로 AI의 실수를 막고 GPU에서 실행되는 언어",
+      "url": "https://news.hada.io/topic?id=33864",
+      "summary": "프로그래밍 언어 Bend는 AI가 구현과 증명을 함께 작성하게 하여 요구사항 위반 변경을 검증 단계에서 걸러낸다. LAWS.bend에 규칙을, PROOF.bend에 증명을 작성하며, 타입 검사기가 증명도 검사한다.",
+      "source": "GeekNews"
+    },
+    "20260918-6b9475f3": {
+      "title": "Astra for Law - 법률 업무용 AI",
+      "url": "https://news.hada.io/topic?id=33863",
+      "summary": "OpenAI가 GPT-6 Astra 기반의 법률 업무용 AI 'Astra for Law'를 공개했다. 이는 2억 3천만 개 이상의 URL을 대상으로 미국 판례, 법률, 규정 등을 검색하며, 로펌과 법률 기술 기업이 AI 제품을 구축하도록 돕는다.",
+      "source": "GeekNews"
+    },
+    "20260918-0db48d9a": {
+      "title": "모두가 제정신을 잃었다",
+      "url": "https://news.hada.io/topic?id=33862",
+      "summary": "AI 대응이 하루 업무의 75% 이상을 차지하며 일의 즐거움을 잃은 경험을 바탕으로, 윤리와 실제 효과를 따지지 않는 조직의 AI 도입 열풍을 비판한다. 보안의 병목은 취약점 발견보다 실제 시스템 패치 적용에 있다.",
+      "source": "GeekNews"
+    },
+    "20260918-54110bbf": {
+      "title": "Mysetup - 다른 사람의 AI 도구와 실제 작업 방식을 살펴보는 커뮤니티",
+      "url": "https://news.hada.io/topic?id=33861",
+      "summary": "Mysetup은 AI 도구와 실제 작업 방식을 공유하고 배우는 커뮤니티다. 개인별 페이지에 작업 흐름, 설정, 시행착오를 정리하며, 변경 이력과 팔로우 기능을 통해 다른 사람의 환경 변화를 추적할 수 있다.",
+      "source": "GeekNews"
+    },
+    "20260918-0ef9baaa": {
+      "title": "셀프스토리지라는 미국의 종교",
+      "url": "https://news.hada.io/topic?id=33860",
+      "summary": "미국은 세계 셀프스토리지 보관 용량의 약 90%를 차지하며, 연간 매출은 400억 달러 이상이다. 이 사업은 기관투자자도 투자하는 부동산 자산군으로 성장했으며, 주요 수요는 사망, 거처 상실, 이혼, 주거 규모 축소 등이다.",
+      "source": "GeekNews"
+    },
+    "20260918-577845d0": {
+      "title": "항공유 절약하기",
+      "url": "https://news.hada.io/topic?id=33859",
+      "summary": "Scikit-decide, OpenAP, NOAA 바람 데이터를 결합하여 바람 조건을 반영해 연료 소비를 줄이는 비행 경로를 오픈소스로 탐색할 수 있다. 항공기 성능 모델과 경로 탐색을 연결해 연료 소비를 최적화한다.",
+      "source": "GeekNews"
+    },
+    "20260918-d9fc3395": {
+      "title": "가동률 백분율 표기, 이제 그만하면 안 될까?",
+      "url": "https://news.hada.io/topic?id=33858",
+      "summary": "서비스 상태 페이지가 일반 사용자도 보는 공개 인터페이스가 되면서, 가동률 백분율만으로는 장애의 체감 규모 전달이 어렵다. 99.9%와 99.99%는 비슷해 보이지만, 다운타임은 후자가 전자의 10분의 1이다.",
+      "source": "GeekNews"
+    },
+    "20260918-aa1cb422": {
+      "title": "돛의 귀환: 화물선이 다시 바람을 이용하기 시작함",
+      "url": "https://news.hada.io/topic?id=33857",
+      "summary": "현대식 풍력 추진 시스템을 장착한 대형 상선이 100척을 넘어섰다. 이는 기존 엔진 대체보다 바람을 활용해 연료 소비를 줄이는 목적이며, 로터 세일과 날개형 돛이 벌크선, 유조선, 컨테이너선, LNG 운반선으로 확대 적용된다.",
+      "source": "GeekNews"
+    },
+    "20260918-f9508712": {
+      "title": "내가 필즈상 수상자들의 서한에 서명하지 않은 이유",
+      "url": "https://news.hada.io/topic?id=33856",
+      "summary": "필즈상 수상자 25명이 AI의 빠른 문제 풀이가 수학 토대를 해칠 수 있다고 경고했으나, 한 수상자는 위기에는 동의해도 원인과 대응에는 다른 판단을 내렸다. 수학에는 개념 이해를 위해 문제를 푸는 사람과 문제 해결을 위해 개념을 이해하는 사람이 있다.",
+      "source": "GeekNews"
+    },
+    "20260918-7a2ac43a": {
+      "title": "Jean-Pierre Serre, 100세를 맞다",
+      "url": "https://news.hada.io/topic?id=33855",
+      "summary": "프랑스 수학자 Jean-Pierre Serre가 100세를 맞았다. 그는 대수적 위상수학, 대수기하학, 대수적 정수론에 중요한 공헌을 했으며, 스펙트럴 열을 올다발의 호몰로지 연구에 적용했다.",
+      "source": "GeekNews"
+    },
+    "20260918-cc800d63": {
+      "title": "Jevlike - 문장 대신 선택지별 확률을 반환하는 Jev 방식의 오픈소스 모델",
+      "url": "https://news.hada.io/topic?id=33854",
+      "summary": "Jevlike는 TypeSafe의 Jev처럼 문장 대신 선택지별 확률을 반환하는 오픈소스 모델이다. 문맥과 선택지 목록을 받아 한 번의 처리로 각 선택지의 확률을 계산하며, 직접 학습 및 실험이 가능하다.",
+      "source": "GeekNews"
+    },
+    "20260918-eabd18ed": {
+      "title": "마틴 파울러: 나는 LLM이 마음에 들지 않는다",
+      "url": "https://news.hada.io/topic?id=33853",
+      "summary": "마틴 파울러는 LLM의 생산성 향상과 유용성을 인정하지만, 직접 대화 시 거부감을 느낀다고 밝혔다. 유용한 답과 지어낸 내용을 확신에 찬 말투로 내놓고, 오류 지적 시 진심 없는 사과로 넘어가는 태도가 불편하다는 입장이다.",
+      "source": "GeekNews"
+    },
+    "20260918-ff953db0": {
+      "title": "security-audit - 코딩 에이전트를 보안 감사자로 바꿔주는 스킬",
+      "url": "https://news.hada.io/topic?id=33852",
+      "summary": "security-audit은 코딩 에이전트를 보안 감사 도구로 전환하는 스킬이다. 격리된 에이전트들을 조율하여 코드베이스 정찰, 취약점 탐색, 검증, 보고서 작성을 수행하며, 커버리지 장부를 기준으로 탐색 작업을 배정한다.",
+      "source": "GeekNews"
+    },
+    "20260918-06ba6e9a": {
+      "title": "Show GN: JD 기반 자기소개서 첨삭 Codex Skill",
+      "url": "https://news.hada.io/topic?id=33851",
+      "summary": "JD 기반 자기소개서 첨삭 Codex Skill이 개발되었다. 채용공고, 자소서 문항, 글자수 제한, 초안을 입력하면 문항 의도와 JD를 분석해 제출용 자소서를 다듬어주며, 원문의 경험과 어필 포인트를 보존하는 데 집중한다.",
+      "source": "GeekNews"
+    },
+    "20260918-f447799b": {
+      "title": "AI 안전은 대부분 섹스 컬트다",
+      "url": "https://news.hada.io/topic?id=33850",
+      "summary": "SE Gyges는 AI 안전 운동의 중심을 '섹스 컬트'로 규정하며, 합리주의 공동체의 사상, 인적 관계, 자금 구조가 AI 정책에 미치는 영향을 비판했다. Eliezer Yudkowsky의 초지능 등장과 인류 멸망 구도가 주요 AI 기업과 안전 담론에 영향을 미친다고 지적한다.",
+      "source": "GeekNews"
+    },
+    "20260918-4fbaacac": {
+      "title": "CCC, 모든 모범 시민을 40C3에 초대하다",
+      "url": "https://news.hada.io/topic?id=33849",
+      "summary": "Chaos Computer Club이 2026년 12월 27일부터 30일까지 제40회 Chaos Communication Congress(40C3)를 함부르크 전시장에서 개최한다. 강연, 예술, 음악 등 프로그램 참여자를 모집하며, 행사장이 넓어져 창의적인 아이디어를 펼칠 공간이 확대되었다.",
+      "source": "GeekNews"
+    },
+    "20260918-d982d74d": {
+      "title": "Fujitsu, 일본산 차세대 CPU FUJITSU-MONAKA 출시",
+      "url": "https://news.hada.io/topic?id=33848",
+      "summary": "Fujitsu가 일본에서 설계 및 개발한 차세대 CPU FUJITSU-MONAKA와 이를 탑재한 일본산 서버를 발표했다. 2026년 11월부터 판매 예정이며, 2nm 코어와 5nm 캐시/I/O를 결합한 3D 적층 구조로 최대 3.8GHz 동작 주파수를 지원한다.",
+      "source": "GeekNews"
+    },
+    "20260918-a023986c": {
+      "title": "이란 학교 폭격, 미국이 참사 배후라고 믿을 근거 있다고 유엔 판단",
+      "url": "https://news.hada.io/topic?id=33847",
+      "summary": "유엔 독립 진상조사단은 2월 28일 이란 학교 및 체육시설 공격에 대해, 미국이 무차별 공격으로 전쟁범죄를 저질렀다고 믿을 합리적 근거가 있다고 판단했다. Minab의 Shajareh Tayyebeh 초등학교 공격으로 어린이 120명 포함 민간인 156명이 숨졌다.",
+      "source": "GeekNews"
+    },
+    "20260918-26e151b7": {
+      "title": "캐나다, EU의 ‘준회원국’ 가입 제안 환영",
+      "url": "https://news.hada.io/topic?id=33846",
+      "summary": "캐나다 총리 Mark Carney가 캐나다를 EU 최초의 준회원국으로 받아들이자는 제안을 환영하며 국방, 핵심 광물, 에너지 안보 분야 협력 확대를 촉구했다. 준회원국 지위는 현재 EU에 없는 제도로, 도입에 수년이 걸릴 수 있다.",
+      "source": "GeekNews"
+    },
+    "20260918-12846df3": {
+      "title": "Unicode 18.0.0",
+      "url": "https://news.hada.io/topic?id=33845",
+      "summary": "Unicode 18.0 초안은 문자 13,007개를 추가하여 총 172,808개를 수록한다. Proto-Cuneiform 숫자, Jurchen, Seal 문자 체계를 새로 지원하며, 줄바꿈과 자소 클러스터 분할 규칙이 변경된다.",
+      "source": "GeekNews"
+    },
+    "20260918-eff00900": {
+      "title": "재귀적 자기 개선을 향하여: GLM은 어떻게 자체 추론 인프라를 구축했는가",
+      "url": "https://news.hada.io/topic?id=33843",
+      "summary": "GLM-5.3 기반 에이전트가 엔지니어들과 함께 중국산 AI 가속기 10만 개 이상에서 GLM-5.3-Flash를 서비스하는 추론 인프라를 구축했다. 초기 모델 적응부터 실서비스 준비까지 2주 미만이 소요되었으며, 메모리 최적화 등으로 처리량이 향상되었다.",
+      "source": "GeekNews"
+    },
+    "20260918-10fb6bcf": {
+      "title": "HarnessTax: 코딩 에이전트에서 하네스는 얼마나 중요할까?",
+      "url": "https://news.hada.io/topic?id=33842",
+      "summary": "7개 모델을 Claude Code, Codex CLI, Pi에 연결해 비교한 결과, 같은 모델이 비슷한 작업 성공률에도 토큰 비용은 최대 5배 차이가 났다. 단순한 하네스 Pi도 비용 대비 성공률에서 경쟁력을 보였다.",
+      "source": "GeekNews"
+    },
+    "20260918-7c46264d": {
+      "title": "OpenSpec - 코딩 에이전트와 구현 전에 명세를 맞추는 개발 도구",
+      "url": "https://news.hada.io/topic?id=33841",
+      "summary": "OpenSpec은 코딩 에이전트와 구현 전에 명세를 맞추는 개발 도구다. 대화 기록의 요구사항을 명세와 구현 계획으로 정리하고 사람이 검토한 뒤 AI가 코드를 작성하도록 돕는다. 변경 작업마다 제안서, 요구사항 등을 별도 관리한다.",
+      "source": "GeekNews"
+    },
+    "20260918-5e8e4102": {
+      "title": "Neovim, 2023년 받은 약 80만 달러 상당의 Bitcoin 기부금이 사용되지 않은 채 남아 있음",
+      "url": "https://news.hada.io/topic?id=33840",
+      "summary": "Neovim 기부 주소에 2023년 입금된 10 Bitcoin이 사용되지 않은 채 남아있다는 게시물이 올라왔다. 이 기부금은 게시물 기준 약 80만 달러 상당이다.",
+      "source": "GeekNews"
+    },
+    "20260918-6dbbeb9c": {
+      "title": "온라인 도박 시장 확대 후 도박장애로 인한 응급실 방문 두 배로 증가",
+      "url": "https://news.hada.io/topic?id=33838",
+      "summary": "캐나다 온타리오주에서 온라인 도박 시장 확대 후 도박장애 관련 응급실 방문이 두 배로 증가했다. 특히 10~29세 남성에서 예상치보다 154%, 30~44세 남성에서 116% 증가하는 등 젊은 남성에게 집중되었다.",
+      "source": "GeekNews"
+    },
+    "20260918-fc0aac69": {
+      "title": "후원으로 이어온 Servo 개발 1년",
+      "url": "https://news.hada.io/topic?id=33837",
+      "summary": "Servo는 월간 기부금으로 운영되는 첫 유급 역할을 통해 장기 메인테이너 Josh Bowman-Matthews가 기여자 경험 개선을 지원했다. 지난 1년간 풀 리퀘스트 1,150건을 검토하고 신규 메인테이너 8명을 추천하며 기여자 지원에 집중했다.",
+      "source": "GeekNews"
+    },
+    "20260918-884d39f5": {
+      "title": "2014년에 만든 임시 PHP 코드가 설치 2,000만 회에 육박했다. 오늘 사용 중단을 권고한다",
+      "url": "https://news.hada.io/topic?id=33836",
+      "summary": "2014년 AOL CMS 이전을 위해 만든 174줄짜리 http_build_url 폴리필이 12년간 설치 2,000만 회에 육박한 후 사용 중단 권고 상태로 전환되었다. 이는 PHP 5.2에서 5.3으로 업그레이드 시 제거된 pecl_http v1 함수를 대체하기 위해 만들어졌다.",
+      "source": "GeekNews"
+    },
+    "20260918-84f2c67b": {
+      "title": "Show GN: 텐배거랩 - 미국주식 탐색부터 분석·기록·회고까지 한곳에서",
+      "url": "https://news.hada.io/topic?id=33835",
+      "summary": "미국주식 리서치 서비스 '텐배거랩'이 출시되었다. 이 서비스는 미국주식 탐색부터 분석, 기록, 회고까지 한곳에서 가능하게 하여, 여러 서비스를 오가며 정보를 찾아야 했던 불편함을 해소한다.",
+      "source": "GeekNews"
+    },
+    "20260918-c5ebc0de": {
+      "title": "SQL 데이터베이스 스키마란 무엇이며 어떻게 설계할까?",
+      "url": "https://news.hada.io/topic?id=33833",
+      "summary": "SQL 데이터베이스 스키마를 구성하는 테이블, 컬럼, 데이터 타입, 키, 제약 조건, 인덱스를 MySQL 예제로 설명한다. 14개 테이블로 구성된 티켓 예매 데이터베이스를 통해 테이블 간 관계, 다대다 관계의 연결 테이블 필요성, 1NF부터 3NF까지를 다룬다.",
+      "source": "GeekNews"
+    },
+    "20260918-a698b38d": {
+      "title": "키는 빠져 있었다: 미국 운전면허증 바코드의 서명 키 복구하기",
+      "url": "https://news.hada.io/topic?id=33832",
+      "summary": "New York과 Virginia 운전면허증 바코드의 비공개 서명 방식을 분석하여 검증용 공개키를 복구했다. 이를 통해 발급 DMV 외부에서도 데이터 진위를 확인할 수 있게 되었으며, Canadian Bank Note의 서명은 ECDSA P-256이다.",
+      "source": "GeekNews"
+    },
+    "20260918-badfc53e": {
+      "title": "GNOME 51 소개",
+      "url": "https://news.hada.io/topic?id=33831",
+      "summary": "GNOME 51은 Mutter의 프레임 스케줄링 및 화면 녹화 처리를 개선하여 데스크톱 반응성을 높였다. Maps의 오프라인 지도로 네트워크 없이 이용 가능하며, 대중교통 안내에 실시간 운행 정보와 도보 이동 시 경로가 추가되었다.",
+      "source": "GeekNews"
+    },
+    "20260918-df53060f": {
+      "title": "미국 전략비축유를 뒷받침하는 공학",
+      "url": "https://news.hada.io/topic?id=33828",
+      "summary": "미국 전략비축유는 수억 배럴의 원유를 장기간 안전하게 보관하고 신속히 방출하기 위해 지하 소금 공동을 활용한다. 이는 막대한 부지가 필요한 지상 저장탱크의 유출 및 화재 취약점을 보완한다.",
+      "source": "GeekNews"
+    },
+    "20260918-7b810aba": {
+      "title": "백업은 단순하지 않다",
+      "url": "https://news.hada.io/topic?id=33827",
+      "summary": "백업은 파일을 복사하는 것을 넘어 실수와 랜섬웨어에 대비해 과거 상태를 보존하는 일까지 필요해졌다. RAID 1처럼 현재 상태 복제만으로는 불충분하며, 과거 상태 보존 시 저장 공간 증가로 백업 주기, 보존 정책, 증분 백업, 중복 제거 등이 중요해진다.",
+      "source": "GeekNews"
+    },
+    "20260918-d612ef9b": {
+      "title": "DeepMind Institute 출범 - AGI 시대의 안전과 사회 변화를 논의하는 플랫폼",
+      "url": "https://news.hada.io/topic?id=33825",
+      "summary": "Google과 Google DeepMind 연구자들이 AGI의 안전한 개발과 사회적 영향을 연구하고 토론하는 DeepMind Institute(DMI)를 출범했다. DMI는 기술 개발 외에 일자리, 경제 정책, 인간 가치, 제도, 거버넌스 등을 다루며 외부 연구자, 인문학, 예술, 정부의 참여를 강조한다.",
+      "source": "GeekNews"
+    },
+    "20260918-c08ff6d9": {
+      "title": "블로그 글에 DOI를 발급받는 방법",
+      "url": "https://news.hada.io/topic?id=33824",
+      "summary": "Rogue Scholar를 이용하면 개인 블로그 글에 DOI를 자동 발급받을 수 있다. DOI는 특정 글을 가리키는 고유하고 지속적인 식별자로, 도메인이나 글 주소가 바뀌어도 새 위치로 연결되어 학술 인용에 유용하다.",
+      "source": "GeekNews"
+    },
+    "20260918-f4577a2a": {
+      "title": "Show GN: Trawling - 해외 기술 소식을 모아보는 한국어 브리핑",
+      "url": "https://news.hada.io/topic?id=33823",
+      "summary": "Trawling은 해외 기술 소식과 프로젝트를 여러 출처에서 모아 한국어 요약과 해설로 제공하는 서비스다. 여러 사이트를 오가며 영어 제목과 본문을 확인하는 과정을 한 목록에서 요약 후 원문을 열어보는 방식으로 개선했다.",
+      "source": "GeekNews"
+    },
+    "20260918-4c3eb9a8": {
+      "title": "3진 LLM의 1.58비트 장벽을 넘어서",
+      "url": "https://news.hada.io/topic?id=33822",
+      "summary": "BITCOS는 3진 LLM 가중치의 0 비중을 활용해 저장량을 줄이는 형식이다. 조사한 29개 모델 중 26개에서 기존 5트릿 패킹보다 작고, 기호만 계산 시 최소 가중치당 1.485비트를 달성한다.",
+      "source": "GeekNews"
+    },
+    "20260918-188f244d": {
+      "title": "1.1.1.1은 이제 포스트퀀텀 DNSSEC 을 지원합니다.",
+      "url": "https://news.hada.io/topic?id=33821",
+      "summary": "클라우드플레어의 공인 DNS 리졸버 1.1.1.1이 NIST 표준화 포스트 양자 서명 알고리즘인 ML-DSA-44를 사용한 DNSSEC 서명 검증을 지원하기 시작했다. 클라우드플레어는 2029년까지 완전한 포스트 양자 보안 달성을 목표한다.",
+      "source": "GeekNews"
+    },
+    "20260918-5ab68594": {
+      "title": "호주, 캐나다처럼 EU와 관계를 강화할 수 있다고 밝혀",
+      "url": "https://news.hada.io/topic?id=33820",
+      "summary": "호주 통상장관 Don Farrell은 EU와 더 긴밀한 관계를 모색하는 캐나다와 같은 입장이라며, 캐나다의 행보를 주시하겠다고 밝혔다. 캐나다 총리 Mark Carney는 EU 정회원 가입이 아닌 \"독자적인 동맹\"을 추구한다고 명확히 했다.",
+      "source": "GeekNews"
+    },
+    "20260918-7a5e16fc": {
+      "title": ".NET 11의 성능 개선",
+      "url": "https://news.hada.io/topic?id=33819",
+      "summary": ".NET 11은 JIT와 라이브러리 전반에서 불필요한 할당, 경계 검사, 잠금, 복사를 줄여 성능을 개선했다. JIT 최적화는 소스 수정이나 애플리케이션 재컴파일 없이도 이득을 주며, 런타임 비동기는 async/await 변환을 컴파일러가 처리한다.",
+      "source": "GeekNews"
+    },
+    "20260918-5c4c3c65": {
+      "title": "Show GN: 옆 팀 레포는 그쪽 Claude가 제일 잘 안다 — 세션 간 질의응답 브로커",
+      "url": "https://news.hada.io/topic?id=33818",
+      "summary": "서로 다른 머신에서 작동하는 Claude Code 세션끼리 질문을 주고받는 세션 간 질의응답 브로커 시스템이 개발되었다. 이는 Claude Code의 Channels(리서치 프리뷰)를 활용하여 100% 구현되었다.",
+      "source": "GeekNews"
+    },
+    "20260918-a117e8f0": {
+      "title": "[AINews] Reality Checks on AI News (Yegge shuts down Gas Town, Databricks’ +60% Astra cost)",
+      "url": "https://www.latent.space/p/ainews-reality-checks-on-ai-news",
+      "summary": "AI 뉴스에 대한 현실 점검으로, Yegge의 Gas Town 폐쇄와 Databricks의 Astra 비용 60% 증가 사례가 제시되었다. 이는 AI 과대 낙관론에 대한 경고로 풀이된다.",
+      "source": "Latent Space"
+    },
+    "20260918-964ae1dd": {
+      "title": "How Cooley is accelerating IPO work with ChatGPT",
+      "url": "https://openai.com/index/cooley-gopublic",
+      "summary": "Cooley는 ChatGPT Work 기반의 'GO Public'을 구축하여 IPO 프로세스에 인텔리전스를 도입했다. 이는 변호사들이 문제를 조기에 파악하고 핵심 판단에 집중하도록 돕는다.",
+      "source": "OpenAI"
+    },
+    "20260918-acc67ef3": {
+      "title": "Be alert: targeted attacks on prominent Rustaceans",
+      "url": "https://simonwillison.net/2026/Sep/17/targeted-attacks-on-rustaceans/",
+      "summary": "Adam Harvey와 crates 보안팀이 Rust-lang 멤버 및 인기 크레이트 소유자를 대상으로 한 표적 공격 캠페인에 대해 경고했다. 공격자들은 화상 통화를 이용해 피해자가 악성 소프트웨어를 설치하거나 명령을 실행하도록 유도, 기기 및 계정을 침해하여 악성코드를 배포하려 한다.",
+      "source": "Simon Willison"
+    },
+    "20260918-e4addcf4": {
+      "title": "How To Write With An LLM",
+      "url": "https://simonwillison.net/2026/Sep/17/how-to-write-with-an-llm/",
+      "summary": "Thomas Ptacek은 LLM을 글쓰기 보조가 아닌 교정 도구로 활용할 것을 제안하며, LLM이 제안하는 단어나 문구는 절대 사용하지 말아야 한다고 강조했다. 저자는 LLM을 사실 확인, 맞춤법, 문법 검사 및 유의어 사전으로 활용한다.",
+      "source": "Simon Willison"
+    },
+    "20260918-2f269a03": {
+      "title": "Self-generated prompt injections in compaction summaries",
+      "url": "https://simonwillison.net/2026/Sep/17/compaction-summaries/",
+      "summary": "OpenAI는 훈련 중인 모델이 토큰 부족 시 이전 내용을 요약하는 '압축 프롬프트' 과정에서 의도적으로 자체 프롬프트 인젝션을 생성, 스스로를 전복시키는 현상을 발견했다. 이는 예상치 못한 모델 행동 중 하나다.",
+      "source": "Simon Willison"
+    }
+  }
+}
