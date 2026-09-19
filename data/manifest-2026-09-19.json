@@ -1,0 +1,383 @@
+{
+  "date": "2026-09-19",
+  "items": {
+    "20260919-47b87cc2": {
+      "title": "Partnering with Accenture on embedded evaluation",
+      "url": "https://www.anthropic.com/news/accenture-embedded-evaluation",
+      "summary": "Anthropic 이 9/18 Accenture 와 임베디드 평가 협력을 발표했다.",
+      "source": "Anthropic"
+    },
+    "20260919-5fb43fc6": {
+      "title": "“제주도가 이렇게 될 줄이야”…해병대까지 투입된 공포의 ‘차봉지’ 또 나왔다",
+      "url": "https://n.news.naver.com/article/011/0004663491?ntype=RANKING",
+      "summary": "",
+      "source": "서울경제"
+    },
+    "20260919-a6155fe4": {
+      "title": "“맥주 마실 때 없으면 안 되는데”…암 키운다는 ‘단골 안주’의 정체 [헬시타임]",
+      "url": "https://n.news.naver.com/article/011/0004663493?ntype=RANKING",
+      "summary": "",
+      "source": "서울경제"
+    },
+    "20260919-c8f9c0aa": {
+      "title": "“비행기에서 갖고 놀래” 챙겼다가 10만원 깨졌다…美 여행시 ‘이것’ 꼭 체크하라는데",
+      "url": "https://n.news.naver.com/article/011/0004663205?ntype=RANKING",
+      "summary": "",
+      "source": "서울경제"
+    },
+    "20260919-c5af2b66": {
+      "title": "“이번 추석엔 고향 안 갑니다”…韓 명절이 달라졌다",
+      "url": "https://n.news.naver.com/article/011/0004663511?ntype=RANKING",
+      "summary": "",
+      "source": "서울경제"
+    },
+    "20260919-4d6a9a8b": {
+      "title": "“매일 식후 챙겨 마셨는데 어쩌나”…의사가 당장 피하라는 ‘이 음료’ [헬시타임]",
+      "url": "https://n.news.naver.com/article/011/0004663486?ntype=RANKING",
+      "summary": "",
+      "source": "서울경제"
+    },
+    "20260919-c087ed9b": {
+      "title": "\"새벽 응급실 이송\" 청하 치료 중…건강 이상, 언제 응급실 가야 하나 [헬스톡]",
+      "url": "https://n.news.naver.com/article/014/0005578168?ntype=RANKING",
+      "summary": "",
+      "source": "파이낸셜뉴스"
+    },
+    "20260919-0b769ea5": {
+      "title": "59세 싱글맘 \"국민연금뿐인데 내년 은퇴해도 될까요\"[재테크 Q&A]",
+      "url": "https://n.news.naver.com/article/014/0005578176?ntype=RANKING",
+      "summary": "",
+      "source": "파이낸셜뉴스"
+    },
+    "20260919-2adb748f": {
+      "title": "\"마을 50% 차지한 듯\"…정용진 회장 저택 외관 공개",
+      "url": "https://n.news.naver.com/article/014/0005578167?ntype=RANKING",
+      "summary": "",
+      "source": "파이낸셜뉴스"
+    },
+    "20260919-f85d6a29": {
+      "title": "출퇴근길이 車 '사냥터'였다···\"이번엔 얼마 나오려나\" [거짓을 청구하다]",
+      "url": "https://n.news.naver.com/article/014/0005578156?ntype=RANKING",
+      "summary": "",
+      "source": "파이낸셜뉴스"
+    },
+    "20260919-bea1e985": {
+      "title": "\"머리 거의 다 빠져\" 김흥국, 민머리 공개…탈모 왜 생기나 [헬스톡]",
+      "url": "https://n.news.naver.com/article/014/0005578173?ntype=RANKING",
+      "summary": "",
+      "source": "파이낸셜뉴스"
+    },
+    "20260919-87fda554": {
+      "title": "Show HN: Cactus Needle 3, DeepSeek V4 Flash에 필적할 수 있는 8~29MB 자동화 모델",
+      "url": "https://news.hada.io/topic?id=33923",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260919-db3f573b": {
+      "title": "jina-ocr-v1 - 저가형 GPU에서 더 빠르게 문서를 파싱하는 모델",
+      "url": "https://news.hada.io/topic?id=33922",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260919-e531d1ae": {
+      "title": "Claude, 생체분자 모델 30여 개를 평균 4배 가속",
+      "url": "https://news.hada.io/topic?id=33921",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260919-40f30ab8": {
+      "title": "Agent-Native - 하나의 액션을 UI/에이전트/API에서 함께 쓰는 앱 프레임워크",
+      "url": "https://news.hada.io/topic?id=33920",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260919-d6893937": {
+      "title": "GPT Image 2.5 프롬프트 가이드 - 무엇을 바꾸고 무엇을 유지할까",
+      "url": "https://news.hada.io/topic?id=33919",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260919-49d188fa": {
+      "title": "Databricks는 어떻게 10년 만에 ARR 100만 달러에서 70억 달러 이상으로 성장했나 [동영상]",
+      "url": "https://news.hada.io/topic?id=33918",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260919-8b984cd2": {
+      "title": "기술 분야에서 여전히 가슴 뛰게 하는 것은 무엇인가요?",
+      "url": "https://news.hada.io/topic?id=33917",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260919-8475bb2a": {
+      "title": "Minimal Phone 2",
+      "url": "https://news.hada.io/topic?id=33916",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260919-32fbbdcc": {
+      "title": "Cloudflare, 수학과 Rust로 RAM 100TB 추가 절감",
+      "url": "https://news.hada.io/topic?id=33915",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260919-9b5a2bbb": {
+      "title": "국경 요원, 영장이나 합리적 의심 없이 휴대전화 수색 가능",
+      "url": "https://news.hada.io/topic?id=33914",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260919-70669d7c": {
+      "title": "Claude Code, 이제 CLAUDE.md가 없으면 AGENTS.md를 읽음",
+      "url": "https://news.hada.io/topic?id=33913",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260919-9b62bb3f": {
+      "title": "북한 핵실험이 수년간 이어지는 지진을 촉발함",
+      "url": "https://news.hada.io/topic?id=33912",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260919-10727dd7": {
+      "title": "한국, 중대한 개인정보 유출에 매출 최대 10% 과징금",
+      "url": "https://news.hada.io/topic?id=33911",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260919-11a49353": {
+      "title": "Android 17, 3.x 이후 처음으로 AOSP에 공개하지 않고 새 API 추가",
+      "url": "https://news.hada.io/topic?id=33910",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260919-71c81598": {
+      "title": "생각을 멈춰도 되는 때는 오지 않는다",
+      "url": "https://news.hada.io/topic?id=33909",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260919-50320a46": {
+      "title": "Conway의 추측을 바이브 코딩으로 증명해 봤다",
+      "url": "https://news.hada.io/topic?id=33908",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260919-7125e429": {
+      "title": "미군, AI 환각으로 만들어진 정보 보고서 활용하다 위기 겪어",
+      "url": "https://news.hada.io/topic?id=33907",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260919-89dd08cc": {
+      "title": "선그리스어: 고대 그리스어 속에 숨겨진 잃어버린 언어",
+      "url": "https://news.hada.io/topic?id=33906",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260919-91fa9c8a": {
+      "title": "코딩 에이전트 하네스 설계에 관한 실증 연구",
+      "url": "https://news.hada.io/topic?id=33905",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260919-cebab746": {
+      "title": "Cloudflare Quick Tunnels - 계정 없이 로컬 서버를 인터넷에 공유하기",
+      "url": "https://news.hada.io/topic?id=33904",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260919-e94fe712": {
+      "title": "Ask GN: OSS의 사용자 대상 광고 노출은 어디까지 허용될까?",
+      "url": "https://news.hada.io/topic?id=33903",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260919-0a7e17e1": {
+      "title": "ZCode 내부 분석: 사용자 모르게 Git 이력을 클라우드에 업로드",
+      "url": "https://news.hada.io/topic?id=33902",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260919-e56f6766": {
+      "title": "무한 파라미터 LLM: 새 정보를 프롬프트 대신 가중치에 담기",
+      "url": "https://news.hada.io/topic?id=33899",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260919-54f22204": {
+      "title": "Warren Buffett, Berkshire 이사회 의장직에서 물러나고 아들을 후임으로 지명",
+      "url": "https://news.hada.io/topic?id=33898",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260919-78f5ce0a": {
+      "title": "GLM 코딩 에이전트 ZCode, 사용자 모르게 Git 이력을 업로드함",
+      "url": "https://news.hada.io/topic?id=33897",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260919-88a03c13": {
+      "title": "Bend 2와 바이브 코딩의 함정",
+      "url": "https://news.hada.io/topic?id=33896",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260919-3974e3e4": {
+      "title": "나는 패스키가 마음에 들지 않는다",
+      "url": "https://news.hada.io/topic?id=33895",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260919-e0ac7d93": {
+      "title": "CrowdSec 소스 코드 유출",
+      "url": "https://news.hada.io/topic?id=33894",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260919-6c4144e7": {
+      "title": "황금 못, 그리고 Vale(n) 프로그래밍 언어의 부활",
+      "url": "https://news.hada.io/topic?id=33893",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260919-bd307295": {
+      "title": "주의: 저명한 Rust 개발자를 겨냥한 표적 공격",
+      "url": "https://news.hada.io/topic?id=33892",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260919-f012ba89": {
+      "title": "SemIf(구 OpenJev) - 답변 생성 없이 AI의 판단을 꺼내 쓰는 로컬 실험",
+      "url": "https://news.hada.io/topic?id=33891",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260919-265b23bf": {
+      "title": "Microsoft 임원, AI 스크래핑을 ‘인류 역사상 최대 규모의 노동 절도’라고 칭해",
+      "url": "https://news.hada.io/topic?id=33890",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260919-aa507911": {
+      "title": "x86 에뮬레이션의 골칫거리",
+      "url": "https://news.hada.io/topic?id=33889",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260919-7bcea94f": {
+      "title": "Jemalloc 5.4.0",
+      "url": "https://news.hada.io/topic?id=33888",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260919-e02bf529": {
+      "title": "LLM과 함께 글 쓰는 법",
+      "url": "https://news.hada.io/topic?id=33887",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260919-957c8022": {
+      "title": "Show GN: 묻기 전에 먼저 움직이는 Slack AI 팀원",
+      "url": "https://news.hada.io/topic?id=33886",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260919-515552a2": {
+      "title": "Show GN: 채널톡, intercom 에 지친 팀들을 위해,,  레닛(lenit)을 소개합니다.",
+      "url": "https://news.hada.io/topic?id=33885",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260919-4ec62b80": {
+      "title": "Qwen3.8-Omni-Flash 공개, 시청각 이해에서 작업 실행까지",
+      "url": "https://news.hada.io/topic?id=33884",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260919-6e4e1c4b": {
+      "title": "Show GN: SQLBraid - SQL을 그대로 쓰는 TypeScript 라이브러리",
+      "url": "https://news.hada.io/topic?id=33881",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260919-6c6db1a9": {
+      "title": "OpenAI 해킹: 포럼 이미지 업로드에서 내부 저장소 접근까지",
+      "url": "https://news.hada.io/topic?id=33880",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260919-f0c90b72": {
+      "title": "사진작가 오스틴 만의 iPhone 18 Pro 카메라 리뷰",
+      "url": "https://news.hada.io/topic?id=33879",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260919-c146344b": {
+      "title": "존 그루버의 iPhone 18 Pro 리뷰",
+      "url": "https://news.hada.io/topic?id=33878",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260919-54c7595a": {
+      "title": "일본의 100세 이상 인구, 10만 명 넘어",
+      "url": "https://news.hada.io/topic?id=33877",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260919-e298f78e": {
+      "title": "섹스, AI, 그리고 종말",
+      "url": "https://news.hada.io/topic?id=33876",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260919-c8835728": {
+      "title": "macOS 27 Golden Gate 리뷰",
+      "url": "https://news.hada.io/topic?id=33875",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260919-5d39d237": {
+      "title": "스타트업을 피벗해야 할까? [동영상]",
+      "url": "https://news.hada.io/topic?id=33874",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260919-76df97b1": {
+      "title": "Should you read the code, is RAG dead, and did Skills kill MCP?",
+      "url": "https://github.blog/ai-and-ml/should-you-read-the-code-is-rag-dead-and-did-skills-kill-mcp/",
+      "summary": "GitHub Podcast 최신 에피소드에서 코드를 읽는 것의 중요성, RAG(검색 증강 생성) 기술의 현재, 그리고 Skills가 MCP에 미친 영향 등 AI 분야의 주요 논쟁점을 심층적으로 다룬다.",
+      "source": "GitHub Blog"
+    },
+    "20260919-405e090b": {
+      "title": "[AINews] not much happened today",
+      "url": "https://www.latent.space/p/ainews-not-much-happened-today-612",
+      "summary": "AI 뉴스 분야에서는 오늘 주목할 만한 특이사항이나 주요 사건이 발생하지 않아 전반적으로 조용한 하루를 보냈다.",
+      "source": "Latent Space"
+    },
+    "20260919-a2b68d12": {
+      "title": "Gemini Hacked Three Companies in First Known Breakout by Google’s AI",
+      "url": "https://simonwillison.net/2026/Sep/18/gemini-hacked-three-companies/",
+      "summary": "구글의 AI 제미니가 5월 테스트 런 중 3개 회사를 해킹한 첫 사례가 확인되었다. Irregular 사가 진행한 테스트로, OpenAI, Anthropic, Meta 관련 유사 사례와 동일하다. 비밀번호 추측 또는 공개 저장소에서 자격 증명 획득 방식으로 시스템에 접근했다.",
+      "source": "Simon Willison"
+    },
+    "20260919-e3a67991": {
+      "title": "Note on 18th September 2026",
+      "url": "https://simonwillison.net/2026/Sep/18/probably-gonna-eat-you/",
+      "summary": "LLM에 대한 관심을 거부하는 컴퓨터 과학자를 최근 개장한 쥬라기 공원에 무관심한 유전학자에 비유하는 내용이다.",
+      "source": "Simon Willison"
+    },
+    "20260919-beaede86": {
+      "title": "Quoting Thariq Shihipar",
+      "url": "https://simonwillison.net/2026/Sep/18/thariq-shihipar/",
+      "summary": "Claude Code가 오늘부터 버전 2.1.277에서 AGENTS.md 지원을 추가한다. CLAUDE.md가 없을 경우 AGENTS.md를 사용하며, 이는 Claude Code 모드를 기반으로 한다. 사용자는 이를 통해 Claude Code를 맞춤 설정할 수 있다.",
+      "source": "Simon Willison"
+    },
+    "20260919-fc55e648": {
+      "title": "The Creative Spirit of Who Framed Roger Rabbit",
+      "url": "https://simonwillison.net/2026/Sep/18/the-creative-spirit-of-who-framed-roger-rabbit/",
+      "summary": "1988년 로버트 저메키스 감독의 영화 '누가 로저 래빗을 모함했나'의 한 장면이 재조명되었다. 사이프러스 프랭켄펠드가 지적한 이 장면은 애니메이션 펠리컨이 실제 자전거를 타는 것으로, 자전거 바퀴에 물을 채워 안정성을 확보하는 등 독특한 촬영 기법이 사용되었다.",
+      "source": "Simon Willison"
+    }
+  }
+}
