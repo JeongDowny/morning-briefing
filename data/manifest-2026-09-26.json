@@ -1,0 +1,323 @@
+{
+  "date": "2026-09-26",
+  "items": {
+    "20260926-0c54f135": {
+      "title": "Funding better evaluations of AI’s impact on wellbeing",
+      "url": "https://www.anthropic.com/news/wellbeing-research-grants",
+      "summary": "Anthropic 이 8/25, AI가 웰빙에 미치는 영향에 대한 더 나은 평가를 위한 자금 지원 계획을 발표했다.",
+      "source": "Anthropic"
+    },
+    "20260926-0d6d982a": {
+      "title": "Microsoft, Home/Code/Autopilot을 갖춘 새 Copilot 발표",
+      "url": "https://news.hada.io/topic?id=34296",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260926-ae3fedab": {
+      "title": "알렉산더 왕: 내가 Muse를 만드는 이유",
+      "url": "https://news.hada.io/topic?id=34295",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260926-00e0c602": {
+      "title": "Show HN: Jev가 Pokémon Red를 플레이함",
+      "url": "https://news.hada.io/topic?id=34294",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260926-7d5bab1f": {
+      "title": "늘 네트워크에 연결되어 있는 삶에 지쳤다",
+      "url": "https://news.hada.io/topic?id=34293",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260926-f161860f": {
+      "title": "ChatGPT와 Gemini가 가짜 고객센터 번호를 안내하도록 만드는 사기 수법",
+      "url": "https://news.hada.io/topic?id=34292",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260926-0fb35cae": {
+      "title": "OpenAI 에이전트가 Hugging Face를 해킹한 구체적 수법 공개",
+      "url": "https://news.hada.io/topic?id=34291",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260926-740508de": {
+      "title": "Ordewell - 코딩 작업을 위한 멀티 에이전트 오케스트레이터",
+      "url": "https://news.hada.io/topic?id=34290",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260926-6d74645e": {
+      "title": "Lobsters: vibecoding을 llms로 바꾸는 Greasemonkey 스크립트",
+      "url": "https://news.hada.io/topic?id=34289",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260926-21929dcf": {
+      "title": "Ollaya - Jev 같은 의사결정 모델을 위한 Ollama",
+      "url": "https://news.hada.io/topic?id=34288",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260926-4c3d2078": {
+      "title": "Oracle, 데이터센터에 전력이 공급되지 않아도 투자자에게 대금 지급 의무",
+      "url": "https://news.hada.io/topic?id=34287",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260926-872702da": {
+      "title": "시험",
+      "url": "https://news.hada.io/topic?id=34286",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260926-fa336609": {
+      "title": "제1원리 사고",
+      "url": "https://news.hada.io/topic?id=34285",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260926-36ba233d": {
+      "title": "SourceHut 빌드 로그를 통한 계정 탈취 취약점, ansi2html의 XSS",
+      "url": "https://news.hada.io/topic?id=34284",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260926-c96f0a6e": {
+      "title": "Oracle, 논란의 데이터센터 사업에서 자사 보호 위해 ‘불가항력’ 사유 내세워",
+      "url": "https://news.hada.io/topic?id=34283",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260926-2fd3806f": {
+      "title": "Cloudflare, HTTP의 골칫거리 ‘Vary’ 지원",
+      "url": "https://news.hada.io/topic?id=34282",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260926-7afb1a52": {
+      "title": "기밀 추산으로 드러난 NSA의 수십억 달러 규모 AI 모델 테스트 지출",
+      "url": "https://news.hada.io/topic?id=34281",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260926-48e9d00f": {
+      "title": "Mercury 2.5 LLM, 초당 약 800토큰 출력",
+      "url": "https://news.hada.io/topic?id=34279",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260926-09510867": {
+      "title": "직접 만질 수 있는 Factorio",
+      "url": "https://news.hada.io/topic?id=34278",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260926-4d11e827": {
+      "title": "Ink &amp; Switch의 인터랙티브 홈페이지",
+      "url": "https://news.hada.io/topic?id=34277",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260926-d8eb9cf5": {
+      "title": "비행기에서 아기띠 사용을 허용하라",
+      "url": "https://news.hada.io/topic?id=34276",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260926-def57c56": {
+      "title": "미국 항소법원, Anthropic의 공급망 위험 지정 유지",
+      "url": "https://news.hada.io/topic?id=34275",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260926-08d3932e": {
+      "title": "Virtio-nvgpu - KVM 가상 머신에서 NVIDIA GPU를 네이티브에 가까운 성능으로 공유",
+      "url": "https://news.hada.io/topic?id=34274",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260926-66a864e6": {
+      "title": "LLM으로 연금술 지식의 전파를 추적하고 17세기 편지를 해독하기",
+      "url": "https://news.hada.io/topic?id=34273",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260926-ae4a5e7e": {
+      "title": "Git-bug - Git 저장소에 이슈를 보관하는 분산형 버그 추적기",
+      "url": "https://news.hada.io/topic?id=34272",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260926-9c70f8ae": {
+      "title": "Go의 플랫폼 독립적 SIMD",
+      "url": "https://news.hada.io/topic?id=34271",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260926-37435ff0": {
+      "title": "M6 Mac Mini의 86Box에서 Voodoo 3와 함께 Pentium II 600MHz 에뮬레이션",
+      "url": "https://news.hada.io/topic?id=34270",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260926-ddf5c99f": {
+      "title": "마피아가 이탈리아로의 펜타닐 유입을 막고 있을 수도 있다",
+      "url": "https://news.hada.io/topic?id=34269",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260926-b02c35f8": {
+      "title": "Rails는 어떻게 되는가?",
+      "url": "https://news.hada.io/topic?id=34268",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260926-c87cbc2e": {
+      "title": "‘What’s Opera, Doc?’는 왜 그런 시각적 스타일을 갖게 됐을까",
+      "url": "https://news.hada.io/topic?id=34267",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260926-5004ea52": {
+      "title": "Disney+와 Hulu, 이익 두 배 증가 후 요금 최대 13% 인상",
+      "url": "https://news.hada.io/topic?id=34266",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260926-072dac44": {
+      "title": "Show GN: 축구 인생 시뮬레이터 게임 - 오프사이드",
+      "url": "https://news.hada.io/topic?id=34265",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260926-a3815269": {
+      "title": "“완전 AI 같아!” 알파 세대의 욕이 된 AI",
+      "url": "https://news.hada.io/topic?id=34264",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260926-8df85824": {
+      "title": "네덜란드 정부, NixOS 기반 Microsoft 대안 구축",
+      "url": "https://news.hada.io/topic?id=34262",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260926-75d58086": {
+      "title": "Show GN: 맥에서 분해된 자소를 결합. 실시간 폴더 감시, 자동 변환 (윈도우 앱스토어)",
+      "url": "https://news.hada.io/topic?id=34261",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260926-7eba70a2": {
+      "title": "크레아틴 흡수가 항종양 면역을 강화함",
+      "url": "https://news.hada.io/topic?id=34260",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260926-3b5fa37d": {
+      "title": "Google에 작별을 고하며",
+      "url": "https://news.hada.io/topic?id=34259",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260926-ccf76c00": {
+      "title": "Google의 Project Suncatcher, 우주에 머신러닝 인프라 구축 추진",
+      "url": "https://news.hada.io/topic?id=34256",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260926-25349783": {
+      "title": "Koi.rest - 물고기를 바라보며 마음의 균형을 되찾는 공간",
+      "url": "https://news.hada.io/topic?id=34255",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260926-cc300bb6": {
+      "title": "호로위츠 앤드리슨 아카데미 소개",
+      "url": "https://news.hada.io/topic?id=34254",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260926-eaf29daa": {
+      "title": "Opus 5.5는 설명 영상을 잘 만든다",
+      "url": "https://news.hada.io/topic?id=34253",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260926-617dc1ca": {
+      "title": "캘리포니아는 발 달린 부를 쫓고 있다",
+      "url": "https://news.hada.io/topic?id=34252",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260926-de9b4088": {
+      "title": "깡통 AI들 때문에 두 번째 뇌를 만들게 됐다",
+      "url": "https://news.hada.io/topic?id=34251",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260926-55e87bfd": {
+      "title": "Google Play와 결별하기: Conversations가 이제 무료인 이유",
+      "url": "https://news.hada.io/topic?id=34250",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260926-3817e655": {
+      "title": "‘멜의 이야기(Story of Mel)’ 해부하기",
+      "url": "https://news.hada.io/topic?id=34249",
+      "summary": "",
+      "source": "GeekNews"
+    },
+    "20260926-aabbcb7a": {
+      "title": "GitHub Copilot app for Beginners: How to build custom workflows with canvases",
+      "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-build-custom-workflows-with-canvases/",
+      "summary": "GitHub Copilot 앱이 캔버스 기반의 맞춤형 워크플로우 구축 기능을 선보인다. 사용자가 원하는 인터페이스를 영어로 설명하면 에이전트가 실시간으로 활용 가능한 화면을 생성, 도구 적응 시간 단축 및 업무 효율성 증대를 돕는다.",
+      "source": "GitHub Blog"
+    },
+    "20260926-4b83598d": {
+      "title": "Improving site performance by shipping more CSS",
+      "url": "https://github.blog/engineering/architecture-optimization/improving-site-performance-by-shipping-more-css/",
+      "summary": "GitHub.com이 웹사이트 성능 개선을 목표로 CSS-in-JS 방식에서 완전히 벗어나, 더 많은 CSS를 직접 제공하는 방식으로 전환을 완료했다.",
+      "source": "GitHub Blog"
+    },
+    "20260926-30b26e07": {
+      "title": "OpenRouter: from Seed to Stripe — with OpenRouter’s Alex Atallah & AMP’s Anjney Midha",
+      "url": "https://www.latent.space/p/openrouter",
+      "summary": "2023년 소수의 선도 모델 연구소만 예상되었으나 현재 수십 개로 증가했다. 이 중 스트라이프가 가장 유명한 연구소 중 하나를 70억 달러에 인수했다.",
+      "source": "Latent Space"
+    },
+    "20260926-658e36b5": {
+      "title": "[AINews] The Future of Latent Space",
+      "url": "https://www.latent.space/p/ainews-the-future-of-latent-space",
+      "summary": "Latent Space가 그동안의 비하인드 작업을 공개하고, 이제 공식적으로 사업을 시작한다고 밝혔다.",
+      "source": "Latent Space"
+    },
+    "20260926-6c1df0ea": {
+      "title": "Runway’s WorldPrompt and the Engineering of Real-Time Worlds",
+      "url": "https://www.latent.space/p/runway",
+      "summary": "Runway의 GWM Worlds 2는 지속적인 컨텍스트와 시간 지정된 액션을 활용해 실시간으로 비디오와 오디오를 생성하는 월드 모델을 조종한다.",
+      "source": "Latent Space"
+    },
+    "20260926-d2d497e5": {
+      "title": "Proaction boosts sales 60% and saves 75+ hours with Codex",
+      "url": "https://openai.com/index/proaction",
+      "summary": "Proaction은 Codex, GPT-Live-1, GPT-6 Astra를 활용해 현대적인 차량 관리 시스템을 더 빠르게 구축하고 판매한다. 이로써 매출 60% 증대와 75시간 이상의 업무 시간 절약을 달성했다.",
+      "source": "OpenAI"
+    },
+    "20260926-5bff2e7c": {
+      "title": "Quoting John Gruber",
+      "url": "https://simonwillison.net/2026/Sep/25/john-gruber/",
+      "summary": "Meta의 'Muse'는 사용자별 Linux VM을 제공하는 기술적 혁신과 쉬운 사용성으로 주목받는다. 최초의 소비자용 에이전트 AI 시스템으로 Meta가 잘 구현했으나, 소비자의 이해도는 미지수다.",
+      "source": "Simon Willison"
+    },
+    "20260926-28f369bb": {
+      "title": "Northern Gannet, Great Blue Heron, California Brown Pelican",
+      "url": "https://simonwillison.net/2026/Sep/25/sighting-403293902/",
+      "summary": "Monterey Bay 국립 해양 보호구역에서 Northern Gannet, Great Blue Heron, California Brown Pelican 등 야생 조류를 촬영했다. 새로운 200-800mm Canon EF 렌즈를 사용하여 'Morris'의 최고 사진을 얻었다.",
+      "source": "Simon Willison"
+    }
+  }
+}
