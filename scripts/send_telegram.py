@@ -1,17 +1,15 @@
-"""텔레그램 봇으로 섹션별 메시지 3개 전송.
+"""텔레그램 봇으로 짧은 브리핑 1개 전송.
 
-입력: summarized.json (Claude 네이티브 요약 결과) 또는 filtered.json (요약 미실행 시 폴백)
+입력: summarized.json (요약 결과) 또는 filtered.json (요약 미실행 시 폴백)
 환경변수: TELEGRAM_BOT_TOKEN, TELEGRAM_CHAT_ID
 
-메시지 분할 정책:
-- 섹션 단위로 별도 메시지 (경제뉴스 / AI·개발소식 / Threads)
-- 섹션 내용이 4000자 초과 시 해당 섹션만 추가 분할
+섹션(AI·개발 → 경제)마다 rank.py 가 고른 상위 N건만 싣는다. 나머지는 제목만
+Daily 노트(devhub "오늘 브리핑")에 접혀 있다. 4000자를 넘으면 이어서 쪼갠다.
 """
 from __future__ import annotations
 
 import json
 import os
-import re
 import sys
 import time
 from datetime import datetime
@@ -21,15 +19,18 @@ from typing import Any
 import requests
 from zoneinfo import ZoneInfo
 
+from rank import DEFAULT_TOP, section_key, split_top
+
 ROOT = Path(__file__).resolve().parent.parent
 COLLECTED_DIR = ROOT / "collected"
 SUMMARIZED_PATH = COLLECTED_DIR / "summarized.json"
 FILTERED_PATH = COLLECTED_DIR / "filtered.json"
+CONFIG_PATH = ROOT / "config" / "briefing.json"
 
 TELEGRAM_API = "https://api.telegram.org/bot{token}/sendMessage"
 MAX_MESSAGE_LEN = 4000  # 4096 한계에서 안전 마진
-BUTTONS_PER_ROW = 4
-MANIFEST_DIR = ROOT / "data"
+
+SECTIONS = [("ai", "🤖 AI / 개발"), ("econ", "📈 경제")]
 
 # MarkdownV2 이스케이프가 필요한 문자들
 MDV2_ESCAPE_CHARS = r"_*[]()~`>#+-=|{}.!"
@@ -46,23 +47,6 @@ def escape_mdv2(text: str) -> str:
     return text
 
 
-def load_url_to_id(date_iso: str) -> dict[str, str]:
-    """오늘 manifest 에서 {url: id} 역맵. 없으면 빈 dict (버튼 없이 발송)."""
-    path = MANIFEST_DIR / f"manifest-{date_iso}.json"
-    if not path.exists():
-        return {}
-    with path.open(encoding="utf-8") as f:
-        manifest = json.load(f)
-    return {meta["url"]: iid for iid, meta in manifest.get("items", {}).items() if meta.get("url")}
-
-
-def build_buttons(numbered: list[tuple[int, str]]) -> dict[str, Any]:
-    """[(번호, id), …] → inline_keyboard (BUTTONS_PER_ROW 개/행)."""
-    flat = [{"text": f"📥 {n}", "callback_data": iid} for n, iid in numbered]
-    rows = [flat[i:i + BUTTONS_PER_ROW] for i in range(0, len(flat), BUTTONS_PER_ROW)]
-    return {"inline_keyboard": rows}
-
-
 def load_input() -> dict[str, Any]:
     # 요약본 우선, 없으면 filtered 폴백 (요약 단계가 실패해도 헤드라인만큼은 발송)
     if SUMMARIZED_PATH.exists():
@@ -77,115 +61,70 @@ def load_input() -> dict[str, Any]:
     sys.exit(1)
 
 
-def group_by_section(sources: list[dict[str, Any]]) -> dict[str, list[dict[str, Any]]]:
-    """수집 소스들을 3개 섹션 버킷으로 그룹핑."""
-    grouped: dict[str, list[dict[str, Any]]] = {}
-    for src in sources:
-        source_name = src.get("source", "")
-        # render_daily 와 동일한 제네릭 규칙: *_rss/*_html 은 전부 AI/개발 섹션으로.
-        # (소스가 추가될 때마다 목록을 갱신하지 않아도 되도록 prefix 하드코딩을 제거)
-        if source_name.startswith("naver_"):
-            section_label = "📈 경제뉴스"
-        elif source_name.startswith("threads_"):
-            section_label = "🧵 Threads 하이라이트"
-        elif source_name.endswith("_rss") or source_name.endswith("_html"):
-            section_label = "🤖 AI / 개발 소식"
-        else:
-            section_label = "📰 기타"
-        grouped.setdefault(section_label, []).append(src)
-    return grouped
-
-
-def format_item_line(item: dict[str, Any], fallback_mode: bool, number: int) -> str:
-    title = item.get("title", "").strip()
+def format_item(item: dict[str, Any], fallback_mode: bool, number: int) -> str:
+    # 영문 원제는 싣지 않는다 — 한국어 제목이 있으면 그것만 (병기는 Daily 노트에)
+    title = (item.get("title_ko") or item.get("title") or "").strip()
     url = item.get("originallink") or item.get("link") or item.get("url") or ""
-    press = item.get("press", "")
-    summary = item.get("summary", "")
+    source = item.get("press") or item.get("source_name") or ""
+    summary = (item.get("summary") or "").strip()
 
-    title_esc = escape_mdv2(title)
-    press_esc = escape_mdv2(press) if press else ""
-    num_esc = escape_mdv2(f"{number}. ")
-
-    lines = []
-    if url:
-        lines.append(f"{num_esc}[{title_esc}]({url})" + (f" _{press_esc}_" if press_esc else ""))
-    else:
-        lines.append(f"{num_esc}*{title_esc}*" + (f" _{press_esc}_" if press_esc else ""))
+    head = escape_mdv2(f"{number}. ")
+    head += f"[{escape_mdv2(title)}]({url})" if url else f"*{escape_mdv2(title)}*"
+    if source:
+        head += f" _{escape_mdv2(source)}_"
     if summary and not fallback_mode:
-        lines.append(f"  ▸ {escape_mdv2(summary)}")
-    return "\n".join(lines)
+        return f"{head}\n  ▸ {escape_mdv2(summary)}"
+    return head
 
 
-def render_one_message(
-    section_label: str,
-    date_str: str,
-    items: list[dict[str, Any]],
-    url_to_id: dict[str, str],
-    fallback_mode: bool,
-    continued: bool = False,
-) -> tuple[str, dict[str, Any] | None]:
-    """items 한 묶음 → (메시지 텍스트, reply_markup). 번호는 1부터, id 있는 항목만 버튼."""
-    # section_label 만 이스케이프하고, "(이어서)"·구분자는 이미 이스케이프된 리터럴로 덧붙인다
-    # (전체를 한 번에 escape_mdv2 하면 백슬래시가 이중 이스케이프됨).
-    label_esc = escape_mdv2(section_label) + (" \\(이어서\\)" if continued else "")
-    header = f"*{label_esc}*" + ("" if continued else f" \\| {escape_mdv2(date_str)}")
-    body_lines = [header, ""]
-    numbered: list[tuple[int, str]] = []
-    for n, item in enumerate(items, start=1):
-        body_lines.append(format_item_line(item, fallback_mode, n))
-        url = item.get("originallink") or item.get("link") or item.get("url") or ""
-        iid = url_to_id.get(url)
-        if iid:
-            numbered.append((n, iid))
-    text = "\n\n".join([body_lines[0]] + body_lines[2:])  # header + 항목들 (빈 줄 정리)
-    kb = build_buttons(numbered) if numbered else None
-    return text, kb
-
-
-def build_section_messages(
-    section_label: str,
-    sources: list[dict[str, Any]],
-    date_str: str,
-    fallback_mode: bool,
-    url_to_id: dict[str, str],
-) -> list[tuple[str, dict[str, Any] | None]]:
-    all_items: list[dict[str, Any]] = []
+def build_blocks(sources: list[dict[str, Any]], tops: dict[str, int],
+                 date_str: str, fallback_mode: bool) -> list[str]:
+    """메시지를 이루는 블록들 — 헤더, 섹션 제목, 항목, 꼬리말. 블록 단위로 쪼갠다."""
+    by_section: dict[str, list[dict[str, Any]]] = {"ai": [], "econ": []}
     for src in sources:
-        all_items.extend(src.get("items", []))
-    if not all_items:
-        return []
+        key = section_key(src.get("source", ""))
+        if key:
+            by_section[key].extend(src.get("items", []))
 
-    # 4000자 안에서 항목 묶음을 쪼갠다 (대략적 길이 추정 — 묶음마다 render 후 길이 확인)
-    out: list[tuple[str, dict[str, Any] | None]] = []
-    bucket: list[dict[str, Any]] = []
-    for item in all_items:
-        trial = bucket + [item]
-        text, _ = render_one_message(section_label, date_str, trial, url_to_id,
-                                     fallback_mode, continued=bool(out))
-        if len(text) > MAX_MESSAGE_LEN and bucket:
-            t, kb = render_one_message(section_label, date_str, bucket, url_to_id,
-                                       fallback_mode, continued=bool(out))
-            out.append((t, kb))
-            bucket = [item]
+    blocks = [f"*{escape_mdv2('🌅 모닝 브리핑')}* \\| {escape_mdv2(date_str)}"]
+    folded = 0
+    for key, label in SECTIONS:
+        items = by_section[key]
+        if not items:
+            continue
+        top, rest = split_top(items, tops[key])
+        folded += len(rest)
+        suffix = "수집 순서" if any(it.get("rank_fallback") for it in top) else "관심사 순"
+        blocks.append(f"*{escape_mdv2(label)}* {escape_mdv2(f'— {suffix} {len(top)} / {len(items)}건')}")
+        blocks.extend(format_item(it, fallback_mode, n) for n, it in enumerate(top, start=1))
+    if folded:
+        blocks.append(f"_{escape_mdv2(f'나머지 {folded}건은 제목만 — devhub 오늘 브리핑')}_")
+    return blocks
+
+
+def pack_messages(blocks: list[str]) -> list[str]:
+    """블록을 MAX_MESSAGE_LEN 안으로 묶는다. 보통 1개."""
+    out: list[str] = []
+    cur = ""
+    for b in blocks:
+        trial = f"{cur}\n\n{b}" if cur else b
+        if len(trial) > MAX_MESSAGE_LEN and cur:
+            out.append(cur)
+            cur = b
         else:
-            bucket = trial
-    if bucket:
-        t, kb = render_one_message(section_label, date_str, bucket, url_to_id,
-                                   fallback_mode, continued=bool(out))
-        out.append((t, kb))
+            cur = trial
+    if cur:
+        out.append(cur)
     return out
 
 
-def send_message(token: str, chat_id: str, text: str,
-                 reply_markup: dict[str, Any] | None = None) -> dict[str, Any]:
+def send_message(token: str, chat_id: str, text: str) -> dict[str, Any]:
     payload = {
         "chat_id": chat_id,
         "text": text,
         "parse_mode": "MarkdownV2",
         "disable_web_page_preview": True,
     }
-    if reply_markup:
-        payload["reply_markup"] = reply_markup
     resp = requests.post(TELEGRAM_API.format(token=token), json=payload, timeout=15)
     if not resp.ok:
         print(f"[send_telegram] 전송 실패 {resp.status_code}: {resp.text}", file=sys.stderr)
@@ -194,9 +133,10 @@ def send_message(token: str, chat_id: str, text: str,
 
 
 def main() -> int:
+    dry_run = "--dry-run" in sys.argv
     token = os.environ.get("TELEGRAM_BOT_TOKEN")
     chat_id = os.environ.get("TELEGRAM_CHAT_ID")
-    if not token or not chat_id:
+    if not dry_run and (not token or not chat_id):
         print("[send_telegram] TELEGRAM_BOT_TOKEN / TELEGRAM_CHAT_ID 환경변수 필요", file=sys.stderr)
         return 1
 
@@ -207,60 +147,42 @@ def main() -> int:
         print("[send_telegram] 전송할 항목 없음", file=sys.stderr)
         return 0
 
+    cfg = json.loads(CONFIG_PATH.read_text(encoding="utf-8")) if CONFIG_PATH.exists() else {}
+    rcfg = cfg.get("ranking", {})
+    tops = {"ai": rcfg.get("ai_top", DEFAULT_TOP["ai"]), "econ": rcfg.get("econ_top", DEFAULT_TOP["econ"])}
+
     today_kst = datetime.now(ZoneInfo("Asia/Seoul")).strftime("%Y-%m-%d (%a)")
-    date_iso = datetime.now(ZoneInfo("Asia/Seoul")).strftime("%Y-%m-%d")
-    url_to_id = load_url_to_id(date_iso)
-    grouped = group_by_section(sources)
+    messages = pack_messages(build_blocks(sources, tops, today_kst, fallback_mode))
 
-    section_order_labels = ["📈 경제뉴스", "🤖 AI / 개발 소식", "🧵 Threads 하이라이트", "📰 기타"]
-    sent = 0
-    for label in section_order_labels:
-        if label not in grouped:
+    for msg in messages:
+        if dry_run:
+            print(msg + f"\n\n----- {len(msg)}자 -----")
             continue
-        for msg, kb in build_section_messages(label, grouped[label], today_kst, fallback_mode, url_to_id):
-            send_message(token, chat_id, msg, kb)
-            sent += 1
-            time.sleep(0.5)
+        send_message(token, chat_id, msg)
+        time.sleep(0.5)
 
-    print(f"[send_telegram] 전송 완료: {sent}개 메시지", file=sys.stderr)
+    print(f"[send_telegram] 전송 완료: {len(messages)}개 메시지", file=sys.stderr)
     return 0
 
 
 def _self_check() -> None:
-    # build_buttons: 4개/행 wrap, callback_data=id, 라벨=번호
-    kb = build_buttons([(1, "20260625-aaaaaaaa"), (2, "20260625-bbbbbbbb"),
-                        (3, "20260625-cccccccc"), (4, "20260625-dddddddd"),
-                        (5, "20260625-eeeeeeee")])
-    rows = kb["inline_keyboard"]
-    assert len(rows) == 2 and len(rows[0]) == 4 and len(rows[1]) == 1, "4개/행 wrap"
-    assert rows[0][0] == {"text": "📥 1", "callback_data": "20260625-aaaaaaaa"}
-    assert rows[1][0]["text"] == "📥 5"
+    # 상위만 싣고, 한국어 제목 우선, 나머지 건수는 꼬리말로
+    ai = [{"title": f"Post {i}", "url": f"https://x.com/{i}", "source_name": "Blog",
+           "summary": "요약", **({"rank": i + 1} if i < 2 else {})} for i in range(5)]
+    ai[0]["title_ko"] = "한국어 제목"
+    econ = [{"title": "금리 동결", "originallink": "https://n.com/1", "press": "hankyung.com", "summary": "s"}]
+    blocks = build_blocks([{"source": "blog_rss", "items": ai}, {"source": "naver_ranking", "items": econ}],
+                          {"ai": 7, "econ": 5}, "2026-09-29 (Tue)", fallback_mode=False)
+    text = "\n\n".join(blocks)
+    assert "한국어 제목" in text and "Post 0" not in text, "title_ko 우선, 원제 병기 안 함"
+    assert "Post 1" in text and "Post 2" not in text, "rank 있는 2건만"
+    assert "금리 동결" in text, "경제는 rank 없으면 앞 N건"
+    assert text.index("AI") < text.index("경제"), "AI 먼저"
+    assert "나머지 3건" in text
 
-    # 번호 매김 + 버튼 정렬: id 있는 항목만 버튼, 라벨=본문 번호
-    url_to_id = {"https://x.com/1": "20260625-11111111", "https://x.com/3": "20260625-33333333"}
-    items = [
-        {"title": "A", "url": "https://x.com/1"},
-        {"title": "B", "url": "https://x.com/2"},  # manifest 에 없음 → 버튼 없음
-        {"title": "C", "url": "https://x.com/3"},
-    ]
-    text, kb2 = render_one_message("📈 경제뉴스", "2026-06-25", items, url_to_id, fallback_mode=False)
-    assert "1\\. " in text or "1. " in text  # 번호 prefix 존재 (이스케이프 무관 느슨 체크)
-    labels = [b["text"] for row in kb2["inline_keyboard"] for b in row]
-    assert labels == ["📥 1", "📥 3"], f"id 있는 1,3 만 버튼: {labels}"
-
-    # 섹션 분류: *_rss/*_html 은 전부 AI/개발 (기타로 안 떨어짐)
-    g = group_by_section([
-        {"source": "naver_ranking", "items": []},
-        {"source": "geeknews_rss", "items": []},
-        {"source": "anthropic_html", "items": []},
-        {"source": "google-deepmind_rss", "items": []},
-        {"source": "weird_source", "items": []},
-    ])
-    assert "📈 경제뉴스" in g and "🤖 AI / 개발 소식" in g and "📰 기타" in g
-    ai = g["🤖 AI / 개발 소식"]
-    ai_keys = {s["source"] for s in ai}
-    assert ai_keys == {"geeknews_rss", "anthropic_html", "google-deepmind_rss"}, ai_keys
-    assert {s["source"] for s in g["📰 기타"]} == {"weird_source"}
+    # 4000자 넘으면 블록 경계에서 쪼갠다
+    msgs = pack_messages(["a" * 2500, "b" * 2500, "c" * 10])
+    assert len(msgs) == 2 and msgs[1].startswith("b")
     print("[send_telegram] self-check OK")
 
 

@@ -14,6 +14,7 @@ import json
 import os
 import re
 import sys
+import time
 from datetime import datetime
 from pathlib import Path
 from typing import Any
@@ -26,12 +27,13 @@ PROMPTS_DIR = ROOT / "config" / "prompts"
 FILTERED_PATH = ROOT / "collected" / "filtered.json"
 SUMMARIZED_PATH = ROOT / "collected" / "summarized.json"
 
-SOURCE_PROMPT = {
-    "naver_ranking": "news-summary.md",
-    "openai_rss": "blog-summary.md",
-    "anthropic_html": "blog-summary.md",
-    "threads_rsshub": "threads-summary.md",
-}
+def prompt_for(source: str) -> str:
+    """네이버 → 경제뉴스, Threads → 포스트, 나머지 RSS·HTML(GeekNews·개인 블로그 포함) → 기술 글."""
+    if source.startswith("naver_"):
+        return "news-summary.md"
+    if source.startswith("threads_"):
+        return "threads-summary.md"
+    return "blog-summary.md"
 
 DEFAULT_MODEL = "gemini-2.5-flash"
 DEFAULT_MAX_TOKENS = 16384  # 한국어 요약 + title_ko 필드 때문에 넉넉하게
@@ -107,9 +109,17 @@ def fallback_summary(lead: str) -> str:
 
 
 def _summarize_once(client, items: list[dict[str, Any]], instruction: str, model: str) -> dict[int, dict[str, str]]:
-    """items 1회 배치 요약 → {로컬인덱스: {summary, title_ko}}. 빈 dict 가능."""
+    """items 1회 배치 요약 → {로컬인덱스: {summary, title_ko}}. 빈 dict 가능 (호출 실패 포함)."""
     if not items or not instruction:
         return {}
+    try:
+        return _call_once(client, items, instruction, model)
+    except Exception as e:
+        print(f"[summarize] 호출 실패: {e}", file=sys.stderr)
+        return {}
+
+
+def _call_once(client, items: list[dict[str, Any]], instruction: str, model: str) -> dict[int, dict[str, str]]:
     user_msg = build_user_message(items, instruction)
     from google.genai import types
     config = types.GenerateContentConfig(
@@ -142,6 +152,7 @@ def summarize_source(client, items: list[dict[str, Any]], instruction: str, mode
     # 재시도: summary 빈 항목만 (로컬→원본 인덱스 매핑)
     missing_idx = [i for i, it in enumerate(items) if not it.get("summary")]
     if missing_idx:
+        time.sleep(5)  # 무료 티어 503 은 잠깐 뒤면 풀리는 경우가 많다
         sub = [items[i] for i in missing_idx]
         retry = _summarize_once(client, sub, instruction, model)  # {로컬j: {...}}
         for j, orig_i in enumerate(missing_idx):
@@ -185,6 +196,7 @@ def main() -> int:
 
     out_sources: list[dict[str, Any]] = []
     total_in, total_summarized = 0, 0
+    ranked = any(it.get("rank") for src in filtered.get("sources", []) for it in src.get("items", []))
 
     for src_block in filtered.get("sources", []):
         source = src_block.get("source", "")
@@ -195,16 +207,18 @@ def main() -> int:
             out_sources.append(src_block)
             continue
 
-        prompt_file = SOURCE_PROMPT.get(source, "news-summary.md")
-        instruction = load_prompt(prompt_file)
+        instruction = load_prompt(prompt_for(source))
 
-        try:
-            items = summarize_source(client, items, instruction, model)
-            ok_count = sum(1 for it in items if it.get("summary"))
-            total_summarized += ok_count
-            print(f"[summarize] {source}: {len(items)}건 중 요약 {ok_count}건", file=sys.stderr)
-        except Exception as e:
-            print(f"[summarize] {source} 실패: {e}", file=sys.stderr)
+        # rank.py 가 돌았으면 상위(rank 있는) 항목만 요약한다. 나머지는 제목만 접혀 나간다.
+        targets = [it for it in items if it.get("rank")] if ranked else items
+        if targets:
+            try:
+                summarize_source(client, targets, instruction, model)
+                ok_count = sum(1 for it in targets if it.get("summary"))
+                total_summarized += ok_count
+                print(f"[summarize] {source}: {len(items)}건 중 {len(targets)}건 대상, 요약 {ok_count}건", file=sys.stderr)
+            except Exception as e:
+                print(f"[summarize] {source} 실패: {e}", file=sys.stderr)
 
         out_sources.append({
             "source": source,
@@ -234,6 +248,11 @@ def _self_check() -> None:
     assert fallback_summary("짧은리드") == "짧은리드"
     assert fallback_summary("") == ""
     assert fallback_summary("   spaced   ") == "spaced"
+    assert prompt_for("naver_ranking") == "news-summary.md"
+    assert prompt_for("geeknews_rss") == "blog-summary.md"
+    assert prompt_for("simon-willison_rss") == "blog-summary.md"
+    assert prompt_for("anthropic_html") == "blog-summary.md"
+    assert prompt_for("threads_rsshub") == "threads-summary.md"
     print("[summarize] self-check OK")
 
 

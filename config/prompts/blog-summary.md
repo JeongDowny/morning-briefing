@@ -1,13 +1,13 @@
-# AI 개발 블로그 요약 프롬프트
+# AI·개발 글 요약 프롬프트
 
-OpenAI / Anthropic 공식 블로그 포스트를 개발자 관점에서 요약. 영문 원본이므로 한국어 번역 제목(`title_ko`)과 핵심 요약(`summary`)을 함께 제공.
+AI·개발 글(OpenAI·Anthropic 등 공식 블로그, GeekNews, 개인 기술 블로그)을 개발자 관점에서 요약. 영문 글이면 한국어 번역 제목(`title_ko`)과 핵심 요약(`summary`)을 함께 제공.
 
 ## 반드시 포함할 필드
 
 각 항목에 대해 JSON 으로 반환:
 
 - `id`: 입력과 동일
-- `title_ko`: 원문 제목의 한국어 번역
+- `title_ko`: 원문 제목의 한국어 번역 (원문이 한국어면 빈 문자열)
   - 제품명·회사명·인명 고유명사는 원문 유지 (예: `Claude Opus 4.7`, `Anthropic`, `OpenAI`, `Broadcom`, `Mozilla`)
   - 자연스러운 한국어 어순으로. 영어 문장 그대로 직역 금지.
 - `summary`: 2~3줄 한국어 요약

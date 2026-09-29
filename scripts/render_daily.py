@@ -16,6 +16,8 @@ from typing import Any
 
 from zoneinfo import ZoneInfo
 
+from rank import DEFAULT_TOP, split_top
+
 ROOT = Path(__file__).resolve().parent.parent
 SUMMARIZED_PATH = ROOT / "collected" / "summarized.json"
 FILTERED_PATH = ROOT / "collected" / "filtered.json"
@@ -24,7 +26,8 @@ DAILY_DIR = ROOT / "Daily"
 
 WEEKDAYS_KR = ["월", "화", "수", "목", "금", "토", "일"]
 
-SECTION_ORDER = ["📈 경제뉴스", "🤖 AI / 개발 소식", "🧵 Threads", "📰 기타"]
+SECTION_ORDER = ["🤖 AI / 개발 소식", "📈 경제뉴스", "🧵 Threads", "📰 기타"]
+RANKED_SECTIONS = {"🤖 AI / 개발 소식": "ai", "📈 경제뉴스": "econ"}
 
 
 def section_for_source(source: str, source_name: str = "") -> tuple[str, str | None]:
@@ -91,6 +94,40 @@ def render_article(item: dict[str, Any], include_lead: bool) -> list[str]:
         suffix = "…" if len(lead) > 300 else ""
         lines.append(f"  - 📄 *{short}{suffix}*")
 
+    return lines
+
+
+def render_folded(items: list[dict[str, Any]]) -> list[str]:
+    """상위에 못 든 항목 — 제목만, 접어서. 버린 게 아니라 내가 훑고 고를 몫."""
+    lines = [
+        "<details>",
+        f"<summary>나머지 {len(items)}건 — 제목만</summary>",
+        "",
+    ]
+    for item in items:
+        title = (item.get("title") or "").strip()
+        url = item.get("originallink") or item.get("link") or item.get("url") or ""
+        source = item.get("press") or item.get("source_name") or ""
+        line = f"- [{title}]({url})" if url else f"- {title}"
+        if source:
+            line += f" — {source}"
+        lines.append(line)
+    lines.extend(["", "</details>", ""])
+    return lines
+
+
+def render_ranked_section(items: list[dict[str, Any]], n: int, include_lead: bool) -> list[str]:
+    top, rest = split_top(items, n)
+    if any(it.get("rank_fallback") for it in top):
+        note = f"> 관심사 정렬 실패 — 수집 순서 앞 {len(top)}건 · 전체 {len(items)}건"
+    else:
+        note = f"> 관심사 순 상위 {len(top)}건 · 전체 {len(items)}건"
+    lines = [note, ""]
+    for item in top:
+        lines.extend(render_article(item, include_lead))
+        lines.append("")
+    if rest:
+        lines.extend(render_folded(rest))
     return lines
 
 
@@ -183,11 +220,19 @@ def main() -> int:
         "",
     ]
 
+    tops = {**DEFAULT_TOP}
+    tops["ai"] = config.get("ranking", {}).get("ai_top", tops["ai"])
+    tops["econ"] = config.get("ranking", {}).get("econ_top", tops["econ"])
+
     for section in SECTION_ORDER:
         if section not in grouped:
             continue
         lines.append(f"## {section}")
         lines.append("")
+        if section in RANKED_SECTIONS:
+            flat = [it for _, items in grouped[section] for it in items]
+            lines.extend(render_ranked_section(flat, tops[RANKED_SECTIONS[section]], include_lead))
+            continue
         for sub_label, items in grouped[section]:
             if section == "🧵 Threads":
                 # 계정별 서브섹션
